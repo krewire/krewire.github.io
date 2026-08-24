@@ -6,6 +6,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
   <link rel="stylesheet" href="/assets/style.css"/>
   <link rel="stylesheet" href="/assets/theme.css"/>
+  <link rel="stylesheet" href="/assets/tailwind.css"/>
   
 </head>
 <body>
@@ -22,18 +23,18 @@
       </button>
     </div>
   </header>
-  <main><section class="hero" data-kiw-component="Hero">
+  <main><section class="hero grid md:grid-cols-[1.1fr_0.9fr] gap-10 items-center py-16" data-kiw-component="Hero">
   <div class="copy">
-    <div class="eyebrow">Unified Go Framework · v0.1.0</div>
-    <h1>Krewire — The Go Framework for Web Artisans</h1>
-    <p>One framework for every web-service workload — <b>app, cli, site, book, worker, service, infra, runtime</b>. One CLI <code>kiw</code>, one config <code>krewire.yaml</code>.</p>
-    <div class="ctas">
-      <a class="btn primary" href="/docs/getting-started">Get Started</a>
-      <a class="btn" href="https://github.com/krewire/krewire">View on GitHub</a>
+    <div class="eyebrow text-xs tracking-widest uppercase text-muted font-semibold">Unified Go Framework · v0.1.0</div>
+    <h1 class="font-serif text-5xl md:text-6xl leading-none tracking-tight my-3">Krewire — The Go Framework for Web Artisans</h1>
+    <p class="text-lg text-muted max-w-xl">One framework for every web-service workload — <b>app, cli, site, book, worker, service, infra, runtime</b>. One CLI <code class="font-mono text-sm bg-bg-2 border border-border px-1.5 py-0.5 rounded-lg">kiw</code>, one config <code class="font-mono text-sm bg-bg-2 border border-border px-1.5 py-0.5 rounded-lg">krewire.yaml</code>.</p>
+    <div class="ctas flex gap-3 mt-6 flex-wrap">
+      <a class="btn primary inline-flex items-center gap-2 px-4 py-2.5 rounded-full border font-semibold text-sm bg-primary text-white border-primary" href="/docs/getting-started">Get Started</a>
+      <a class="btn inline-flex items-center gap-2 px-4 py-2.5 rounded-full border font-semibold text-sm" href="https://github.com/krewire/krewire">View on GitHub</a>
     </div>
-    <div class="meta"><span>Go 1.22+ · File-based routing · Scoped CSS · No JS by default</span></div>
+    <div class="meta mt-4 text-xs text-muted"><span>Go 1.22+ · File-based routing · Scoped CSS · No JS by default</span></div>
   </div>
-  <div class="art"><div class="window" data-kiw-component="CodeWindow">
+  <div class="art min-w-0"><div class="window" data-kiw-component="CodeWindow">
   <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="title">krewire.kiw</span></div>
   <pre><code><span class="c">---</span>
 <span class="k">title:</span> Hello
@@ -44,60 +45,60 @@
 </div></div>
 </section>
 
-<section class="features">
-  <h2>One framework. Eight workloads.</h2>
-  <p class="sub">From CLI to WASM frontend — same Go, same <code>kiw</code>.</p>
-  <div class="grid">
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">▲</div>
-  <h3>app</h3>
-  <p>Fullstack monolith — web + API in one binary</p>
+<section class="features py-6">
+  <h2 class="text-3xl font-bold tracking-tight mb-1">One framework. Eight workloads.</h2>
+  <p class="sub text-muted mb-5">From CLI to WASM frontend — same Go, same <code class="font-mono text-sm bg-bg-2 border border-border px-1 py-0.5 rounded">kiw</code>.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">▲</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">app</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Fullstack monolith — web + API in one binary</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">›</div>
-  <h3>cli</h3>
-  <p>Command-line apps with framework/tui</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">›</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">cli</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Command-line apps with framework/tui</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">◧</div>
-  <h3>site</h3>
-  <p>File-based .kiw DSL → static site, no JS by default</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">◧</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">site</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">File-based .kiw DSL → static site, no JS by default</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">≡</div>
-  <h3>book</h3>
-  <p>Manuscript → book via mdbind</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">≡</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">book</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Manuscript → book via mdbind</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">⚙</div>
-  <h3>worker</h3>
-  <p>Job queues, cron, retries, DLQ</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">⚙</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">worker</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Job queues, cron, retries, DLQ</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">⬢</div>
-  <h3>service</h3>
-  <p>Registry, gateway, resilience, tracing</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">⬢</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">service</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Registry, gateway, resilience, tracing</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">☁</div>
-  <h3>infra</h3>
-  <p>Provider-agnostic IaC → AWS/K8s</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">☁</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">infra</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Provider-agnostic IaC → AWS/K8s</p>
 </div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">◈</div>
-  <h3>runtime</h3>
-  <p>Go→WASM, VDOM, mount points</p>
+    <div class="card rounded-2xl border border-border p-5 bg-bg shadow-sm hover:-translate-y-0.5 transition" data-kiw-component="FeatureCard">
+  <div class="icon w-10 h-10 rounded-xl grid place-items-center bg-primary/10 text-lg">◈</div>
+  <h3 class="text-sm font-semibold mt-3 mb-1.5">runtime</h3>
+  <p class="text-xs text-muted leading-relaxed m-0">Go→WASM, VDOM, mount points</p>
 </div>
   </div>
 </section>
 
-<section class="cta">
-  <h2>Go-first. Zero JS until you need it.</h2>
-  <p>Write pages as <code>pages/*.kiw</code> — frontmatter + HTML + scoped <code>&lt;style&gt;</code>. No toolchain, no npm.</p>
-  <pre><code>kiw new my-site --site
+<section class="cta my-9 p-7 border border-border rounded-2xl bg-bg-2">
+  <h2 class="text-2xl font-bold mb-2">Go-first. Zero JS until you need it.</h2>
+  <p class="text-muted mb-3">Write pages as <code class="font-mono text-sm">pages/*.kiw</code> — frontmatter + HTML + scoped <code class="font-mono text-sm">&lt;style&gt;</code>. No toolchain, no npm.</p>
+  <pre class="bg-[#0a0a0a] text-[#e5e7eb] p-4 rounded-xl overflow-auto"><code class="font-mono text-sm">kiw new my-site --site
 kiw build
 kiw serve</code></pre>
-  <a class="btn primary" href="/docs/getting-started">Read the docs →</a>
+  <a class="btn primary inline-flex items-center px-4 py-2.5 rounded-full bg-primary text-white font-semibold mt-4" href="/docs/getting-started">Read the docs →</a>
 </section>
 
 <section class="eco" data-kiw-component="Ecosystem">
