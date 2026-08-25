@@ -1,118 +1,49 @@
-<!DOCTYPE html><html lang="en" data-kiw-layout="Base"><head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="color-scheme" content="light dark"/>
-  <title>Krewire — The Go Framework for Web Artisans</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Krewire — One Go Framework for Every Workload</title>
+<link rel="stylesheet" href="/assets/mdbind.css">
+<style>:root{--base-1: #fdfdfb;--base-1-content: #1a1a1a;--base-2: #f5f2eb;--base-2-content: #666;--base-3: #efece4;--base-3-content: #4a4a4a;--primary: #00c853;--primary-content: #ffffff;--secondary: #4a8f7a;--secondary-content: #ffffff;--accent: #f59e0b;--accent-content: #ffffff;--ghost: #e9e6dc;--ghost-content: #666;--neutral: #e3e0d8;--neutral-content: #666;--success: #15803d;--success-content: #ffffff;--info: #0d9488;--info-content: #ffffff;--warning: #f59e0b;--warning-content: #ffffff;--error: #b91c1c;--error-content: #ffffff;}:root[data-theme="dark"]{--base-1: #17171a;--base-1-content: #e6e4dd;--base-2: #202024;--base-2-content: #9a968b;--base-3: #2a2a30;--base-3-content: #c6c2b8;--primary: #5cff8e;--primary-content: #06160d;--secondary: #7fc99d;--secondary-content: #07130b;--accent: #ffb020;--accent-content: #241a00;--ghost: #26262b;--ghost-content: #9a968b;--neutral: #2e2e34;--neutral-content: #9a968b;--success: #4ade80;--success-content: #0b1f10;--info: #2dd4bf;--info-content: #062a23;--warning: #ffb020;--warning-content: #241a00;--error: #f87171;--error-content: #260a0a;}@media (prefers-color-scheme: dark){:root:not([data-theme]){--base-1: #17171a;--base-1-content: #e6e4dd;--base-2: #202024;--base-2-content: #9a968b;--base-3: #2a2a30;--base-3-content: #c6c2b8;--primary: #5cff8e;--primary-content: #06160d;--secondary: #7fc99d;--secondary-content: #07130b;--accent: #ffb020;--accent-content: #241a00;--ghost: #26262b;--ghost-content: #9a968b;--neutral: #2e2e34;--neutral-content: #9a968b;--success: #4ade80;--success-content: #0b1f10;--info: #2dd4bf;--info-content: #062a23;--warning: #ffb020;--warning-content: #241a00;--error: #f87171;--error-content: #260a0a;}}</style><script>(function(){var k="krewire-theme",d="auto",t=d;try{t=localStorage.getItem(k)||d}catch(e){}var m=window.matchMedia('(prefers-color-scheme: dark)');function apply(){var dark=t==='dark'||(t==='auto'&&m.matches);var r=document.documentElement;r.dataset.theme=dark?'dark':'light';r.style.colorScheme=dark?'dark':'light';var meta=document.querySelector('meta[name="color-scheme"]');if(meta)meta.content=dark?'dark':'light'}apply();if(m.addEventListener){m.addEventListener('change',function(){if(t==='auto')apply()})}window.krewireTheme={get:function(){return t},set:function(x){t=x;try{localStorage.setItem(k,x)}catch(e){}apply()},toggle:function(){var dark=t==='dark'||(t==='auto'&&m.matches);window.krewireTheme.set(dark?'light':'dark')}};document.addEventListener('click',function(e){var el=e.target&&e.target.closest?e.target.closest('[data-theme-toggle]'):null;if(el)window.krewireTheme.toggle()})})();</script>
 </head>
 <body>
-  <header class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="/">Krewire <span class="badge">v0.1.0</span></a>
-      <nav class="links">
-        <a href="/docs">Docs</a>
-        <a href="https://github.com/krewire/framework">GitHub</a>
-        <a href="https://github.com/krewire/krewire">krewire/krewire</a>
-      </nav>
-      <button class="theme-toggle" data-theme-toggle="" aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
-        <span class="sun">☀</span><span class="moon">☾</span>
-      </button>
-    </div>
-  </header>
-  <main><section class="hero" data-kiw-component="Hero">
-  <div class="copy">
-    <div class="eyebrow">Unified Go Framework · v0.1.0</div>
-    <h1>Krewire — The Go Framework for Web Artisans</h1>
-    <p>One framework for every web-service workload — <b>app, cli, site, book, worker, service, infra, runtime</b>. One CLI <code>kiw</code>, one config <code>krewire.yaml</code>.</p>
-    <div class="ctas">
-      <a class="btn primary" href="/docs/getting-started">Get Started</a>
-      <a class="btn" href="https://github.com/krewire/krewire">View on GitHub</a>
-    </div>
-    <div class="meta"><span>Go 1.22+ · File-based routing · Scoped CSS · No JS by default</span></div>
+
+<header class="topbar">
+  <nav>
+    <a class="brand" href="/">Krewire — One Go Framework for Every Workload</a>
+    <a href="/docs">Docs</a><a href="https://github.com/krewire/krewire">GitHub</a><a href="https://github.com/krewire/framework/tree/main/docs/specs">Specs</a>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle light/dark theme" title="Toggle theme"><svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  </nav>
+</header>
+
+<div class="layout">
+  
+<aside class="sidebar">
+  <p class="sidebar-title">Contents</p>
+  <nav>
+    
+    <a href="/docs"><span class="num">1.</span> docs</a>
+    
+    
+  </nav>
+</aside>
+
+  <main>
+    <h1>Krewire — One Go Framework for Every Workload</h1>
+    <p class="author">by Krewire Contributors</p>
+    <p class="lede">A 4-page book assembled from Markdown.</p>
+    <p><a class="start" href="/docs">Start reading &rarr;</a></p>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>© 2026 Krewire Contributors — v0.1.0. Built 100% with Krewire.</p>
+    <p class="built-with">Built with <a href="https://github.com/krewire/mdbind">mdbind</a> and the <a href="https://github.com/krewire/framework">Krewire Framework</a>.</p>
   </div>
-  <div class="art"><div class="window" data-kiw-component="CodeWindow">
-  <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="title">krewire.kiw</span></div>
-  <pre><code><span class="c">---</span>
-<span class="k">title:</span> Hello
-<span class="k">layout:</span> Base
-<span class="c">---</span>
-<span class="t">&lt;h1&gt;</span>{{.Title}}<span class="t">&lt;/h1&gt;</span>
-<span class="t">&lt;style&gt;</span>h1{color:var(--primary)}<span class="t">&lt;/style&gt;</span></code></pre>
-</div></div>
-</section>
+</footer>
 
-<section class="features">
-  <h2>One framework. Eight workloads.</h2>
-  <p class="sub">From CLI to WASM frontend — same Go, same <code>kiw</code>.</p>
-  <div class="grid">
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">▲</div>
-  <h3>app</h3>
-  <p>Fullstack monolith — web + API in one binary</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">›</div>
-  <h3>cli</h3>
-  <p>Command-line apps with framework/tui</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">◧</div>
-  <h3>site</h3>
-  <p>File-based .kiw DSL → static site, no JS by default</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">≡</div>
-  <h3>book</h3>
-  <p>Manuscript → book via mdbind</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">⚙</div>
-  <h3>worker</h3>
-  <p>Job queues, cron, retries, DLQ</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">⬢</div>
-  <h3>service</h3>
-  <p>Registry, gateway, resilience, tracing</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">☁</div>
-  <h3>infra</h3>
-  <p>Provider-agnostic IaC → AWS/K8s</p>
-</div>
-    <div class="card" data-kiw-component="FeatureCard">
-  <div class="icon">◈</div>
-  <h3>runtime</h3>
-  <p>Go→WASM, VDOM, mount points</p>
-</div>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Go-first. Zero JS until you need it.</h2>
-  <p>Write pages as <code>pages/*.kiw</code> — frontmatter + HTML + scoped <code>&lt;style&gt;</code>. No toolchain, no npm.</p>
-  <pre><code>kiw new my-site --site
-kiw build
-kiw serve</code></pre>
-  <a class="btn primary" href="/docs/getting-started">Read the docs →</a>
-</section>
-
-<section class="eco" data-kiw-component="Ecosystem">
-  <h2>Ecosystem — one <code>kiw</code> for everything</h2>
-  <div class="grid">
-    <a class="item" href="https://github.com/krewire/framework"><b>framework</b><span>app · web · ui · runtime · worker · service · infra</span></a>
-    <a class="item" href="https://github.com/krewire/libs"><b>libs</b><span>core + kern · config · validate · term</span></a>
-    <a class="item" href="https://github.com/krewire/mdbind"><b>mdbind</b><span>book → site pipeline</span></a>
-    <a class="item" href="https://github.com/krewire/guild"><b>guild</b><span>AI agent template</span></a>
-    <a class="item" href="https://github.com/krewire/kiw"><b>kiw</b><span>build · serve · dev · deploy</span></a>
-  </div>
-</section></main>
-  <footer class="footer">
-    <div class="footer-inner">
-      <span>© 2026 Krewire Contributors — Built 100% with Krewire `site` workload.</span>
-      <span><a href="https://github.com/krewire">github.com/krewire</a> · <a href="/docs/getting-started">Get Started</a></span>
-    </div>
-  </footer>
-
-</body></html>
+</body>
+</html>
