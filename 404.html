@@ -8,17 +8,12 @@
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
-
-      // If it's already an .html file, don't redirect
       if (path.endsWith('.html')) return;
-
-      // If it's a directory request (ends with /), try index.html
       if (path.endsWith('/')) {
-        window.location.href = path + 'index.html' + search + hash;
+        var withoutSlash = path.slice(0, -1);
+        window.location.href = withoutSlash + '.html' + search + hash;
         return;
       }
-
-      // Try appending .html for extensionless routes
       window.location.href = path + '.html' + search + hash;
     })();
   </script>
