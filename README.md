@@ -1,6 +1,6 @@
-# Krewire — krewire/krewire
+# Krewire — GitHub Pages deployment
 
-Source for **https://krewire.github.io/** — the unified Krewire site (landing + docs), **100% built with Krewire** (`site` workload, file-based `.kiw`).
+Standalone deployment repository for **https://krewire.github.io/** — the unified Krewire site (landing + docs). This repository is independent from the Krewire site source and has no automated cross-repository deployment.
 
 - **Stack:** `krewire.yaml` (kind `site`, `base:"/"`) + `pages/*.kiw` + `components/*.kiw` + `layouts/*.kiw` + `content/docs/*.md` → `krewire build` → `site/` (no `go.mod` needed per `KWF-DF3PL`).
 - **Design:** Inspired by `laravel.com` — sparse hero with code snippet, 8 workload cards, ecosystem strip, docs sidebar. Theme toggle (`auto`/`light`/`dark`) via `localStorage`, scoped CSS (`data-kiw-*`), `framework/ui` vars (`--color-primary` `#00c853`).
@@ -22,11 +22,10 @@ pages/docs/[slug].kiw    → /docs/:slug  (from content/docs/*.md)
 
 ## Deploy
 
-- **Source:** `krewire/krewire` `main` (this repo)
-- **Built artifact:** pushed to `krewire/krewire` `gh-deploy` (site at root, `.nojekyll`)
-- **Live:** `krewire/krewire.github.io` `gh-pages` → `https://krewire.github.io/` (org pages, `base:"/"`)
+- **Published artifact:** `gh-pages` branch, served from the repository root by GitHub Pages.
+- **Source:** This repository is maintained independently; production deployment of the main Krewire site is managed elsewhere.
 
-Pushing built site to `gh-deploy` triggers `.github/workflows/deploy.yml` (on `gh-deploy`) which deploys to `krewire.github.io`.
+There is no workflow in this repository that builds from or publishes to another Krewire repository.
 
 ## Structure (not too scoped)
 
