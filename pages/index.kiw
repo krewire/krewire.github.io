@@ -133,13 +133,14 @@ layout: Landing
     </div>
   </section>
 
-  <!-- WHERE TO START (CONTRIBUTOR NAVIGATION MAP) -->
-  <section class="nav-map" id="where-to-start">
+  <!-- UNIFIED CODEBASE MATRIX & CONTRIBUTOR NAVIGATOR -->
+  <section class="repos-nav" id="repositories">
+    <span id="where-to-start" class="section-anchor"></span>
     <div class="section-inner">
       <div class="section-head">
-        <div class="sub-badge">Contributor Navigator</div>
-        <h2>Where Should I Start?</h2>
-        <p>New to Krewire? Match your background and passions to the right corner of the ecosystem. Bootstrap locally in under a minute, then dive straight into active issues.</p>
+        <div class="sub-badge">Codebase Matrix &amp; Navigator</div>
+        <h2>Core Repositories &amp; Where to Start</h2>
+        <p>Match your skills and background to the right codebase, bootstrap your local environment in 30 seconds, and dive straight into active issues.</p>
       </div>
 
       <!-- FAST-TRACK ONE-LINE SETUP BANNER -->
@@ -178,15 +179,43 @@ layout: Landing
         </div>
       </div>
 
-      <!-- NAVIGATION CARDS MATRIX -->
-      <div class="nav-map-grid">
+            <!-- NAVIGATION CARDS MATRIX -->
+      <div class="nav-map-grid repo-grid">
+        <!-- krewire/framework -->
+        <div class="nav-map-card repo-card featured" data-category="web">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Web Engine &amp; Fullstack</span>
+            <span class="nav-curve-badge intermediate">Intermediate</span>
+          </div>
+          <h3 class="nav-card-title"><span class="repo-icon">⬢</span> krewire/framework</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> High-performance HTTP routers, context pipelines, reactive SSR/VDOM, static-site compilers, background worker queues, and typed DI containers.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>framework/web</code>
+              <code>framework/storage</code>
+              <code>framework/app</code>
+              <code>framework/worker</code>
+              <code>framework/dsl</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/framework" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
+            </a>
+          </div>
+        </div>
+
         <!-- krewire/libs -->
-        <div class="nav-map-card" data-category="core">
+        <div class="nav-map-card repo-card" data-category="core">
           <div class="nav-card-top">
             <span class="nav-track-tag">Go Core &amp; Primitives</span>
             <span class="nav-curve-badge gentle">Gentle Onboarding</span>
           </div>
-          <h3 class="nav-card-title">krewire/libs</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">◈</span> krewire/libs</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Pure Go standard library, domain modeling, zero-dependency validation, crypto/security, and rock-solid memory/virtual filesystems.</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -200,43 +229,21 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/libs/issues" target="_blank" rel="noopener">
-              Explore Libs Issues &rarr;
+              Good First Issues &rarr;
             </a>
-          </div>
-        </div>
-
-        <!-- krewire/framework -->
-        <div class="nav-map-card" data-category="web">
-          <div class="nav-card-top">
-            <span class="nav-track-tag">Web Engine &amp; Fullstack</span>
-            <span class="nav-curve-badge intermediate">Intermediate</span>
-          </div>
-          <h3 class="nav-card-title">krewire/framework</h3>
-          <p class="nav-card-match"><strong>If you enjoy:</strong> High-performance HTTP routers, context pipelines, reactive SSR/VDOM, static-site compilers, background worker queues, and typed DI containers.</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label">Key Packages:</span>
-            <div class="pkg-tags">
-              <code>framework/web</code>
-              <code>framework/storage</code>
-              <code>framework/app</code>
-              <code>framework/worker</code>
-              <code>framework/dsl</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/framework/issues" target="_blank" rel="noopener">
-              Explore Framework Issues &rarr;
+            <a class="nav-repo-link" href="https://github.com/krewire/libs" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
 
         <!-- krewire/kiw -->
-        <div class="nav-map-card" data-category="dx">
+        <div class="nav-map-card repo-card" data-category="dx">
           <div class="nav-card-top">
             <span class="nav-track-tag">CLI &amp; Developer Experience</span>
             <span class="nav-curve-badge gentle">Gentle Onboarding</span>
           </div>
-          <h3 class="nav-card-title">krewire/kiw</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">⚙</span> krewire/kiw</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Fast terminal feedback, delightful CLI ergonomics, code scaffolding, file watchers, release automations, and workspace commands.</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -249,18 +256,21 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/kiw/issues" target="_blank" rel="noopener">
-              Explore Kiw Issues &rarr;
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/kiw" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
 
         <!-- krewire/hub -->
-        <div class="nav-map-card" data-category="dx">
+        <div class="nav-map-card repo-card" data-category="dx">
           <div class="nav-card-top">
             <span class="nav-track-tag">Plugins &amp; Integrations</span>
             <span class="nav-curve-badge gentle">Gentle Onboarding</span>
           </div>
-          <h3 class="nav-card-title">krewire/hub</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">🔌</span> krewire/hub</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Tailwind CSS integrations, package resolver chains (npm &amp; Go modules), and building third-party developer tool extensions.</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -272,18 +282,21 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/hub/issues" target="_blank" rel="noopener">
-              Explore Hub Issues &rarr;
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/hub" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
 
         <!-- krewire/ship -->
-        <div class="nav-map-card" data-category="devops">
+        <div class="nav-map-card repo-card" data-category="devops">
           <div class="nav-card-top">
             <span class="nav-track-tag">Deployment &amp; Cloud Infra</span>
             <span class="nav-curve-badge advanced">Specialized</span>
           </div>
-          <h3 class="nav-card-title">krewire/ship</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">🚀</span> krewire/ship</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Zero-downtime releases, SSH runners, containerless raw VM automation, automated TLS provisioning, and systemd service generation.</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -295,18 +308,21 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/ship/issues" target="_blank" rel="noopener">
-              Explore Ship Issues &rarr;
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/ship" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
 
         <!-- krewire/guild -->
-        <div class="nav-map-card" data-category="ai">
+        <div class="nav-map-card repo-card" data-category="ai">
           <div class="nav-card-top">
             <span class="nav-track-tag">AI Guild &amp; Agent Triads</span>
-            <span class="nav-curve-badge intermediate">Innovative</span>
+            <span class="nav-curve-badge innovative">Innovative</span>
           </div>
-          <h3 class="nav-card-title">krewire/guild</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">▲</span> krewire/guild</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Autonomous agent swarms, prompt engineering, OpenCode skill definitions, verification subagents (auditor/reviewer), and Model Context Protocol (MCP).</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -319,18 +335,21 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/guild/issues" target="_blank" rel="noopener">
-              Explore Guild Issues &rarr;
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/guild" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
 
         <!-- krewire/mdbind -->
-        <div class="nav-map-card" data-category="core">
+        <div class="nav-map-card repo-card" data-category="core">
           <div class="nav-card-top">
             <span class="nav-track-tag">Static Books &amp; Documentation</span>
             <span class="nav-curve-badge gentle">Gentle Onboarding</span>
           </div>
-          <h3 class="nav-card-title">krewire/mdbind</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">≡</span> krewire/mdbind</h3>
           <p class="nav-card-match"><strong>If you enjoy:</strong> Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.</p>
           <div class="nav-card-packages">
             <span class="pkg-label">Key Packages:</span>
@@ -342,7 +361,10 @@ layout: Landing
           </div>
           <div class="nav-card-footer">
             <a class="nav-action-link" href="https://github.com/krewire/mdbind/issues" target="_blank" rel="noopener">
-              Explore Mdbind Issues &rarr;
+              Good First Issues &rarr;
+            </a>
+            <a class="nav-repo-link" href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">
+              GitHub Repo &nearr;
             </a>
           </div>
         </div>
@@ -350,211 +372,6 @@ layout: Landing
     </div>
   </section>
 
-  <!-- REPOSITORY MATRIX -->
-  <section class="repos" id="repositories">
-    <div class="section-inner">
-      <div class="section-head">
-        <div class="sub-badge">Codebase Matrix</div>
-        <h2>Core Repositories</h2>
-        <p>Explore the six foundational pillars of Krewire. Each repository has clear boundaries, modular architecture, and welcomes contributions.</p>
-      </div>
-      <div class="repo-grid">
-        
-        <!-- framework -->
-        <div class="repo-card featured">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">⬢</span>
-              <h3>krewire/framework</h3>
-            </div>
-            <span class="repo-badge primary">Core Engine</span>
-          </div>
-          <p class="repo-desc">The unified Go framework runtime powering 8 workloads: <code>app</code>, <code>web</code>, <code>runner</code>, <code>service</code>, <code>worker</code>, <code>runtime</code>, <code>infra</code>, <code>tui</code>, and <code>testing</code>.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span>Zero-alloc routing, concurrent runners, graceful shutdown, panic recovery, middleware.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>New runner adapters, distributed queue drivers, WASM bridges, observability plugins.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">Go 1.22+</span>
-            <span class="tag">net/http</span>
-            <span class="tag">High Concurrency</span>
-            <a class="repo-link" href="https://github.com/krewire/framework" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- libs -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">◈</span>
-              <h3>krewire/libs</h3>
-            </div>
-            <span class="repo-badge">Krewire Libs</span>
-          </div>
-          <p class="repo-desc">Essential low-level kernel primitives, structural utilities, high-performance validation, configuration, and terminal formatters.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span><code>core</code>, <code>kern</code>, <code>validation</code>, <code>config</code>, <code>term</code>, <code>fs</code> with zero external bloat.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>Micro-optimizations, zero-copy string helpers, config parsers, thread-safe collections.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">Zero Deps</span>
-            <span class="tag">Kernel</span>
-            <a class="repo-link" href="https://github.com/krewire/libs" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- kiw -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">⚙</span>
-              <h3>krewire/kiw</h3>
-            </div>
-            <span class="repo-badge">Toolchain CLI</span>
-          </div>
-          <p class="repo-desc">The unified command-line toolchain for building, serving, live-reloading, generating templates, and deploying Krewire applications.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span><code>kiw new</code>, <code>kiw build</code>, <code>kiw serve</code>, SSG compiler, plugin engine.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>Scaffolding templates, hot-reload file watchers, dev-server UX, LSP integration.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">CLI</span>
-            <span class="tag">Compiler</span>
-            <a class="repo-link" href="https://github.com/krewire/kiw" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- guild -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">▲</span>
-              <h3>krewire/guild</h3>
-            </div>
-            <span class="repo-badge">AI Agent Swarm</span>
-          </div>
-          <p class="repo-desc">Autonomous AI Agent Guild template, multi-agent triads, skill registry, and continuous self-improving developer automation.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span>Agent triads (builder/auditor/planner), skill definitions, MCP servers, autonomous PR triage.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>Specialized developer skills, automated benchmark suites, reasoning prompts.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">AI Agents</span>
-            <span class="tag">Autonomous</span>
-            <a class="repo-link" href="https://github.com/krewire/guild" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- ship -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">☁</span>
-              <h3>krewire/ship</h3>
-            </div>
-            <span class="repo-badge">Deployment Engine</span>
-          </div>
-          <p class="repo-desc">Zero-cost infrastructure orchestrator and deployment automation. Containerless running on raw VMs, systemd units, and cloud providers.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span>Zero-downtime deploys, automated TLS, SSH runners, multi-target release pipelines.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>Cloud provider adapters, health-check monitors, atomic rollback engines.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">Infra</span>
-            <span class="tag">Deployment</span>
-            <a class="repo-link" href="https://github.com/krewire/ship" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- hub -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">🔌</span>
-              <h3>krewire/hub</h3>
-            </div>
-            <span class="repo-badge">Plugin & Integration Registry</span>
-          </div>
-          <p class="repo-desc">Plugin system and third-party integration registry for the Krewire ecosystem. Provides the plugin interface, installer contracts, and resolver chain used by <code>kiw build</code>, <code>kiw add</code>, and <code>kiw remove</code>.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span>Self-registering plugins (Tailwind CSS, etc.), npm/gomod resolver chain, zero-change extensibility for <code>kiw</code>.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>New build plugins, package resolvers, third-party integrations, and installer adapters.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">Plugins</span>
-            <span class="tag">Integrations</span>
-            <span class="tag">Registry</span>
-            <a class="repo-link" href="https://github.com/krewire/hub" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-        <!-- mdbind -->
-        <div class="repo-card">
-          <div class="repo-header">
-            <div class="repo-name">
-              <span class="repo-icon">≡</span>
-              <h3>krewire/mdbind</h3>
-            </div>
-            <span class="repo-badge">Standalone Book Builder</span>
-          </div>
-          <p class="repo-desc">Fast, zero-dependency Markdown-based book and documentation site builder. Runs completely standalone via CLI or as the <code>book</code> workload in Krewire.</p>
-          <div class="repo-details">
-            <div class="detail-item">
-              <strong>Key Focus:</strong>
-              <span>Ordered chapters, collapsible sidebar, <code>book.yaml</code> config, instant live reload, sub-15ms builds.</span>
-            </div>
-            <div class="detail-item">
-              <strong>Contribute:</strong>
-              <span>CLI ergonomics, search indexing, custom callouts, syntax highlighting speedups.</span>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <span class="tag">Standalone CLI</span>
-            <span class="tag">Markdown</span>
-            <span class="tag">Zero-Deps</span>
-            <a class="repo-link" href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">Explore Repo →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <!-- CONTRIBUTION PATHWAYS -->
   <section class="pathways" id="pathways">
@@ -1398,17 +1215,44 @@ kiw build</code></pre>
   padding:2px 6px;
   border-radius:4px;
 }
+.section-anchor{
+  display:block;
+  position:relative;
+  top:-70px;
+  visibility:hidden;
+}
+.repos-nav,
+.nav-map{
+  padding:36px 0 24px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  width:100%;
+}
+.repo-icon{
+  color:var(--primary);
+  margin-right:6px;
+  display:inline-block;
+}
+.nav-map-card.featured{
+  border-color:color-mix(in srgb, var(--primary) 40%, var(--border));
+  background:linear-gradient(180deg, color-mix(in srgb, var(--primary) 4%, var(--bg-2)), var(--bg-2));
+}
 .nav-card-footer{
   margin-top:auto;
-  padding-top:12px;
+  padding-top:14px;
   border-top:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
 }
 .nav-action-link{
   display:inline-flex;
   align-items:center;
   gap:4px;
-  font-size:13px;
-  font-weight:600;
+  font-size:12.5px;
+  font-weight:700;
   color:var(--primary);
   text-decoration:none;
   transition:gap .15s ease;
@@ -1417,14 +1261,16 @@ kiw build</code></pre>
   gap:8px;
   text-decoration:underline;
 }
-
-/* REPOSITORIES MATRIX */
-.repos{
-  padding:34px 0 22px;
-  background:var(--bg-2);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  width:100%;
+.nav-repo-link{
+  font-size:12px;
+  font-weight:500;
+  color:var(--muted);
+  text-decoration:none;
+  transition:color .15s ease;
+}
+.nav-repo-link:hover{
+  color:var(--fg);
+  text-decoration:underline;
 }
 .repo-card{
   display:flex;

@@ -162,7 +162,7 @@
     }
 
     var filterBtns = document.querySelectorAll('[data-nav-filter]');
-    var cards = document.querySelectorAll('.nav-map-card');
+    var cards = document.querySelectorAll('.repo-card');
     if (filterBtns.length > 0 && cards.length > 0) {
       filterBtns.forEach(function (btn) {
         btn.addEventListener('click', function () {
