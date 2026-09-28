@@ -864,28 +864,53 @@
   border:1px solid var(--border);
   padding:2px 6px;
   border-radius:4px;
+}[data-kiw-component="page:/"] .section-anchor, [data-kiw-component="page:/"].section-anchor{
+  display:block;
+  position:relative;
+  top:-70px;
+  visibility:hidden;
+}[data-kiw-component="page:/"] .repos-nav, [data-kiw-component="page:/"].repos-nav, [data-kiw-component="page:/"] .nav-map, [data-kiw-component="page:/"].nav-map{
+  padding:36px 0 24px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  width:100%;
+}[data-kiw-component="page:/"] .repo-icon, [data-kiw-component="page:/"].repo-icon{
+  color:var(--primary);
+  margin-right:6px;
+  display:inline-block;
+}[data-kiw-component="page:/"] .nav-map-card.featured, [data-kiw-component="page:/"].nav-map-card.featured{
+  border-color:color-mix(in srgb, var(--primary) 40%, var(--border));
+  background:linear-gradient(180deg, color-mix(in srgb, var(--primary) 4%, var(--bg-2)), var(--bg-2));
 }[data-kiw-component="page:/"] .nav-card-footer, [data-kiw-component="page:/"].nav-card-footer{
   margin-top:auto;
-  padding-top:12px;
+  padding-top:14px;
   border-top:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
 }[data-kiw-component="page:/"] .nav-action-link, [data-kiw-component="page:/"].nav-action-link{
   display:inline-flex;
   align-items:center;
   gap:4px;
-  font-size:13px;
-  font-weight:600;
+  font-size:12.5px;
+  font-weight:700;
   color:var(--primary);
   text-decoration:none;
   transition:gap .15s ease;
 }[data-kiw-component="page:/"] .nav-action-link:hover, [data-kiw-component="page:/"].nav-action-link:hover{
   gap:8px;
   text-decoration:underline;
-}[data-kiw-component="page:/"] .repos, [data-kiw-component="page:/"].repos{
-  padding:34px 0 22px;
-  background:var(--bg-2);
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  width:100%;
+}[data-kiw-component="page:/"] .nav-repo-link, [data-kiw-component="page:/"].nav-repo-link{
+  font-size:12px;
+  font-weight:500;
+  color:var(--muted);
+  text-decoration:none;
+  transition:color .15s ease;
+}[data-kiw-component="page:/"] .nav-repo-link:hover, [data-kiw-component="page:/"].nav-repo-link:hover{
+  color:var(--fg);
+  text-decoration:underline;
 }[data-kiw-component="page:/"] .repo-card, [data-kiw-component="page:/"].repo-card{
   display:flex;
   flex-direction:column;
