@@ -509,19 +509,21 @@ a:hover{color:var(--primary)}
   text-underline-offset:3px;
 }
 
-/* PROGRESSIVE ENHANCEMENT: TABLET (min-width: 640px) */
+/* ==========================================================================
+   VIEWPORT SM: SMALL SCREENS / LARGE PHONES & SMALL TABLETS (min-width: 640px)
+   ========================================================================== */
 @media(min-width:640px){
   .nav-inner{
-    padding:12px 20px;
+    padding:10px 18px;
   }
   .footer-inner{
-    padding:40px 20px 26px;
+    padding:36px 18px 24px;
   }
   .footer-grid{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-    gap:28px;
-    padding-bottom:28px;
+    gap:26px;
+    padding-bottom:26px;
   }
   .footer-bottom{
     flex-direction:row;
@@ -530,14 +532,20 @@ a:hover{color:var(--primary)}
   }
 }
 
-/* PROGRESSIVE ENHANCEMENT: DESKTOP (min-width: 880px) */
-@media(min-width:880px){
+/* ==========================================================================
+   VIEWPORT MD: MEDIUM SCREENS / TABLETS & LAPTOPS (min-width: 768px)
+   ========================================================================== */
+@media(min-width:768px){
+  .nav-inner{
+    padding:12px 20px;
+    gap:16px;
+  }
   .links{
     display:flex;
     margin-left:auto;
-    margin-right:12px;
-    gap:18px;
-    font-size:13.5px;
+    margin-right:8px;
+    gap:16px;
+    font-size:13px;
     color:var(--muted);
     align-items:center;
   }
@@ -545,6 +553,7 @@ a:hover{color:var(--primary)}
     color:var(--muted);
     font-weight:500;
     transition:color .15s;
+    white-space:nowrap;
   }
   .links a:hover{
     color:var(--fg);
@@ -555,13 +564,27 @@ a:hover{color:var(--primary)}
   .nav-mobile-menu{
     display:none !important;
   }
+  .footer-inner{
+    padding:42px 20px 26px;
+  }
+  .footer-grid{
+    grid-template-columns:repeat(2, 1fr);
+    gap:30px;
+  }
 }
 
-/* PROGRESSIVE ENHANCEMENT: LARGE DESKTOP (min-width: 1024px) */
+/* ==========================================================================
+   VIEWPORT LG: LARGE SCREENS / DESKTOPS (min-width: 1024px)
+   ========================================================================== */
 @media(min-width:1024px){
+  .nav-inner{
+    padding:14px 24px;
+    gap:24px;
+  }
   .links{
     gap:22px;
     font-size:14px;
+    margin-right:12px;
   }
   .footer-grid{
     grid-template-columns:1.4fr 1fr 1fr 1fr;
