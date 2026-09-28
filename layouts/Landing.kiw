@@ -102,7 +102,7 @@
         <div class="footer-col">
           <strong>Repositories</strong>
           <a href="https://github.com/krewire/framework" target="_blank" rel="noopener">framework</a>
-          <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (cord)</a>
+          <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (Krewire Libs)</a>
           <a href="https://github.com/krewire/kiw" target="_blank" rel="noopener">kiw (cli)</a>
           <a href="https://github.com/krewire/guild" target="_blank" rel="noopener">guild (ai agent)</a>
           <a href="https://github.com/krewire/hub" target="_blank" rel="noopener">hub (plugins)</a>
