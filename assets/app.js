@@ -87,7 +87,9 @@
       '.hero-copy',
       '.hero-art',
       '.section-head',
-      '.window'
+      '.window',
+      '.fast-setup-box',
+      '.nav-map-card'
     ].join(', ');
 
     var elements = document.querySelectorAll(selectors);
@@ -126,6 +128,61 @@
     }
   }
 
+  // 4. CONTRIBUTOR NAVIGATION MAP & COPY ACTION
+  function initNavMap() {
+    var copyBtn = document.querySelector('[data-copy-cmd]');
+    var cmdEl = document.getElementById('setup-cmd');
+    if (copyBtn && cmdEl) {
+      copyBtn.addEventListener('click', function () {
+        var text = cmdEl.innerText || cmdEl.textContent;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(onCopied);
+        } else {
+          var input = document.createElement('textarea');
+          input.value = text;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+          onCopied();
+        }
+      });
+      function onCopied() {
+        var copyText = copyBtn.querySelector('.copy-text');
+        if (copyText) {
+          var old = copyText.textContent;
+          copyText.textContent = 'Copied!';
+          copyBtn.classList.add('copied');
+          setTimeout(function () {
+            copyText.textContent = old;
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        }
+      }
+    }
+
+    var filterBtns = document.querySelectorAll('[data-nav-filter]');
+    var cards = document.querySelectorAll('.nav-map-card');
+    if (filterBtns.length > 0 && cards.length > 0) {
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var filter = btn.getAttribute('data-nav-filter');
+          filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+
+          cards.forEach(function (card) {
+            var cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+  }
+
   // Initialize theme immediately to prevent flash
   initTheme();
 
@@ -134,9 +191,11 @@
     document.addEventListener('DOMContentLoaded', function () {
       initNav();
       initAnimations();
+      initNavMap();
     });
   } else {
     initNav();
     initAnimations();
+    initNavMap();
   }
 })();

@@ -19,7 +19,7 @@
       </a>
       <nav class="links">
         <a href="#benefits">Perks &amp; Access</a>
-        <a href="#get-started">Get Started</a>
+        <a href="#where-to-start">Where to Start</a>
         <a href="#repositories">Repositories</a>
         <a href="#pathways">Pathways</a>
         <a href="#standards">Standards</a>
@@ -42,6 +42,10 @@
         <a class="mobile-link" href="#benefits">
           <span class="link-icon">★</span>
           <span>Perks &amp; Lifetime Access</span>
+        </a>
+        <a class="mobile-link" href="#where-to-start">
+          <span class="link-icon">🧭</span>
+          <span>Where to Start (Nav Map)</span>
         </a>
         <a class="mobile-link" href="#get-started">
           <span class="link-icon">⚡</span>
@@ -209,6 +213,223 @@
         <div class="policy-text">
           <strong>Krewire Meritocracy Policy:</strong>
           <span>We believe those who lay the foundation should share in its fruits. Commercial access is free for all active contributors, provided ongoing dedication to the collective is consistently maintained.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="nav-map" id="where-to-start">
+    <div class="section-inner">
+      <div class="section-head">
+        <div class="sub-badge">Contributor Navigator</div>
+        <h2>Where Should I Start?</h2>
+        <p>New to Krewire? Match your background and passions to the right corner of the ecosystem. Bootstrap locally in under a minute, then dive straight into active issues.</p>
+      </div>
+
+      
+      <div class="fast-setup-box">
+        <div class="fast-setup-header">
+          <div class="fast-setup-title">
+            <span class="fast-icon">⚡</span>
+            <strong>One-Command Contributor Bootstrap</strong>
+          </div>
+          <span class="fast-setup-badge">Recommended</span>
+        </div>
+        <p class="fast-setup-desc">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
+        <div class="terminal-cmd-bar">
+          <code id="setup-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</code>
+          <button class="btn-copy" data-copy-cmd="" aria-label="Copy setup command">
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <div class="fast-setup-meta">
+          <span>Prerequisites: Go 1.22+ and Git</span>
+          <span>•</span>
+          <span>Zero manual configuration required</span>
+        </div>
+      </div>
+
+      
+      <div class="nav-filter-bar">
+        <span class="filter-label">Filter by Track:</span>
+        <div class="filter-pills" role="tablist">
+          <button class="filter-pill is-active" data-nav-filter="all">All Tracks</button>
+          <button class="filter-pill" data-nav-filter="core">Go Core &amp; Libs</button>
+          <button class="filter-pill" data-nav-filter="web">Web &amp; Runtime</button>
+          <button class="filter-pill" data-nav-filter="devops">DevOps &amp; Infra</button>
+          <button class="filter-pill" data-nav-filter="dx">CLI &amp; Tooling</button>
+          <button class="filter-pill" data-nav-filter="ai">AI Guild</button>
+        </div>
+      </div>
+
+      
+      <div class="nav-map-grid">
+        
+        <div class="nav-map-card" data-category="core">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Go Core &amp; Primitives</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/libs</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Pure Go standard library, domain modeling, zero-dependency validation, crypto/security, and rock-solid memory/virtual filesystems.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>libs/config</code>
+              <code>libs/validation</code>
+              <code>libs/fs</code>
+              <code>libs/file</code>
+              <code>libs/core</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/libs/issues" target="_blank" rel="noopener">
+              Explore Libs Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="web">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Web Engine &amp; Fullstack</span>
+            <span class="nav-curve-badge intermediate">Intermediate</span>
+          </div>
+          <h3 class="nav-card-title">krewire/framework</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> High-performance HTTP routers, context pipelines, reactive SSR/VDOM, static-site compilers, background worker queues, and typed DI containers.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>framework/web</code>
+              <code>framework/storage</code>
+              <code>framework/app</code>
+              <code>framework/worker</code>
+              <code>framework/dsl</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/framework/issues" target="_blank" rel="noopener">
+              Explore Framework Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="dx">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">CLI &amp; Developer Experience</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/kiw</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Fast terminal feedback, delightful CLI ergonomics, code scaffolding, file watchers, release automations, and workspace commands.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>kiw/cmd/kiw</code>
+              <code>kiw/internal/commands</code>
+              <code>kiw/internal/scaffold</code>
+              <code>kiw/internal/release</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/kiw/issues" target="_blank" rel="noopener">
+              Explore Kiw Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="dx">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Plugins &amp; Integrations</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/hub</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Tailwind CSS integrations, package resolver chains (npm &amp; Go modules), and building third-party developer tool extensions.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>hub/plugin</code>
+              <code>hub/packages</code>
+              <code>hub/plugin/tailwind</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/hub/issues" target="_blank" rel="noopener">
+              Explore Hub Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="devops">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Deployment &amp; Cloud Infra</span>
+            <span class="nav-curve-badge advanced">Specialized</span>
+          </div>
+          <h3 class="nav-card-title">krewire/ship</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Zero-downtime releases, SSH runners, containerless raw VM automation, automated TLS provisioning, and systemd service generation.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>ship/deploy</code>
+              <code>ship/deploy/target</code>
+              <code>infra adapters</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/ship/issues" target="_blank" rel="noopener">
+              Explore Ship Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="ai">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">AI Guild &amp; Agent Triads</span>
+            <span class="nav-curve-badge intermediate">Innovative</span>
+          </div>
+          <h3 class="nav-card-title">krewire/guild</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Autonomous agent swarms, prompt engineering, OpenCode skill definitions, verification subagents (auditor/reviewer), and Model Context Protocol (MCP).</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>guild/template/.agents</code>
+              <code>skills/*</code>
+              <code>commands/*</code>
+              <code>agents/*</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/guild/issues" target="_blank" rel="noopener">
+              Explore Guild Issues →
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="nav-map-card" data-category="core">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Static Books &amp; Documentation</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/mdbind</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>mdbind/book</code>
+              <code>goldmark plugins</code>
+              <code>assets embedding</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/mdbind/issues" target="_blank" rel="noopener">
+              Explore Mdbind Issues →
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -675,6 +896,7 @@ kiw build</code></pre>
         <div class="footer-col">
           <strong>Contribution</strong>
           <a href="#benefits">Contributor Perks &amp; Access</a>
+          <a href="#where-to-start">Where to Start (Nav Map)</a>
           <a href="#get-started">Getting Started</a>
           <a href="#pathways">Contribution Pathways</a>
           <a href="#standards">The Krewire Way (Gates)</a>
