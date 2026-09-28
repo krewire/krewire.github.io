@@ -1,6 +1,6 @@
 ---
-title: "Krewire — One Go Framework for Every Workload"
-description: "Unified Go Framework for every workload — app, cli, site, book, worker, service, infra, runtime. One CLI kiw, one config."
+title: "Krewire Contributors — Home of the Open Source Collective"
+description: "The home for engineers, architects, and AI agent guilds crafting an autonomous, sustainable Go digital ecosystem at near-zero cost."
 layout: Landing
 ---
 
@@ -8,14 +8,15 @@ layout: Landing
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <div class="eyebrow">Unified Go Framework{{with .Version}} · {{.}}{{end}} · Open Source</div>
-      <h1>One Go Framework.<br>Every Workload.</h1>
-      <p class="lead">From CLI to site, book to infra — one framework, one CLI <code>kiw</code>, one config <code>krewire.yaml</code>. Go-first, zero JS until you need it.</p>
+      <div class="eyebrow">◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM</div>
+      <h1>Build the Future of Go.<br>Together, Autonomously.</h1>
+      <p class="lead">The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.</p>
       <div class="ctas">
-        <a class="btn primary" href="/docs/getting-started">Get Started →</a>
-        <a class="btn" href="https://github.com/krewire/krewire" target="_blank" rel="noopener"><span>★</span> View on GitHub</a>
+        <a class="btn primary" href="#get-started">Start Contributing →</a>
+        <a class="btn" href="#repositories">Explore Repositories</a>
+        <a class="btn gh-btn" href="https://github.com/krewire" target="_blank" rel="noopener"><span>★</span> GitHub Org</a>
       </div>
-      <div class="meta">Go 1.22+ · File-based routing · Scoped CSS · No JS by default</div>
+      <div class="meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
     </div>
     <div class="hero-art">
       {{component "CodeWindow" .}}
@@ -26,236 +27,622 @@ layout: Landing
 <!-- TRUST BAR -->
 <section class="trust">
   <div class="trust-inner">
-    <span class="trust-label">One config, eight workloads</span>
+    <span class="trust-label">Collective Ecosystem</span>
     <div class="trust-items">
-      <span>One CLI <code>kiw</code></span>
+      <span><b>6</b> Active Repositories</span>
       <span class="dot">·</span>
-      <span>One config <code>krewire.yaml</code></span>
+      <span><b>8</b> Unified Workloads</span>
       <span class="dot">·</span>
-      <span>8 workloads</span>
+      <span><b>100%</b> Native Go</span>
       <span class="dot">·</span>
-      <span>100% Go</span>
+      <span><b>3</b> Strict Quality Gates</span>
+      <span class="dot">·</span>
+      <span>Near-Zero Cloud Cost</span>
     </div>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
+<!-- PILLARS / PHILOSOPHY -->
+<section class="pillars" id="philosophy">
   <div class="section-inner">
     <div class="section-head">
-      <h2>One framework. Eight workloads.</h2>
-      <p>From static site to microservice — same Go, same <code>kiw</code>. Add only what you need, pay zero cost for what you don't.</p>
+      <div class="sub-badge">Philosophy</div>
+      <h2>Engineered for Autonomy, Built for Longevity</h2>
+      <p>Krewire is not just another web framework. It is an open architectural collective solving software fragmentation, ballooning cloud costs, and developer fatigue.</p>
     </div>
-    <div class="grid">
-      {{component "FeatureCard" (dict "Icon" "▲" "Title" "app" "Desc" "Fullstack monolith — web + API in one binary. `kiw run`." )}}
-      {{component "FeatureCard" (dict "Icon" "›" "Title" "cli" "Desc" "Command-line apps with framework/tui. Bubbles-inspired." )}}
-      {{component "FeatureCard" (dict "Icon" "◧" "Title" "site" "Desc" "File-based .kiw DSL → static site. No JS by default." )}}
-      {{component "FeatureCard" (dict "Icon" "≡" "Title" "book" "Desc" "Manuscript → book via mdbind. Markdown → site." )}}
-      {{component "FeatureCard" (dict "Icon" "⚙" "Title" "worker" "Desc" "Job queues, cron, retries, DLQ via framework/worker." )}}
-      {{component "FeatureCard" (dict "Icon" "⬢" "Title" "service" "Desc" "Registry, gateway, resilience, tracing via service." )}}
-      {{component "FeatureCard" (dict "Icon" "☁" "Title" "infra" "Desc" "Provider-agnostic IaC → AWS/K8s via framework/infra." )}}
-      {{component "FeatureCard" (dict "Icon" "◈" "Title" "runtime" "Desc" "Go→WASM, VDOM, islands, hydration via runtime." )}}
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">⚡</div>
+        <h3>Autonomous by Design</h3>
+        <p>Built from ground up to support self-healing, self-building pipelines, and native orchestration by autonomous AI agents (Guild).</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📐</div>
+        <h3>Spec-Driven Development (SDD)</h3>
+        <p>Zero hand-waving. Every architectural boundary begins with formal specifications (<code>KWF-*</code>) and clear contract interfaces before implementation.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🌱</div>
+        <h3>Near-Zero Cloud Cost</h3>
+        <p>Radical resource efficiency. Go standard-library minimalism designed to operate smoothly on $5 VPS nodes up to hyperscale infrastructure.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🤝</div>
+        <h3>Human-AI Synergy</h3>
+        <p>Specialized AI agent guilds act as first-class team members — auditing security, catching regressions, and helping contributors iterate faster.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="how">
+<!-- REPOSITORY MATRIX -->
+<section class="repos" id="repositories">
   <div class="section-inner">
     <div class="section-head">
-      <h2>How it works</h2>
-      <p>Three commands. Zero toolchain.</p>
+      <div class="sub-badge">Codebase Matrix</div>
+      <h2>Core Repositories</h2>
+      <p>Explore the six foundational pillars of Krewire. Each repository has clear boundaries, modular architecture, and welcomes contributions.</p>
     </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3>kiw new</h3>
-        <p>Scaffold a <code>site</code>, <code>book</code>, <code>app</code> or <code>cli</code> in seconds.</p>
-        <pre><code>kiw new my-site --site
-cd my-site</code></pre>
+    <div class="repo-grid">
+      
+      <!-- framework -->
+      <div class="repo-card featured">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">⬢</span>
+            <h3>krewire/framework</h3>
+          </div>
+          <span class="repo-badge primary">Core Engine</span>
+        </div>
+        <p class="repo-desc">The unified Go framework runtime powering 8 workloads: <code>app</code>, <code>web</code>, <code>runner</code>, <code>service</code>, <code>worker</code>, <code>runtime</code>, <code>infra</code>, <code>tui</code>, and <code>testing</code>.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span>Zero-alloc routing, concurrent runners, graceful shutdown, panic recovery, middleware.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>New runner adapters, distributed queue drivers, WASM bridges, observability plugins.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">Go 1.22+</span>
+          <span class="tag">net/http</span>
+          <span class="tag">High Concurrency</span>
+          <a class="repo-link" href="https://github.com/krewire/framework" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3>kiw build</h3>
-        <p>Build static or binary. Scoped CSS, file-based routing, no config.</p>
-        <pre><code>kiw build
-# → .krewire/build/</code></pre>
+
+      <!-- libs / cord -->
+      <div class="repo-card">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">◈</span>
+            <h3>krewire/libs <span class="alias">(cord)</span></h3>
+          </div>
+          <span class="repo-badge">Standard Library</span>
+        </div>
+        <p class="repo-desc">Essential low-level kernel primitives, structural utilities, high-performance validation, configuration, and terminal formatters.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span><code>core</code>, <code>kern</code>, <code>validate</code>, <code>config</code>, <code>term</code>, <code>sync</code> with zero external bloat.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>Micro-optimizations, zero-copy string helpers, config parsers, thread-safe collections.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">Zero Deps</span>
+          <span class="tag">Kernel</span>
+          <a class="repo-link" href="https://github.com/krewire/libs" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>kiw deploy</h3>
-        <p>Deploy to GitHub Pages or your infra. One command.</p>
-        <pre><code>kiw deploy --target gh-pages</code></pre>
+
+      <!-- kiw -->
+      <div class="repo-card">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">⚙</span>
+            <h3>krewire/kiw</h3>
+          </div>
+          <span class="repo-badge">Toolchain CLI</span>
+        </div>
+        <p class="repo-desc">The unified command-line toolchain for building, serving, live-reloading, generating templates, and deploying Krewire applications.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span><code>kiw new</code>, <code>kiw build</code>, <code>kiw serve</code>, SSG compiler, plugin engine.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>Scaffolding templates, hot-reload file watchers, dev-server UX, LSP integration.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">CLI</span>
+          <span class="tag">Compiler</span>
+          <a class="repo-link" href="https://github.com/krewire/kiw" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
       </div>
+
+      <!-- guild -->
+      <div class="repo-card">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">▲</span>
+            <h3>krewire/guild</h3>
+          </div>
+          <span class="repo-badge">AI Agent Swarm</span>
+        </div>
+        <p class="repo-desc">Autonomous AI Agent Guild template, multi-agent triads, skill registry, and continuous self-improving developer automation.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span>Agent triads (builder/auditor/planner), skill definitions, MCP servers, autonomous PR triage.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>Specialized developer skills, automated benchmark suites, reasoning prompts.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">AI Agents</span>
+          <span class="tag">Autonomous</span>
+          <a class="repo-link" href="https://github.com/krewire/guild" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
+      </div>
+
+      <!-- ship -->
+      <div class="repo-card">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">☁</span>
+            <h3>krewire/ship</h3>
+          </div>
+          <span class="repo-badge">Deployment Engine</span>
+        </div>
+        <p class="repo-desc">Zero-cost infrastructure orchestrator and deployment automation. Containerless running on raw VMs, systemd units, and cloud providers.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span>Zero-downtime deploys, automated TLS, SSH runners, multi-target release pipelines.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>Cloud provider adapters, health-check monitors, atomic rollback engines.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">Infra</span>
+          <span class="tag">Deployment</span>
+          <a class="repo-link" href="https://github.com/krewire/ship" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
+      </div>
+
+      <!-- mdbind -->
+      <div class="repo-card">
+        <div class="repo-header">
+          <div class="repo-name">
+            <span class="repo-icon">≡</span>
+            <h3>krewire/mdbind</h3>
+          </div>
+          <span class="repo-badge">Compiler Pipeline</span>
+        </div>
+        <p class="repo-desc">High-performance Markdown and manuscript compiler that converts documentation, books, and content folders into fast static sites.</p>
+        <div class="repo-details">
+          <div class="detail-item">
+            <strong>Key Focus:</strong>
+            <span>Goldmark extensions, YAML frontmatter parser, navigation AST, static HTML generator.</span>
+          </div>
+          <div class="detail-item">
+            <strong>Contribute:</strong>
+            <span>Markdown AST renderers, callout syntax plugins, syntax highlighting speedups.</span>
+          </div>
+        </div>
+        <div class="repo-footer">
+          <span class="tag">Markdown</span>
+          <span class="tag">AST</span>
+          <a class="repo-link" href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">Explore Repo →</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- WHY KREWIRE -->
-<section class="why">
+<!-- CONTRIBUTION PATHWAYS -->
+<section class="pathways" id="pathways">
   <div class="section-inner">
     <div class="section-head">
-      <h2>Go-first. Progressive. Zero bloat.</h2>
+      <div class="sub-badge">Choose Your Track</div>
+      <h2>Contribution Pathways</h2>
+      <p>Whether you are a Go systems programmer, an architect, a documentation writer, or an AI prompt engineer — there is a high-impact seat for you.</p>
     </div>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon">◈</div>
-        <h3>Go-first</h3>
-        <p>Write everything in Go. No JS toolchain until you opt into <code>runtime</code> WASM.</p>
+    <div class="pathway-grid">
+      <div class="pathway-card">
+        <div class="pathway-num">01</div>
+        <h3>Core Go Engineering</h3>
+        <p>Work on the foundational engine: HTTP routing, concurrent runner coordination, worker queues, and memory allocations.</p>
+        <div class="pathway-tags">
+          <span>Concurrency</span>
+          <span>net/http</span>
+          <span>Profiling</span>
+        </div>
       </div>
-      <div class="why-card">
-        <div class="why-icon">◧</div>
-        <h3>File-based</h3>
-        <p><code>pages/*.kiw</code> with frontmatter + HTML + scoped <code>&lt;style&gt;</code>. No config hell.</p>
+      <div class="pathway-card">
+        <div class="pathway-num">02</div>
+        <h3>Architecture & SDD</h3>
+        <p>Draft Spec-Driven Development proposals (<code>KWF-*</code>), formalize module contracts, design clean interfaces, and review architectural integrity.</p>
+        <div class="pathway-tags">
+          <span>KWF Specs</span>
+          <span>Interface Design</span>
+          <span>RFCs</span>
+        </div>
       </div>
-      <div class="why-card">
-        <div class="why-icon">☰</div>
-        <h3>One CLI</h3>
-        <p><code>kiw build</code>, <code>kiw serve</code>, <code>kiw deploy</code> for every workload.</p>
+      <div class="pathway-card">
+        <div class="pathway-num">03</div>
+        <h3>AI Agent Engineering</h3>
+        <p>Develop autonomous skills for the Guild, build MCP tools, and optimize subagent triads that autonomously test and refactor code.</p>
+        <div class="pathway-tags">
+          <span>AI Guild</span>
+          <span>MCP Tools</span>
+          <span>Autonomous Swarm</span>
+        </div>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-num">04</div>
+        <h3>Developer Experience & CLI</h3>
+        <p>Make <code>kiw</code> lightning fast and delightfully intuitive. Improve terminal UX, scaffolding generators, and developer productivity.</p>
+        <div class="pathway-tags">
+          <span>CLI Ergonomics</span>
+          <span>TUI</span>
+          <span>Hot-Reload</span>
+        </div>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-num">05</div>
+        <h3>Testing & Quality Assurance</h3>
+        <p>Hunt race conditions, write fuzz tests, build chaos experiments for concurrent workers, and ensure 100% test reliability.</p>
+        <div class="pathway-tags">
+          <span>Fuzz Testing</span>
+          <span>Race Detection</span>
+          <span>Stress Tests</span>
+        </div>
+      </div>
+      <div class="pathway-card">
+        <div class="pathway-num">06</div>
+        <h3>Technical Writing & Docs</h3>
+        <p>Create architectural deep dives, tutorials, quickstart guides, and help translate Krewire documentation for global and Indonesian engineers.</p>
+        <div class="pathway-tags">
+          <span>Technical Docs</span>
+          <span>Guides</span>
+          <span>Community</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DSL SHOWCASE -->
-<section class="showcase">
-  <div class="section-inner showcase-inner">
-    <div>
-      <h2>Write pages as <code>.kiw</code></h2>
-      <p>Frontmatter + HTML + scoped CSS. No npm, no bundler.</p>
-      <pre class="code"><code>---
-title: Hello
-layout: Base
----
-&lt;h1&gt;{{"{{"}}.Title{{"}}"}}&lt;/h1&gt;
-&lt;style&gt;h1{color:var(--primary)}&lt;/style&gt;</code></pre>
-      <div class="ctas">
-        <a class="btn primary" href="/docs/dsl">Explore the DSL →</a>
-        <a class="btn" href="/docs/getting-started">Read the docs →</a>
-      </div>
+<!-- STANDARDS & QUALITY GATES -->
+<section class="standards" id="standards">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="sub-badge">Quality Assurance</div>
+      <h2>The Krewire Way: 3 Quality Gates</h2>
+      <p>To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
     </div>
-    <div class="showcase-card">
-      <div class="card-head">Why scoped CSS?</div>
-      <p>Every <code>.kiw</code> component gets <code>data-kiw-component</code> scoping automatically. Like Svelte/Astro — zero setup, zero leaks.</p>
-      <ul>
-        <li>✓ Scoped by default</li>
-        <li>✓ Global via <code>:root</code></li>
-        <li>✓ Theme with <code>ui.Theme</code></li>
-      </ul>
+    <div class="gates-grid">
+      <div class="gate-card">
+        <div class="gate-icon">1</div>
+        <h3>Gate 1: Format & Lint</h3>
+        <p>Zero lint errors and idiomatic Go formatting. Code must adhere strictly to Go standard conventions.</p>
+        <pre class="gate-cmd"><code>go fmt -s ./...
+go vet ./...</code></pre>
+        <div class="gate-status">Required: Clean exit, 0 warnings</div>
+      </div>
+      <div class="gate-card">
+        <div class="gate-icon">2</div>
+        <h3>Gate 2: Race & Tests</h3>
+        <p>Every commit is verified with race condition detection and comprehensive unit & integration tests.</p>
+        <pre class="gate-cmd"><code>go test -race -cover ./...
+kiw build</code></pre>
+        <div class="gate-status">Required: 100% test pass, 0 data races</div>
+      </div>
+      <div class="gate-card">
+        <div class="gate-icon">3</div>
+        <h3>Gate 3: Spec & Commits</h3>
+        <p>Changes must link to a valid Spec or Issue, following Conventional Commits format.</p>
+        <pre class="gate-cmd"><code>feat(runner): implement parallel workloads
+fix(web): recover panic in http handler</code></pre>
+        <div class="gate-status">Required: Semantic versioning compliance</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ECOSYSTEM -->
-{{component "Ecosystem" .}}
+<!-- 5-STEP ONBOARDING -->
+<section class="onboarding" id="get-started">
+  <div class="section-inner">
+    <div class="section-head">
+      <div class="sub-badge">Getting Started</div>
+      <h2>Start Contributing in 5 Steps</h2>
+      <p>From zero to your first merged pull request. Here is how to get your development environment running in minutes.</p>
+    </div>
+    <div class="steps-flow">
+      <div class="flow-step">
+        <div class="flow-badge">1</div>
+        <div class="flow-content">
+          <h4>Fork & Clone the Repositories</h4>
+          <p>Fork any Krewire repository to your personal GitHub account, then clone it locally:</p>
+          <pre><code>git clone https://github.com/&lt;your-username&gt;/framework.git
+cd framework</code></pre>
+        </div>
+      </div>
 
-<!-- FINAL CTA -->
+      <div class="flow-step">
+        <div class="flow-badge">2</div>
+        <div class="flow-content">
+          <h4>Initialize Multi-Module Workspace</h4>
+          <p>If you're working across multiple Krewire repos, sync your local Go workspace seamlessly:</p>
+          <pre><code>go work init ./
+go work use ./
+go work sync</code></pre>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-badge">3</div>
+        <div class="flow-content">
+          <h4>Pick an Open Issue</h4>
+          <p>Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment on the issue to let the community know you're working on it.</p>
+          <a class="btn-subtle" href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">View Good First Issues →</a>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-badge">4</div>
+        <div class="flow-content">
+          <h4>Implement & Verify Locally</h4>
+          <p>Write clean code and corresponding tests. Verify that all 3 Quality Gates pass with zero failures:</p>
+          <pre><code>go test -race ./...
+# For website changes:
+kiw build</code></pre>
+        </div>
+      </div>
+
+      <div class="flow-step">
+        <div class="flow-badge">5</div>
+        <div class="flow-content">
+          <h4>Submit Pull Request & Collaborate</h4>
+          <p>Open a Pull Request with Conventional Commits. The maintainers and the AI Guild will review, provide fast feedback, and guide you to merge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI GUILD COLLABORATION -->
+<section class="guild-section" id="guild">
+  <div class="section-inner">
+    <div class="guild-card">
+      <div class="guild-grid">
+        <div class="guild-info">
+          <div class="sub-badge">Human + AI Synergy</div>
+          <h2>Collaborating with the AI Guild</h2>
+          <p>Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Guild operates with strict verification standards:</p>
+          <ul class="guild-list">
+            <li><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
+            <li><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
+            <li><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
+            <li><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
+          </ul>
+          <div class="ctas">
+            <a class="btn primary" href="https://github.com/krewire/guild" target="_blank" rel="noopener">Explore AI Guild Repo →</a>
+            <a class="btn" href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener">Join Discussions</a>
+          </div>
+        </div>
+        <div class="guild-box">
+          <div class="guild-box-head">AI Guild Agent Triad</div>
+          <div class="agent-item">
+            <span class="agent-role planner">Planner</span>
+            <div>
+              <strong>Requirements & SDD</strong>
+              <p>Translates feature ideas into formal specs and architectural blueprints.</p>
+            </div>
+          </div>
+          <div class="agent-item">
+            <span class="agent-role builder">Builder</span>
+            <div>
+              <strong>Implementation & Refactoring</strong>
+              <p>Generates clean Go implementations adhering to idiomatic patterns.</p>
+            </div>
+          </div>
+          <div class="agent-item">
+            <span class="agent-role auditor">Auditor</span>
+            <div>
+              <strong>Verification & Quality Gates</strong>
+              <p>Validates concurrency, zero data races, and performance benchmarks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CALLOUT -->
 <section class="final-cta">
   <div class="cta-card">
-    <h2>Ready to build?</h2>
-    <p>Start with a site, scale to a monolith, then to services — same repo, same CLI.</p>
+    <div class="sub-badge">Join the Collective</div>
+    <h2>Ready to shape the future of Go?</h2>
+    <p>Become part of an open source community building fast, sustainable, and autonomous Go software. Every contribution, idea, and PR makes a difference.</p>
     <div class="ctas">
-      <a class="btn primary large" href="/docs/getting-started">Get Started — 5 min →</a>
-      <a class="btn large" href="https://github.com/krewire/krewire" target="_blank" rel="noopener">Star on GitHub</a>
+      <a class="btn primary large" href="https://github.com/krewire" target="_blank" rel="noopener">Join on GitHub →</a>
+      <a class="btn large" href="#get-started">Read Quickstart</a>
     </div>
-    <div class="cta-meta"><code>kiw new my-app && cd my-app && kiw serve</code> — that's it.</div>
+    <div class="cta-meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
   </div>
 </section>
 
 <style>
-.hero{padding:56px 0 24px;background:linear-gradient(180deg, color-mix(in srgb, var(--bg-2) 70%, var(--bg)), var(--bg))}
-.hero-inner{max-width:80rem;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:12px}
-.hero h1{font-family:ui-serif, Georgia, serif;font-size:56px;line-height:.95;letter-spacing:-.04em;margin:0 0 16px}
-.hero .lead{font-size:18px;color:color-mix(in srgb, var(--fg) 72%, var(--muted));max-width:560px;margin:0}
-.hero .lead code{font-family:ui-monospace, monospace;font-size:13px;background:var(--bg-2);border:1px solid var(--border);padding:2px 6px;border-radius:8px}
-.ctas{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid var(--border);background:var(--bg);font-weight:600;font-size:14px;transition:all .15s}
-.btn:hover{border-color:var(--fg);transform:translateY(-1px)}
+/* HERO */
+.hero{padding:64px 0 36px;background:linear-gradient(180deg, color-mix(in srgb, var(--bg-2) 75%, var(--bg)), var(--bg))}
+.hero-inner{max-width:80rem;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:1.18fr .82fr;gap:44px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+.hero h1{font-family:ui-serif, Georgia, serif;font-size:54px;line-height:1.02;letter-spacing:-.04em;margin:0 0 18px}
+.hero .lead{font-size:17px;color:color-mix(in srgb, var(--fg) 75%, var(--muted));max-width:620px;margin:0;line-height:1.65}
+.hero .lead code{font-family:ui-monospace, monospace;font-size:13px;background:var(--bg-2);border:1px solid var(--border);padding:2px 6px;border-radius:6px}
+.ctas{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1px solid var(--border);background:var(--bg);font-weight:600;font-size:14px;transition:all .18s ease;cursor:pointer}
+.btn:hover{border-color:var(--fg);transform:translateY(-1px);color:var(--fg)}
 .btn.primary{background:var(--primary);color:var(--primary-content);border-color:var(--primary)}
-.btn.primary:hover{filter:brightness(1.05)}
-.btn.large{padding:12px 22px;font-size:15px}
-.meta{margin-top:18px;font-size:12px;color:var(--muted)}
+.btn.primary:hover{filter:brightness(1.08);color:var(--primary-content)}
+.btn.large{padding:13px 26px;font-size:15px}
+.btn.gh-btn{background:var(--bg-2)}
+.btn-subtle{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--primary);margin-top:8px}
+.btn-subtle:hover{text-decoration:underline}
+.meta{margin-top:22px;font-size:12px;color:var(--muted);letter-spacing:.02em}
+
+/* TRUST BAR */
 .trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-2)}
 .trust-inner{max-width:80rem;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.trust-label{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.trust-items{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted);flex-wrap:wrap}
-.trust-items code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg);border:1px solid var(--border);padding:1px 6px;border-radius:6px}
+.trust-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.trust-items{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.trust-items b{color:var(--fg)}
 .trust-items .dot{opacity:.4}
-.features{padding:48px 0 24px}
+
+/* SECTION HEADERS */
 .section-inner{max-width:80rem;margin:0 auto;padding:0 16px}
-.section-head{max-width:720px;margin:0 0 32px}
-.section-head h2{font-size:32px;letter-spacing:-.03em;margin:0 0 10px}
-.section-head p{color:var(--muted);margin:0;font-size:15px}
-.section-head p code{font-family:ui-monospace, monospace;font-size:13px;background:var(--bg-2);border:1px solid var(--border);padding:1px 6px;border-radius:6px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.how{padding:32px 0;background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.step{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:20px}
-.step-num{width:32px;height:32px;display:grid;place-items:center;border-radius:999px;background:var(--primary);color:var(--primary-content);font-weight:700;font-size:14px;margin-bottom:12px}
-.step h3{margin:0 0 6px;font-size:16px}
-.step p{margin:0 0 12px;color:var(--muted);font-size:13px}
-.step pre{margin:0;background:#0a0a0a;color:#e5e7eb;border-radius:10px;padding:12px;overflow:auto}
-.step code{font-family:ui-monospace, monospace;font-size:12px}
-.why{padding:48px 0}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.why-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg)}
-.why-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;background:var(--bg-2);border:1px solid var(--border);margin-bottom:14px}
-.why-card h3{margin:0 0 8px;font-size:16px}
-.why-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
-.why-card code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg-2);border:1px solid var(--border);padding:1px 5px;border-radius:6px}
-.showcase{padding:40px 0;border-top:1px solid var(--border)}
-.showcase-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
-.showcase h2{font-size:24px;margin:0 0 8px;letter-spacing:-.02em}
-.showcase p{color:var(--muted);margin:0 0 16px}
-.showcase .code{margin:0;background:#0a0a0a;color:#e5e7eb;border-radius:12px;padding:16px;overflow:auto;font-family:ui-monospace, monospace;font-size:13px;line-height:1.7}
-.showcase-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg-2)}
-.card-head{font-weight:700;margin-bottom:10px}
-.showcase-card p{font-size:13px}
-.showcase-card ul{margin:16px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--muted)}
-.showcase-card code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg);border:1px solid var(--border);padding:1px 5px;border-radius:6px}
-.final-cta{padding:40px 0 56px}
-.cta-card{max-width:80rem;margin:0 auto;padding:36px 16px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg, var(--bg-2), var(--bg));text-align:center}
-.cta-card h2{font-size:28px;margin:0 0 8px;letter-spacing:-.02em}
-.cta-card p{color:var(--muted);margin:0 0 20px}
+.section-head{max-width:760px;margin:0 0 36px}
+.sub-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);background:color-mix(in srgb, var(--primary) 12%, transparent);padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.section-head h2{font-size:34px;letter-spacing:-.03em;margin:0 0 12px;line-height:1.15}
+.section-head p{color:var(--muted);margin:0;font-size:16px;line-height:1.6}
+
+/* PILLARS */
+.pillars{padding:60px 0 36px}
+.pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pillar-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg);transition:border-color .15s}
+.pillar-card:hover{border-color:color-mix(in srgb, var(--primary) 50%, var(--border))}
+.pillar-icon{font-size:24px;margin-bottom:14px}
+.pillar-card h3{margin:0 0 8px;font-size:17px;letter-spacing:-.01em}
+.pillar-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.6}
+.pillar-card code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg-2);border:1px solid var(--border);padding:1px 5px;border-radius:6px}
+
+/* REPOSITORIES MATRIX */
+.repos{padding:54px 0 36px;background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.repo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.repo-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg);display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s, border-color .15s}
+.repo-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb, var(--fg) 25%, var(--border))}
+.repo-card.featured{border-color:color-mix(in srgb, var(--primary) 40%, var(--border));background:linear-gradient(180deg, color-mix(in srgb, var(--primary) 3%, var(--bg)), var(--bg))}
+.repo-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.repo-name{display:flex;align-items:center;gap:10px}
+.repo-icon{font-size:18px;color:var(--primary)}
+.repo-name h3{margin:0;font-size:16px;font-family:ui-monospace, SFMono-Regular, Menlo, monospace;letter-spacing:-.01em}
+.repo-name .alias{font-size:12px;color:var(--muted);font-weight:normal}
+.repo-badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bg-2);border:1px solid var(--border);color:var(--muted);white-space:nowrap}
+.repo-badge.primary{background:var(--primary);color:var(--primary-content);border-color:var(--primary)}
+.repo-desc{font-size:13.5px;color:var(--muted);margin:0 0 16px;line-height:1.55}
+.repo-desc code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg-2);padding:1px 5px;border-radius:5px}
+.repo-details{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;font-size:12.5px;padding-top:14px;border-top:1px solid var(--border)}
+.detail-item strong{color:var(--fg);display:block;margin-bottom:2px}
+.detail-item span{color:var(--muted);line-height:1.5}
+.repo-footer{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding-top:14px;border-top:1px solid var(--border)}
+.tag{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--bg-2);border:1px solid var(--border);color:var(--muted);font-family:ui-monospace, monospace}
+.repo-link{margin-left:auto;font-size:13px;font-weight:600;color:var(--primary)}
+.repo-link:hover{text-decoration:underline}
+
+/* PATHWAYS */
+.pathways{padding:60px 0 36px}
+.pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pathway-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg);position:relative}
+.pathway-num{font-size:20px;font-weight:800;color:color-mix(in srgb, var(--primary) 70%, var(--muted));font-family:ui-monospace, monospace;margin-bottom:10px}
+.pathway-card h3{margin:0 0 8px;font-size:17px;letter-spacing:-.01em}
+.pathway-card p{margin:0 0 16px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.pathway-card code{font-family:ui-monospace, monospace;font-size:12px;background:var(--bg-2);border:1px solid var(--border);padding:1px 4px;border-radius:5px}
+.pathway-tags{display:flex;gap:6px;flex-wrap:wrap}
+.pathway-tags span{font-size:11px;background:var(--bg-2);border:1px solid var(--border);border-radius:6px;padding:2px 7px;color:var(--muted)}
+
+/* STANDARDS & GATES */
+.standards{padding:54px 0 36px;background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.gates-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gate-card{border:1px solid var(--border);border-radius:16px;padding:24px;background:var(--bg);display:flex;flex-direction:column}
+.gate-icon{width:32px;height:32px;border-radius:50%;background:var(--primary);color:var(--primary-content);display:grid;place-items:center;font-weight:800;font-size:14px;margin-bottom:14px}
+.gate-card h3{margin:0 0 8px;font-size:17px}
+.gate-card p{margin:0 0 14px;font-size:13.5px;color:var(--muted);line-height:1.55}
+.gate-cmd{margin:0 0 14px;background:#0a0a0a;color:#e5e7eb;border-radius:10px;padding:12px;overflow:auto}
+.gate-cmd code{font-family:ui-monospace, monospace;font-size:12.5px;line-height:1.6}
+.gate-status{margin-top:auto;font-size:12px;font-weight:600;color:var(--primary);display:flex;align-items:center;gap:6px}
+
+/* ONBOARDING FLOW */
+.onboarding{padding:60px 0 36px}
+.steps-flow{display:flex;flex-direction:column;gap:18px;max-width:880px;margin:0 auto}
+.flow-step{display:flex;gap:20px;border:1px solid var(--border);border-radius:16px;padding:22px 24px;background:var(--bg);align-items:flex-start}
+.flow-badge{width:34px;height:34px;flex-shrink:0;border-radius:10px;background:var(--bg-2);border:1px solid var(--border);display:grid;place-items:center;font-weight:800;font-size:14px;color:var(--fg)}
+.flow-content{flex:1;min-width:0}
+.flow-content h4{margin:0 0 6px;font-size:16px}
+.flow-content p{margin:0 0 10px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.flow-content pre{margin:0;background:#0a0a0a;color:#e5e7eb;border-radius:10px;padding:12px 14px;overflow:auto}
+.flow-content code{font-family:ui-monospace, monospace;font-size:12.5px}
+.tag-issue{font-family:ui-monospace, monospace;font-size:11.5px;background:color-mix(in srgb, var(--primary) 15%, transparent);border:1px solid color-mix(in srgb, var(--primary) 30%, transparent);color:var(--fg);padding:2px 7px;border-radius:6px}
+
+/* AI GUILD */
+.guild-section{padding:36px 0 54px}
+.guild-card{border:1px solid var(--border);border-radius:20px;background:linear-gradient(145deg, color-mix(in srgb, var(--bg-2) 90%, var(--bg)), var(--bg));padding:36px}
+.guild-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.guild-info h2{font-size:30px;letter-spacing:-.03em;margin:0 0 14px}
+.guild-info p{color:var(--muted);font-size:14.5px;line-height:1.65;margin:0 0 16px}
+.guild-list{margin:0 0 24px;padding-left:18px;display:flex;flex-direction:column;gap:10px;font-size:13.5px;color:var(--muted);line-height:1.6}
+.guild-list b{color:var(--fg)}
+.guild-box{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.guild-box-head{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:10px;border-bottom:1px solid var(--border)}
+.agent-item{display:flex;gap:14px;align-items:flex-start}
+.agent-role{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;font-family:ui-monospace, monospace;text-transform:uppercase;white-space:nowrap}
+.agent-role.planner{background:#3b82f6;color:#ffffff}
+.agent-role.builder{background:#10b981;color:#ffffff}
+.agent-role.auditor{background:#f59e0b;color:#ffffff}
+.agent-item strong{font-size:13.5px;display:block;margin-bottom:2px}
+.agent-item p{margin:0;font-size:12px;color:var(--muted);line-height:1.5}
+
+/* FINAL CTA */
+.final-cta{padding:32px 0 64px}
+.cta-card{max-width:80rem;margin:0 auto;padding:48px 24px;border:1px solid var(--border);border-radius:24px;background:linear-gradient(135deg, var(--bg-2), var(--bg));text-align:center}
+.cta-card h2{font-size:32px;margin:0 0 10px;letter-spacing:-.02em}
+.cta-card p{color:var(--muted);margin:0 auto 24px;max-width:600px;font-size:15px;line-height:1.6}
 .cta-card .ctas{justify-content:center}
-.cta-meta{margin-top:14px;font-size:12px;color:var(--muted)}
-.cta-meta code{font-family:ui-monospace, monospace;background:var(--bg);border:1px solid var(--border);padding:2px 8px;border-radius:999px}
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;gap:24px}
-  .hero h1{font-size:42px}
-  .grid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr}
-  .why-grid{grid-template-columns:1fr}
-  .showcase-inner{grid-template-columns:1fr}
+.cta-meta{margin-top:18px;font-size:12.5px;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:1080px){
+  .repo-grid{grid-template-columns:1fr 1fr}
+  .pillar-grid{grid-template-columns:1fr 1fr}
+  .pathway-grid{grid-template-columns:1fr 1fr}
 }
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:42px}
+  .guild-grid{grid-template-columns:1fr;gap:28px}
+  .gates-grid{grid-template-columns:1fr}
+}
+
 @media(max-width:640px){
-  .hero{padding:32px 0 16px}
-  .hero h1{font-size:34px}
-  .hero .lead{font-size:16px}
+  .hero{padding:36px 0 20px}
+  .hero h1{font-size:32px}
+  .hero .lead{font-size:15px}
   .hero .ctas{flex-direction:column;align-items:stretch}
   .hero .btn{width:100%;justify-content:center}
   .trust-items{flex-direction:column;align-items:flex-start;gap:8px}
   .trust-items .dot{display:none}
-  .features{padding:24px 0 12px}
-  .section-head h2{font-size:26px}
-  .grid{grid-template-columns:1fr}
-  .card{padding:16px}
-  .how{padding:24px 0}
-  .why{padding:32px 0}
-  .why-card{padding:20px}
-  .showcase{padding:24px 0}
-  .showcase h2{font-size:20px}
-  .showcase .code{font-size:12px;padding:12px}
-  .final-cta{padding:24px 0 40px}
-  .cta-card{padding:24px 12px}
-  .cta-card h2{font-size:22px}
+  .pillar-grid{grid-template-columns:1fr}
+  .repo-grid{grid-template-columns:1fr}
+  .pathway-grid{grid-template-columns:1fr}
+  .flow-step{flex-direction:column;gap:12px;padding:18px}
+  .guild-card{padding:24px 16px}
+  .cta-card{padding:32px 16px}
+  .cta-card h2{font-size:24px}
   .cta-card .ctas{flex-direction:column;align-items:stretch}
   .cta-card .btn{width:100%;justify-content:center}
-}
-@media(max-width:560px){
-  .grid{grid-template-columns:1fr}
-  .hero{padding:24px 0 12px}
-  .features{padding:16px 0 8px}
 }
 </style>

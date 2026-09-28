@@ -31,12 +31,15 @@
       <a class="brand" href="/">
         <span class="brand-mark">◈</span>
         <span class="brand-text">Krewire</span>
-        {{with .Version}}<span class="badge">{{.}}</span>{{end}}
+        <span class="badge">Contributors</span>
       </a>
       <nav class="links">
-        <a href="/docs">Docs</a>
-        <a href="/docs/getting-started">Get Started</a>
-        <a href="https://github.com/krewire/krewire" target="_blank" rel="noopener">GitHub</a>
+        <a href="#get-started">Get Started</a>
+        <a href="#repositories">Repositories</a>
+        <a href="#pathways">Pathways</a>
+        <a href="#standards">Standards</a>
+        <a href="#guild">AI Guild</a>
+        <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> GitHub</a>
       </nav>
       <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
         <span class="sun">☀</span><span class="moon">☾</span>
@@ -48,30 +51,37 @@
     <div class="footer-inner">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand"><span class="brand-mark">◈</span> Krewire</div>
-          <p class="footer-desc">One Go Framework for Every Workload.<br>One CLI <code>kiw</code>, one config <code>krewire.yaml</code>.</p>
+          <div class="footer-brand"><span class="brand-mark">◈</span> Krewire Contributors</div>
+          <p class="footer-desc">Home of the Open Source Collective.<br>Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.</p>
         </div>
         <div class="footer-col">
-          <strong>Workloads</strong>
-          <a href="/docs/workloads">app · cli · site · book</a>
-          <a href="/docs/workloads">worker · service · infra · runtime</a>
+          <strong>Repositories</strong>
+          <a href="https://github.com/krewire/framework" target="_blank" rel="noopener">framework</a>
+          <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (cord)</a>
+          <a href="https://github.com/krewire/kiw" target="_blank" rel="noopener">kiw (cli)</a>
+          <a href="https://github.com/krewire/guild" target="_blank" rel="noopener">guild (ai agent)</a>
+          <a href="https://github.com/krewire/ship" target="_blank" rel="noopener">ship (deployer)</a>
+          <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">mdbind (compiler)</a>
         </div>
         <div class="footer-col">
-          <strong>Resources</strong>
-          <a href="/docs/getting-started">Getting Started</a>
-          <a href="/docs">Documentation</a>
-          <a href="https://github.com/krewire/framework/tree/main/docs/specs">Specs</a>
+          <strong>Contribution</strong>
+          <a href="#get-started">Getting Started</a>
+          <a href="#pathways">Contribution Pathways</a>
+          <a href="#standards">The Krewire Way (Gates)</a>
+          <a href="#guild">AI Guild Collaboration</a>
+          <a href="https://github.com/krewire/framework/tree/main/docs/specs" target="_blank" rel="noopener">KWF Specs</a>
         </div>
         <div class="footer-col">
           <strong>Community</strong>
-          <a href="https://github.com/krewire/krewire">GitHub</a>
-          <a href="https://github.com/orgs/krewire/discussions">Forum</a>
-          <a href="https://github.com/krewire/framework">Framework</a>
+          <a href="https://github.com/krewire" target="_blank" rel="noopener">GitHub Organization</a>
+          <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener">Discussions</a>
+          <a href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">Good First Issues</a>
+          <a href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Krewire Contributors — Built 100% with Krewire <code>site</code> workload.</span>
-        <span><a href="https://github.com/krewire">github.com/krewire</a></span>
+        <span>© 2026 Krewire Contributors — Built 100% with Krewire <code>site</code> workload (Dogfooding).</span>
+        <span><a href="https://github.com/krewire" target="_blank" rel="noopener">github.com/krewire</a></span>
       </div>
     </div>
   </footer>
