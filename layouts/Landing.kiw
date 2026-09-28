@@ -35,7 +35,7 @@
       </a>
       <nav class="links">
         <a href="#benefits">Perks & Access</a>
-        <a href="#get-started">Get Started</a>
+        <a href="#where-to-start">Where to Start</a>
         <a href="#repositories">Repositories</a>
         <a href="#pathways">Pathways</a>
         <a href="#standards">Standards</a>
@@ -58,6 +58,10 @@
         <a class="mobile-link" href="#benefits">
           <span class="link-icon">★</span>
           <span>Perks & Lifetime Access</span>
+        </a>
+        <a class="mobile-link" href="#where-to-start">
+          <span class="link-icon">🧭</span>
+          <span>Where to Start (Nav Map)</span>
         </a>
         <a class="mobile-link" href="#get-started">
           <span class="link-icon">⚡</span>
@@ -108,6 +112,7 @@
         <div class="footer-col">
           <strong>Contribution</strong>
           <a href="#benefits">Contributor Perks & Access</a>
+          <a href="#where-to-start">Where to Start (Nav Map)</a>
           <a href="#get-started">Getting Started</a>
           <a href="#pathways">Contribution Pathways</a>
           <a href="#standards">The Krewire Way (Gates)</a>

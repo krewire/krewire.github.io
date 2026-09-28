@@ -133,6 +133,223 @@ layout: Landing
     </div>
   </section>
 
+  <!-- WHERE TO START (CONTRIBUTOR NAVIGATION MAP) -->
+  <section class="nav-map" id="where-to-start">
+    <div class="section-inner">
+      <div class="section-head">
+        <div class="sub-badge">Contributor Navigator</div>
+        <h2>Where Should I Start?</h2>
+        <p>New to Krewire? Match your background and passions to the right corner of the ecosystem. Bootstrap locally in under a minute, then dive straight into active issues.</p>
+      </div>
+
+      <!-- FAST-TRACK ONE-LINE SETUP BANNER -->
+      <div class="fast-setup-box">
+        <div class="fast-setup-header">
+          <div class="fast-setup-title">
+            <span class="fast-icon">⚡</span>
+            <strong>One-Command Contributor Bootstrap</strong>
+          </div>
+          <span class="fast-setup-badge">Recommended</span>
+        </div>
+        <p class="fast-setup-desc">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
+        <div class="terminal-cmd-bar">
+          <code id="setup-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</code>
+          <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <div class="fast-setup-meta">
+          <span>Prerequisites: Go 1.22+ and Git</span>
+          <span>•</span>
+          <span>Zero manual configuration required</span>
+        </div>
+      </div>
+
+      <!-- FILTER CONTROLS -->
+      <div class="nav-filter-bar">
+        <span class="filter-label">Filter by Track:</span>
+        <div class="filter-pills" role="tablist">
+          <button class="filter-pill is-active" data-nav-filter="all">All Tracks</button>
+          <button class="filter-pill" data-nav-filter="core">Go Core &amp; Libs</button>
+          <button class="filter-pill" data-nav-filter="web">Web &amp; Runtime</button>
+          <button class="filter-pill" data-nav-filter="devops">DevOps &amp; Infra</button>
+          <button class="filter-pill" data-nav-filter="dx">CLI &amp; Tooling</button>
+          <button class="filter-pill" data-nav-filter="ai">AI Guild</button>
+        </div>
+      </div>
+
+      <!-- NAVIGATION CARDS MATRIX -->
+      <div class="nav-map-grid">
+        <!-- krewire/libs -->
+        <div class="nav-map-card" data-category="core">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Go Core &amp; Primitives</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/libs</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Pure Go standard library, domain modeling, zero-dependency validation, crypto/security, and rock-solid memory/virtual filesystems.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>libs/config</code>
+              <code>libs/validation</code>
+              <code>libs/fs</code>
+              <code>libs/file</code>
+              <code>libs/core</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/libs/issues" target="_blank" rel="noopener">
+              Explore Libs Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/framework -->
+        <div class="nav-map-card" data-category="web">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Web Engine &amp; Fullstack</span>
+            <span class="nav-curve-badge intermediate">Intermediate</span>
+          </div>
+          <h3 class="nav-card-title">krewire/framework</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> High-performance HTTP routers, context pipelines, reactive SSR/VDOM, static-site compilers, background worker queues, and typed DI containers.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>framework/web</code>
+              <code>framework/storage</code>
+              <code>framework/app</code>
+              <code>framework/worker</code>
+              <code>framework/dsl</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/framework/issues" target="_blank" rel="noopener">
+              Explore Framework Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/kiw -->
+        <div class="nav-map-card" data-category="dx">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">CLI &amp; Developer Experience</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/kiw</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Fast terminal feedback, delightful CLI ergonomics, code scaffolding, file watchers, release automations, and workspace commands.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>kiw/cmd/kiw</code>
+              <code>kiw/internal/commands</code>
+              <code>kiw/internal/scaffold</code>
+              <code>kiw/internal/release</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/kiw/issues" target="_blank" rel="noopener">
+              Explore Kiw Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/hub -->
+        <div class="nav-map-card" data-category="dx">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Plugins &amp; Integrations</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/hub</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Tailwind CSS integrations, package resolver chains (npm &amp; Go modules), and building third-party developer tool extensions.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>hub/plugin</code>
+              <code>hub/packages</code>
+              <code>hub/plugin/tailwind</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/hub/issues" target="_blank" rel="noopener">
+              Explore Hub Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/ship -->
+        <div class="nav-map-card" data-category="devops">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Deployment &amp; Cloud Infra</span>
+            <span class="nav-curve-badge advanced">Specialized</span>
+          </div>
+          <h3 class="nav-card-title">krewire/ship</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Zero-downtime releases, SSH runners, containerless raw VM automation, automated TLS provisioning, and systemd service generation.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>ship/deploy</code>
+              <code>ship/deploy/target</code>
+              <code>infra adapters</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/ship/issues" target="_blank" rel="noopener">
+              Explore Ship Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/guild -->
+        <div class="nav-map-card" data-category="ai">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">AI Guild &amp; Agent Triads</span>
+            <span class="nav-curve-badge intermediate">Innovative</span>
+          </div>
+          <h3 class="nav-card-title">krewire/guild</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Autonomous agent swarms, prompt engineering, OpenCode skill definitions, verification subagents (auditor/reviewer), and Model Context Protocol (MCP).</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>guild/template/.agents</code>
+              <code>skills/*</code>
+              <code>commands/*</code>
+              <code>agents/*</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/guild/issues" target="_blank" rel="noopener">
+              Explore Guild Issues &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- krewire/mdbind -->
+        <div class="nav-map-card" data-category="core">
+          <div class="nav-card-top">
+            <span class="nav-track-tag">Static Books &amp; Documentation</span>
+            <span class="nav-curve-badge gentle">Gentle Onboarding</span>
+          </div>
+          <h3 class="nav-card-title">krewire/mdbind</h3>
+          <p class="nav-card-match"><strong>If you enjoy:</strong> Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.</p>
+          <div class="nav-card-packages">
+            <span class="pkg-label">Key Packages:</span>
+            <div class="pkg-tags">
+              <code>mdbind/book</code>
+              <code>goldmark plugins</code>
+              <code>assets embedding</code>
+            </div>
+          </div>
+          <div class="nav-card-footer">
+            <a class="nav-action-link" href="https://github.com/krewire/mdbind/issues" target="_blank" rel="noopener">
+              Explore Mdbind Issues &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- REPOSITORY MATRIX -->
   <section class="repos" id="repositories">
     <div class="section-inner">
@@ -942,6 +1159,265 @@ kiw build</code></pre>
   margin-right:4px;
 }
 
+/* CONTRIBUTOR NAVIGATION MAP */
+.nav-map{
+  padding:36px 0 24px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  width:100%;
+}
+.fast-setup-box{
+  background:linear-gradient(180deg, color-mix(in srgb, var(--primary) 7%, var(--bg-2)), var(--bg-2));
+  border:1px solid color-mix(in srgb, var(--primary) 35%, var(--border));
+  border-radius:14px;
+  padding:20px 16px;
+  margin-bottom:28px;
+}
+.fast-setup-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:8px;
+}
+.fast-setup-title{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:15px;
+}
+.fast-icon{
+  color:var(--primary);
+  font-size:16px;
+}
+.fast-setup-badge{
+  font-size:10px;
+  font-weight:700;
+  padding:2px 8px;
+  border-radius:999px;
+  background:var(--primary);
+  color:#020617;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.fast-setup-desc{
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px;
+}
+.terminal-cmd-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 14px;
+  gap:12px;
+  overflow-x:auto;
+}
+.terminal-cmd-bar code{
+  font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size:12.5px;
+  color:var(--fg);
+  white-space:nowrap;
+}
+.btn-copy{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  padding:5px 12px;
+  background:var(--bg-2);
+  border:1px solid var(--border);
+  border-radius:7px;
+  color:var(--fg);
+  font-size:12px;
+  font-weight:600;
+  cursor:pointer;
+  transition:all .15s ease;
+  flex-shrink:0;
+}
+.btn-copy:hover{
+  border-color:var(--primary);
+  color:var(--primary);
+}
+.btn-copy.copied{
+  background:var(--primary);
+  color:#020617;
+  border-color:var(--primary);
+}
+.fast-setup-meta{
+  display:flex;
+  gap:10px;
+  font-size:11.5px;
+  color:var(--muted);
+  margin-top:10px;
+  flex-wrap:wrap;
+}
+
+/* FILTER BAR */
+.nav-filter-bar{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:20px;
+}
+.filter-label{
+  font-size:12px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:var(--muted);
+}
+.filter-pills{
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding-bottom:4px;
+  -webkit-overflow-scrolling:touch;
+}
+.filter-pill{
+  background:var(--bg-2);
+  border:1px solid var(--border);
+  color:var(--muted);
+  border-radius:999px;
+  padding:6px 14px;
+  font-size:12.5px;
+  font-weight:500;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .15s ease;
+}
+.filter-pill:hover{
+  color:var(--fg);
+  border-color:color-mix(in srgb, var(--primary) 40%, var(--border));
+}
+.filter-pill.is-active{
+  background:color-mix(in srgb, var(--primary) 12%, transparent);
+  color:var(--primary);
+  border-color:var(--primary);
+  font-weight:600;
+}
+
+/* NAV MAP CARDS */
+.nav-map-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+.nav-map-card{
+  background:var(--bg-2);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:20px 16px;
+  display:flex;
+  flex-direction:column;
+  transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.nav-map-card:hover{
+  border-color:color-mix(in srgb, var(--primary) 45%, var(--border));
+  transform:translateY(-2px);
+}
+.nav-card-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.nav-track-tag{
+  font-size:11px;
+  font-weight:600;
+  color:var(--primary);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.nav-curve-badge{
+  font-size:10px;
+  font-weight:600;
+  padding:2px 7px;
+  border-radius:999px;
+  border:1px solid var(--border);
+}
+.nav-curve-badge.gentle{
+  background:color-mix(in srgb, #22c55e 12%, transparent);
+  color:#22c55e;
+  border-color:color-mix(in srgb, #22c55e 30%, transparent);
+}
+.nav-curve-badge.intermediate{
+  background:color-mix(in srgb, #3b82f6 12%, transparent);
+  color:#3b82f6;
+  border-color:color-mix(in srgb, #3b82f6 30%, transparent);
+}
+.nav-curve-badge.advanced{
+  background:color-mix(in srgb, #f59e0b 12%, transparent);
+  color:#f59e0b;
+  border-color:color-mix(in srgb, #f59e0b 30%, transparent);
+}
+.nav-curve-badge.innovative{
+  background:color-mix(in srgb, #a855f7 12%, transparent);
+  color:#a855f7;
+  border-color:color-mix(in srgb, #a855f7 30%, transparent);
+}
+.nav-card-title{
+  font-size:18px;
+  margin:0 0 8px;
+  font-family:ui-monospace, monospace;
+}
+.nav-card-match{
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 14px;
+  flex-grow:1;
+}
+.nav-card-match strong{
+  color:var(--fg);
+}
+.nav-card-packages{
+  margin-bottom:16px;
+  font-size:12px;
+}
+.pkg-label{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  margin-bottom:6px;
+  font-weight:600;
+}
+.pkg-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+.pkg-tags code{
+  font-size:11px;
+  background:var(--bg);
+  border:1px solid var(--border);
+  padding:2px 6px;
+  border-radius:4px;
+}
+.nav-card-footer{
+  margin-top:auto;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+}
+.nav-action-link{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--primary);
+  text-decoration:none;
+  transition:gap .15s ease;
+}
+.nav-action-link:hover{
+  gap:8px;
+  text-decoration:underline;
+}
+
 /* REPOSITORIES MATRIX */
 .repos{
   padding:34px 0 22px;
@@ -1423,6 +1899,7 @@ kiw build</code></pre>
   /* 2-COLUMN GRIDS ON TABLET */
   .pillar-grid,
   .benefit-grid,
+  .nav-map-grid,
   .repo-grid,
   .pathway-grid,
   .gates-grid{
@@ -1431,11 +1908,20 @@ kiw build</code></pre>
   }
   .pillar-card,
   .benefit-card,
+  .nav-map-card,
   .repo-card,
   .pathway-card,
   .gate-card{
     padding:20px 18px;
     border-radius:16px;
+  }
+  .nav-filter-bar{
+    flex-direction:row;
+    align-items:center;
+    gap:16px;
+  }
+  .fast-setup-box{
+    padding:22px 20px;
   }
 
   .benefit-policy-banner{
@@ -1538,6 +2024,18 @@ kiw build</code></pre>
   .benefit-card:hover{
     transform:translateY(-2px);
     border-color:color-mix(in srgb, var(--fg) 25%, var(--border));
+  }
+
+  /* NAV MAP 3-COLUMN */
+  .nav-map{
+    padding:50px 0 32px;
+  }
+  .nav-map-grid{
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+  }
+  .fast-setup-box{
+    padding:24px 24px;
   }
 
   /* REPOS 3-COLUMN */
