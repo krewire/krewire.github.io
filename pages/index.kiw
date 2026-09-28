@@ -1013,7 +1013,7 @@ kiw build</code></pre>
   padding:2px 8px;
   border-radius:999px;
   background:var(--primary);
-  color:#020617;
+  color:var(--primary-content);
   text-transform:uppercase;
   letter-spacing:.05em;
 }
@@ -1061,7 +1061,7 @@ kiw build</code></pre>
 }
 .btn-copy.copied{
   background:var(--primary);
-  color:#020617;
+  color:var(--primary-content);
   border-color:var(--primary);
 }
 .fast-setup-meta{
