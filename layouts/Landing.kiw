@@ -25,7 +25,7 @@
   </script>
 </head>
 <body>
-  <header class="nav">
+  <header class="nav" id="main-nav">
     <div class="nav-inner">
       <a class="brand" href="/">
         <span class="brand-mark">◈</span>
@@ -41,18 +41,49 @@
         <a href="#guild">AI Guild</a>
         <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> GitHub</a>
       </nav>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
-        <span class="sun">☀</span><span class="moon">☾</span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+        <button class="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
     </div>
-    <div class="nav-mobile-strip">
-      <a href="#benefits">Perks & Access</a>
-      <a href="#get-started">Get Started</a>
-      <a href="#repositories">Repos</a>
-      <a href="#pathways">Pathways</a>
-      <a href="#standards">Gates</a>
-      <a href="#guild">Guild</a>
-      <a href="https://github.com/krewire" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="nav-mobile-menu" id="mobile-nav-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a class="mobile-link" href="#benefits">
+          <span class="link-icon">★</span>
+          <span>Perks & Lifetime Access</span>
+        </a>
+        <a class="mobile-link" href="#get-started">
+          <span class="link-icon">⚡</span>
+          <span>Getting Started</span>
+        </a>
+        <a class="mobile-link" href="#repositories">
+          <span class="link-icon">⬢</span>
+          <span>Core Repositories</span>
+        </a>
+        <a class="mobile-link" href="#pathways">
+          <span class="link-icon">◈</span>
+          <span>Contribution Pathways</span>
+        </a>
+        <a class="mobile-link" href="#standards">
+          <span class="link-icon">✓</span>
+          <span>The 3 Quality Gates</span>
+        </a>
+        <a class="mobile-link" href="#guild">
+          <span class="link-icon">▲</span>
+          <span>AI Guild Collaboration</span>
+        </a>
+        <div class="mobile-menu-divider"></div>
+        <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
+          <span>★ GitHub Organization</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
     </div>
   </header>
   <main class="landing-main">{{.Content}}</main>
@@ -95,6 +126,90 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      function init() {
+        // 1. Mobile Navbar Toggler
+        var toggler = document.querySelector(".nav-toggler");
+        var mobileMenu = document.querySelector(".nav-mobile-menu");
+        var nav = document.getElementById("main-nav") || document.querySelector(".nav");
+
+        if (toggler && mobileMenu) {
+          var toggleNav = function(open) {
+            var isOpen = typeof open === "boolean" ? open : !mobileMenu.classList.contains("is-open");
+            toggler.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            mobileMenu.setAttribute("aria-hidden", isOpen ? "false" : "true");
+            mobileMenu.classList.toggle("is-open", isOpen);
+            toggler.classList.toggle("is-active", isOpen);
+          };
+
+          toggler.addEventListener("click", function(e) {
+            e.stopPropagation();
+            toggleNav();
+          });
+
+          // Close on link click
+          mobileMenu.querySelectorAll("a").forEach(function(link) {
+            link.addEventListener("click", function() {
+              toggleNav(false);
+            });
+          });
+
+          // Close on Escape key
+          document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+              toggleNav(false);
+            }
+          });
+
+          // Close on outside click
+          document.addEventListener("click", function(e) {
+            if (mobileMenu.classList.contains("is-open") && nav && !nav.contains(e.target)) {
+              toggleNav(false);
+            }
+          });
+        }
+
+        // 2. Viewport Fade-In Animation (IntersectionObserver)
+        var targetSelectors = ".pillar-card, .benefit-card, .repo-card, .pathway-card, .gate-card, .flow-step, .guild-card, .cta-card, .hero-copy, .hero-art, .section-head, .window";
+        var animatedElements = document.querySelectorAll(targetSelectors);
+
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(function(entries, obs) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+              }
+            });
+          }, {
+            threshold: 0.08,
+            rootMargin: "0px 0px -30px 0px"
+          });
+
+          animatedElements.forEach(function(el, idx) {
+            el.classList.add("reveal");
+            var delay = (idx % 3) * 60;
+            if (delay > 0) {
+              el.style.transitionDelay = delay + "ms";
+            }
+            observer.observe(el);
+          });
+        } else {
+          animatedElements.forEach(function(el) {
+            el.classList.add("reveal", "is-visible");
+          });
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
 
@@ -146,14 +261,143 @@ a:hover{color:var(--primary)}
 .brand-mark{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:var(--primary);color:var(--primary-content);font-size:14px;line-height:1}
 .brand-text{font-weight:800}
 .brand .badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--primary);color:var(--primary-content);margin-left:2px}
-.links{margin-left:auto;display:flex;gap:20px;font-size:14px;color:var(--muted);align-items:center}
+.links{margin-left:auto;margin-right:12px;display:flex;gap:20px;font-size:14px;color:var(--muted);align-items:center}
 .links a{color:var(--muted);font-weight:500;transition:color .15s}
 .links a:hover{color:var(--fg)}
 .gh-link{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:999px;border:1px solid var(--border);background:var(--bg-2)}
-.theme-toggle{margin-left:4px;border:1px solid var(--border);background:var(--bg-2);border-radius:999px;padding:6px 10px;cursor:pointer;color:var(--fg)}
+
+/* NAV ACTIONS & TOGGLER */
+.nav-actions{display:flex;align-items:center;gap:8px}
+.theme-toggle{border:1px solid var(--border);background:var(--bg-2);border-radius:999px;padding:6px 10px;cursor:pointer;color:var(--fg);display:inline-flex;align-items:center;justify-content:center}
 .theme-toggle .sun{display:var(--show-sun)}
 .theme-toggle .moon{display:var(--show-moon)}
-.nav-mobile-strip{display:none}
+
+.nav-toggler{
+  display:none;
+  width:38px;
+  height:38px;
+  padding:8px 7px;
+  background:var(--bg-2);
+  border:1px solid var(--border);
+  border-radius:10px;
+  cursor:pointer;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  align-items:center;
+  transition:all .2s ease;
+}
+.nav-toggler .bar{
+  display:block;
+  width:20px;
+  height:2px;
+  background:var(--fg);
+  border-radius:2px;
+  transition:all .25s ease-in-out;
+  transform-origin:center;
+}
+.nav-toggler.is-active .bar-1{
+  transform:translateY(7px) rotate(45deg);
+}
+.nav-toggler.is-active .bar-2{
+  opacity:0;
+  transform:scaleX(0);
+}
+.nav-toggler.is-active .bar-3{
+  transform:translateY(-7px) rotate(-45deg);
+}
+.nav-toggler:hover{
+  border-color:var(--primary);
+}
+
+/* MOBILE DROPDOWN MENU */
+.nav-mobile-menu{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  background:color-mix(in srgb, var(--bg) 96%, transparent);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow);
+  padding:12px 16px 20px;
+  transform:translateY(-8px);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s cubic-bezier(0.16, 1, 0.3, 1), transform .25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-mobile-menu.is-open{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+.mobile-menu-inner{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  max-width:80rem;
+  margin:0 auto;
+}
+.mobile-link{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:11px 14px;
+  border-radius:12px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--fg);
+  transition:background .15s, color .15s, transform .15s;
+}
+.mobile-link:hover, .mobile-link:active{
+  background:var(--bg-2);
+  color:var(--primary);
+  transform:translateX(3px);
+}
+.mobile-link .link-icon{
+  width:20px;
+  display:grid;
+  place-items:center;
+  color:var(--primary);
+  font-size:13px;
+}
+.mobile-menu-divider{
+  height:1px;
+  background:var(--border);
+  margin:8px 0;
+}
+.gh-mobile{
+  background:color-mix(in srgb, var(--primary) 10%, transparent);
+  color:var(--fg);
+  border:1px solid color-mix(in srgb, var(--primary) 25%, transparent);
+  justify-content:space-between;
+}
+.gh-mobile:hover{
+  background:var(--primary);
+  color:var(--primary-content);
+}
+
+/* VIEWPORT FADE-IN ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .65s cubic-bezier(0.16, 1, 0.3, 1), transform .65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change:opacity, transform;
+}
+.reveal.is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+  }
+}
+
 .landing-main{min-width:0}
 .footer{border-top:1px solid var(--border);margin-top:0;background:var(--bg-2)}
 .footer-inner{max-width:80rem;margin:0 auto;padding:44px 16px 28px}
@@ -171,36 +415,13 @@ a:hover{color:var(--primary)}
 
 @media(max-width:960px){
   .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
-  .links{gap:14px;font-size:13px}
 }
 
-@media(max-width:768px){
+@media(max-width:860px){
   .links{display:none}
-  .nav-mobile-strip{
-    display:flex;
-    gap:8px;
-    padding:8px 16px 10px;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-    border-top:1px solid var(--border);
-  }
-  .nav-mobile-strip::-webkit-scrollbar{display:none}
-  .nav-mobile-strip a{
-    white-space:nowrap;
-    font-size:12px;
-    font-weight:600;
-    color:var(--muted);
-    padding:4px 11px;
-    border-radius:999px;
-    background:var(--bg-2);
-    border:1px solid var(--border);
-    flex-shrink:0;
-  }
-  .nav-mobile-strip a:hover{
-    color:var(--primary);
-    border-color:var(--primary);
-  }
+  .nav-actions{margin-left:auto}
+  .nav-toggler{display:flex}
+  .nav-mobile-menu{display:block}
 }
 
 @media(max-width:560px){
