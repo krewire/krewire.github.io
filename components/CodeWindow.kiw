@@ -22,8 +22,8 @@
   color:#FAF8F4;
   border-radius:12px;
   overflow:hidden;
-  box-shadow:var(--shadow);
-  border:1px solid rgba(250,248,244,.15);
+  box-shadow:5px 5px 0px var(--border);
+  border:2.5px solid var(--border);
   max-width:100%;
   min-width:0;
   width:100%;
@@ -34,13 +34,14 @@
   gap:6px;
   padding:8px 12px;
   background:#112646;
-  border-bottom:1px solid rgba(250,248,244,.12);
+  border-bottom:2px solid var(--border);
   min-width:0;
 }
 .dot{
-  width:8px;
-  height:8px;
+  width:9px;
+  height:9px;
   border-radius:50%;
+  border:1.5px solid var(--border);
   flex-shrink:0;
 }
 .r{background:#FF3B2E}
