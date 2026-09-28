@@ -44,7 +44,12 @@ jobs:
           kiw build
           mkdir -p .krewire/build/assets
           npm run build:css
-          cp assets/app.js .krewire/build/assets/ || true
+          cp assets/app.js .krewire/build/assets/
+          for f in .krewire/build/*.html; do
+            if ! grep -q 'assets/app.js' "$f"; then
+              sed -i 's|</body>|<script src="/assets/app.js" defer></script></body>|' "$f"
+            fi
+          done
           touch .krewire/build/.nojekyll
 
       - name: Deploy to gh-pages branch
