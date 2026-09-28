@@ -228,22 +228,23 @@ layout: Landing
             <span class="repo-icon">≡</span>
             <h3>krewire/mdbind</h3>
           </div>
-          <span class="repo-badge">Compiler Pipeline</span>
+          <span class="repo-badge">Standalone Book Builder</span>
         </div>
-        <p class="repo-desc">High-performance Markdown and manuscript compiler that converts documentation, books, and content folders into fast static sites.</p>
+        <p class="repo-desc">Fast, zero-dependency Markdown-based book and documentation site builder. Runs completely standalone via CLI or as the <code>book</code> workload in Krewire.</p>
         <div class="repo-details">
           <div class="detail-item">
             <strong>Key Focus:</strong>
-            <span>Goldmark extensions, YAML frontmatter parser, navigation AST, static HTML generator.</span>
+            <span>Ordered chapters, collapsible sidebar, <code>book.yaml</code> config, instant live reload, sub-15ms builds.</span>
           </div>
           <div class="detail-item">
             <strong>Contribute:</strong>
-            <span>Markdown AST renderers, callout syntax plugins, syntax highlighting speedups.</span>
+            <span>CLI ergonomics, search indexing, custom callouts, syntax highlighting speedups.</span>
           </div>
         </div>
         <div class="repo-footer">
+          <span class="tag">Standalone CLI</span>
           <span class="tag">Markdown</span>
-          <span class="tag">AST</span>
+          <span class="tag">Zero-Deps</span>
           <a class="repo-link" href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">Explore Repo →</a>
         </div>
       </div>
