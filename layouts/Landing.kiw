@@ -544,30 +544,7 @@ a:hover{color:var(--primary)}
     padding:12px 20px;
     gap:16px;
   }
-  .links{
-    display:flex;
-    margin-left:auto;
-    margin-right:8px;
-    gap:16px;
-    font-size:13px;
-    color:var(--muted);
-    align-items:center;
-  }
-  .links a{
-    color:var(--muted);
-    font-weight:500;
-    transition:color .15s;
-    white-space:nowrap;
-  }
-  .links a:hover{
-    color:var(--fg);
-  }
-  .nav-toggler{
-    display:none !important;
-  }
-  .nav-mobile-menu{
-    display:none !important;
-  }
+  /* On medium screens (tablets), keep links hidden and use hamburger menu */
   .footer-inner{
     padding:42px 20px 26px;
   }
@@ -585,10 +562,23 @@ a:hover{color:var(--primary)}
     padding:14px 24px;
     gap:24px;
   }
+  /* On desktop, show full horizontal links and hide hamburger menu */
   .links{
+    display:flex;
+    margin-left:auto;
+    margin-right:12px;
     gap:22px;
     font-size:14px;
-    margin-right:12px;
+    align-items:center;
+  }
+  .links a{
+    color:var(--muted);
+    font-weight:500;
+    transition:color .15s;
+    white-space:nowrap;
+  }
+  .links a:hover{
+    color:var(--fg);
   }
   .nav-toggler{
     display:none !important;
