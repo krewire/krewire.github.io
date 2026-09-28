@@ -512,7 +512,7 @@ a:hover{color:var(--primary)}
 /* ==========================================================================
    VIEWPORT SM: SMALL SCREENS / LARGE PHONES & SMALL TABLETS (min-width: 640px)
    ========================================================================== */
-@media(min-width:640px){
+@media (min-width: 640px){
   .nav-inner{
     padding:10px 18px;
   }
@@ -521,7 +521,7 @@ a:hover{color:var(--primary)}
   }
   .footer-grid{
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:26px;
     padding-bottom:26px;
   }
@@ -535,7 +535,7 @@ a:hover{color:var(--primary)}
 /* ==========================================================================
    VIEWPORT MD: MEDIUM SCREENS / TABLETS & LAPTOPS (min-width: 768px)
    ========================================================================== */
-@media(min-width:768px){
+@media (min-width: 768px){
   .nav-inner{
     padding:12px 20px;
     gap:16px;
@@ -568,7 +568,7 @@ a:hover{color:var(--primary)}
     padding:42px 20px 26px;
   }
   .footer-grid{
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:30px;
   }
 }
@@ -576,7 +576,7 @@ a:hover{color:var(--primary)}
 /* ==========================================================================
    VIEWPORT LG: LARGE SCREENS / DESKTOPS (min-width: 1024px)
    ========================================================================== */
-@media(min-width:1024px){
+@media (min-width: 1024px){
   .nav-inner{
     padding:14px 24px;
     gap:24px;

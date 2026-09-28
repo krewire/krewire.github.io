@@ -1687,10 +1687,9 @@ kiw build</code></pre>
 }
 
 /* ==========================================================================
-/* ==========================================================================
    VIEWPORT SM: SMALL SCREENS / LARGE PHONES & SMALL TABLETS (min-width: 640px)
    ========================================================================== */
-@media(min-width:640px){
+@media (min-width: 640px){
   .section-inner{
     padding:0 18px;
   }
@@ -1750,7 +1749,7 @@ kiw build</code></pre>
   .repo-grid,
   .pathway-grid,
   .gates-grid{
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:14px;
   }
   .pillar-card,
@@ -1762,6 +1761,18 @@ kiw build</code></pre>
     padding:18px 16px;
     border-radius:14px;
   }
+
+  /* Span odd card in 2-column layout to prevent awkward empty slots */
+  .benefit-card:nth-child(3){
+    grid-column:span 2;
+  }
+  .nav-map-card.featured{
+    grid-column:span 2;
+  }
+  .gate-card:nth-child(3){
+    grid-column:span 2;
+  }
+
   .nav-filter-bar{
     flex-direction:row;
     align-items:center;
@@ -1815,7 +1826,7 @@ kiw build</code></pre>
 /* ==========================================================================
    VIEWPORT MD: MEDIUM SCREENS / TABLETS & SMALL LAPTOPS (min-width: 768px)
    ========================================================================== */
-@media(min-width:768px){
+@media (min-width: 768px){
   .section-inner{
     padding:0 22px;
   }
@@ -1829,27 +1840,60 @@ kiw build</code></pre>
     font-size:14.5px;
   }
 
-  /* HERO */
+  /* HERO (2-COLUMN GRID ON MD) */
   .hero{
     padding:44px 0 28px;
   }
   .hero-inner{
     padding:0 22px;
-    gap:28px;
+    display:grid;
+    grid-template-columns:minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap:32px;
+    align-items:center;
   }
   .hero .lead{
     font-size:15px;
   }
 
-  /* GRIDS ON MD */
-  .pillar-grid,
-  .benefit-grid,
-  .nav-map-grid,
-  .repo-grid,
-  .pathway-grid,
-  .gates-grid{
+  /* BALANCED GRIDS ON MD */
+  .pillar-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
     gap:18px;
   }
+  /* 3 benefits in 1 row of 3 */
+  .benefit-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:18px;
+  }
+  .benefit-card:nth-child(3){
+    grid-column:auto;
+  }
+
+  /* Codebase matrix on MD: featured spans 2 columns, other 6 form 3 rows of 2 */
+  .nav-map-grid,
+  .repo-grid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:18px;
+  }
+  .nav-map-card.featured{
+    grid-column:span 2;
+  }
+
+  /* 6 pathways in 2 rows of 3 */
+  .pathway-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:16px;
+  }
+
+  /* 3 quality gates in 1 row of 3 */
+  .gates-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:16px;
+  }
+  .gate-card:nth-child(3){
+    grid-column:auto;
+  }
+
   .pillar-card,
   .benefit-card,
   .nav-map-card,
@@ -1870,6 +1914,12 @@ kiw build</code></pre>
     font-size:13px;
   }
 
+  /* FILTER PILLS WRAPPING ON TABLET */
+  .filter-pills{
+    flex-wrap:wrap;
+    overflow-x:visible;
+  }
+
   .flow-step{
     padding:18px 20px;
     border-radius:16px;
@@ -1882,10 +1932,18 @@ kiw build</code></pre>
     border-radius:10px;
   }
 
+  /* AI GUILD 2-COLUMN GRID ON MD */
   .guild-card{
     padding:28px 24px;
     border-radius:20px;
   }
+  .guild-grid{
+    display:grid;
+    grid-template-columns:minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap:28px;
+    align-items:center;
+  }
+
   .cta-card{
     padding:38px 24px;
     border-radius:22px;
@@ -1895,7 +1953,7 @@ kiw build</code></pre>
 /* ==========================================================================
    VIEWPORT LG: LARGE SCREENS / DESKTOPS (min-width: 1024px)
    ========================================================================== */
-@media(min-width:1024px){
+@media (min-width: 1024px){
   .section-inner{
     padding:0 24px;
   }
@@ -1904,16 +1962,14 @@ kiw build</code></pre>
     max-width:760px;
   }
 
-  /* HERO 2-COLUMN SPLIT */
+  /* HERO 2-COLUMN SPLIT ON LG */
   .hero{
     padding:56px 0 36px;
   }
   .hero-inner{
     padding:0 24px;
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
+    grid-template-columns:minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap:44px;
-    align-items:center;
   }
   .hero h1{
     font-size:clamp(32px, 4.2vw, 54px);
@@ -1924,25 +1980,25 @@ kiw build</code></pre>
     max-width:620px;
   }
 
-  /* PILLARS 4-COLUMN */
+  /* PILLARS 4-COLUMN ON LG */
   .pillars{
     padding:48px 0 32px;
   }
   .pillar-grid{
-    grid-template-columns:repeat(4, 1fr);
-    gap:18px;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:20px;
   }
   .pillar-card:hover{
     border-color:color-mix(in srgb, var(--primary) 50%, var(--border));
   }
 
-  /* BENEFITS 3-COLUMN */
+  /* BENEFITS 3-COLUMN ON LG */
   .benefits{
     padding:48px 0 32px;
   }
   .benefit-grid{
-    grid-template-columns:repeat(3, 1fr);
-    gap:20px;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:22px;
   }
   .benefit-card{
     padding:24px 20px;
@@ -1954,53 +2010,53 @@ kiw build</code></pre>
     border-color:color-mix(in srgb, var(--fg) 25%, var(--border));
   }
 
-  /* NAV MAP 3-COLUMN */
-  .nav-map{
+  /* NAV MAP 3-COLUMN WITH FEATURED BANNER CARD */
+  .nav-map,
+  .repos-nav{
     padding:48px 0 32px;
   }
-  .nav-map-grid{
-    grid-template-columns:repeat(3, 1fr);
+  .nav-map-grid,
+  .repo-grid{
+    grid-template-columns:repeat(3, minmax(0, 1fr));
     gap:22px;
+  }
+  /* Flagship repo card spans full 3-column width */
+  .nav-map-card.featured{
+    grid-column:1 / -1;
   }
   .fast-setup-box{
     padding:24px 24px;
   }
 
-  /* REPOS 3-COLUMN */
-  .repos{
-    padding:48px 0 32px;
-  }
-  .repo-grid{
-    grid-template-columns:repeat(3, 1fr);
-    gap:22px;
-  }
+  .nav-map-card,
   .repo-card{
     padding:22px;
     transition:transform .15s, border-color .15s;
   }
+  .nav-map-card:hover,
   .repo-card:hover{
     transform:translateY(-2px);
     border-color:color-mix(in srgb, var(--fg) 25%, var(--border));
   }
 
-  /* PATHWAYS 3-COLUMN */
+  /* PATHWAYS 3-COLUMN ON LG */
   .pathways{
     padding:48px 0 32px;
   }
   .pathway-grid{
-    grid-template-columns:repeat(3, 1fr);
-    gap:20px;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:22px;
   }
   .pathway-card{
     padding:22px;
   }
 
-  /* GATES 3-COLUMN */
+  /* GATES 3-COLUMN ON LG */
   .standards{
     padding:48px 0 32px;
   }
   .gates-grid{
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3, minmax(0, 1fr));
     gap:22px;
   }
   .gate-card{
@@ -2015,7 +2071,7 @@ kiw build</code></pre>
     padding:20px 22px;
   }
 
-  /* AI GUILD 2-COLUMN SPLIT */
+  /* AI GUILD 2-COLUMN SPLIT ON LG */
   .guild-section{
     padding:32px 0 48px;
   }
@@ -2023,10 +2079,8 @@ kiw build</code></pre>
     padding:34px 30px;
   }
   .guild-grid{
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
+    grid-template-columns:minmax(0, 1.2fr) minmax(0, 0.8fr);
     gap:36px;
-    align-items:center;
   }
   .guild-box{
     padding:22px;

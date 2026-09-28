@@ -75,12 +75,12 @@
 .p{color:#6b7280;user-select:none}
 
 /* Tablet & Desktop enhancement */
-@media(min-width:640px){
+@media (min-width: 640px){
   .window{border-radius:16px}
   .bar{gap:8px;padding:10px 16px}
   .dot{width:10px;height:10px}
   .title{font-size:12px}
-  .window pre{padding:18px 18px}
-  .window code{font-size:13px;line-height:1.7}
+  .window pre{padding:16px 16px}
+  .window code{font-size:12.5px;line-height:1.65}
 }
 </style>
