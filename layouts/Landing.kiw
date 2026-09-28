@@ -31,7 +31,7 @@
       <a class="brand" href="/">
         <span class="brand-mark">◈</span>
         <span class="brand-text">Krewire</span>
-        <span class="badge">Contributors</span>
+        <span class="badge" data-i18n="nav.badge">Contributors</span>
       </a>
       <nav class="links">
         <a href="#benefits" data-i18n="nav.perks">Perks & Access</a>
@@ -89,7 +89,7 @@
         </a>
         <div class="mobile-menu-divider"></div>
         <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
-          <span>★ GitHub Organization</span>
+          <span>★ <span data-i18n="footer.gh_org">GitHub Organization</span></span>
           <span class="link-arrow">↗</span>
         </a>
       </div>
@@ -100,11 +100,11 @@
     <div class="footer-inner">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand"><span class="brand-mark">◈</span> Krewire Contributors</div>
-          <p class="footer-desc">Home of the Open Source Collective.<br>Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.</p>
+          <div class="footer-brand"><span class="brand-mark">◈</span> <span data-i18n="footer.brand_title">Krewire Contributors</span></div>
+          <p class="footer-desc" data-i18n-html="footer.desc_html">Home of the Open Source Collective.<br>Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.</p>
         </div>
         <div class="footer-col">
-          <strong>Repositories</strong>
+          <strong data-i18n="footer.col_repos">Repositories</strong>
           <a href="https://github.com/krewire/framework" target="_blank" rel="noopener">framework</a>
           <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (Krewire Libs)</a>
           <a href="https://github.com/krewire/kiw" target="_blank" rel="noopener">kiw (cli)</a>
@@ -114,25 +114,25 @@
           <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">mdbind (compiler)</a>
         </div>
         <div class="footer-col">
-          <strong>Contribution</strong>
-          <a href="#benefits">Contributor Perks & Access</a>
-          <a href="#where-to-start">Where to Start (Nav Map)</a>
-          <a href="#get-started">Getting Started</a>
-          <a href="#pathways">Contribution Pathways</a>
-          <a href="#standards">The Krewire Way (Gates)</a>
-          <a href="#guild">AI Guild Collaboration</a>
-          <a href="https://github.com/krewire/framework/tree/main/docs/specs" target="_blank" rel="noopener">KWF Specs</a>
+          <strong data-i18n="footer.col_contrib">Contribution</strong>
+          <a href="#benefits" data-i18n="footer.perks">Contributor Perks & Access</a>
+          <a href="#where-to-start" data-i18n="footer.where_start">Where to Start (Nav Map)</a>
+          <a href="#get-started" data-i18n="footer.getting_started">Getting Started</a>
+          <a href="#pathways" data-i18n="footer.pathways">Contribution Pathways</a>
+          <a href="#standards" data-i18n="footer.standards">The Krewire Way (Gates)</a>
+          <a href="#guild" data-i18n="footer.guild">AI Guild Collaboration</a>
+          <a href="https://github.com/krewire/framework/tree/main/docs/specs" target="_blank" rel="noopener" data-i18n="footer.kwf_specs">KWF Specs</a>
         </div>
         <div class="footer-col">
-          <strong>Community</strong>
-          <a href="https://github.com/krewire" target="_blank" rel="noopener">GitHub Organization</a>
-          <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener">Discussions</a>
-          <a href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">Good First Issues</a>
-          <a href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a>
+          <strong data-i18n="footer.col_community">Community</strong>
+          <a href="https://github.com/krewire" target="_blank" rel="noopener" data-i18n="footer.gh_org">GitHub Organization</a>
+          <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" data-i18n="footer.discussions">Discussions</a>
+          <a href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" data-i18n="footer.good_first">Good First Issues</a>
+          <a href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener" data-i18n="footer.coc">Code of Conduct</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Krewire Contributors — Built 100% with Krewire <code>site</code> workload (Dogfooding).</span>
+        <span data-i18n-html="footer.bottom_rights_html">© 2026 Krewire Contributors — Built 100% with Krewire <code>site</code> workload (Dogfooding).</span>
         <span><a href="https://github.com/krewire" target="_blank" rel="noopener">github.com/krewire</a></span>
       </div>
     </div>
