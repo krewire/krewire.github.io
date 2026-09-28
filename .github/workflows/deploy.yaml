@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Install kiw CLI
-        run: go install github.com/krewire/kiw/cmd/kiw@latest
+        run: go install github.com/krewire/kiw/cmd/kiw@v0.1.4
 
       - name: Build website
         run: |
