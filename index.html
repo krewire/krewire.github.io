@@ -9,7 +9,7 @@
   
 </head>
 <body>
-  <header class="nav">
+  <header class="nav" id="main-nav">
     <div class="nav-inner">
       <a class="brand" href="/">
         <span class="brand-mark">◈</span>
@@ -25,18 +25,49 @@
         <a href="#guild">AI Guild</a>
         <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> GitHub</a>
       </nav>
-      <button class="theme-toggle" data-theme-toggle="" aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
-        <span class="sun">☀</span><span class="moon">☾</span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle="" aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+        <button class="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
     </div>
-    <div class="nav-mobile-strip">
-      <a href="#benefits">Perks &amp; Access</a>
-      <a href="#get-started">Get Started</a>
-      <a href="#repositories">Repos</a>
-      <a href="#pathways">Pathways</a>
-      <a href="#standards">Gates</a>
-      <a href="#guild">Guild</a>
-      <a href="https://github.com/krewire" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="nav-mobile-menu" id="mobile-nav-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a class="mobile-link" href="#benefits">
+          <span class="link-icon">★</span>
+          <span>Perks &amp; Lifetime Access</span>
+        </a>
+        <a class="mobile-link" href="#get-started">
+          <span class="link-icon">⚡</span>
+          <span>Getting Started</span>
+        </a>
+        <a class="mobile-link" href="#repositories">
+          <span class="link-icon">⬢</span>
+          <span>Core Repositories</span>
+        </a>
+        <a class="mobile-link" href="#pathways">
+          <span class="link-icon">◈</span>
+          <span>Contribution Pathways</span>
+        </a>
+        <a class="mobile-link" href="#standards">
+          <span class="link-icon">✓</span>
+          <span>The 3 Quality Gates</span>
+        </a>
+        <a class="mobile-link" href="#guild">
+          <span class="link-icon">▲</span>
+          <span>AI Guild Collaboration</span>
+        </a>
+        <div class="mobile-menu-divider"></div>
+        <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
+          <span>★ GitHub Organization</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
     </div>
   </header>
   <main class="landing-main"><div class="contributors-portal" data-kiw-component="page:/">
@@ -634,5 +665,7 @@ kiw build</code></pre>
       </div>
     </div>
   </footer>
+
+  
 
 </body></html>
