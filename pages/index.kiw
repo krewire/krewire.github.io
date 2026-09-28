@@ -279,6 +279,34 @@ layout: Landing
           </div>
         </div>
 
+        <!-- hub -->
+        <div class="repo-card">
+          <div class="repo-header">
+            <div class="repo-name">
+              <span class="repo-icon">🔌</span>
+              <h3>krewire/hub</h3>
+            </div>
+            <span class="repo-badge">Plugin & Integration Registry</span>
+          </div>
+          <p class="repo-desc">Plugin system and third-party integration registry for the Krewire ecosystem. Provides the plugin interface, installer contracts, and resolver chain used by <code>kiw build</code>, <code>kiw add</code>, and <code>kiw remove</code>.</p>
+          <div class="repo-details">
+            <div class="detail-item">
+              <strong>Key Focus:</strong>
+              <span>Self-registering plugins (Tailwind CSS, etc.), npm/gomod resolver chain, zero-change extensibility for <code>kiw</code>.</span>
+            </div>
+            <div class="detail-item">
+              <strong>Contribute:</strong>
+              <span>New build plugins, package resolvers, third-party integrations, and installer adapters.</span>
+            </div>
+          </div>
+          <div class="repo-footer">
+            <span class="tag">Plugins</span>
+            <span class="tag">Integrations</span>
+            <span class="tag">Registry</span>
+            <a class="repo-link" href="https://github.com/krewire/hub" target="_blank" rel="noopener">Explore Repo →</a>
+          </div>
+        </div>
+
         <!-- mdbind -->
         <div class="repo-card">
           <div class="repo-header">
