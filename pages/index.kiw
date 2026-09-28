@@ -316,28 +316,28 @@ layout: Landing
           </div>
         </div>
 
-        <!-- krewire/guild -->
+        <!-- krewire/boost -->
         <div class="nav-map-card repo-card" data-category="ai">
           <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_guild">AI Guild &amp; Agent Triads</span>
+            <span class="nav-track-tag" data-i18n="navigator.track_guild">AI Boost &amp; Agent Triads</span>
             <span class="nav-curve-badge innovative" data-i18n="navigator.curve_innovative">Innovative</span>
           </div>
-          <h3 class="nav-card-title"><span class="repo-icon">▲</span> krewire/guild</h3>
+          <h3 class="nav-card-title"><span class="repo-icon">▲</span> krewire/boost</h3>
           <p class="nav-card-match" data-i18n="navigator.match_guild"><strong>If you enjoy:</strong> Autonomous agent swarms, prompt engineering, OpenCode skill definitions, verification subagents (auditor/reviewer), and Model Context Protocol (MCP).</p>
           <div class="nav-card-packages">
             <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages:</span>
             <div class="pkg-tags">
-              <code>guild/template/.agents</code>
+              <code>boost/template/.agents</code>
               <code>skills/*</code>
               <code>commands/*</code>
               <code>agents/*</code>
             </div>
           </div>
           <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/guild/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
+            <a class="nav-action-link" href="https://github.com/krewire/boost/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
               Good First Issues &rarr;
             </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/guild" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
+            <a class="nav-repo-link" href="https://github.com/krewire/boost" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
               GitHub Repo &nearr;
             </a>
           </div>
@@ -544,15 +544,16 @@ kiw build</code></pre>
     </div>
   </section>
 
-  <!-- AI GUILD COLLABORATION -->
-  <section class="guild-section" id="guild">
+  <!-- AI BOOST COLLABORATION -->
+  <section class="guild-section" id="boost">
+    <span id="guild" class="section-anchor"></span>
     <div class="section-inner">
       <div class="guild-card">
         <div class="guild-grid">
           <div class="guild-info">
             <div class="sub-badge" data-i18n="guild.badge">Human + AI Synergy</div>
-            <h2 data-i18n="guild.title">Collaborating with the AI Guild</h2>
-            <p data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Guild operates with strict verification standards:</p>
+            <h2 data-i18n="guild.title">Collaborating with AI Boost</h2>
+            <p data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
             <ul class="guild-list">
               <li data-i18n-html="guild.item1_html"><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
               <li data-i18n-html="guild.item2_html"><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
@@ -560,12 +561,12 @@ kiw build</code></pre>
               <li data-i18n-html="guild.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
             </ul>
             <div class="ctas">
-              <a class="btn primary" href="https://github.com/krewire/guild" target="_blank" rel="noopener" data-i18n="guild.cta_repo">Explore AI Guild Repo →</a>
+              <a class="btn primary" href="https://github.com/krewire/boost" target="_blank" rel="noopener" data-i18n="guild.cta_repo">Explore AI Boost Repo →</a>
               <a class="btn" href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" data-i18n="guild.cta_disc">Join Discussions</a>
             </div>
           </div>
           <div class="guild-box">
-            <div class="guild-box-head" data-i18n="guild.triad_title">AI Guild Agent Triad</div>
+            <div class="guild-box-head" data-i18n="guild.triad_title">AI Boost Agent Triad</div>
             <div class="agent-item">
               <span class="agent-role planner">Planner</span>
               <div>

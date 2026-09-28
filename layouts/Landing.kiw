@@ -39,7 +39,7 @@
         <a href="#repositories" data-i18n="nav.repositories">Repositories</a>
         <a href="#pathways" data-i18n="nav.pathways">Pathways</a>
         <a href="#standards" data-i18n="nav.standards">Standards</a>
-        <a href="#guild" data-i18n="nav.guild">AI Guild</a>
+        <a href="#boost" data-i18n="nav.guild">AI Boost</a>
         <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> <span data-i18n="nav.github">GitHub</span></a>
       </nav>
       <div class="nav-actions">
@@ -83,9 +83,9 @@
           <span class="link-icon">✓</span>
           <span data-i18n="nav.standards">The 3 Quality Gates</span>
         </a>
-        <a class="mobile-link" href="#guild">
+        <a class="mobile-link" href="#boost">
           <span class="link-icon">▲</span>
-          <span data-i18n="nav.guild">AI Guild Collaboration</span>
+          <span data-i18n="nav.guild">AI Boost Collaboration</span>
         </a>
         <div class="mobile-menu-divider"></div>
         <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
@@ -108,7 +108,7 @@
           <a href="https://github.com/krewire/framework" target="_blank" rel="noopener">framework</a>
           <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (Krewire Libs)</a>
           <a href="https://github.com/krewire/kiw" target="_blank" rel="noopener">kiw (cli)</a>
-          <a href="https://github.com/krewire/guild" target="_blank" rel="noopener">guild (ai agent)</a>
+          <a href="https://github.com/krewire/boost" target="_blank" rel="noopener">boost (ai agent)</a>
           <a href="https://github.com/krewire/hub" target="_blank" rel="noopener">hub (plugins)</a>
           <a href="https://github.com/krewire/ship" target="_blank" rel="noopener">ship (deployer)</a>
           <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">mdbind (compiler)</a>
@@ -120,7 +120,7 @@
           <a href="#get-started" data-i18n="footer.getting_started">Getting Started</a>
           <a href="#pathways" data-i18n="footer.pathways">Contribution Pathways</a>
           <a href="#standards" data-i18n="footer.standards">The Krewire Way (Gates)</a>
-          <a href="#guild" data-i18n="footer.guild">AI Guild Collaboration</a>
+          <a href="#boost" data-i18n="footer.guild">AI Boost Collaboration</a>
           <a href="https://github.com/krewire/framework/tree/main/docs/specs" target="_blank" rel="noopener" data-i18n="footer.kwf_specs">KWF Specs</a>
         </div>
         <div class="footer-col">
