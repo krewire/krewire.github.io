@@ -49,11 +49,11 @@
     @apply inline-flex items-center gap-2 px-4 py-2.5 rounded-full border font-semibold text-sm transition-all duration-150;
   }
 
-  .btn-primary {
-    @apply bg-primary text-primary-content border-primary;
+  .btn-primary, .btn.primary {
+    @apply bg-primary text-slate-950 border-primary font-semibold;
   }
 
-  .btn-primary:hover {
+  .btn-primary:hover, .btn.primary:hover {
     @apply brightness-105;
   }
 
@@ -66,7 +66,8 @@
   }
 
   .card:hover {
-    @apply -translate-y-0.5 border-primary/25;
+    @apply -translate-y-0.5;
+    border-color: rgba(0, 200, 83, 0.25);
   }
 
   .section-inner {
