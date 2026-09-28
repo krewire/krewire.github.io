@@ -183,6 +183,205 @@
     }
   }
 
+  // 5. I18N SYSTEM (English & Indonesian)
+  var translations = {
+    en: {
+      nav: {
+        perks: "Perks & Access",
+        start: "Where to Start",
+        repositories: "Repositories",
+        pathways: "Pathways",
+        standards: "Standards",
+        guild: "AI Guild",
+        github: "GitHub"
+      },
+      hero: {
+        eyebrow: "◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM",
+        title_html: "Build the Future of Go.<br>Together, Autonomously.",
+        lead: "The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.",
+        cta_start: "Start Contributing →",
+        cta_repos: "Explore Repositories",
+        meta: "Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy"
+      },
+      trust: {
+        label: "Collective Ecosystem",
+        repos_html: "<b>6</b> Active Repositories",
+        workloads_html: "<b>8</b> Unified Workloads",
+        native_html: "<b>100%</b> Native Go",
+        gates_html: "<b>3</b> Strict Quality Gates",
+        cost: "Near-Zero Cloud Cost"
+      },
+      benefits: {
+        badge: "Contributor Privilege",
+        title: "Lifetime Access to Krewire's Paid Ecosystem",
+        subtitle: "Genuine appreciation for true builders. By joining and actively contributing to the Krewire open source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.",
+        b1_title: "Commercial Sub-Products Lifetime Access",
+        b1_desc: "Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.",
+        b2_title: "Active Contributions Required",
+        b2_desc: "This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.",
+        b3_title: "Revocable if Inactive or Dormant",
+        b3_desc: "To protect community fairness and true meritocracy, commercial access licenses may be revoked at any time if a contributor becomes inactive or dormant over an extended period."
+      },
+      navigator: {
+        badge: "Codebase Matrix & Navigator",
+        title: "Core Repositories & Where to Start",
+        subtitle: "Match your skills and background to the right codebase, bootstrap your local environment in 30 seconds, and dive straight into active issues.",
+        one_line_title: "One-Command Contributor Bootstrap",
+        one_line_desc: "Automatically clones all ecosystem repositories, creates your go.work workspace, builds the kiw devtool, and validates compatibility contracts:",
+        filter_label: "Filter by Track:",
+        filter_all: "All Tracks",
+        filter_core: "Go Core & Libs",
+        filter_web: "Web & Runtime",
+        filter_devops: "DevOps & Infra",
+        filter_dx: "CLI & Tooling",
+        filter_ai: "AI Guild"
+      },
+      standards: {
+        badge: "Quality Assurance",
+        title: "The Krewire Way: 3 Quality Gates",
+        subtitle: "To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates."
+      },
+      guild: {
+        badge: "Human + AI Synergy",
+        title: "Collaborating with the AI Guild",
+        lead: "Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Guild operates with strict verification standards:"
+      }
+    },
+    id: {
+      nav: {
+        perks: "Hak & Akses",
+        start: "Mulai Dari Mana",
+        repositories: "Repositori",
+        pathways: "Jalur Kontribusi",
+        standards: "Standar",
+        guild: "AI Guild",
+        github: "GitHub"
+      },
+      hero: {
+        eyebrow: "◈ KOLEKTIF SUMBER TERBUKA · EKOSISTEM GO OTONOM",
+        title_html: "Bangun Masa Depan Go.<br>Bersama, Secara Otonom.",
+        lead: "Rumah bagi kontributor, arsitek perangkat lunak, dan guild agen AI yang merekayasa ekosistem digital otonom dan berkelanjutan dalam Go. Dari workload terpadu dan IaC hemat biaya hingga orkestrasi agen AI — direkayasa di Indonesia untuk engineer di seluruh dunia.",
+        cta_start: "Mulai Berkontribusi →",
+        cta_repos: "Jelajahi Repositori",
+        meta: "Go 1.22+ · Spec-Driven Development (KWF) · Quality Gate Ketat · Sinergi Manusia & AI"
+      },
+      trust: {
+        label: "Ekosistem Kolektif",
+        repos_html: "<b>6</b> Repositori Aktif",
+        workloads_html: "<b>8</b> Workload Terpadu",
+        native_html: "<b>100%</b> Go Asli",
+        gates_html: "<b>3</b> Quality Gate Ketat",
+        cost: "Biaya Cloud Mendekati Nol"
+      },
+      benefits: {
+        badge: "Hak Istimewa Kontributor",
+        title: "Akses Seumur Hidup ke Ekosistem Berbayar Krewire",
+        subtitle: "Apresiasi tulus untuk para perintis sejati. Dengan bergabung dan berkontribusi aktif pada kolektif sumber terbuka Krewire, Anda mendapatkan akses seumur hidup ke sub-produk komersial dan fitur premium kami.",
+        b1_title: "Akses Seumur Hidup Sub-Produk Komersial",
+        b1_desc: "Dapatkan lisensi seumur hidup gratis untuk produk komersial Krewire mendatang — termasuk perkakas orkestrasi cloud terkelola, modul enterprise, dan layanan premium.",
+        b2_title: "Wajib Berkontribusi Aktif",
+        b2_desc: "Hak istimewa ini adalah komitmen dua arah. Akses Anda tetap aktif selama Anda berkontribusi secara berkala dan merawat pertumbuhan ekosistem.",
+        b3_title: "Dapat Dicabut Jika Tidak Aktif / Dormant",
+        b3_desc: "Untuk menjaga keadilan komunitas dan meritokrasi sejati, lisensi akses komersial dapat dicabut kapan saja apabila seorang kontributor tidak aktif dalam jangka waktu lama."
+      },
+      navigator: {
+        badge: "Matriks Basis Kode & Navigator",
+        title: "Repositori Inti & Mulai Dari Mana",
+        subtitle: "Sesuaikan keahlian dan minat Anda dengan basis kode yang tepat, pasang lingkungan lokal dalam 30 detik, dan langsung mulai berkontribusi pada isu aktif.",
+        one_line_title: "Bootstrap Kontributor Sekali Perintah",
+        one_line_desc: "Otomatis melakukan kloning seluruh repositori ekosistem, menyiapkan workspace go.work, mengompilasi devtool kiw, dan memvalidasi kontrak kompatibilitas:",
+        filter_label: "Filter menurut Jalur:",
+        filter_all: "Semua Jalur",
+        filter_core: "Go Core & Libs",
+        filter_web: "Web & Runtime",
+        filter_devops: "DevOps & Infra",
+        filter_dx: "CLI & Tooling",
+        filter_ai: "AI Guild"
+      },
+      standards: {
+        badge: "Jaminan Kualitas",
+        title: "The Krewire Way: 3 Quality Gate",
+        subtitle: "Demi menjaga basis kode tetap andal, terprediksi, dan siap produksi, setiap pull request wajib melewati tiga gerbang kendali otomatis."
+      },
+      guild: {
+        badge: "Sinergi Manusia + AI",
+        title: "Berkolaborasi dengan AI Guild",
+        lead: "Krewire mempelopori kolaborasi antara maintainer manusia dan agen AI otonom. AI Guild kami beroperasi dengan standar verifikasi ketat:"
+      }
+    }
+  };
+
+  function getNestedValue(obj, keyPath) {
+    if (!obj || !keyPath) return null;
+    var parts = keyPath.split('.');
+    var curr = obj;
+    for (var i = 0; i < parts.length; i++) {
+      if (curr && typeof curr === 'object' && parts[i] in curr) {
+        curr = curr[parts[i]];
+      } else {
+        return null;
+      }
+    }
+    return curr;
+  }
+
+  function initI18n() {
+    var currentLang = 'en';
+    try {
+      var saved = localStorage.getItem('krewire-lang');
+      if (saved === 'id' || saved === 'en') {
+        currentLang = saved;
+      } else if (navigator.language && navigator.language.toLowerCase().startsWith('id')) {
+        currentLang = 'id';
+      }
+    } catch (e) {}
+
+    function applyLanguage(lang) {
+      currentLang = (lang === 'id') ? 'id' : 'en';
+      document.documentElement.lang = currentLang;
+      try {
+        localStorage.setItem('krewire-lang', currentLang);
+      } catch (e) {}
+
+      // Update toggle buttons
+      document.querySelectorAll('.lang-toggle .lang-code').forEach(function(el) {
+        el.textContent = currentLang.toUpperCase();
+      });
+
+      // Update all translatable elements
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        var val = getNestedValue(translations[currentLang], key) || getNestedValue(translations.en, key);
+        if (val) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.setAttribute('placeholder', val);
+          } else {
+            el.textContent = val;
+          }
+        }
+      });
+
+      // Handle elements with HTML data-i18n-html
+      document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n-html');
+        var val = getNestedValue(translations[currentLang], key) || getNestedValue(translations.en, key);
+        if (val) {
+          el.innerHTML = val;
+        }
+      });
+    }
+
+    window.krewireI18n = {
+      getLocale: function() { return currentLang; },
+      setLocale: function(l) { applyLanguage(l); },
+      toggle: function() {
+        applyLanguage(currentLang === 'en' ? 'id' : 'en');
+      }
+    };
+
+    applyLanguage(currentLang);
+  }
+
   // Initialize theme immediately to prevent flash
   initTheme();
 
@@ -192,10 +391,12 @@
       initNav();
       initAnimations();
       initNavMap();
+      initI18n();
     });
   } else {
     initNav();
     initAnimations();
     initNavMap();
+    initI18n();
   }
 })();

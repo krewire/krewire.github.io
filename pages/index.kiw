@@ -10,14 +10,14 @@ layout: Landing
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-copy">
-        <div class="eyebrow">◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM</div>
-        <h1>Build the Future of Go.<br>Together, Autonomously.</h1>
-        <p class="lead">The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM</div>
+        <h1 data-i18n-html="hero.title_html">Build the Future of Go.<br>Together, Autonomously.</h1>
+        <p class="lead" data-i18n="hero.lead">The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.</p>
         <div class="ctas">
-          <a class="btn primary" href="#get-started">Start Contributing →</a>
-          <a class="btn" href="#repositories">Explore Repositories</a>
+          <a class="btn primary" href="#get-started" data-i18n="hero.cta_start">Start Contributing →</a>
+          <a class="btn" href="#repositories" data-i18n="hero.cta_repos">Explore Repositories</a>
         </div>
-        <div class="meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
+        <div class="meta" data-i18n="hero.meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
       </div>
       <div class="hero-art">
         {{component "CodeWindow" .}}
@@ -28,17 +28,17 @@ layout: Landing
   <!-- TRUST BAR -->
   <section class="trust">
     <div class="trust-inner">
-      <span class="trust-label">Collective Ecosystem</span>
+      <span class="trust-label" data-i18n="trust.label">Collective Ecosystem</span>
       <div class="trust-items">
-        <span><b>6</b> Active Repositories</span>
+        <span data-i18n-html="trust.repos_html"><b>6</b> Active Repositories</span>
         <span class="dot">·</span>
-        <span><b>8</b> Unified Workloads</span>
+        <span data-i18n-html="trust.workloads_html"><b>8</b> Unified Workloads</span>
         <span class="dot">·</span>
-        <span><b>100%</b> Native Go</span>
+        <span data-i18n-html="trust.native_html"><b>100%</b> Native Go</span>
         <span class="dot">·</span>
-        <span><b>3</b> Strict Quality Gates</span>
+        <span data-i18n-html="trust.gates_html"><b>3</b> Strict Quality Gates</span>
         <span class="dot">·</span>
-        <span>Near-Zero Cloud Cost</span>
+        <span data-i18n="trust.cost">Near-Zero Cloud Cost</span>
       </div>
     </div>
   </section>
@@ -80,17 +80,17 @@ layout: Landing
   <section class="benefits" id="benefits">
     <div class="section-inner">
       <div class="section-head">
-        <div class="sub-badge">Contributor Privilege</div>
-        <h2>Lifetime Access to Krewire's Paid Ecosystem</h2>
-        <p>Genuine appreciation for true builders. By joining and actively contributing to the Krewire open source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
+        <div class="sub-badge" data-i18n="benefits.badge">Contributor Privilege</div>
+        <h2 data-i18n="benefits.title">Lifetime Access to Krewire's Paid Ecosystem</h2>
+        <p data-i18n="benefits.subtitle">Genuine appreciation for true builders. By joining and actively contributing to the Krewire open source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
       </div>
 
       <div class="benefit-grid">
         <div class="benefit-card highlight">
           <div class="benefit-badge">Core Privilege</div>
           <div class="benefit-icon">★</div>
-          <h3>Commercial Sub-Products Lifetime Access</h3>
-          <p>Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
+          <h3 data-i18n="benefits.b1_title">Commercial Sub-Products Lifetime Access</h3>
+          <p data-i18n="benefits.b1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
           <ul class="benefit-list">
             <li>Free lifetime access to all paid Krewire commercial sub-products</li>
             <li>Priority early-access releases and exclusive roadmap previews</li>
@@ -101,8 +101,8 @@ layout: Landing
         <div class="benefit-card condition">
           <div class="benefit-badge req">Strict Requirement</div>
           <div class="benefit-icon">⚡</div>
-          <h3>Active Contributions Required</h3>
-          <p>This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
+          <h3 data-i18n="benefits.b2_title">Active Contributions Required</h3>
+          <p data-i18n="benefits.b2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
           <ul class="benefit-list">
             <li>Submit PRs for new features, bugfixes, or kernel optimizations</li>
             <li>Review open PRs and stress-test high-concurrency scenarios</li>
@@ -113,8 +113,8 @@ layout: Landing
         <div class="benefit-card notice">
           <div class="benefit-badge warn">Revocation Policy</div>
           <div class="benefit-icon">⚠</div>
-          <h3>Revocable if Inactive or Dormant</h3>
-          <p>To protect community fairness and true meritocracy, commercial access licenses may be revoked at any time if a contributor becomes inactive or dormant over an extended period.</p>
+          <h3 data-i18n="benefits.b3_title">Revocable if Inactive or Dormant</h3>
+          <p data-i18n="benefits.b3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked at any time if a contributor becomes inactive or dormant over an extended period.</p>
           <ul class="benefit-list">
             <li>Contributor activity and commits are periodically audited</li>
             <li>Prolonged inactivity or dormancy leads to license deactivation</li>
@@ -138,9 +138,9 @@ layout: Landing
     <span id="where-to-start" class="section-anchor"></span>
     <div class="section-inner">
       <div class="section-head">
-        <div class="sub-badge">Codebase Matrix &amp; Navigator</div>
-        <h2>Core Repositories &amp; Where to Start</h2>
-        <p>Match your skills and background to the right codebase, bootstrap your local environment in 30 seconds, and dive straight into active issues.</p>
+        <div class="sub-badge" data-i18n="navigator.badge">Codebase Matrix &amp; Navigator</div>
+        <h2 data-i18n="navigator.title">Core Repositories &amp; Where to Start</h2>
+        <p data-i18n="navigator.subtitle">Match your skills and background to the right codebase, bootstrap your local environment in 30 seconds, and dive straight into active issues.</p>
       </div>
 
       <!-- FAST-TRACK ONE-LINE SETUP BANNER -->
@@ -148,11 +148,11 @@ layout: Landing
         <div class="fast-setup-header">
           <div class="fast-setup-title">
             <span class="fast-icon">⚡</span>
-            <strong>One-Command Contributor Bootstrap</strong>
+            <strong data-i18n="navigator.one_line_title">One-Command Contributor Bootstrap</strong>
           </div>
           <span class="fast-setup-badge">Recommended</span>
         </div>
-        <p class="fast-setup-desc">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
+        <p class="fast-setup-desc" data-i18n="navigator.one_line_desc">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
         <div class="terminal-cmd-bar">
           <code id="setup-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</code>
           <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
@@ -168,14 +168,14 @@ layout: Landing
 
       <!-- FILTER CONTROLS -->
       <div class="nav-filter-bar">
-        <span class="filter-label">Filter by Track:</span>
+        <span class="filter-label" data-i18n="navigator.filter_label">Filter by Track:</span>
         <div class="filter-pills" role="tablist">
-          <button class="filter-pill is-active" data-nav-filter="all">All Tracks</button>
-          <button class="filter-pill" data-nav-filter="core">Go Core &amp; Libs</button>
-          <button class="filter-pill" data-nav-filter="web">Web &amp; Runtime</button>
-          <button class="filter-pill" data-nav-filter="devops">DevOps &amp; Infra</button>
-          <button class="filter-pill" data-nav-filter="dx">CLI &amp; Tooling</button>
-          <button class="filter-pill" data-nav-filter="ai">AI Guild</button>
+          <button class="filter-pill is-active" data-nav-filter="all" data-i18n="navigator.filter_all">All Tracks</button>
+          <button class="filter-pill" data-nav-filter="core" data-i18n="navigator.filter_core">Go Core &amp; Libs</button>
+          <button class="filter-pill" data-nav-filter="web" data-i18n="navigator.filter_web">Web &amp; Runtime</button>
+          <button class="filter-pill" data-nav-filter="devops" data-i18n="navigator.filter_devops">DevOps &amp; Infra</button>
+          <button class="filter-pill" data-nav-filter="dx" data-i18n="navigator.filter_dx">CLI &amp; Tooling</button>
+          <button class="filter-pill" data-nav-filter="ai" data-i18n="navigator.filter_ai">AI Guild</button>
         </div>
       </div>
 
@@ -450,9 +450,9 @@ layout: Landing
   <section class="standards" id="standards">
     <div class="section-inner">
       <div class="section-head">
-        <div class="sub-badge">Quality Assurance</div>
-        <h2>The Krewire Way: 3 Quality Gates</h2>
-        <p>To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
+        <div class="sub-badge" data-i18n="standards.badge">Quality Assurance</div>
+        <h2 data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
+        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
       </div>
       <div class="gates-grid">
         <div class="gate-card">
@@ -550,9 +550,9 @@ kiw build</code></pre>
       <div class="guild-card">
         <div class="guild-grid">
           <div class="guild-info">
-            <div class="sub-badge">Human + AI Synergy</div>
-            <h2>Collaborating with the AI Guild</h2>
-            <p>Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Guild operates with strict verification standards:</p>
+            <div class="sub-badge" data-i18n="guild.badge">Human + AI Synergy</div>
+            <h2 data-i18n="guild.title">Collaborating with the AI Guild</h2>
+            <p data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Guild operates with strict verification standards:</p>
             <ul class="guild-list">
               <li><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
               <li><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>

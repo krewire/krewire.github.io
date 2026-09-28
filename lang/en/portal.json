@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "perks": "Perks & Access",
+    "start": "Where to Start",
+    "repositories": "Repositories",
+    "pathways": "Pathways",
+    "standards": "Standards",
+    "guild": "AI Guild",
+    "github": "GitHub"
+  },
+  "hero": {
+    "eyebrow": "◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM",
+    "title_line1": "Build the Future of Go.",
+    "title_line2": "Together, Autonomously.",
+    "lead": "The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.",
+    "cta_start": "Start Contributing →",
+    "cta_repos": "Explore Repositories",
+    "meta": "Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy"
+  },
+  "trust": {
+    "label": "Collective Ecosystem",
+    "repos": "Active Repositories",
+    "workloads": "Unified Workloads",
+    "native": "Native Go",
+    "gates": "Strict Quality Gates",
+    "cost": "Near-Zero Cloud Cost"
+  },
+  "benefits": {
+    "badge": "Contributor Ownership",
+    "title": "What You Get as a Krewire Contributor",
+    "subtitle": "We believe open source contribution should be reciprocated with tangible ownership, recognition, and lifetime utility. Every merged PR earns you a stake in the collective.",
+    "b1_title": "Lifetime Infrastructure Access",
+    "b1_desc": "Contributors receive complimentary lifetime access to our decentralized build runners, edge cache nodes, and package registries.",
+    "b2_title": "Guild Council Governance",
+    "b2_desc": "Vote on architectural specs (KWF), decide roadmap allocations, and participate in core collective governance councils.",
+    "b3_title": "Sovereign Digital Identity",
+    "b3_desc": "Your code commits are cryptographically verified and anchored into the Krewire Contributor Ledger with permanent attestation.",
+    "b4_title": "Ecosystem Sponsorship & Bounties",
+    "b4_desc": "Eligible contributors gain direct sponsorship distributions from our open source development treasury."
+  },
+  "navigator": {
+    "badge": "Navigator",
+    "title": "Codebase Matrix & Contributor Navigator",
+    "subtitle": "Explore all active repositories, pick your domain, or filter by your specialty. Find your immediate contribution match below.",
+    "filter_all": "All Repositories",
+    "filter_core": "Core Runtime",
+    "filter_agents": "Autonomous Agents",
+    "filter_dx": "Developer Experience",
+    "filter_sites": "Production Sites",
+    "search_placeholder": "Filter by topic, tag, or keyword..."
+  },
+  "standards": {
+    "badge": "Quality Gates",
+    "title": "Non-Negotiable Standards: 3 Strict Quality Gates",
+    "subtitle": "Krewire rejects technical debt at the front door. Every repository, pull request, and AI agent output must pass three mandatory gates before merge.",
+    "gate1_title": "Zero Data Races & 100% Deterministic Concurrency",
+    "gate1_desc": "Every Go package must execute with go test -race with zero warnings. Concurrency bugs are treated as critical defects.",
+    "gate2_title": "Zero External Framework Dependencies",
+    "gate2_desc": "Core repositories depend solely on the Go standard library and internal primitives. No bloated third-party framework wrappers.",
+    "gate3_title": "Specification-Driven Development (SDD)",
+    "gate3_desc": "Code is never written in a vacuum. Every component, workload, and API boundary must trace back to a formal KWF or KWL spec."
+  },
+  "guild": {
+    "badge": "Guild & AI",
+    "title": "Human & AI Agent Synergy: The Krewire Guild",
+    "lead": "In Krewire, autonomous AI agents are first-class contributors, not just autocomplete toys. Our multi-agent Guild coordinates code audits, spec verification, and self-healing deployments in continuous tandem with human maintainers.",
+    "card1_title": "Role-Specialized Autonomous Agents",
+    "card1_desc": "20 specialized agents: Planner, Builder, Auditor, Decomposer, Deployer, and Housekeeper operating in structured DAG phases.",
+    "card2_title": "Verified Self-Healing CI/CD",
+    "card2_desc": "Agents automatically diagnose build failures, propose targeted regression tests, and fix defects against architectural specs.",
+    "card3_title": "Human Approval Gates",
+    "card3_desc": "Humans retain absolute governance. Critical architectural decisions and releases require cryptographic maintainer sign-off."
+  },
+  "footer": {
+    "desc": "Home of the Open Source Collective. Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.",
+    "rights": "© 2026 Krewire Contributors — Built 100% with Krewire site workload."
+  }
+}

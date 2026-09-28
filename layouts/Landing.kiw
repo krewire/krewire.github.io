@@ -34,15 +34,19 @@
         <span class="badge">Contributors</span>
       </a>
       <nav class="links">
-        <a href="#benefits">Perks & Access</a>
-        <a href="#where-to-start">Where to Start</a>
-        <a href="#repositories">Repositories</a>
-        <a href="#pathways">Pathways</a>
-        <a href="#standards">Standards</a>
-        <a href="#guild">AI Guild</a>
-        <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> GitHub</a>
+        <a href="#benefits" data-i18n="nav.perks">Perks & Access</a>
+        <a href="#where-to-start" data-i18n="nav.start">Where to Start</a>
+        <a href="#repositories" data-i18n="nav.repositories">Repositories</a>
+        <a href="#pathways" data-i18n="nav.pathways">Pathways</a>
+        <a href="#standards" data-i18n="nav.standards">Standards</a>
+        <a href="#guild" data-i18n="nav.guild">AI Guild</a>
+        <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> <span data-i18n="nav.github">GitHub</span></a>
       </nav>
       <div class="nav-actions">
+        <button class="lang-toggle" data-lang-toggle aria-label="Toggle language" onclick="window.krewireI18n.toggle()">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-code">EN</span>
+        </button>
         <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
           <span class="sun">☀</span><span class="moon">☾</span>
         </button>
@@ -57,31 +61,31 @@
       <div class="mobile-menu-inner">
         <a class="mobile-link" href="#benefits">
           <span class="link-icon">★</span>
-          <span>Perks & Lifetime Access</span>
+          <span data-i18n="nav.perks">Perks & Lifetime Access</span>
         </a>
         <a class="mobile-link" href="#where-to-start">
           <span class="link-icon">🧭</span>
-          <span>Where to Start (Nav Map)</span>
+          <span data-i18n="nav.start">Where to Start (Nav Map)</span>
         </a>
         <a class="mobile-link" href="#get-started">
           <span class="link-icon">⚡</span>
-          <span>Getting Started</span>
+          <span data-i18n="hero.cta_start">Getting Started</span>
         </a>
         <a class="mobile-link" href="#repositories">
           <span class="link-icon">⬢</span>
-          <span>Core Repositories</span>
+          <span data-i18n="nav.repositories">Core Repositories</span>
         </a>
         <a class="mobile-link" href="#pathways">
           <span class="link-icon">◈</span>
-          <span>Contribution Pathways</span>
+          <span data-i18n="nav.pathways">Contribution Pathways</span>
         </a>
         <a class="mobile-link" href="#standards">
           <span class="link-icon">✓</span>
-          <span>The 3 Quality Gates</span>
+          <span data-i18n="nav.standards">The 3 Quality Gates</span>
         </a>
         <a class="mobile-link" href="#guild">
           <span class="link-icon">▲</span>
-          <span>AI Guild Collaboration</span>
+          <span data-i18n="nav.guild">AI Guild Collaboration</span>
         </a>
         <div class="mobile-menu-divider"></div>
         <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
@@ -253,6 +257,29 @@ a:hover{color:var(--primary)}
   gap:8px;
   margin-left:auto;
 }
+.lang-toggle{
+  height:38px;
+  padding:0 10px;
+  border:1px solid var(--border);
+  background:var(--bg-2);
+  border-radius:10px;
+  cursor:pointer;
+  color:var(--fg);
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.02em;
+  transition:all .18s ease;
+}
+.lang-toggle:hover{
+  border-color:var(--primary);
+  color:var(--primary);
+}
+.lang-toggle .lang-icon{font-size:13px}
+.lang-toggle .lang-code{font-weight:800}
+
 .theme-toggle{
   width:38px;
   height:38px;

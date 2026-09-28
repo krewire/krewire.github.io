@@ -20,3 +20,11 @@ nav:
 footer: "© 2026 Krewire Contributors — Built 100% with Krewire site workload."
 theme:
   default: "auto"
+
+i18n:
+  default_locale: "en"
+  fallback_locale: "en"
+  base_path: "lang"
+  locales:
+    - "en"
+    - "id"

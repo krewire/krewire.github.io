@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "perks": "Hak & Akses",
+    "start": "Mulai Dari Mana",
+    "repositories": "Repositori",
+    "pathways": "Jalur Kontribusi",
+    "standards": "Standar",
+    "guild": "AI Guild",
+    "github": "GitHub"
+  },
+  "hero": {
+    "eyebrow": "◈ KOLEKTIF SUMBER TERBUKA · EKOSISTEM GO OTONOM",
+    "title_line1": "Bangun Masa Depan Go.",
+    "title_line2": "Bersama, Secara Otonom.",
+    "lead": "Rumah bagi kontributor, arsitek perangkat lunak, dan guild agen AI yang merekayasa ekosistem digital otonom dan berkelanjutan dalam Go. Dari workload terpadu dan IaC hemat biaya hingga orkestrasi agen AI — direkayasa di Indonesia untuk engineer di seluruh dunia.",
+    "cta_start": "Mulai Berkontribusi →",
+    "cta_repos": "Jelajahi Repositori",
+    "meta": "Go 1.22+ · Spec-Driven Development (KWF) · Quality Gate Ketat · Sinergi Manusia & AI"
+  },
+  "trust": {
+    "label": "Ekosistem Kolektif",
+    "repos": "Repositori Aktif",
+    "workloads": "Workload Terpadu",
+    "native": "100% Go Asli",
+    "gates": "3 Quality Gate Ketat",
+    "cost": "Biaya Cloud Mendekati Nol"
+  },
+  "benefits": {
+    "badge": "Kepemilikan Kontributor",
+    "title": "Keuntungan Sebagai Kontributor Krewire",
+    "subtitle": "Kami percaya kontribusi sumber terbuka harus dibalas dengan kepemilikan nyata, pengakuan permanen, dan manfaat seumur hidup. Setiap PR yang dimerge memberi Anda kepemilikan dalam kolektif.",
+    "b1_title": "Akses Infrastruktur Seumur Hidup",
+    "b1_desc": "Kontributor mendapatkan akses gratis seumur hidup ke build runner terdesentralisasi, node edge cache, dan registry paket kami.",
+    "b2_title": "Hak Suara Dewan Guild",
+    "b2_desc": "Berikan suara pada spesifikasi arsitektur (KWF), tentukan alokasi roadmap, dan berpartisipasi dalam dewan tata kelola kolektif inti.",
+    "b3_title": "Identitas Digital Berdaulat",
+    "b3_desc": "Commit kode Anda diverifikasi secara kriptografis dan dijangkarkan ke dalam Buku Besar Kontributor Krewire dengan bukti permanen.",
+    "b4_title": "Sponsorship & Bounty Ekosistem",
+    "b4_desc": "Kontributor yang memenuhi syarat memperoleh distribusi sponsorship langsung dari perbendaharaan pengembangan sumber terbuka kami."
+  },
+  "navigator": {
+    "badge": "Navigator",
+    "title": "Matriks Basis Kode & Navigator Kontributor",
+    "subtitle": "Jelajahi seluruh repositori aktif, pilih domain Anda, atau filter sesuai keahlian. Temukan kecocokan kontribusi pertama Anda di bawah ini.",
+    "filter_all": "Semua Repositori",
+    "filter_core": "Core Runtime",
+    "filter_agents": "Agen Otonom",
+    "filter_dx": "Pengalaman Developer",
+    "filter_sites": "Situs Produksi",
+    "search_placeholder": "Cari berdasarkan topik, tag, atau kata kunci..."
+  },
+  "standards": {
+    "badge": "Quality Gate",
+    "title": "Standar Tanpa Kompromi: 3 Quality Gate Ketat",
+    "subtitle": "Krewire menolak utang teknis sejak pintu masuk. Setiap repositori, pull request, dan keluaran agen AI wajib lolos tiga gerbang kendali sebelum digabungkan.",
+    "gate1_title": "Bebas Data Race & Konkurensi 100% Deterministik",
+    "gate1_desc": "Setiap paket Go harus dijalankan dengan go test -race tanpa peringatan sama sekali. Bug konkurensi diperlakukan sebagai cacat kritis.",
+    "gate2_title": "Bebas Dependensi Framework Eksternal",
+    "gate2_desc": "Repositori inti hanya bergantung pada library standar Go dan primitif internal. Tidak ada wrapper framework pihak ketiga yang membengkak.",
+    "gate3_title": "Pengembangan Berbasis Spesifikasi (SDD)",
+    "gate3_desc": "Kode tidak pernah ditulis tanpa landasan. Setiap komponen, workload, dan batasan API harus merujuk ke spesifikasi formal KWF atau KWL."
+  },
+  "guild": {
+    "badge": "Guild & AI",
+    "title": "Sinergi Manusia & Agen AI: Guild Krewire",
+    "lead": "Di Krewire, agen AI otonom adalah kontributor kelas satu, bukan sekadar pelengkap autocomplete. Multi-agen Guild kami mengoordinasikan audit kode, verifikasi spesifikasi, dan deployment swa-pulih bersama para maintainer manusia.",
+    "card1_title": "Agen Otonom dengan Spesialisasi Peran",
+    "card1_desc": "20 agen khusus: Planner, Builder, Auditor, Decomposer, Deployer, dan Housekeeper beroperasi dalam fase DAG terstruktur.",
+    "card2_title": "CI/CD Swa-Pulih Terverifikasi",
+    "card2_desc": "Agen secara otomatis mendiagnosis kegagalan build, menyusun tes regresi terarah, dan memperbaiki cacat terhadap spesifikasi arsitektur.",
+    "card3_title": "Pintu Persetujuan Manusia",
+    "card3_desc": "Manusia memegang kedaulatan mutlak. Keputusan arsitektur penting dan rilis rilis memerlukan tanda tangan kriptografis maintainer."
+  },
+  "footer": {
+    "desc": "Rumah bagi Kolektif Sumber Terbuka. Merancang ekosistem Go yang otonom, berkelanjutan, dan terukur dengan biaya mendekati nol.",
+    "rights": "© 2026 Kontributor Krewire — Dibangun 100% dengan workload site Krewire."
+  }
+}
