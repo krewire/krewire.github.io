@@ -33,6 +33,7 @@
         <span class="badge">Contributors</span>
       </a>
       <nav class="links">
+        <a href="#benefits">Perks & Access</a>
         <a href="#get-started">Get Started</a>
         <a href="#repositories">Repositories</a>
         <a href="#pathways">Pathways</a>
@@ -45,6 +46,7 @@
       </button>
     </div>
     <div class="nav-mobile-strip">
+      <a href="#benefits">Perks & Access</a>
       <a href="#get-started">Get Started</a>
       <a href="#repositories">Repos</a>
       <a href="#pathways">Pathways</a>
@@ -72,6 +74,7 @@
         </div>
         <div class="footer-col">
           <strong>Contribution</strong>
+          <a href="#benefits">Contributor Perks & Access</a>
           <a href="#get-started">Getting Started</a>
           <a href="#pathways">Contribution Pathways</a>
           <a href="#standards">The Krewire Way (Gates)</a>
