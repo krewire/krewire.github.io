@@ -1,11 +1,15 @@
 project:
+  name: "krewire.github.io"
   kind: site
-version: "v0.3.3"
+  version: "v0.1.0"
+  author: "Krewire Contributors"
+
+build:
+  output: ".krewire/build"
+  base: "/"
+
 title: "Krewire Contributors — Home of the Open Source Collective"
 description: "The home for contributors building Krewire — an autonomous, sustainable, and scalable Go digital ecosystem at near-zero cost."
-base: "/"
-output: ".krewire/build"
-author: "Krewire Contributors"
 nav:
   - text: "Getting Started"
     url: "#get-started"
