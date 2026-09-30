@@ -20,7 +20,7 @@ layout: Landing
         <div class="meta" data-i18n="hero.meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
       </div>
       <div class="hero-art">
-        <CodeWindow . />
+        <CodeWindow />
       </div>
     </div>
   </section>
