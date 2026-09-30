@@ -29,6 +29,10 @@ module.exports = {
         serif: ["ui-serif", "Georgia", "serif"],
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       },
+      maxWidth: {
+        container: "80rem",
+        prose: "760px",
+      },
     },
   },
   plugins: [],

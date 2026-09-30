@@ -74,8 +74,12 @@
     border-color: rgba(0, 200, 83, 0.25);
   }
 
+  .container-site {
+    @apply max-w-container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
   .section-inner {
-    @apply max-w-7xl mx-auto px-4;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .section-head {
