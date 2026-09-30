@@ -196,7 +196,7 @@ layout: Landing
               <code>framework/storage</code>
               <code>framework/app</code>
               <code>framework/worker</code>
-              <code>framework/dsl</code>
+              <code>framework/service</code>
             </div>
           </div>
           <div class="nav-card-footer">
@@ -249,6 +249,7 @@ layout: Landing
             <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages:</span>
             <div class="pkg-tags">
               <code>kiw/cmd/kiw</code>
+              <code>kiw/dsl</code>
               <code>kiw/internal/commands</code>
               <code>kiw/internal/scaffold</code>
               <code>kiw/internal/release</code>
@@ -518,7 +519,9 @@ go work sync</code></pre>
           <div class="flow-content">
             <h4 data-i18n="onboarding.s3_title">Pick an Open Issue</h4>
             <p data-i18n-html="onboarding.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment on the issue to let the community know you're working on it.</p>
-            <a class="btn-subtle" href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" data-i18n="onboarding.s3_btn">View Good First Issues →</a>
+            <div class="mt-2">
+              <Button Variant="secondary" Size="sm" Href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" Target="_blank" DataI18n="onboarding.s3_btn">View Good First Issues →</Button>
+            </div>
           </div>
         </div>
 
@@ -560,9 +563,9 @@ kiw build</code></pre>
               <li data-i18n-html="guild.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
               <li data-i18n-html="guild.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
             </ul>
-            <div class="ctas">
-              <a class="btn primary" href="https://github.com/krewire/boost" target="_blank" rel="noopener" data-i18n="guild.cta_repo">Explore AI Boost Repo →</a>
-              <a class="btn" href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" data-i18n="guild.cta_disc">Join Discussions</a>
+            <div class="ctas flex flex-wrap gap-3">
+              <Button Variant="primary" Href="https://github.com/krewire/boost" Target="_blank" DataI18n="guild.cta_repo">Explore AI Boost Repo →</Button>
+              <Button Variant="outline" Href="https://github.com/orgs/krewire/discussions" Target="_blank" DataI18n="guild.cta_disc">Join Discussions</Button>
             </div>
           </div>
           <div class="guild-box">
@@ -600,9 +603,9 @@ kiw build</code></pre>
       <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
       <h2 data-i18n="cta.title">Ready to shape the future of Go?</h2>
       <p data-i18n="cta.lead">Become part of an open source community building fast, sustainable, and autonomous Go software. Every contribution, idea, and PR makes a difference.</p>
-      <div class="ctas">
-        <a class="btn primary large" href="https://github.com/krewire" target="_blank" rel="noopener" data-i18n="cta.github">Join on GitHub →</a>
-        <a class="btn large" href="#get-started" data-i18n="cta.quickstart">Read Quickstart</a>
+      <div class="ctas flex flex-wrap gap-3 justify-center">
+        <Button Variant="primary" Size="lg" Href="https://github.com/krewire" Target="_blank" DataI18n="cta.github">Join on GitHub →</Button>
+        <Button Variant="outline" Size="lg" Href="#get-started" DataI18n="cta.quickstart">Read Quickstart</Button>
       </div>
       <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
     </div>
