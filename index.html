@@ -299,7 +299,7 @@
               <code>framework/storage</code>
               <code>framework/app</code>
               <code>framework/worker</code>
-              <code>framework/dsl</code>
+              <code>framework/service</code>
             </div>
           </div>
           <div class="nav-card-footer">
@@ -352,6 +352,7 @@
             <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages:</span>
             <div class="pkg-tags">
               <code>kiw/cmd/kiw</code>
+              <code>kiw/dsl</code>
               <code>kiw/internal/commands</code>
               <code>kiw/internal/scaffold</code>
               <code>kiw/internal/release</code>
@@ -621,7 +622,15 @@ go work sync</code></pre>
           <div class="flow-content">
             <h4 data-i18n="onboarding.s3_title">Pick an Open Issue</h4>
             <p data-i18n-html="onboarding.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment on the issue to let the community know you&#39;re working on it.</p>
-            <a class="btn-subtle" data-i18n="onboarding.s3_btn" href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" rel="noopener" target="_blank">View Good First Issues →</a>
+            <div class="mt-2">
+              
+<a class="btn btn-secondary btn-sm " data-i18n="onboarding.s3_btn" data-kiw-component="Button" href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" rel="noopener" target="_blank">
+  
+    View Good First Issues →
+  
+</a>
+
+            </div>
           </div>
         </div>
 
@@ -663,9 +672,21 @@ kiw build</code></pre>
               <li data-i18n-html="guild.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
               <li data-i18n-html="guild.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
             </ul>
-            <div class="ctas">
-              <a class="btn primary" data-i18n="guild.cta_repo" href="https://github.com/krewire/boost" rel="noopener" target="_blank">Explore AI Boost Repo →</a>
-              <a class="btn" data-i18n="guild.cta_disc" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank">Join Discussions</a>
+            <div class="ctas flex flex-wrap gap-3">
+              
+<a class="btn btn-primary btn-md " data-i18n="guild.cta_repo" data-kiw-component="Button" href="https://github.com/krewire/boost" rel="noopener" target="_blank">
+  
+    Explore AI Boost Repo →
+  
+</a>
+
+              
+<a class="btn btn-outline btn-md " data-i18n="guild.cta_disc" data-kiw-component="Button" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank">
+  
+    Join Discussions
+  
+</a>
+
             </div>
           </div>
           <div class="guild-box">
@@ -703,9 +724,21 @@ kiw build</code></pre>
       <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
       <h2 data-i18n="cta.title">Ready to shape the future of Go?</h2>
       <p data-i18n="cta.lead">Become part of an open source community building fast, sustainable, and autonomous Go software. Every contribution, idea, and PR makes a difference.</p>
-      <div class="ctas">
-        <a class="btn primary large" data-i18n="cta.github" href="https://github.com/krewire" rel="noopener" target="_blank">Join on GitHub →</a>
-        <a class="btn large" data-i18n="cta.quickstart" href="#get-started">Read Quickstart</a>
+      <div class="ctas flex flex-wrap gap-3 justify-center">
+        
+<a class="btn btn-primary btn-lg " data-i18n="cta.github" data-kiw-component="Button" href="https://github.com/krewire" rel="noopener" target="_blank">
+  
+    Join on GitHub →
+  
+</a>
+
+        
+<a class="btn btn-outline btn-lg " data-i18n="cta.quickstart" data-kiw-component="Button" href="#get-started">
+  
+    Read Quickstart
+  
+</a>
+
       </div>
       <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
     </div>

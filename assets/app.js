@@ -8,6 +8,42 @@
 (function () {
   'use strict';
 
+  // Helper: Copy Command for Terminal components
+  function copyCmd(btn, text) {
+    if (!btn) return;
+    var orig = btn.innerText;
+    function showCopied() {
+      btn.innerText = '✓ Copied!';
+      setTimeout(function () { btn.innerText = orig; }, 2000);
+    }
+
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+        fallbackCopy(text, showCopied);
+      });
+    } else {
+      fallbackCopy(text, showCopied);
+    }
+  }
+
+  function fallbackCopy(text, cb) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      ta.style.top = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (cb) cb();
+    } catch (err) {}
+  }
+
+  window.copyCmd = copyCmd;
+
   // 1. THEME SWITCHER
   function initTheme() {
     try {
