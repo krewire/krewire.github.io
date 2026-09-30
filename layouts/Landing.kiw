@@ -30,11 +30,7 @@
 <body>
   <header class="nav" id="main-nav">
     <div class="nav-inner">
-      <a class="brand" href="/">
-        <span class="brand-mark">◈</span>
-        <span class="brand-text">Krewire</span>
-        <span class="badge" data-i18n="nav.badge">Contributors</span>
-      </a>
+      <Brand Name="Krewire" Badge="Contributors" BadgeI18n="nav.badge" Href="/" Class="brand" />
       <nav class="links">
         <a href="#benefits" data-i18n="nav.perks">Perks & Access</a>
         <a href="#where-to-start" data-i18n="nav.start">Where to Start</a>
@@ -45,18 +41,9 @@
         <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> <span data-i18n="nav.github">GitHub</span></a>
       </nav>
       <div class="nav-actions">
-        <button class="lang-toggle" data-lang-toggle aria-label="Toggle language" onclick="window.krewireI18n.toggle()">
-          <span class="lang-icon">🌐</span>
-          <span class="lang-code">EN</span>
-        </button>
-        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme" onclick="window.krewireTheme.toggle()">
-          <span class="sun">☀</span><span class="moon">☾</span>
-        </button>
-        <button class="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu">
-          <span class="bar bar-1"></span>
-          <span class="bar bar-2"></span>
-          <span class="bar bar-3"></span>
-        </button>
+        <LangSwitch Class="lang-toggle" />
+        <ThemeSwitch Class="theme-toggle" />
+        <Hamburger ID="nav-toggler" Controls="mobile-nav-menu" Label="Toggle navigation menu" Class="nav-toggler" />
       </div>
     </div>
     <div class="nav-mobile-menu" id="mobile-nav-menu" aria-hidden="true">
@@ -98,48 +85,7 @@
     </div>
   </header>
   <main class="landing-main">{{.Content}}</main>
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand"><span class="brand-mark">◈</span> <span data-i18n="footer.brand_title">Krewire Contributors</span></div>
-          <p class="footer-desc" data-i18n-html="footer.desc_html">Home of the Open Source Collective.<br>Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.</p>
-        </div>
-        <div class="footer-col">
-          <strong data-i18n="footer.col_repos">Repositories</strong>
-          <a href="https://github.com/krewire/framework" target="_blank" rel="noopener">framework</a>
-          <a href="https://github.com/krewire/libs" target="_blank" rel="noopener">libs (Krewire Libs)</a>
-          <a href="https://github.com/krewire/kiw" target="_blank" rel="noopener">kiw (cli)</a>
-          <a href="https://github.com/krewire/boost" target="_blank" rel="noopener">boost (ai agent)</a>
-          <a href="https://github.com/krewire/hub" target="_blank" rel="noopener">hub (plugins)</a>
-          <a href="https://github.com/krewire/ship" target="_blank" rel="noopener">ship (deployer)</a>
-          <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">mdbind (compiler)</a>
-          <a href="https://github.com/krewire/forge" target="_blank" rel="noopener">forge (app builder)</a>
-        </div>
-        <div class="footer-col">
-          <strong data-i18n="footer.col_contrib">Contribution</strong>
-          <a href="#benefits" data-i18n="footer.perks">Contributor Perks & Access</a>
-          <a href="#where-to-start" data-i18n="footer.where_start">Where to Start (Nav Map)</a>
-          <a href="#get-started" data-i18n="footer.getting_started">Getting Started</a>
-          <a href="#pathways" data-i18n="footer.pathways">Contribution Pathways</a>
-          <a href="#standards" data-i18n="footer.standards">The Krewire Way (Gates)</a>
-          <a href="#boost" data-i18n="footer.guild">AI Boost Collaboration</a>
-          <a href="https://github.com/krewire/framework/tree/main/docs/specs" target="_blank" rel="noopener" data-i18n="footer.kwf_specs">KWF Specs</a>
-        </div>
-        <div class="footer-col">
-          <strong data-i18n="footer.col_community">Community</strong>
-          <a href="https://github.com/krewire" target="_blank" rel="noopener" data-i18n="footer.gh_org">GitHub Organization</a>
-          <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" data-i18n="footer.discussions">Discussions</a>
-          <a href="https://github.com/krewire/framework/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" data-i18n="footer.good_first">Good First Issues</a>
-          <a href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener" data-i18n="footer.coc">Code of Conduct</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span data-i18n-html="footer.bottom_rights_html">© 2026 Krewire Contributors — Built 100% with Krewire <code>site</code> workload (Dogfooding).</span>
-        <span><a href="https://github.com/krewire" target="_blank" rel="noopener">github.com/krewire</a></span>
-      </div>
-    </div>
-  </footer>
+  <Footer Variant="contributors" />
   <script src="/assets/app.js" defer></script>
 </body>
 </html>

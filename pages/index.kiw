@@ -13,9 +13,9 @@ layout: Landing
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM</div>
         <h1 data-i18n-html="hero.title_html">Build the Future of Go.<br>Together, Autonomously.</h1>
         <p class="lead" data-i18n="hero.lead">The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.</p>
-        <div class="ctas">
-          <a class="btn primary" href="#get-started" data-i18n="hero.cta_start">Start Contributing →</a>
-          <a class="btn" href="#repositories" data-i18n="hero.cta_repos">Explore Repositories</a>
+        <div class="ctas flex flex-wrap gap-3">
+          <Button Variant="primary" Size="lg" Href="#get-started" DataI18n="hero.cta_start">Start Contributing →</Button>
+          <Button Variant="outline" Size="lg" Href="#repositories" DataI18n="hero.cta_repos">Explore Repositories</Button>
         </div>
         <div class="meta" data-i18n="hero.meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
       </div>
