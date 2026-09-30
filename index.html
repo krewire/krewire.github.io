@@ -110,20 +110,19 @@
         <div class="meta" data-i18n="hero.meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human &amp; AI Synergy</div>
       </div>
       <div class="hero-art">
-        <div class="window" data-kiw-component="CodeWindow">
-  <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="title">terminal — contributor-quickstart</span></div>
-  <pre><code><span class="c"># 1. Clone &amp; set up multi-repo Go workspace</span>
-<span class="p">$ </span><span class="k">git</span> clone https://github.com/krewire/framework.git
-<span class="p">$ </span><span class="k">cd</span> framework &amp;&amp; <span class="k">go</span> work sync
-
-<span class="c"># 2. Run the 3 Krewire Quality Gates</span>
-<span class="p">$ </span><span class="k">go</span> fmt ./...
-<span class="p">$ </span><span class="k">go</span> vet ./...
-<span class="p">$ </span><span class="k">go</span> test -race ./...
-
-<span class="c"># 3. Build &amp; Dogfood the site workload</span>
-<span class="p">$ </span><span class="k">kiw</span> build
-<span class="t">✓ 100% test coverage · Spec-Driven Development verified</span></code></pre>
+        <div class="code-window " data-kiw-component="CodeWindow">
+  <div class="code-window-bar">
+    <div class="code-window-dots" aria-hidden="true">
+      <span class="code-window-dot dot-red"></span>
+      <span class="code-window-dot dot-yellow"></span>
+      <span class="code-window-dot dot-green"></span>
+    </div>
+    <span class="code-window-title font-mono">terminal</span>
+  </div>
+  <pre class="code-window-pre"><code class="code-window-code"><span class="c"># Krewire Devtool</span>
+<span class="p">$ </span><span class="k">kiw</span> new my-project --site
+<span class="p">$ </span><span class="k">cd</span> my-project &amp;&amp; <span class="k">kiw</span> dev
+<span class="t">✓ Ready at http://localhost:8080</span></code></pre>
 </div>
       </div>
     </div>
