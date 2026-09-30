@@ -128,7 +128,13 @@
   box-shadow: var(--pop-sm, 2px 2px 0px var(--border, #0B1F3B));
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
   user-select: none;
-}[data-kiw-component="Hamburger"] .hamburger:hover, [data-kiw-component="Hamburger"].hamburger:hover{
+}[data-kiw-component="Hamburger"] .hamburger.hidden, [data-kiw-component="Hamburger"].hamburger.hidden{
+  display: none !important;
+}@media (min-width: 1024px) {[data-kiw-component="Hamburger"] .hamburger.lg\:hidden, [data-kiw-component="Hamburger"].hamburger.lg\:hidden{
+    display: none !important;
+  }}@media (min-width: 768px) {[data-kiw-component="Hamburger"] .hamburger.md\:hidden, [data-kiw-component="Hamburger"].hamburger.md\:hidden{
+    display: none !important;
+  }}[data-kiw-component="Hamburger"] .hamburger:hover, [data-kiw-component="Hamburger"].hamburger:hover{
   background: var(--bg-2, #f2ede4);
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0px var(--border, #0B1F3B);
