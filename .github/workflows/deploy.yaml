@@ -37,7 +37,9 @@ jobs:
         run: npm ci
 
       - name: Install kiw CLI
-        run: go install github.com/krewire/kiw/cmd/kiw@v0.1.4
+        run: |
+          GOPROXY=direct GONOSUMDB="github.com/krewire/*" go install github.com/krewire/kiw/cmd/kiw@v0.1.0
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
 
       - name: Build website
         run: |
