@@ -8,6 +8,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="stylesheet" href="/assets/tailwind.css">
+  <link rel="stylesheet" href="/assets/forge.css">
   <script>
     (function(){
       try{
@@ -113,6 +114,7 @@
           <a href="https://github.com/krewire/hub" target="_blank" rel="noopener">hub (plugins)</a>
           <a href="https://github.com/krewire/ship" target="_blank" rel="noopener">ship (deployer)</a>
           <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">mdbind (compiler)</a>
+          <a href="https://github.com/krewire/forge" target="_blank" rel="noopener">forge (app builder)</a>
         </div>
         <div class="footer-col">
           <strong data-i18n="footer.col_contrib">Contribution</strong>
