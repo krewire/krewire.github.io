@@ -17,7 +17,7 @@ layout: Landing
           <Button Variant="primary" Size="lg" Href="#get-started" DataI18n="hero.cta_start">Start Contributing →</Button>
           <Button Variant="outline" Size="lg" Href="#repositories" DataI18n="hero.cta_repos">Explore Repositories</Button>
         </div>
-        <div class="meta" data-i18n="hero.meta">Go 1.22+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
+        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
       </div>
       <div class="hero-art">
         <CodeWindow />
@@ -160,7 +160,7 @@ layout: Landing
           </button>
         </div>
         <div class="fast-setup-meta">
-          <span data-i18n="navigator.meta_prereq">Prerequisites: Go 1.22+ and Git</span>
+          <span data-i18n="navigator.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
           <span>•</span>
           <span data-i18n="navigator.meta_zero">Zero manual configuration required</span>
         </div>
