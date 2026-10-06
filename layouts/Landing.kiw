@@ -27,15 +27,16 @@
 <body>
   <header class="nav" id="main-nav">
     <div class="nav-inner">
-      <Brand Name="Krewire" Badge="Contributors" BadgeI18n="nav.badge" Href="/" Class="brand" />
+      <Brand Name="Krewire" Badge="v0.1.0 GA" BadgeI18n="nav.badge" Href="/" Class="brand" />
       <nav class="links">
-        <a href="#benefits" data-i18n="nav.perks">Perks & Access</a>
-        <a href="#where-to-start" data-i18n="nav.start">Where to Start</a>
+        <a href="#releases" data-i18n="nav.releases">v0.1.0 Highlights</a>
+        <a href="#features" data-i18n="nav.features">What's New</a>
+        <a href="#workloads" data-i18n="nav.workloads">8 Workloads</a>
+        <a href="#quickstart" data-i18n="nav.quickstart">Quickstart</a>
         <a href="#repositories" data-i18n="nav.repositories">Repositories</a>
-        <a href="#pathways" data-i18n="nav.pathways">Pathways</a>
-        <a href="#standards" data-i18n="nav.standards">Standards</a>
+        <a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
         <a href="#boost" data-i18n="nav.guild">AI Boost</a>
-        <a href="https://github.com/krewire" target="_blank" rel="noopener" class="gh-link"><span>★</span> <span data-i18n="nav.github">GitHub</span></a>
+        <a href="https://github.com/krewire/krewire/releases" target="_blank" rel="noopener" class="gh-link"><span>📦</span> <span data-i18n="nav.releases_gh">Releases ↗</span></a>
       </nav>
       <div class="nav-actions">
         <LangSwitch Class="lang-toggle" />
@@ -45,37 +46,45 @@
     </div>
     <div class="nav-mobile-menu" id="mobile-nav-menu" aria-hidden="true">
       <div class="mobile-menu-inner">
-        <a class="mobile-link" href="#benefits">
-          <span class="link-icon">★</span>
-          <span data-i18n="nav.perks">Perks & Lifetime Access</span>
+        <a class="mobile-link" href="#releases">
+          <span class="link-icon">🚀</span>
+          <span data-i18n="nav.releases">v0.1.0 Highlights</span>
         </a>
-        <a class="mobile-link" href="#where-to-start">
-          <span class="link-icon">🧭</span>
-          <span data-i18n="nav.start">Where to Start (Nav Map)</span>
-        </a>
-        <a class="mobile-link" href="#get-started">
+        <a class="mobile-link" href="#features">
           <span class="link-icon">⚡</span>
-          <span data-i18n="hero.cta_start">Getting Started</span>
+          <span data-i18n="nav.features">What's New</span>
+        </a>
+        <a class="mobile-link" href="#workloads">
+          <span class="link-icon">◈</span>
+          <span data-i18n="nav.workloads">8 Unified Workloads</span>
+        </a>
+        <a class="mobile-link" href="#quickstart">
+          <span class="link-icon">⚙</span>
+          <span data-i18n="nav.quickstart">Quickstart (kiw)</span>
         </a>
         <a class="mobile-link" href="#repositories">
           <span class="link-icon">⬢</span>
-          <span data-i18n="nav.repositories">Core Repositories</span>
+          <span data-i18n="nav.repositories">5 Core Repositories</span>
         </a>
-        <a class="mobile-link" href="#pathways">
-          <span class="link-icon">◈</span>
-          <span data-i18n="nav.pathways">Contribution Pathways</span>
+        <a class="mobile-link" href="#roadmap">
+          <span class="link-icon">🧭</span>
+          <span data-i18n="nav.roadmap">Version Roadmap</span>
         </a>
         <a class="mobile-link" href="#standards">
           <span class="link-icon">✓</span>
-          <span data-i18n="nav.standards">The 3 Quality Gates</span>
+          <span data-i18n="nav.standards">3 Quality Gates</span>
         </a>
         <a class="mobile-link" href="#boost">
           <span class="link-icon">▲</span>
-          <span data-i18n="nav.guild">AI Boost Collaboration</span>
+          <span data-i18n="nav.guild">AI Boost Framework</span>
+        </a>
+        <a class="mobile-link" href="#benefits">
+          <span class="link-icon">★</span>
+          <span data-i18n="nav.perks">Contributor Perks</span>
         </a>
         <div class="mobile-menu-divider"></div>
-        <a class="mobile-link gh-mobile" href="https://github.com/krewire" target="_blank" rel="noopener">
-          <span>★ <span data-i18n="footer.gh_org">GitHub Organization</span></span>
+        <a class="mobile-link gh-mobile" href="https://github.com/krewire/krewire/releases" target="_blank" rel="noopener">
+          <span>📦 <span data-i18n="nav.releases_gh">Official GitHub Releases</span></span>
           <span class="link-arrow">↗</span>
         </a>
       </div>
