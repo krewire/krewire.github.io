@@ -1,11 +1,11 @@
-# Krewire — GitHub Pages deployment
+# Krewire Community Portal — krewire.github.io
 
-Standalone deployment repository for **https://krewire.github.io/** — the unified Krewire site (landing + docs). This repository is independent from the Krewire site source and has no automated cross-repository deployment.
+Official community portal for **https://krewire.github.io/** — the hub for contributors, open-source collective guides, and sponsorship for the Krewire ecosystem.
 
-- **Stack:** `krewire.yaml` (kind `site`, `base:"/"`) + `pages/*.kiw` + `components/*.kiw` + `layouts/*.kiw` + `content/docs/*.md` → `krewire build` → `site/` (no `go.mod` needed per `KWF-DF3PL`).
-- **Design:** Inspired by `laravel.com` — sparse hero with code snippet, 8 workload cards, ecosystem strip, docs sidebar. Theme toggle (`auto`/`light`/`dark`) via `localStorage`, scoped CSS (`data-kiw-*`), `framework/ui` vars (`--color-primary` `#00c853`).
-- **Version:** `v0.1.0` — single source `krewire.yaml` `project.version`; injected as `.Version` into every page (badges/footer), never hardcoded in content.
-- **Spec:** `docs/specs/KRW-SITE-X7K9Q-landing-site.md` (broad scope: landing + docs, not narrow).
+- **Stack:** `krewire.yaml` (kind `site`, `base:"/"`) + `pages/*.kiw` + `components/*.kiw` + `layouts/*.kiw` + `content/docs/*.md` → `kiw build` → `site/` (no `go.mod` needed).
+- **Design:** Contributor & sponsorship portal, theme toggle (`auto`/`light`/`dark`) via `localStorage`, scoped CSS (`data-kiw-*`), theme color tokens.
+- **Version:** `v0.1.0` — single source `krewire.yaml` `project.version`.
+- **Purpose:** Attracting contributors, community stewardship, showcase, and sponsorships for the Indonesian & global open-source community.
 
 ## Quick start
 
