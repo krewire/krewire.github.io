@@ -15,7 +15,7 @@ Build `krewire/krewire.com` (public repo) as the **unified site** for the Krewir
 
 ## 2. Background & Context
 
-`framework/web/ssg` already builds file-based sites from `pages/*.kiw` with scoped CSS and content collections (`KWF-DF3PL`, `KWF-PT8OD`, `KWF-D57UK`). Smoke-tests (`web/ssg/testdata/landing`, `web/ssg/testdata/mount`) pass, and `kiw build` dispatch via `pages/` works after the `findRoot` fix for site-kind without `go.mod`. The ecosystem lacks a dogfooded public presence that serves both **first impression** and **continued learning**; `laravel.com` shows the bar: sparse hero with code snippet, feature grid, product pillars, frontend support, package grid, and deep docs navigation. Krewire mirrors this with `kiw new`, `kiw build`, 8 workload kinds (app/cli/site/book/worker/service/infra/runtime), and Go-first ergonomics — but generalizes beyond a marketing page: the same engine will host guides, specs, and API docs.
+`packages/web/ssg` already builds file-based sites from `pages/*.kiw` with scoped CSS and content collections (`KWF-DF3PL`, `KWF-PT8OD`, `KWF-D57UK`). Smoke-tests (`web/ssg/testdata/landing`, `web/ssg/testdata/mount`) pass, and `kiw build` dispatch via `pages/` works after the `findRoot` fix for site-kind without `go.mod`. The ecosystem lacks a dogfooded public presence that serves both **first impression** and **continued learning**; `laravel.com` shows the bar: sparse hero with code snippet, feature grid, product pillars, frontend support, package grid, and deep docs navigation. Krewire mirrors this with `kiw new`, `kiw build`, 8 workload kinds (app/cli/site/book/worker/service/infra/runtime), and Go-first ergonomics — but generalizes beyond a marketing page: the same engine will host guides, specs, and API docs.
 
 Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code snippet, product pillars (Cloud/Forge/Vapor…), Frontend (React/Vue via Inertia), Packages grid, Community, and enterprise logos. Krewire mirrors this with `kiw new`, `kiw build`, 8 workload kinds, and Go-first ergonomics, plus a docs system inspired by Laravel's `/docs` section (sidebar nav, prose, code windows, callouts) — all from the same file-based pipeline.
 
@@ -55,11 +55,11 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 | ID | Requirement | Priority | RFC 2119 |
 |----|-------------|----------|----------|
 | KRW-LAND-001 | Repo `krewire/krewire.com` is public; `main` holds sources (`krewire.yaml`, `pages/`, `components/`, `layouts/`, `public/`, `docs/specs/`); `gh-pages` holds built `site/` (index.html, assets) | Must | MUST |
-| KRW-LAND-010 | `krewire.yaml` declares `project.kind: site`, `title`, `description`, `theme` (light #00c853 / dark #5cff8e per `framework/ui`) | Must | MUST |
+| KRW-LAND-010 | `krewire.yaml` declares `project.kind: site`, `title`, `description`, `theme` (light #00c853 / dark #5cff8e per `packages/ui`) | Must | MUST |
 | KRW-LAND-011 | `pages/index.kiw` is the landing; routes extensionless (`/` → `index.html`), no trailing slashes | Must | MUST |
 | KRW-LAND-012 | `layouts/Base.kiw` provides HTML shell, `<head>` theme script (`localStorage krewire-theme`), nav, footer, content slot `{{.Content}}` | Must | MUST |
 | KRW-LAND-020 | Components: `Hero.kiw` (title, subtitle, code window, CTAs), `FeatureCard.kiw`, `Ecosystem.kiw`, `CodeWindow.kiw`, `Section.kiw` — invocable via `{{component "Hero" .}}` | Must | MUST |
-| KRW-LAND-021 | Styles: scoped by default, `:root` global for theme vars `--color-primary`, `--show-sun/moon` from `framework/ui`; collected to `assets/style.css` | Must | MUST |
+| KRW-LAND-021 | Styles: scoped by default, `:root` global for theme vars `--color-primary`, `--show-sun/moon` from `packages/ui`; collected to `assets/style.css` | Must | MUST |
 | KRW-LAND-030 | Content: hero (tagline "One Go Framework. Every Workload." — Krewire's own positioning, not borrowed taglines, `kiw new my-app`, CTA), 8 workload cards, code snippet (file-based routing + .kiw DSL), ecosystem links, community placeholder | Must | MUST |
 | KRW-LAND-040 | `public/` assets (favicon, logo) copied verbatim; no extra toolchain | Must | MUST |
 | KRW-LAND-050 | `krewire build` in repo root builds deterministic `site/`; `krewire serve` previews locally | Must | MUST |
@@ -80,7 +80,7 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 - Kind `site` file-based: `pages/index.kiw` + `components/*.kiw` + `layouts/Base.kiw` + `public/*` → `ssg.LoadFromDir` → `site/`
 - `krewire.yaml` metadata-only (no `ssg:`) — write-once
 - `layouts/Base.kiw` wraps `{{.Content}}`; `{{component "Hero" .}}` injects scoped fragments
-- `framework/web/ssg` CSS scoping (`[data-kiw-component]`, `[data-kiw-layout]`), `framework/ui` theme vars + toggle CSS
+- `packages/web/ssg` CSS scoping (`[data-kiw-component]`, `[data-kiw-layout]`), `packages/ui` theme vars + toggle CSS
 
 ### 6.2 Routes & Data
 
@@ -126,5 +126,5 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 ## 12. References
 
 - `laravel.com` (inspiration, not clone): https://laravel.com
-- `framework/web/ssg/testdata/landing` fixture
+- `packages/web/ssg/testdata/landing` fixture
 - `internal/docs/project-vision.md`

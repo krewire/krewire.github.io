@@ -40,4 +40,4 @@ public/               # favicon.svg, copied verbatim
 
 ## Ecosystem
 
-Source lives across `krewire/*`: `framework`, `libs`, `mdbind`, `boost`, `hub`, `ship`, `kiw`. This site dogfoods `framework/web/ssg` + `kiw/dsl` (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
+Krewire consists of 5 repositories (`krewire`, `mdbind`, `internal`, `krewire.com`, `krewire.github.io`). This site dogfoods `packages/web/ssg` + `packages/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.

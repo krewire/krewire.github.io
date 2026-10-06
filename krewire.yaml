@@ -8,7 +8,7 @@ build:
   output: ".krewire/build"
   base: "/"
 
-title: "Krewire Welcome — Official Release Launch & Community Hub"
+title: "Krewire Release — Official Release Launch & Community Hub"
 description: "The official release hub, contributor portal, and sponsorship platform for the Krewire open-source ecosystem."
 nav:
   - text: "Releases"

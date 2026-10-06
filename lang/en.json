@@ -1,7 +1,7 @@
 {
-  "site_title": "Krewire Contributors — Home of the Open Source Collective",
-  "site_description": "The home for engineers, architects, and AI agent guilds crafting an autonomous, sustainable Go digital ecosystem at near-zero cost.",
+  "site_title": "Krewire Release — Official Release Launch & Community Hub",
+  "site_description": "The home for engineers, architects, and autonomous AI agents crafting a modular, sustainable Go digital ecosystem at near-zero cost.",
   "portal": {
-    "welcome": "Welcome to Krewire Contributors"
+    "welcome": "Welcome to Krewire Release"
   }
 }
