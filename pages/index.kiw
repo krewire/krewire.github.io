@@ -742,20 +742,6 @@ fix(web): recover panic in http handler</code></pre>
   box-shadow: var(--pop-shadow-lg);
 }
 
-/* MOBILE GRIDS (1-COLUMN BASE) */
-.features-grid,
-.workloads-grid,
-.quickstart-steps,
-.roadmap-grid,
-.benefit-grid,
-.repo-grid,
-.nav-map-grid,
-.gates-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
 /* SECTION PADDINGS & BACKGROUNDS */
 .releases-section,
 .quickstart-section,
@@ -1780,41 +1766,6 @@ fix(web): recover panic in http handler</code></pre>
     opacity: 0.4;
   }
 
-  /* BALANCED GRIDS ON SM */
-  .features-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .workloads-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .quickstart-steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .roadmap-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .gates-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .benefit-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .repo-grid,
-  .nav-map-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-  /* Flagship repo spans top 2 columns on SM, leaving a neat 2x2 grid below */
-  .repo-card.featured,
-  .nav-map-card.featured {
-    grid-column: span 2;
-  }
 
   /* FILTER BAR ON SM */
   .nav-filter-bar {
@@ -1882,25 +1833,6 @@ fix(web): recover panic in http handler</code></pre>
     font-size: 15px;
   }
 
-  /* OPTIMIZED GRIDS ON MD */
-  .features-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-  .workloads-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
-  }
-  .quickstart-steps,
-  .roadmap-grid,
-  .gates-grid,
-  .benefit-grid {
-    gap: 18px;
-  }
-  .repo-grid,
-  .nav-map-grid {
-    gap: 18px;
-  }
 
   /* AI BOOST 2-COLUMN ON MD */
   .guild-card {
@@ -1972,27 +1904,6 @@ fix(web): recover panic in http handler</code></pre>
     padding: 52px 0 36px;
   }
 
-  /* 3-COLUMN REPOSITORIES WITH FLAGSHIP PROPORTION */
-  .repo-grid,
-  .nav-map-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-  }
-  .repo-card.featured,
-  .nav-map-card.featured {
-    grid-column: span 2;
-  }
-
-  .features-grid,
-  .quickstart-steps,
-  .roadmap-grid,
-  .gates-grid,
-  .benefit-grid {
-    gap: 22px;
-  }
-  .workloads-grid {
-    gap: 18px;
-  }
 
   /* CARD PADDING ON LG */
   .feature-card,
