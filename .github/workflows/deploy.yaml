@@ -41,6 +41,7 @@ jobs:
       - name: Install kiw CLI
         run: |
           git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/mdbind.git" "${RUNNER_TEMP}/mdbind"
           cd "${RUNNER_TEMP}/krewire"
           go build -o "${RUNNER_TEMP}/bin/kiw" ./tools/kiw/cmd/kiw
           echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
