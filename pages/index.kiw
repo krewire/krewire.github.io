@@ -483,7 +483,7 @@ fix(web): recover panic in http handler</code></pre>
           <div class="flow-content">
             <h4 data-i18n="onboarding.s1_title">Fork & Clone the Repositories</h4>
             <p data-i18n="onboarding.s1_desc">Fork any Krewire repository to your personal GitHub account, then clone it locally:</p>
-            <pre><code>git clone https://github.com/&lt;your-username&gt;/krewire.git
+            <pre><code>git clone https://github.com/krewire/krewire.git
 cd krewire</code></pre>
           </div>
         </div>
