@@ -475,15 +475,20 @@
   padding: 0 16px;
   min-width: 0;
 }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-  margin: 0 auto 24px;
-  max-width: 44rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }[data-kiw-component="page:/"] .sub-badge, [data-kiw-component="page:/"].sub-badge{
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   font-size: 11px;
   font-weight: 900;
@@ -495,24 +500,29 @@
   box-shadow: var(--pop-shadow-sm);
   padding: 3px 10px;
   border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 12px;
+  align-self: center;
 }[data-kiw-component="page:/"] .section-head h2{
   font-size: clamp(22px, 6vw, 32px);
   font-weight: 900;
   letter-spacing: -0.035em;
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
   line-height: 1.2;
   word-break: break-word;
   text-align: center;
   width: 100%;
+  max-width: 52rem;
 }[data-kiw-component="page:/"] .section-head p{
   color: var(--muted);
   margin: 0 auto;
   font-size: 14px;
   line-height: 1.6;
-  max-width: 42rem;
+  max-width: 44rem;
   word-break: break-word;
   text-align: center;
+  width: 100%;
 }[data-kiw-component="page:/"] .feature-card, [data-kiw-component="page:/"].feature-card, [data-kiw-component="page:/"] .workload-card, [data-kiw-component="page:/"].workload-card, [data-kiw-component="page:/"] .qs-card, [data-kiw-component="page:/"].qs-card, [data-kiw-component="page:/"] .roadmap-card, [data-kiw-component="page:/"].roadmap-card, [data-kiw-component="page:/"] .benefit-card, [data-kiw-component="page:/"].benefit-card, [data-kiw-component="page:/"] .repo-card, [data-kiw-component="page:/"].repo-card, [data-kiw-component="page:/"] .nav-map-card, [data-kiw-component="page:/"].nav-map-card, [data-kiw-component="page:/"] .gate-card, [data-kiw-component="page:/"].gate-card{
   min-width: 0;
   width: 100%;
@@ -1325,12 +1335,16 @@
 }@media (min-width: 640px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 20px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 auto 28px;
-    max-width: 46rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(24px, 4vw, 32px);
+    max-width: 54rem;
   }[data-kiw-component="page:/"] .section-head p{
     font-size: 14.5px;
+    max-width: 46rem;
   }[data-kiw-component="page:/"] .hero, [data-kiw-component="page:/"].hero{
     padding: 38px 0 28px;
   }[data-kiw-component="page:/"] .hero-inner, [data-kiw-component="page:/"].hero-inner{
@@ -1399,10 +1413,13 @@
   }}@media (min-width: 768px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 24px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 auto 32px;
-    max-width: 48rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(26px, 3.6vw, 36px);
+    max-width: 56rem;
   }[data-kiw-component="page:/"] .hero, [data-kiw-component="page:/"].hero{
     padding: 44px 0 32px;
   }[data-kiw-component="page:/"] .hero-inner, [data-kiw-component="page:/"].hero-inner{
@@ -1437,12 +1454,16 @@
   }}@media (min-width: 1024px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 32px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 auto 36px;
-    max-width: 50rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(28px, 3.2vw, 38px);
+    max-width: 58rem;
   }[data-kiw-component="page:/"] .section-head p{
     font-size: 15px;
+    max-width: 48rem;
   }[data-kiw-component="page:/"] .hero, [data-kiw-component="page:/"].hero{
     padding: 56px 0 38px;
   }[data-kiw-component="page:/"] .hero-inner, [data-kiw-component="page:/"].hero-inner{
