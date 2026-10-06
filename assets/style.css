@@ -538,10 +538,6 @@
 }[data-kiw-component="page:/"] .feature-card:hover, [data-kiw-component="page:/"].feature-card:hover, [data-kiw-component="page:/"] .workload-card:hover, [data-kiw-component="page:/"].workload-card:hover, [data-kiw-component="page:/"] .qs-card:hover, [data-kiw-component="page:/"].qs-card:hover, [data-kiw-component="page:/"] .roadmap-card:hover, [data-kiw-component="page:/"].roadmap-card:hover, [data-kiw-component="page:/"] .benefit-card:hover, [data-kiw-component="page:/"].benefit-card:hover, [data-kiw-component="page:/"] .repo-card:hover, [data-kiw-component="page:/"].repo-card:hover, [data-kiw-component="page:/"] .nav-map-card:hover, [data-kiw-component="page:/"].nav-map-card:hover, [data-kiw-component="page:/"] .gate-card:hover, [data-kiw-component="page:/"].gate-card:hover{
   transform: translate(-2px, -2px);
   box-shadow: var(--pop-shadow-lg);
-}[data-kiw-component="page:/"] .features-grid, [data-kiw-component="page:/"].features-grid, [data-kiw-component="page:/"] .workloads-grid, [data-kiw-component="page:/"].workloads-grid, [data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps, [data-kiw-component="page:/"] .roadmap-grid, [data-kiw-component="page:/"].roadmap-grid, [data-kiw-component="page:/"] .benefit-grid, [data-kiw-component="page:/"].benefit-grid, [data-kiw-component="page:/"] .repo-grid, [data-kiw-component="page:/"].repo-grid, [data-kiw-component="page:/"] .nav-map-grid, [data-kiw-component="page:/"].nav-map-grid, [data-kiw-component="page:/"] .gates-grid, [data-kiw-component="page:/"].gates-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
 }[data-kiw-component="page:/"] .releases-section, [data-kiw-component="page:/"].releases-section, [data-kiw-component="page:/"] .quickstart-section, [data-kiw-component="page:/"].quickstart-section, [data-kiw-component="page:/"] .roadmap-section, [data-kiw-component="page:/"].roadmap-section{
   padding: 38px 0 28px;
   background-color: var(--bg);
@@ -1367,29 +1363,6 @@
   }[data-kiw-component="page:/"] .trust-items .dot{
     display: inline;
     opacity: 0.4;
-  }[data-kiw-component="page:/"] .features-grid, [data-kiw-component="page:/"].features-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .workloads-grid, [data-kiw-component="page:/"].workloads-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .roadmap-grid, [data-kiw-component="page:/"].roadmap-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .gates-grid, [data-kiw-component="page:/"].gates-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .benefit-grid, [data-kiw-component="page:/"].benefit-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .repo-grid, [data-kiw-component="page:/"].repo-grid, [data-kiw-component="page:/"] .nav-map-grid, [data-kiw-component="page:/"].nav-map-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .repo-card.featured, [data-kiw-component="page:/"].repo-card.featured, [data-kiw-component="page:/"] .nav-map-card.featured, [data-kiw-component="page:/"].nav-map-card.featured{
-    grid-column: span 2;
   }[data-kiw-component="page:/"] .nav-filter-bar, [data-kiw-component="page:/"].nav-filter-bar{
     flex-direction: row;
     align-items: center;
@@ -1430,16 +1403,6 @@
     align-items: center;
   }[data-kiw-component="page:/"] .hero .lead{
     font-size: 15px;
-  }[data-kiw-component="page:/"] .features-grid, [data-kiw-component="page:/"].features-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }[data-kiw-component="page:/"] .workloads-grid, [data-kiw-component="page:/"].workloads-grid{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
-  }[data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps, [data-kiw-component="page:/"] .roadmap-grid, [data-kiw-component="page:/"].roadmap-grid, [data-kiw-component="page:/"] .gates-grid, [data-kiw-component="page:/"].gates-grid, [data-kiw-component="page:/"] .benefit-grid, [data-kiw-component="page:/"].benefit-grid{
-    gap: 18px;
-  }[data-kiw-component="page:/"] .repo-grid, [data-kiw-component="page:/"].repo-grid, [data-kiw-component="page:/"] .nav-map-grid, [data-kiw-component="page:/"].nav-map-grid{
-    gap: 18px;
   }[data-kiw-component="page:/"] .guild-card, [data-kiw-component="page:/"].guild-card{
     padding: 28px 24px;
     border-radius: 18px;
@@ -1478,15 +1441,6 @@
     max-width: 620px;
   }[data-kiw-component="page:/"] .releases-section, [data-kiw-component="page:/"].releases-section, [data-kiw-component="page:/"] .quickstart-section, [data-kiw-component="page:/"].quickstart-section, [data-kiw-component="page:/"] .roadmap-section, [data-kiw-component="page:/"].roadmap-section, [data-kiw-component="page:/"] .workloads-section, [data-kiw-component="page:/"].workloads-section, [data-kiw-component="page:/"] .repos-nav, [data-kiw-component="page:/"].repos-nav, [data-kiw-component="page:/"] .standards, [data-kiw-component="page:/"].standards, [data-kiw-component="page:/"] .benefits, [data-kiw-component="page:/"].benefits{
     padding: 52px 0 36px;
-  }[data-kiw-component="page:/"] .repo-grid, [data-kiw-component="page:/"].repo-grid, [data-kiw-component="page:/"] .nav-map-grid, [data-kiw-component="page:/"].nav-map-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-  }[data-kiw-component="page:/"] .repo-card.featured, [data-kiw-component="page:/"].repo-card.featured, [data-kiw-component="page:/"] .nav-map-card.featured, [data-kiw-component="page:/"].nav-map-card.featured{
-    grid-column: span 2;
-  }[data-kiw-component="page:/"] .features-grid, [data-kiw-component="page:/"].features-grid, [data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps, [data-kiw-component="page:/"] .roadmap-grid, [data-kiw-component="page:/"].roadmap-grid, [data-kiw-component="page:/"] .gates-grid, [data-kiw-component="page:/"].gates-grid, [data-kiw-component="page:/"] .benefit-grid, [data-kiw-component="page:/"].benefit-grid{
-    gap: 22px;
-  }[data-kiw-component="page:/"] .workloads-grid, [data-kiw-component="page:/"].workloads-grid{
-    gap: 18px;
   }[data-kiw-component="page:/"] .feature-card, [data-kiw-component="page:/"].feature-card, [data-kiw-component="page:/"] .workload-card, [data-kiw-component="page:/"].workload-card, [data-kiw-component="page:/"] .qs-card, [data-kiw-component="page:/"].qs-card, [data-kiw-component="page:/"] .roadmap-card, [data-kiw-component="page:/"].roadmap-card, [data-kiw-component="page:/"] .benefit-card, [data-kiw-component="page:/"].benefit-card, [data-kiw-component="page:/"] .repo-card, [data-kiw-component="page:/"].repo-card, [data-kiw-component="page:/"] .nav-map-card, [data-kiw-component="page:/"].nav-map-card, [data-kiw-component="page:/"] .gate-card, [data-kiw-component="page:/"].gate-card{
     padding: 22px 20px;
   }[data-kiw-component="page:/"] .guild-section, [data-kiw-component="page:/"].guild-section{
