@@ -1,6 +1,6 @@
 ---
-title: "Krewire Contributors — Home of the Open Source Collective"
-description: "The home for engineers, architects, and AI agent guilds crafting an autonomous, sustainable Go digital ecosystem at near-zero cost."
+title: "Krewire Welcome — Official Release Launch & Community Hub"
+description: "The official launchpad, contributor portal, and sponsorship hub for the Krewire open-source ecosystem."
 layout: Landing
 ---
 
@@ -10,14 +10,15 @@ layout: Landing
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-copy">
-        <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN SOURCE COLLECTIVE · AUTONOMOUS GO ECOSYSTEM</div>
-        <h1 data-i18n-html="hero.title_html">Build the Future of Go.<br>Together, Autonomously.</h1>
-        <p class="lead" data-i18n="hero.lead">The home for contributors, architects, and AI agent guilds engineering an autonomous, sustainable digital ecosystem in Go. From unified workloads and zero-cost IaC to AI agent orchestration — engineered in Indonesia for engineers worldwide.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">◈ OFFICIAL RELEASE LAUNCH · KREWIRE ECOSYSTEM</div>
+        <h1 data-i18n-html="hero.title_html">Krewire v0.1.0 is Here.<br>Build the Future of Go.</h1>
+        <p class="lead" data-i18n="hero.lead">Welcome to the official launchpad and community hub for Krewire. A unified, modular Go ecosystem powering 8 workloads behind one config and one CLI — engineered in Indonesia for engineers and AI agent guilds worldwide.</p>
         <div class="ctas flex flex-wrap gap-3">
-          <Button Variant="primary" Size="lg" Href="#get-started" DataI18n="hero.cta_start">Start Contributing →</Button>
-          <Button Variant="outline" Size="lg" Href="#repositories" DataI18n="hero.cta_repos">Explore Repositories</Button>
+          <Button Variant="primary" Size="lg" Href="#releases" DataI18n="hero.cta_release">Explore v0.1.0 Launch →</Button>
+          <Button Variant="outline" Size="lg" Href="#get-started" DataI18n="hero.cta_start">Become a Contributor</Button>
+          <Button Variant="outline" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Sponsor Krewire</Button>
         </div>
-        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Spec-Driven Development (KWF) · Strict Quality Gates · Human & AI Synergy</div>
+        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Strict Quality Gates</div>
       </div>
       <div class="hero-art">
         <CodeWindow />
@@ -28,17 +29,57 @@ layout: Landing
   <!-- TRUST BAR -->
   <section class="trust">
     <div class="trust-inner">
-      <span class="trust-label" data-i18n="trust.label">Collective Ecosystem</span>
+      <span class="trust-label" data-i18n="trust.label">Ecosystem Launch Matrix</span>
       <div class="trust-items">
-        <span data-i18n-html="trust.repos_html"><b>6</b> Active Repositories</span>
+        <span data-i18n-html="trust.repos_html"><b>5</b> Official Repositories</span>
         <span class="dot">·</span>
         <span data-i18n-html="trust.workloads_html"><b>8</b> Unified Workloads</span>
         <span class="dot">·</span>
         <span data-i18n-html="trust.native_html"><b>100%</b> Native Go</span>
         <span class="dot">·</span>
-        <span data-i18n-html="trust.gates_html"><b>3</b> Strict Quality Gates</span>
+        <span data-i18n-html="trust.version_html"><b>v0.1.0</b> Stable Baseline</span>
         <span class="dot">·</span>
         <span data-i18n="trust.cost">Near-Zero Cloud Cost</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELEASE LAUNCH SECTION -->
+  <section class="releases" id="releases" style="padding: 64px 24px; border-bottom: 1px solid var(--border);">
+    <div class="section-inner" style="max-width: 1120px; margin: 0 auto;">
+      <div class="section-head text-center" style="margin-bottom: 48px;">
+        <div class="sub-badge" style="display: inline-block; padding: 4px 12px; border-radius: 9999px; background: rgba(57, 211, 83, 0.1); color: var(--primary); font-size: 13px; font-weight: 600; margin-bottom: 12px;">Ecosystem Release</div>
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 12px;">Krewire Ecosystem v0.1.0 Launch</h2>
+        <p style="color: var(--muted); max-width: 680px; margin: 0 auto; font-size: 16px;">The complete foundational release of the Krewire modular Go libraries, devtool CLI, and developer workflow.</p>
+      </div>
+
+      <div class="release-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 40px;">
+        <div class="release-card" style="padding: 24px; border-radius: 12px; background: var(--bg-card, rgba(255,255,255,0.03)); border: 1px solid var(--border);">
+          <div style="font-size: 24px; margin-bottom: 12px;">📦</div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Single Monorepo</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">Consolidated under <code>github.com/krewire/krewire</code> — seamless module resolution, atomic versioning, and zero dependency fragmentation.</p>
+        </div>
+        <div class="release-card" style="padding: 24px; border-radius: 12px; background: var(--bg-card, rgba(255,255,255,0.03)); border: 1px solid var(--border);">
+          <div style="font-size: 24px; margin-bottom: 12px;">⚡</div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Unified 'kiw' Devtool</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">One single binary managing the entire software lifecycle: <code>kiw init</code>, <code>kiw new</code>, <code>kiw dev</code>, <code>kiw build</code>, and <code>kiw deploy</code>.</p>
+        </div>
+        <div class="release-card" style="padding: 24px; border-radius: 12px; background: var(--bg-card, rgba(255,255,255,0.03)); border: 1px solid var(--border);">
+          <div style="font-size: 24px; margin-bottom: 12px;">⚙️</div>
+          <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">One Config: krewire.yaml</h3>
+          <p style="color: var(--muted); font-size: 14px; line-height: 1.6;">Strictly typed, declarative project manifests eliminating arbitrary configuration drift across all 8 supported workloads.</p>
+        </div>
+      </div>
+
+      <div class="quickstart-box" style="padding: 32px; border-radius: 12px; background: var(--bg-dark, #0B1F3B); border: 1px solid var(--border); color: #fff; text-align: center;">
+        <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px;">Quick Start in Seconds</h3>
+        <p style="color: #9ab0ce; font-size: 14px; margin-bottom: 20px;">Initialize a project minimal setup or scaffold a complete fullstack application:</p>
+        <div style="background: rgba(0,0,0,0.4); padding: 14px 20px; border-radius: 8px; font-family: monospace; font-size: 14px; color: #39D353; display: inline-block; max-width: 100%; overflow-x: auto; text-align: left;">
+          kiw new my-app && cd my-app && kiw dev
+        </div>
+        <div style="margin-top: 20px;">
+          <a href="https://krewire.com" target="_blank" style="color: #39D353; font-weight: 600; font-size: 14px; text-decoration: underline;">Read Full Documentation on krewire.com →</a>
+        </div>
       </div>
     </div>
   </section>
