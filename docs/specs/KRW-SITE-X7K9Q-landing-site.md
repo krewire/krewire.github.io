@@ -11,7 +11,7 @@
 
 ## 1. Summary
 
-Build `krewire/krewire` (public repo) as the **unified site** for the Krewire ecosystem — **landing + documentation** — **100% built with the ecosystem itself** (file-based `.kiw` DSL, `krewire.yaml`, `pages/`/`components/`/`layouts/`/`content/`/`public/` → `krewire build` → `site/`), inspired by `laravel.com`'s clarity but Go-native and docs-ready. The site proves the `site` workload is production-ready for both marketing and long-form docs, validates the static-site pipeline (file-based routing, scoped CSS, theme toggle, asset hashing, content collections), and is published to `https://krewire.github.io/` (via `krewire/krewire.github.io`) — not too narrowly scoped to a one-page landing.
+Build `krewire/krewire.com` (public repo) as the **unified site** for the Krewire ecosystem — **landing + documentation** — **100% built with the ecosystem itself** (file-based `.kiw` DSL, `krewire.yaml`, `pages/`/`components/`/`layouts/`/`content/`/`public/` → `krewire build` → `site/`), inspired by `laravel.com`'s clarity but Go-native and docs-ready. The site proves the `site` workload is production-ready for both marketing and long-form docs, validates the static-site pipeline (file-based routing, scoped CSS, theme toggle, asset hashing, content collections), and is published to `https://krewire.github.io/` (via `krewire/krewire.com.github.io`) — not too narrowly scoped to a one-page landing.
 
 ## 2. Background & Context
 
@@ -28,7 +28,7 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 ## 4. Goals & Non-Goals
 
 ### Goals
-- G1 — Ship `krewire/krewire` public repo as the **source** for the unified site; publish the built `site/` to `krewire/krewire.github.io` so `https://krewire.github.io/` (root, no `/krewire/` prefix) serves the site, built solely via `kiw build`.
+- G1 — Ship `krewire/krewire.com` public repo as the **source** for the unified site; publish the built `site/` to `krewire/krewire.com.github.io` so `https://krewire.github.io/` (root, no `/krewire/` prefix) serves the site, built solely via `kiw build`.
 - G2 — Landing surface: elegant display typography, code snippet (`kiw new my-app && kiw build`), CTAs (Get Started → docs, View on GitHub), feature cards, ecosystem strip — not over-scoped to a single hero.
 - G3 — Documentation surface: file-based docs under `/docs` (getting-started, workload matrix, `.kiw` DSL) with sidebar nav, prose, code windows, callouts — same engine as landing, proving the site is **general-purpose**.
 - G4 — Reusable system: `layouts/Base.kiw` + docs-aware layout (`Docs.kiw`) and generic components (`Hero`, `FeatureCard`, `Ecosystem`, `CodeWindow`, `Section`, `Prose`, `Callout`, `DocNav`) — landing and docs share the same design tokens.
@@ -54,7 +54,7 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 
 | ID | Requirement | Priority | RFC 2119 |
 |----|-------------|----------|----------|
-| KRW-LAND-001 | Repo `krewire/krewire` is public; `main` holds sources (`krewire.yaml`, `pages/`, `components/`, `layouts/`, `public/`, `docs/specs/`); `gh-pages` holds built `site/` (index.html, assets) | Must | MUST |
+| KRW-LAND-001 | Repo `krewire/krewire.com` is public; `main` holds sources (`krewire.yaml`, `pages/`, `components/`, `layouts/`, `public/`, `docs/specs/`); `gh-pages` holds built `site/` (index.html, assets) | Must | MUST |
 | KRW-LAND-010 | `krewire.yaml` declares `project.kind: site`, `title`, `description`, `theme` (light #00c853 / dark #5cff8e per `framework/ui`) | Must | MUST |
 | KRW-LAND-011 | `pages/index.kiw` is the landing; routes extensionless (`/` → `index.html`), no trailing slashes | Must | MUST |
 | KRW-LAND-012 | `layouts/Base.kiw` provides HTML shell, `<head>` theme script (`localStorage krewire-theme`), nav, footer, content slot `{{.Content}}` | Must | MUST |
@@ -103,7 +103,7 @@ Inspiration (not plagiarism): `laravel.com` distributes **laravel new**, code sn
 
 ## 8. Rollout
 
-- Phase: Spec draft → scaffold `krewire/krewire` (krewire.yaml + pages/layouts/components/public) → `kiw build` → verify `site/` → push `main` → copy `site/` to `gh-pages` branch → enable Pages (gh-pages, root) → `curl https://krewire.github.io/krewire/` verification
+- Phase: Spec draft → scaffold `krewire/krewire.com` (krewire.yaml + pages/layouts/components/public) → `kiw build` → verify `site/` → push `main` → copy `site/` to `gh-pages` branch → enable Pages (gh-pages, root) → `curl https://krewire.github.io/krewire/` verification
 
 ## 9. Open Questions
 
