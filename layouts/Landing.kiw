@@ -343,7 +343,8 @@ a:hover{color:var(--primary)}
   transform:translate(1px, 1px);
   box-shadow:1px 1px 0px var(--border);
 }
-.nav-toggler .bar{
+.nav-toggler .bar,
+.nav-toggler .hamburger-line{
   display:block;
   width:16px;
   height:2.5px;
@@ -352,15 +353,18 @@ a:hover{color:var(--primary)}
   transition:all .24s ease-in-out;
   transform-origin:center;
 }
-.nav-toggler.is-active .bar-1{
-  transform:translateY(7px) rotate(45deg);
+.nav-toggler.is-active .bar-1,
+.nav-toggler.is-active .line-1{
+  transform:translateY(6px) rotate(45deg);
 }
-.nav-toggler.is-active .bar-2{
+.nav-toggler.is-active .bar-2,
+.nav-toggler.is-active .line-2{
   opacity:0;
   transform:scaleX(0);
 }
-.nav-toggler.is-active .bar-3{
-  transform:translateY(-7px) rotate(-45deg);
+.nav-toggler.is-active .bar-3,
+.nav-toggler.is-active .line-3{
+  transform:translateY(-6px) rotate(-45deg);
 }
 
 /* MOBILE DROPDOWN MENU (MOBILE-FIRST) */
@@ -369,10 +373,13 @@ a:hover{color:var(--primary)}
   top:100%;
   left:0;
   width:100%;
+  max-height:calc(100dvh - 64px);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
   background:var(--bg);
   border-bottom:var(--pop-border);
-  box-shadow:0 12px 0px rgba(0,0,0,0.12);
-  padding:14px 14px 22px;
+  box-shadow:0 16px 32px rgba(0,0,0,0.14);
+  padding:14px 14px 24px;
   transform:translateY(-8px);
   opacity:0;
   pointer-events:none;
@@ -394,7 +401,7 @@ a:hover{color:var(--primary)}
   display:flex;
   align-items:center;
   gap:12px;
-  padding:11px 14px;
+  padding:10px 14px;
   border-radius:8px;
   border:1.5px solid transparent;
   font-size:14px;
@@ -411,11 +418,11 @@ a:hover{color:var(--primary)}
   transform:translateX(2px);
 }
 .mobile-link .link-icon{
-  width:20px;
+  width:22px;
   display:grid;
   place-items:center;
   color:var(--primary);
-  font-size:14px;
+  font-size:15px;
 }
 .mobile-menu-divider{
   height:2px;
