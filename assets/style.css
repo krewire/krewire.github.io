@@ -475,8 +475,12 @@
   padding: 0 16px;
   min-width: 0;
 }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
+  max-width: 44rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }[data-kiw-component="page:/"] .sub-badge, [data-kiw-component="page:/"].sub-badge{
   display: inline-flex;
   align-items: center;
@@ -499,6 +503,8 @@
   margin: 0 0 10px;
   line-height: 1.2;
   word-break: break-word;
+  text-align: center;
+  width: 100%;
 }[data-kiw-component="page:/"] .section-head p{
   color: var(--muted);
   margin: 0 auto;
@@ -506,6 +512,7 @@
   line-height: 1.6;
   max-width: 42rem;
   word-break: break-word;
+  text-align: center;
 }[data-kiw-component="page:/"] .feature-card, [data-kiw-component="page:/"].feature-card, [data-kiw-component="page:/"] .workload-card, [data-kiw-component="page:/"].workload-card, [data-kiw-component="page:/"] .qs-card, [data-kiw-component="page:/"].qs-card, [data-kiw-component="page:/"] .roadmap-card, [data-kiw-component="page:/"].roadmap-card, [data-kiw-component="page:/"] .benefit-card, [data-kiw-component="page:/"].benefit-card, [data-kiw-component="page:/"] .repo-card, [data-kiw-component="page:/"].repo-card, [data-kiw-component="page:/"] .nav-map-card, [data-kiw-component="page:/"].nav-map-card, [data-kiw-component="page:/"] .gate-card, [data-kiw-component="page:/"].gate-card{
   min-width: 0;
   width: 100%;
@@ -1286,17 +1293,22 @@
   background-size: 16px 16px;
   box-shadow: var(--pop-shadow-lg);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }[data-kiw-component="page:/"] .cta-card h2{
   font-size: clamp(22px, 5.5vw, 34px);
   font-weight: 900;
   margin: 0 0 10px;
   letter-spacing: -0.03em;
+  text-align: center;
 }[data-kiw-component="page:/"] .cta-card p{
   color: var(--muted);
   margin: 0 auto 18px;
   max-width: 580px;
   font-size: 13.5px;
   line-height: 1.6;
+  text-align: center;
 }[data-kiw-component="page:/"] .cta-card .ctas{
   display: flex;
   flex-direction: column;
@@ -1313,7 +1325,8 @@
 }@media (min-width: 640px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 20px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 0 28px;
+    margin: 0 auto 28px;
+    max-width: 46rem;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(24px, 4vw, 32px);
   }[data-kiw-component="page:/"] .section-head p{
@@ -1366,6 +1379,7 @@
   }[data-kiw-component="page:/"] .nav-filter-bar, [data-kiw-component="page:/"].nav-filter-bar{
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 12px;
   }[data-kiw-component="page:/"] .guild-card, [data-kiw-component="page:/"].guild-card{
     padding: 24px 20px;
@@ -1385,7 +1399,8 @@
   }}@media (min-width: 768px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 24px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 0 32px;
+    margin: 0 auto 32px;
+    max-width: 48rem;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(26px, 3.6vw, 36px);
   }[data-kiw-component="page:/"] .hero, [data-kiw-component="page:/"].hero{
@@ -1422,7 +1437,8 @@
   }}@media (min-width: 1024px) {[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 32px;
   }[data-kiw-component="page:/"] .section-head, [data-kiw-component="page:/"].section-head{
-    margin: 0 0 36px;
+    margin: 0 auto 36px;
+    max-width: 50rem;
   }[data-kiw-component="page:/"] .section-head h2{
     font-size: clamp(28px, 3.2vw, 38px);
   }[data-kiw-component="page:/"] .section-head p{
