@@ -84,7 +84,7 @@
   background: var(--forge-secondary);
   color: var(--forge-secondary-content);
 }
-.forge-btn-danger {
+.forge-btn-error {
   background: var(--forge-error);
   color: #ffffff;
 }
@@ -108,7 +108,7 @@
 .forge-badge-secondary { background: var(--forge-secondary); color: var(--forge-secondary-content); }
 .forge-badge-success { background: var(--forge-success); color: var(--forge-primary-content); }
 .forge-badge-warning { background: var(--forge-warning); color: #000; }
-.forge-badge-danger { background: var(--forge-error); color: #fff; }
+.forge-badge-error { background: var(--forge-error); color: #fff; }
 
 .forge-card {
   background: var(--forge-bg);
@@ -148,7 +148,7 @@
 .forge-alert-info { background: color-mix(in srgb, var(--forge-secondary) 25%, var(--forge-bg)); }
 .forge-alert-success { background: color-mix(in srgb, var(--forge-success) 25%, var(--forge-bg)); }
 .forge-alert-warning { background: color-mix(in srgb, var(--forge-warning) 25%, var(--forge-bg)); }
-.forge-alert-danger { background: color-mix(in srgb, var(--forge-error) 25%, var(--forge-bg)); }
+.forge-alert-error { background: color-mix(in srgb, var(--forge-error) 25%, var(--forge-bg)); }
 
 /* Forms */
 .forge-form {
