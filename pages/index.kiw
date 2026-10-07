@@ -187,12 +187,12 @@ layout: Landing
 
         <div class="workload-card">
           <div class="workload-top">
-            <span class="workload-tag">Core Domain</span>
+            <span class="workload-tag">WebAssembly</span>
             <span class="workload-icon">◈</span>
           </div>
-          <h3 data-i18n="workloads.w_kernel_title">kernel</h3>
-          <p data-i18n="workloads.w_kernel_desc">Pre-init bootstrap core containing strict domain models and runtime lifecycle abstractions.</p>
-          <div class="workload-marker">kiw init</div>
+          <h3 data-i18n="workloads.w_runtime_title">runtime</h3>
+          <p data-i18n="workloads.w_runtime_desc">Compile Go into WebAssembly with virtual DOM diffing, reactive interactive islands, and partial client hydration.</p>
+          <div class="workload-marker">kiw build --target wasm</div>
         </div>
       </div>
     </div>

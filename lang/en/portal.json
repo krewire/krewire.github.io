@@ -65,8 +65,8 @@
     "w_service_desc": "High-throughput microservices, headless daemons, and low-latency JSON/gRPC APIs.",
     "w_infra_title": "infra",
     "w_infra_desc": "Zero-downtime raw VM runners, SSH automation, automated TLS provisioning, and systemd manifests.",
-    "w_kernel_title": "kernel",
-    "w_kernel_desc": "Pre-init bootstrap core containing strict domain models and runtime lifecycle abstractions."
+    "w_runtime_title": "runtime",
+    "w_runtime_desc": "Compile Go into WebAssembly with virtual DOM diffing, reactive interactive islands, and partial client hydration."
   },
   "quickstart": {
     "badge": "Quick Installation",

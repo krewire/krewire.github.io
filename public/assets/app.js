@@ -290,8 +290,8 @@
       "w_service_desc": "High-throughput microservices, headless daemons, and low-latency JSON/gRPC APIs.",
       "w_infra_title": "infra",
       "w_infra_desc": "Zero-downtime raw VM runners, SSH automation, automated TLS provisioning, and systemd manifests.",
-      "w_kernel_title": "kernel",
-      "w_kernel_desc": "Pre-init bootstrap core containing strict domain models and runtime lifecycle abstractions."
+      "w_runtime_title": "runtime",
+      "w_runtime_desc": "Compile Go into WebAssembly with virtual DOM diffing, reactive interactive islands, and partial client hydration."
     },
     "quickstart": {
       "badge": "Quick Installation",
@@ -533,8 +533,8 @@
       "w_service_desc": "Layanan mikro berkinerja tinggi, daemon tanpa antarmuka, dan API JSON/gRPC latensi rendah.",
       "w_infra_title": "infra",
       "w_infra_desc": "Otomasi rilis tanpa downtime pada VM mentah, eksekutor SSH, penyediaan otomatis TLS, dan unit systemd.",
-      "w_kernel_title": "kernel",
-      "w_kernel_desc": "Inti bootstrap pre-init yang memuat model domain ketat dan abstraksi siklus hidup runtime."
+      "w_runtime_title": "runtime",
+      "w_runtime_desc": "Kompilasi Go ke WebAssembly dengan diffing virtual DOM, reactive interactive islands, dan hidrasi klien parsial."
     },
     "quickstart": {
       "badge": "Instalasi Cepat",
