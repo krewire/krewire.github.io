@@ -293,12 +293,12 @@
 
         <div class="workload-card">
           <div class="workload-top">
-            <span class="workload-tag">Core Domain</span>
+            <span class="workload-tag">WebAssembly</span>
             <span class="workload-icon">◈</span>
           </div>
-          <h3 data-i18n="workloads.w_kernel_title">kernel</h3>
-          <p data-i18n="workloads.w_kernel_desc">Pre-init bootstrap core containing strict domain models and runtime lifecycle abstractions.</p>
-          <div class="workload-marker">kiw init</div>
+          <h3 data-i18n="workloads.w_runtime_title">runtime</h3>
+          <p data-i18n="workloads.w_runtime_desc">Compile Go into WebAssembly with virtual DOM diffing, reactive interactive islands, and partial client hydration.</p>
+          <div class="workload-marker">kiw build --target wasm</div>
         </div>
       </div>
     </div>
@@ -775,14 +775,11 @@ fix(web): recover panic in http handler</code></pre>
       
       <div class="flex flex-col gap-2 footer-col">
         <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.col_repos">Repositories</strong>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/framework" rel="noopener" target="_blank">framework</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/libs" rel="noopener" target="_blank">libs (Krewire Libs)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/kiw" rel="noopener" target="_blank">kiw (cli)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/boost" rel="noopener" target="_blank">boost (ai agent)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/hub" rel="noopener" target="_blank">hub (plugins)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/ship" rel="noopener" target="_blank">ship (deployer)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/mdbind" rel="noopener" target="_blank">mdbind (compiler)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/forge" rel="noopener" target="_blank">forge (app builder)</a>
+        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire" rel="noopener" target="_blank">krewire (core monorepo)</a>
+        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/mdbind" rel="noopener" target="_blank">mdbind (book engine)</a>
+        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/internal" rel="noopener" target="_blank">internal (docs hub)</a>
+        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.com" rel="noopener" target="_blank">krewire.com (portal)</a>
+        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.github.io" rel="noopener" target="_blank">krewire.github.io (community)</a>
       </div>
 
       
