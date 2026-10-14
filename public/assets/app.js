@@ -279,11 +279,11 @@
         },
         "pathways": {
             "badge": "Codebase Matrix",
-            "title": "5 Repositories & Where to Start",
+            "title": "4 Public Repositories & Where to Start",
             "subtitle": "Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.",
             "one_line_title": "One-Command Contributor Bootstrap",
             "one_line_badge": "Recommended",
-            "one_line_desc_html": "Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:",
+            "one_line_desc_html": "Clone the core repository, run the test suites, and verify all 3 automated quality gates:",
             "copy_btn": "Copy",
             "copied_btn": "Copied!",
             "meta_prereq": "Prerequisites: Go 1.27.1+ and Git",

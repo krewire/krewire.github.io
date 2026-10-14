@@ -40,4 +40,4 @@ public/               # favicon.svg, copied verbatim
 
 ## Ecosystem
 
-Krewire consists of 5 repositories (`krewire`, `mdbind`, `internal`, `krewire.com`, `krewire.github.io`). This site dogfoods `packages/web/ssg` + `packages/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
+Krewire consists of 4 public repositories (`krewire`, `mdbind`, `krewire.com`, `krewire.github.io`). This site dogfoods `packages/web/ssg` + `packages/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
