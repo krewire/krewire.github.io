@@ -78,12 +78,21 @@ jobs:
         run: |
           kiw build
           touch .krewire/build/.nojekyll
-          echo "launchpad.krewire.com" > .krewire/build/CNAME
+          # Mirror output into contribute/ subfolder so both root (https://krewire.github.io/)
+          # and mounted base path (https://krewire.github.io/contribute/ and krewire.com/contribute/) resolve identically.
+          mkdir -p .krewire/build/contribute
+          cp -a .krewire/build/assets .krewire/build/contribute/
+          cp -a .krewire/build/index.html .krewire/build/contribute/
+          cp -a .krewire/build/404.html .krewire/build/contribute/ 2>/dev/null || true
+          cp -a .krewire/build/*.png .krewire/build/*.svg .krewire/build/*.ico .krewire/build/*.xml .krewire/build/*.webmanifest .krewire/build/contribute/ 2>/dev/null || true
 
       - name: Fast sanity check of build outputs
         run: |
-          test -f .krewire/build/index.html || { echo "✗ Missing index.html"; exit 1; }
-          test -f .krewire/build/CNAME || { echo "✗ Missing CNAME"; exit 1; }
+          test -f .krewire/build/index.html || { echo "✗ Missing root index.html"; exit 1; }
+          test -f .krewire/build/contribute/index.html || { echo "✗ Missing contribute/index.html"; exit 1; }
+          test -d .krewire/build/assets || { echo "✗ Missing assets"; exit 1; }
+          test -d .krewire/build/contribute/assets || { echo "✗ Missing contribute/assets"; exit 1; }
+          test ! -f .krewire/build/CNAME || { echo "✗ CNAME must not exist"; exit 1; }
           echo "✓ Fast sanity checks passed."
 
       - name: Upload build artifact
@@ -114,94 +123,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .krewire/build
           publish_branch: gh-pages
-          cname: launchpad.krewire.com
           commit_message: "hotfix(emergency): fast deploy from ${{ github.sha }} [bypass release protocol]"
-
-  # ─────────────────────────────────────────────────────────────────────────────
-  # JOB 3 — Direct Emergency Deploy to VPS
-  # ─────────────────────────────────────────────────────────────────────────────
-  deploy-hotfix-vps:
-    name: Deploy Hotfix to VPS (launchpad.krewire.com)
-    runs-on: ubuntu-latest
-    needs: build-hotfix
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: hotfix-build-${{ github.sha }}
-          path: .krewire/build
-
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Backup Current Stable Directory on VPS
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=yes \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'REMOTE'
-            set -euo pipefail
-            if [ -d /var/www/launchpad.krewire.com ]; then
-              echo "▶ Creating snapshot of current stable portal directory..."
-              rm -rf /tmp/launchpad.krewire.com.stable.bak
-              cp -a /var/www/launchpad.krewire.com /tmp/launchpad.krewire.com.stable.bak
-              echo "✓ Stable snapshot created."
-            fi
-          REMOTE
-
-      - name: Apply Hotfix to launchpad.krewire.com via rsync
-        run: |
-          rsync -az --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
-            .krewire/build/ \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/launchpad.krewire.com/
-
-      - name: Record emergency hotfix audit trail
-        env:
-          BRANCH: ${{ github.ref_name }}
-          SHA: ${{ github.sha }}
-          ACTOR: ${{ github.actor }}
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=yes \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash -s "${BRANCH}" "${SHA}" "${ACTOR}" << 'REMOTE'
-            BRANCH="$1"
-            SHA="$2"
-            ACTOR="$3"
-            mkdir -p ~/workspace/krewire
-            echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] 🚨 EMERGENCY HOTFIX APPLIED: portal branch=${BRANCH} commit=${SHA} actor=${ACTOR} (Protocol Bypass)" >> ~/workspace/krewire/deploy.log
-            echo "✓ Emergency hotfix audit recorded."
-          REMOTE
-
-      - name: Hotfix Smoke Test
-        run: |
-          echo "▶ Verifying hotfix response on https://launchpad.krewire.com ..."
-          sleep 3
-          HTTP_CODE="$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 https://launchpad.krewire.com/ 2>/dev/null || true)"
-          if [ "${HTTP_CODE}" = "200" ]; then
-            echo "✓ Portal live site responded HTTP 200 after emergency hotfix."
-          else
-            echo "✗ Smoke test failed: HTTP ${HTTP_CODE} — triggering fallback to stable!"
-            exit 1
-          fi
-
-      - name: Emergency Fallback to Stable Snapshot on Failure
-        if: failure()
-        run: |
-          echo "🚨 HOTFIX FAILED! Restoring stable snapshot on VPS..."
-          ssh -i ~/.ssh/deploy_key \
-            -o StrictHostKeyChecking=yes \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'REMOTE'
-            set -euo pipefail
-            if [ -d /tmp/launchpad.krewire.com.stable.bak ]; then
-              echo "▶ Restoring portal from stable backup..."
-              rsync -az --delete /tmp/launchpad.krewire.com.stable.bak/ /var/www/launchpad.krewire.com/
-              echo "✓ Fallback to stable version completed."
-              echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] ⚠️ HOTFIX FAILED: Restored stable snapshot" >> ~/workspace/krewire/deploy.log
-            else
-              echo "⚠ No stable backup snapshot available."
-            fi
-          REMOTE
