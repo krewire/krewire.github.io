@@ -42,7 +42,7 @@
         <a href="#pathways" data-i18n="nav.pathways">Pathways &amp; Repos</a>
         <a href="#guide" data-i18n="nav.guide">Contributor Guide</a>
         <a href="#standards" data-i18n="nav.standards">Quality Gates</a>
-        <a href="#sponsorship" data-i18n="nav.sponsorship">Open Core &amp; Sponsorship</a>
+        <a href="#sponsorship" data-i18n="nav.sponsorship">Sponsorship</a>
         <a href="#boost" data-i18n="nav.boost">AI Boost</a>
         <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="gh-link"><span>💬</span> <span data-i18n="nav.discussions">Discussions ↗</span></a>
       </nav>
@@ -60,7 +60,7 @@
         </a>
         <a class="mobile-link" href="#pathways">
           <span class="link-icon">⬢</span>
-          <span data-i18n="nav.pathways">Contribution Pathways (5 Repos)</span>
+          <span data-i18n="nav.pathways">Contribution Pathways (4 Repos)</span>
         </a>
         <a class="mobile-link" href="#guide">
           <span class="link-icon">⚡</span>
@@ -72,7 +72,7 @@
         </a>
         <a class="mobile-link" href="#sponsorship">
           <span class="link-icon">💖</span>
-          <span data-i18n="nav.sponsorship">Open Core &amp; Sponsorship</span>
+          <span data-i18n="nav.sponsorship">Sponsorship</span>
         </a>
         <a class="mobile-link" href="#boost">
           <span class="link-icon">▲</span>

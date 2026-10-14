@@ -230,7 +230,7 @@
             "pathways": "Pathways & Repos",
             "guide": "Contributor Guide",
             "standards": "Quality Gates",
-            "sponsorship": "Open Core & Sponsorship",
+            "sponsorship": "Sponsorship",
             "boost": "AI Boost",
             "discussions": "Discussions ↗",
             "github_org": "GitHub Organization"
@@ -238,11 +238,11 @@
         "hero": {
             "eyebrow": "◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD",
             "title_html": "Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.",
-            "lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.",
+            "lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.",
             "cta_contribute": "Start Contributing →",
-            "cta_sponsor": "Sponsorship & Tiers 💖",
+            "cta_sponsor": "Sponsor Collective 💖",
             "cta_issues": "Good First Issues ↗",
-            "meta": "100% Open Source Core (MIT) · Free Forever · Four-Rung Tier Ladder · AI-Assisted Synergy"
+            "meta": "100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy"
         },
         "trust": {
             "label": "Community & Stewardship Baseline",
@@ -292,17 +292,14 @@
             "filter_all": "All Repositories",
             "filter_core": "Core Monorepo & Books",
             "filter_web": "Portals & Sites",
-            "filter_docs": "Specs & Architecture",
             "track_krewire": "Core Monorepo & Libraries",
             "track_mdbind": "Static Books & Documentation",
             "track_krewire_com": "Official Product & Docs Site",
             "track_github_io": "Community & Sponsorship Portal",
-            "track_internal": "Architecture ADRs & Governance",
             "match_krewire": "If you enjoy: Modular Go libraries (packages/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).",
             "match_mdbind": "If you enjoy: Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.",
             "match_krewire_com": "If you enjoy: High-fidelity web design, interactive documentation, component-driven layouts, and dogfooding the .kiw DSL in production.",
             "match_github_io": "If you enjoy: Community engagement, sponsorship platforms, localization (i18n), accessible UI components, and contributor onboarding portals.",
-            "match_internal": "If you enjoy: Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and ecosystem governance.",
             "pkg_label": "Key Packages & Paths:",
             "action_issues": "Good First Issues →",
             "action_repo": "GitHub Repo ↗"
@@ -338,45 +335,28 @@
             "gate3_req": "Required: Semantic commit format & spec traceability"
         },
         "sponsorship": {
-            "badge": "Open Core Model",
-            "title": "The Four-Rung Tier Ladder & Sponsorship",
-            "subtitle": "Krewire operates on an open core model: every line of code inside krewire/krewire is 100% open source (MIT). The ecosystem starts on the free tier — free forever — and climbs a four-rung ladder of pro, team, and enterprise.",
-            "tier1_badge": "Free Forever",
-            "tier1_name": "free",
-            "tier1_target": "Students, UMKM, hobbyists, evaluation",
-            "tier1_desc": "The whole path from requirement to running product. A project built entirely on free modules builds, deploys, and operates with no license key, no seat count, no telemetry, and no expiry.",
-            "tier1_f1": "100% Open source (MIT License)",
-            "tier1_f2": "Self-serve, no account or license key needed",
-            "tier1_f3": "All core modules (kern, web, ui, tui, runtime, i18n, assets, cloud, testing, hub)",
-            "tier1_cta": "Get Started (Free) →",
-            "tier2_badge": "Planned Tier",
-            "tier2_name": "pro",
-            "tier2_target": "Individual developers, freelancers, advanced products",
-            "tier2_desc": "Self-serve production reliability: distinguishes production-grade operational commitments, hardened security, managed secrets, and commercial sponsorship entitlements.",
-            "tier2_f1": "100% Open source (MIT License)",
-            "tier2_f2": "Hardened security & signed release pipeline",
-            "tier2_f3": "Managed secrets & KMS-backed credential rotation",
-            "tier2_cta": "Sponsor on GitHub →",
-            "tier3_badge": "Planned Tier",
-            "tier3_name": "team",
-            "tier3_target": "Growing teams and agencies (multi-contributor)",
-            "tier3_desc": "Collaboration and fleet policy: shared configuration, team-wide policy, role separation across environments, and aggregate reporting.",
-            "tier3_f1": "100% Open source (MIT License)",
-            "tier3_f2": "Team-wide policy & role separation",
-            "tier3_f3": "Fleet-level dashboards, cost & usage visibility",
-            "tier3_cta": "Sponsor on GitHub →",
-            "tier4_badge": "Custom B2B",
-            "tier4_name": "enterprise",
-            "tier4_target": "Organizations with procurement, compliance, or SLA needs",
-            "tier4_desc": "Deliberately not a self-serve product. Negotiated contract with compliance guarantees, named support contacts, immutable audit logging, and private registry support.",
-            "tier4_f1": "100% Open source core (MIT License)",
-            "tier4_f2": "Immutable audit logs & data retention enforcement",
-            "tier4_f3": "Defined availability SLA & named support contact",
-            "tier4_cta": "Inquire for Enterprise B2B →",
-            "sponsor_box_title": "Sponsoring the Krewire Collective",
-            "sponsor_box_desc": "Sponsorship fuels independent infrastructure, code signing attestations, and sustained open-source development. Choose your preferred channel to support:",
-            "sponsor_gh_btn": "Sponsor via GitHub Sponsors 💖",
-            "sponsor_b2b_btn": "Contact for Enterprise B2B Inquiry →"
+            "badge": "Community Support",
+            "title": "Sponsoring Krewire",
+            "subtitle": "Krewire is an independent open-source collective born in Indonesia. Sponsorship sustains full-time engineering, independent infrastructure, security signing, and community education — keeping the ecosystem 100% open and community-owned.",
+            "channel1_badge": "Individual & Community Backers",
+            "channel1_title": "GitHub Sponsors",
+            "channel1_desc": "Support Krewire with recurring monthly backing or one-time contributions. Every contribution directly funds developer infrastructure, domain upkeep, test runners, and open-source tooling.",
+            "channel1_p1": "Backer badge & recognition in Krewire README & official sites",
+            "channel1_p2": "Direct updates from maintainers on roadmap & releases",
+            "channel1_p3": "Join private community discussions and early preview channels",
+            "channel1_p4": "Zero platform fee — 100% goes directly to ecosystem sustainability",
+            "channel1_cta": "Back on GitHub Sponsors 💖 →",
+            "channel2_badge": "Companies & Organizations",
+            "channel2_title": "Corporate & Strategic Sponsorship",
+            "channel2_desc": "For engineering organizations, tech startups, and enterprises building upon Krewire or investing in Indonesia's open-source technology sovereignty.",
+            "channel2_p1": "Prominent logo placement on krewire.com, docs, and event materials",
+            "channel2_p2": "Direct priority issue advisory & architectural guidance with core team",
+            "channel2_p3": "Custom invoicing, tax receipting, or B2B community partnership agreements",
+            "channel2_p4": "Showcase your organization's engineering culture and job openings to Krewire builders",
+            "channel2_cta": "Inquire for Corporate Sponsorship →",
+            "trust_title": "100% Open Source, Always",
+            "trust_desc": "Sponsorship is purely an investment into public goods. No paid paywalls, no proprietary gates in core packages — all code remains free and open under the MIT license.",
+            "trust_btn": "Become a Sponsor →"
         },
         "guild": {
             "badge": "Human + AI Synergy",
@@ -411,7 +391,7 @@
             "col_contrib": "Contribution",
             "col_community": "Community & Sponsors",
             "perks": "Contributor Perks & Access",
-            "where_start": "5 Repositories Matrix",
+            "where_start": "4 Public Repositories Matrix",
             "getting_started": "5-Step Contributor Guide",
             "pathways": "Contribution Pathways",
             "standards": "3 Quality Gates",
@@ -431,7 +411,7 @@
             "pathways": "Jalur & Repositori",
             "guide": "Panduan Kontributor",
             "standards": "Standar Mutu",
-            "sponsorship": "Open Core & Sponsorship",
+            "sponsorship": "Sponsor",
             "boost": "AI Boost",
             "discussions": "Diskusi ↗",
             "github_org": "Organisasi GitHub"
@@ -439,11 +419,11 @@
         "hero": {
             "eyebrow": "◈ KOLEKTIF SUMBER TERBUKA · LAHIR DI INDONESIA · UNTUK DUNIA",
             "title_html": "Berkontribusi Kode. Sponsori Sumber Terbuka.<br>Berdayakan Rekayasawan Indonesia.",
-            "lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular berbasis open core, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara para sponsor mendukung infrastruktur mandiri dan para pengelola.",
+            "lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara para sponsor mendukung infrastruktur mandiri dan para pengelola.",
             "cta_contribute": "Mulai Berkontribusi →",
-            "cta_sponsor": "Sponsorship & Tingkatan 💖",
+            "cta_sponsor": "Sponsori Kolektif 💖",
             "cta_issues": "Good First Issues ↗",
-            "meta": "100% Inti Sumber Terbuka (MIT) · Gratis Selamanya · Jenjang Empat Tingkat · Sinergi AI Boost"
+            "meta": "100% Inti Sumber Terbuka (MIT) · Milik Komunitas · Infrastruktur Mandiri · Sinergi AI Boost"
         },
         "trust": {
             "label": "Fondasi Komunitas & Tata Kelola",
@@ -480,11 +460,11 @@
         },
         "pathways": {
             "badge": "Matriks Basis Kode",
-            "title": "5 Repositori & Tempat Memulai",
+            "title": "4 Repositori Publik & Tempat Memulai",
             "subtitle": "Cocokkan keahlian dan minat Anda dengan repositori yang tepat, siapkan lingkungan lokal, dan langsung tangani isu aktif.",
             "one_line_title": "Bootstrap Kontributor Satu Perintah",
             "one_line_badge": "Disarankan",
-            "one_line_desc_html": "Secara otomatis mengklon seluruh repositori ekosistem, membuat workspace <code>go.work</code>, mengompilasi devtool <code>kiw</code>, dan memvalidasi kontrak kompatibilitas:",
+            "one_line_desc_html": "Klon repositori inti, jalankan pengujian, dan verifikasi seluruh 3 Quality Gate otomatis:",
             "copy_btn": "Salin",
             "copied_btn": "Tersalin!",
             "meta_prereq": "Prasyarat: Go 1.27.1+ dan Git",
@@ -493,17 +473,14 @@
             "filter_all": "Semua Repositori",
             "filter_core": "Monorepo Inti & Buku",
             "filter_web": "Portal & Situs Web",
-            "filter_docs": "Spesifikasi & Arsitektur",
             "track_krewire": "Monorepo Inti & Pustaka",
             "track_mdbind": "Buku Statis & Dokumentasi",
             "track_krewire_com": "Situs Produk & Dokumen Resmi",
             "track_github_io": "Portal Komunitas & Sponsor",
-            "track_internal": "ADR Arsitektur & Tata Kelola",
             "match_krewire": "Jika Anda menyukai: Pustaka Go modular (packages/*), CLI devtool (tools/kiw), runtime fullstack, antrean latar belakang, dan template agen AI (templates/boost).",
             "match_mdbind": "Jika Anda menyukai: Pembangun dokumentasi statis super cepat, transformasi AST Markdown, live reload instan, pengindeksan pencarian, dan penyorot sintaksis.",
             "match_krewire_com": "Jika Anda menyukai: Desain web presisi tinggi, dokumentasi interaktif, tata letak berbasis komponen, dan dogfooding DSL .kiw di produksi.",
             "match_github_io": "Jika Anda menyukai: Keterlibatan komunitas, platform sponsorship, pelokalan (i18n), komponen antarmuka aksesibel, dan portal orientasi kontributor.",
-            "match_internal": "Jika Anda menyukai: Architectural Decision Records (ADR), spesifikasi ekosistem, peta jalan jangka panjang, dan tata kelola ekosistem.",
             "pkg_label": "Paket & Jalur Utama:",
             "action_issues": "Good First Issues →",
             "action_repo": "Repositori GitHub ↗"
@@ -539,45 +516,28 @@
             "gate3_req": "Wajib: Format commit semantik & keterlacakan spesifikasi"
         },
         "sponsorship": {
-            "badge": "Model Open Core",
-            "title": "Jenjang Empat Tingkat & Sponsorship",
-            "subtitle": "Krewire beroperasi dengan model open core: setiap baris kode di krewire/krewire 100% sumber terbuka (MIT). Ekosistem dimulai dari tingkat free — gratis selamanya — dan bertumbuh secara progresif melalui pro, team, dan enterprise.",
-            "tier1_badge": "Gratis Selamanya",
-            "tier1_name": "free",
-            "tier1_target": "Mahasiswa, UMKM, pehobi, evaluasi",
-            "tier1_desc": "Jalur lengkap dari penulisan kebutuhan hingga produk berjalan. Proyek yang seluruhnya dibangun di atas modul free dapat dikompilasi, dijalankan, dan diserahkan tanpa lisensi atau telemetri.",
-            "tier1_f1": "100% Sumber terbuka (Lisensi MIT)",
-            "tier1_f2": "Mandiri, tanpa akun atau kunci lisensi",
-            "tier1_f3": "Seluruh modul inti (kern, web, ui, tui, runtime, i18n, assets, cloud, testing, hub)",
-            "tier1_cta": "Mulai Menggunakan (Gratis) →",
-            "tier2_badge": "Tingkat Terencana",
-            "tier2_name": "pro",
-            "tier2_target": "Pengembang individu, pekerja lepas, produk mandiri",
-            "tier2_desc": "Keandalan produksi mandiri: komitmen operasional tingkat produksi, keamanan tangguh, secrets vault berbasis KMS, dan hak sponsorship komersial.",
-            "tier2_f1": "100% Sumber terbuka (Lisensi MIT)",
-            "tier2_f2": "Keamanan tangguh & pipeline rilis bertanda tangan",
-            "tier2_f3": "Secrets terkelola & rotasi kredensial berbasis KMS",
-            "tier2_cta": "Sponsori di GitHub →",
-            "tier3_badge": "Tingkat Terencana",
-            "tier3_name": "team",
-            "tier3_target": "Tim berkembang, agensi, proyek banyak kontributor",
-            "tier3_desc": "Kebijakan kolaborasi dan armada: konfigurasi bersama, kebijakan seluruh tim, pemisahan peran lintas lingkungan, dan pelaporan agregat.",
-            "tier3_f1": "100% Sumber terbuka (Lisensi MIT)",
-            "tier3_f2": "Kebijakan tim & pemisahan peran lingkungan",
-            "tier3_f3": "Dashboard armada, visibilitas biaya & penggunaan",
-            "tier3_cta": "Sponsori di GitHub →",
-            "tier4_badge": "Kemitraan Khusus B2B",
-            "tier4_name": "enterprise",
-            "tier4_target": "Organisasi dengan kebutuhan pengadaan, kepatuhan, atau SLA",
-            "tier4_desc": "Bukan produk mandiri. Kontrak negosiasi langsung dengan jaminan kepatuhan, kontak dukungan khusus, log audit tak dapat diubah, dan registry privat.",
-            "tier4_f1": "100% Inti sumber terbuka (Lisensi MIT)",
-            "tier4_f2": "Log audit tak dapat diubah & penegakan retensi data",
-            "tier4_f3": "Komitmen ketersediaan SLA & kontak dukungan terdedikasi",
-            "tier4_cta": "Pertanyaan Kemitraan Enterprise →",
-            "sponsor_box_title": "Sponsori Kolektif Krewire",
-            "sponsor_box_desc": "Dukungan sponsorship menopang infrastruktur mandiri, atestasi penandatanganan kode, dan pengembangan sumber terbuka yang berkelanjutan. Pilih saluran dukungan Anda:",
-            "sponsor_gh_btn": "Sponsori melalui GitHub Sponsors 💖",
-            "sponsor_b2b_btn": "Kontak untuk Kemitraan Enterprise B2B →"
+            "badge": "Dukungan Komunitas",
+            "title": "Sponsori Krewire",
+            "subtitle": "Krewire adalah kolektif sumber terbuka independen yang berbasis di Indonesia. Dukungan sponsor menopang rekayasa penuh waktu, infrastruktur mandiri, sertifikasi keamanan, dan edukasi komunitas — menjaga ekosistem 100% terbuka dan milik komunitas.",
+            "channel1_badge": "Individu & Pendukung Komunitas",
+            "channel1_title": "GitHub Sponsors",
+            "channel1_desc": "Dukung Krewire secara bulanan atau donasi satu kali. Setiap kontribusi langsung mendanai infrastruktur pengembang, domain, test runner CI, dan devtools sumber terbuka.",
+            "channel1_p1": "Lencana donatur & pencantuman nama di README Krewire serta situs resmi",
+            "channel1_p2": "Pembaruan langsung dari maintainer terkait roadmap & rilis ekosistem",
+            "channel1_p3": "Akses ke kanal diskusi komunitas privat dan pengujian fitur awal",
+            "channel1_p4": "Bebas biaya platform — 100% dana dialokasikan untuk keberlanjutan ekosistem",
+            "channel1_cta": "Dukung via GitHub Sponsors 💖 →",
+            "channel2_badge": "Perusahaan & Organisasi",
+            "channel2_title": "Sponsorship Korporat & Kemitraan Strategis",
+            "channel2_desc": "Bagi organisasi rekayasa perangkat lunak, startup, dan korporasi yang membangun produk di atas Krewire atau berinvestasi pada kedaulatan teknologi Indonesia.",
+            "channel2_p1": "Penempatan logo resmi di portal krewire.com, dokumentasi, dan materi rilis",
+            "channel2_p2": "Konsultasi arsitektur langsung & prioritas penanganan isu dari tim inti",
+            "channel2_p3": "Faktur resmi, dokumen perpajakan, atau perjanjian kemitraan B2B",
+            "channel2_p4": "Promosikan kultur rekayasa dan lowongan kerja teknologi Anda kepada para pembangun Krewire",
+            "channel2_cta": "Hubungi untuk Kemitraan Korporat →",
+            "trust_title": "100% Sumber Terbuka, Selamanya",
+            "trust_desc": "Sponsorship murni merupakan investasi untuk barang publik (public goods). Tidak ada paywall berbayar atau fitur terkunci pada paket inti — seluruh kode tetap bebas dan terbuka di bawah lisensi MIT.",
+            "trust_btn": "Menjadi Sponsor →"
         },
         "guild": {
             "badge": "Sinergi Manusia + AI",
@@ -612,7 +572,7 @@
             "col_contrib": "Kontribusi",
             "col_community": "Komunitas & Sponsor",
             "perks": "Hak Istimewa Kontributor",
-            "where_start": "Matriks 5 Repositori",
+            "where_start": "Matriks 4 Repositori Publik",
             "getting_started": "Panduan Kontributor 5 Langkah",
             "pathways": "Jalur Kontribusi",
             "standards": "3 Quality Gate",
@@ -627,5 +587,89 @@
     }
   };
 
+  function getNestedValue(obj, keyPath) {
+    if (!obj || !keyPath) return null;
+    var parts = keyPath.split(".");
+    var curr = obj;
+    for (var i = 0; i < parts.length; i++) {
+      if (curr && typeof curr === "object" && parts[i] in curr) {
+        curr = curr[parts[i]];
+      } else {
+        return null;
+      }
+    }
+    return curr;
+  }
+
   function initI18n() {
-    
+    var currentLang = "en";
+    try {
+      var saved = localStorage.getItem("krewire-lang");
+      if (saved === "id" || saved === "en") {
+        currentLang = saved;
+      } else if (navigator.language && navigator.language.toLowerCase().startsWith("id")) {
+        currentLang = "id";
+      }
+    } catch (e) {}
+
+    function applyLanguage(lang) {
+      currentLang = (lang === "id") ? "id" : "en";
+      document.documentElement.lang = currentLang;
+      try {
+        localStorage.setItem("krewire-lang", currentLang);
+      } catch (e) {}
+
+      document.querySelectorAll(".lang-toggle .lang-code").forEach(function(el) {
+        el.textContent = currentLang.toUpperCase();
+      });
+
+      document.querySelectorAll("[data-i18n]").forEach(function(el) {
+        var key = el.getAttribute("data-i18n");
+        var val = getNestedValue(translations[currentLang], key) || getNestedValue(translations.en, key);
+        if (val) {
+          if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+            el.setAttribute("placeholder", val);
+          } else {
+            el.textContent = val;
+          }
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach(function(el) {
+        var key = el.getAttribute("data-i18n-html");
+        var val = getNestedValue(translations[currentLang], key) || getNestedValue(translations.en, key);
+        if (val) {
+          el.innerHTML = val;
+        }
+      });
+    }
+
+    window.krewireI18n = {
+      getLocale: function() { return currentLang; },
+      setLocale: function(l) { applyLanguage(l); },
+      toggle: function() {
+        applyLanguage(currentLang === "en" ? "id" : "en");
+      }
+    };
+
+    applyLanguage(currentLang);
+  }
+
+  // Initialize theme immediately to prevent flash
+  initTheme();
+
+  // Initialize interactive components when DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      initNav();
+      initAnimations();
+      initNavMap();
+      initI18n();
+    });
+  } else {
+    initNav();
+    initAnimations();
+    initNavMap();
+    initI18n();
+  }
+})();
