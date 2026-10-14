@@ -2,10 +2,10 @@
 
 Official community portal for **https://krewire.github.io/** — the hub for contributors, open-source collective guides, and sponsorship for the Krewire ecosystem.
 
-- **Stack:** `krewire.yaml` (kind `site`, `base:"/"`) + `pages/*.kiw` + `components/*.kiw` + `layouts/*.kiw` + `content/docs/*.md` → `kiw build` → `site/` (no `go.mod` needed).
-- **Design:** Contributor & sponsorship portal, theme toggle (`auto`/`light`/`dark`) via `localStorage`, scoped CSS (`data-kiw-*`), theme color tokens.
+- **Stack:** `krewire.yaml` (kind `site`, `base: "/contribute/"`) + `pages/*.kiw` + `layouts/*.kiw` → `kiw build` → `.krewire/build` (no `go.mod` needed).
+- **Design:** Contributor & sponsorship portal, theme toggle (`auto`/`light`/`dark`) via `localStorage`, bilingual i18n (`en`/`id`), scoped CSS (`data-kiw-*`), theme color tokens.
 - **Version:** `v0.1.0` — single source `krewire.yaml` `project.version`.
-- **Purpose:** Attracting contributors, community stewardship, showcase, and sponsorships for the Indonesian & global open-source community.
+- **Purpose:** Contributor onboarding, meritocracy privileges, codebase matrix, 3 quality gates, and transparent sponsorship tiers for the Indonesian & global open-source community.
 
 ## Quick start
 

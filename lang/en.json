@@ -1,7 +1,7 @@
 {
-  "site_title": "Krewire Release — Official Release Launch & Community Hub",
-  "site_description": "The home for engineers, architects, and autonomous AI agents crafting a modular, sustainable Go digital ecosystem at near-zero cost.",
+  "site_title": "Krewire Community — Contribution & Sponsorship Portal",
+  "site_description": "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem.",
   "portal": {
-    "welcome": "Welcome to Krewire Release"
+    "welcome": "Welcome to Krewire Community Portal"
   }
 }

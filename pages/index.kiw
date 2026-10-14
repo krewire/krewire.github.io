@@ -1,24 +1,24 @@
 ---
-title: "Krewire Release — Official Release Launch & Community Hub"
-description: "The official version release launchpad, codebase matrix, and roadmap for the Krewire open-source ecosystem."
+title: "Krewire Community — Contribution & Sponsorship Portal"
+description: "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem. Empowering Indonesian and global engineers to build and sustain modular Go systems."
 layout: Landing
 ---
 
-<div class="contributors-portal release-portal">
+<div class="contributors-portal">
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero" id="overview">
     <div class="hero-inner">
       <div class="hero-copy">
-        <div class="eyebrow" data-i18n="hero.eyebrow">◈ ECOSYSTEM VERSION RELEASE · v0.1.0 GENERAL AVAILABILITY</div>
-        <h1 data-i18n-html="hero.title_html">Krewire v0.1.0 is Here.<br>The Modular Go Ecosystem for 8 Workloads.</h1>
-        <p class="lead" data-i18n="hero.lead">The official release launchpad for the Krewire open-source ecosystem. A unified, modular Go foundation engineered with single monorepo architecture, one declarative config (krewire.yaml), and one developer CLI (kiw) — crafted in Indonesia for software engineers and autonomous AI agents worldwide.</p>
+        <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
+        <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.</h1>
+        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while generous sponsors fund student fellowships and independent infrastructure.</p>
         <div class="ctas flex flex-wrap gap-3">
-          <Button Variant="primary" Size="lg" Href="#releases" DataI18n="hero.cta_release">Explore v0.1.0 Highlights →</Button>
-          <Button Variant="outline" Size="lg" Href="#quickstart" DataI18n="hero.cta_quickstart">Install CLI (kiw)</Button>
-          <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/releases" Target="_blank" DataI18n="hero.cta_releases_gh">GitHub Releases ↗</Button>
+          <Button Variant="primary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing →</Button>
+          <Button Variant="secondary" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Become a Sponsor 💖</Button>
+          <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" Target="_blank" DataI18n="hero.cta_issues">Good First Issues ↗</Button>
         </div>
-        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Verified Quality Gates</div>
+        <div class="meta" data-i18n="hero.meta">100% Open Source Core (MIT) · Free Forever · Four-Rung Tier Ladder · AI-Assisted Synergy</div>
       </div>
       <div class="hero-art">
         <div class="code-terminal-card">
@@ -28,453 +28,350 @@ layout: Landing
               <span class="term-dot yellow"></span>
               <span class="term-dot green"></span>
             </div>
-            <span class="term-title">kiw — release v0.1.0 (GA)</span>
+            <span class="term-title">kiw — contributor &amp; sponsor hub</span>
           </div>
           <div class="code-terminal-body">
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go install github.com/krewire/krewire/tools/kiw/cmd/kiw@latest</span></div>
-            <div class="term-line term-info">✓ installed kiw devtool v0.1.0 (go1.27.1 linux/amd64)</div>
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">kiw new my-service --kind=app</span></div>
-            <div class="term-line term-info">✓ scaffolded workload app behind krewire.yaml</div>
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cd my-service &amp;&amp; kiw dev</span></div>
-            <div class="term-line term-success">⚡ [krewire] server live at http://localhost:8080 (0.4ms)</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</span></div>
+            <div class="term-line term-info">✓ cloned 5 ecosystem repos behind go.work</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">kiw test</span></div>
+            <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
+            <div class="term-line term-muted mt-2"># Active Sponsorship Impact</div>
+            <div class="term-line term-info">⚡ 40% Student Fellowships · 30% CI Clusters · 20% Security Audits</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TRUST / LAUNCH MATRIX BAR -->
-  <section class="trust">
+  <!-- COMMUNITY TRUST / BASELINE BAR -->
+  <section class="trust" id="trust">
     <div class="trust-inner">
-      <span class="trust-label" data-i18n="trust.label">v0.1.0 Release Baseline</span>
+      <span class="trust-label" data-i18n="trust.label">Community &amp; Stewardship Baseline</span>
       <div class="trust-items">
-        <span class="trust-item" data-i18n-html="trust.version_html"><b>v0.1.0</b> Stable GA</span>
+        <span class="trust-item" data-i18n-html="trust.indonesia_html"><b>Indonesian</b> Collective</span>
         <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.repos_html"><b>5</b> Official Repositories</span>
+        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Meritocracy</b> Perks</span>
         <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.workloads_html"><b>8</b> Unified Workloads</span>
+        <span class="trust-item" data-i18n-html="trust.opencore_html"><b>Open Core</b> Sustainability</span>
         <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.native_html"><b>100%</b> Native Go</span>
+        <span class="trust-item" data-i18n-html="trust.free_html"><b>100%</b> Free Core (MIT)</span>
         <span class="dot">·</span>
         <span class="trust-item" data-i18n="trust.cost">Near-Zero Cloud Cost</span>
       </div>
     </div>
   </section>
 
-  <!-- v0.1.0 RELEASE HIGHLIGHTS -->
-  <section class="releases-section" id="releases">
+  <!-- WHY CONTRIBUTE & CONTRIBUTOR PRIVILEGES -->
+  <section class="benefits" id="privileges">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="releases.badge">Ecosystem Release</div>
-        <h2 data-i18n="releases.title">Krewire Ecosystem v0.1.0 Launch</h2>
-        <p data-i18n="releases.subtitle">The foundational milestone release delivering single monorepo architecture, the kiw devtool, strictly typed manifests, and 8 unified workload shapes.</p>
+        <div class="sub-badge" data-i18n="privileges.badge">Contributor Privileges</div>
+        <h2 data-i18n="privileges.title">Lifetime Access to Krewire's Paid Ecosystem</h2>
+        <p data-i18n="privileges.subtitle">True builders deserve shared ownership. By joining and actively contributing to the Krewire open-source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
       </div>
 
-      <div class="features-grid">
-        <div class="feature-card highlight-card">
-          <div class="feature-icon">📦</div>
-          <h3 data-i18n="releases.f1_title">Single Monorepo Architecture</h3>
-          <p data-i18n="releases.f1_desc">Consolidated under github.com/krewire/krewire. Eliminates cross-module dependency fragmentation, guarantees atomic Git commits, and powers seamless Go workspaces (go.work).</p>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-badge" data-i18n="privileges.p1_badge">Core Privilege</div>
+          <h3 data-i18n="privileges.p1_title">Commercial Sub-Products Lifetime Access</h3>
+          <p data-i18n="privileges.p1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
+          <ul class="benefit-list">
+            <li data-i18n="privileges.p1_i1">Free lifetime access to all paid Krewire commercial sub-products</li>
+            <li data-i18n="privileges.p1_i2">Priority early-access releases and exclusive roadmap previews</li>
+            <li data-i18n="privileges.p1_i3">Direct private collaboration channels with core maintainers</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3 data-i18n="releases.f2_title">Unified 'kiw' Devtool CLI</h3>
-          <p data-i18n="releases.f2_desc">A single binary driving the software lifecycle: kiw new, kiw dev, kiw build, kiw serve, kiw worker, kiw deploy, and kiw boost.</p>
+
+        <div class="benefit-card highlight-card">
+          <div class="benefit-badge" data-i18n="privileges.p2_badge">Strict Requirement</div>
+          <h3 data-i18n="privileges.p2_title">Active Contributions Required</h3>
+          <p data-i18n="privileges.p2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
+          <ul class="benefit-list">
+            <li data-i18n="privileges.p2_i1">Submit PRs for new features, bugfixes, or kernel optimizations</li>
+            <li data-i18n="privileges.p2_i2">Review open PRs and stress-test high-concurrency scenarios</li>
+            <li data-i18n="privileges.p2_i3">Author KWF architecture specifications or comprehensive docs</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚙️</div>
-          <h3 data-i18n="releases.f3_title">One Config: krewire.yaml</h3>
-          <p data-i18n="releases.f3_desc">Strictly typed, declarative project manifests eliminating arbitrary configuration drift across all 8 supported workloads.</p>
+
+        <div class="benefit-card">
+          <div class="benefit-badge" data-i18n="privileges.p3_badge">Revocation Policy</div>
+          <h3 data-i18n="privileges.p3_title">Revocable if Inactive or Dormant</h3>
+          <p data-i18n="privileges.p3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked if a contributor becomes inactive or dormant over an extended period.</p>
+          <ul class="benefit-list">
+            <li data-i18n="privileges.p3_i1">Contributor activity and commits are periodically audited</li>
+            <li data-i18n="privileges.p3_i2">Prolonged inactivity or dormancy leads to license deactivation</li>
+            <li data-i18n="privileges.p3_i3">Access privileges can be promptly reinstated upon resumed contribution</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🧩</div>
-          <h3 data-i18n="releases.f4_title">Modular Domain Libraries</h3>
-          <p data-i18n="releases.f4_desc">Single-purpose packages under packages/* (kern, web, ui, cli, db, config, validation, fs, worker). Compose only what you need without inheriting a monolithic framework.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤖</div>
-          <h3 data-i18n="releases.f5_title">AI Boost &amp; Agent Triad Native</h3>
-          <p data-i18n="releases.f5_desc">First-class integration for autonomous AI developer agents (templates/boost) with formal KWF-* specifications, automated audits, and regression tests.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📖</div>
-          <h3 data-i18n="releases.f6_title">Independent Docs Engine (mdbind)</h3>
-          <p data-i18n="releases.f6_desc">Standalone Markdown book &amp; docs compiler powering the book kind with AST transformations, live reloads, and offline assets embedding.</p>
+      </div>
+
+      <div class="meritocracy-callout mt-8">
+        <div class="meritocracy-inner">
+          <div class="meritocracy-icon">⚖️</div>
+          <div class="meritocracy-body">
+            <strong data-i18n="privileges.policy_title">Krewire Meritocracy Policy:</strong>
+            <p data-i18n="privileges.policy_text">We believe those who lay the foundation should share in its fruits. Commercial access is free for all active contributors, provided ongoing dedication to the collective is consistently maintained.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8 UNIFIED WORKLOADS SECTION -->
-  <section class="workloads-section" id="workloads">
+  <!-- CONTRIBUTION PATHWAYS & CODEBASE MATRIX -->
+  <section class="repos-nav" id="pathways">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="workloads.badge">Unified Architecture</div>
-        <h2 data-i18n="workloads.title">8 Workload Kinds Behind One Engine</h2>
-        <p data-i18n="workloads.subtitle">Krewire adapts to your project shape. An explicit project.kind in krewire.yaml determines the build, runtime, and deployment lifecycle.</p>
+        <div class="sub-badge" data-i18n="pathways.badge">Codebase Matrix</div>
+        <h2 data-i18n="pathways.title">5 Repositories &amp; Where to Start</h2>
+        <p data-i18n="pathways.subtitle">Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
       </div>
 
-      <div class="workloads-grid">
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Fullstack</span>
-            <span class="workload-icon">💻</span>
+      <!-- ONE COMMAND BOOTSTRAP BOX -->
+      <div class="fast-setup-box mb-8">
+        <div class="fast-setup-header">
+          <div class="fast-setup-title">
+            <span class="fast-icon">⚡</span>
+            <strong data-i18n="pathways.one_line_title">One-Command Contributor Bootstrap</strong>
           </div>
-          <h3 data-i18n="workloads.w_app_title">app</h3>
-          <p data-i18n="workloads.w_app_desc">Fullstack web applications with reactive server rendering, context pipelines, and DI containers.</p>
-          <div class="workload-marker">kiw run · kiw dev</div>
+          <span class="fast-setup-badge" data-i18n="pathways.one_line_badge">Recommended</span>
+        </div>
+        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
+        <div class="terminal-cmd-bar">
+          <code id="setup-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</code>
+          <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
+            <span class="copy-text" data-i18n="pathways.copy_btn">Copy</span>
+          </button>
+        </div>
+        <div class="fast-setup-meta">
+          <span class="meta-item" data-i18n="pathways.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
+          <span class="meta-dot">·</span>
+          <span class="meta-item" data-i18n="pathways.meta_zero">Zero manual configuration required</span>
+        </div>
+      </div>
+
+      <!-- TRACK FILTER -->
+      <div class="nav-filters mb-6">
+        <span class="filter-label" data-i18n="pathways.filter_label">Filter by Track:</span>
+        <div class="filter-pills">
+          <button class="filter-pill is-active" data-nav-filter="all" data-i18n="pathways.filter_all">All Repositories</button>
+          <button class="filter-pill" data-nav-filter="core" data-i18n="pathways.filter_core">Core Monorepo &amp; Books</button>
+          <button class="filter-pill" data-nav-filter="web" data-i18n="pathways.filter_web">Portals &amp; Sites</button>
+          <button class="filter-pill" data-nav-filter="docs" data-i18n="pathways.filter_docs">Specs &amp; Architecture</button>
+        </div>
+      </div>
+
+      <!-- REPOSITORIES GRID -->
+      <div class="repo-grid">
+        <!-- 1. krewire/krewire -->
+        <div class="repo-card featured" data-category="core">
+          <div class="repo-header">
+            <div class="repo-meta-top">
+              <span class="repo-tag core">Core Engine</span>
+              <span class="repo-lang">Go 1.27.1</span>
+            </div>
+            <h3 class="repo-title">
+              <a href="https://github.com/krewire/krewire" target="_blank" rel="noopener">krewire/krewire</a>
+            </h3>
+            <div class="repo-track-name" data-i18n="pathways.track_krewire">Core Monorepo &amp; Libraries</div>
+          </div>
+          <div class="repo-body">
+            <p class="repo-match" data-i18n="pathways.match_krewire">If you enjoy: Modular Go libraries (packages/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).</p>
+            <div class="repo-pkgs">
+              <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
+              <div class="pkgs-chips">
+                <span class="pkg-chip">packages/kern</span>
+                <span class="pkg-chip">packages/web</span>
+                <span class="pkg-chip">packages/ui</span>
+                <span class="pkg-chip">tools/kiw</span>
+                <span class="pkg-chip">templates/boost</span>
+              </div>
+            </div>
+          </div>
+          <div class="repo-footer">
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
+          </div>
         </div>
 
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Developer CLI</span>
-            <span class="workload-icon">⌨</span>
+        <!-- 2. krewire/mdbind -->
+        <div class="repo-card" data-category="core">
+          <div class="repo-header">
+            <div class="repo-meta-top">
+              <span class="repo-tag tool">Docs Engine</span>
+              <span class="repo-lang">Go</span>
+            </div>
+            <h3 class="repo-title">
+              <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener">krewire/mdbind</a>
+            </h3>
+            <div class="repo-track-name" data-i18n="pathways.track_mdbind">Static Books &amp; Documentation</div>
           </div>
-          <h3 data-i18n="workloads.w_cli_title">cli</h3>
-          <p data-i18n="workloads.w_cli_desc">Ergonomic terminal tools, subcommands, and flags powered by the lightweight TUI library.</p>
-          <div class="workload-marker">kiw run &lt;args&gt;</div>
+          <div class="repo-body">
+            <p class="repo-match" data-i18n="pathways.match_mdbind">If you enjoy: Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.</p>
+            <div class="repo-pkgs">
+              <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
+              <div class="pkgs-chips">
+                <span class="pkg-chip">parser/</span>
+                <span class="pkg-chip">compiler/</span>
+                <span class="pkg-chip">theme/</span>
+                <span class="pkg-chip">server/</span>
+              </div>
+            </div>
+          </div>
+          <div class="repo-footer">
+            <a href="https://github.com/krewire/mdbind/issues" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
+            <a href="https://github.com/krewire/mdbind" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
+          </div>
         </div>
 
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Static Web</span>
-            <span class="workload-icon">🌐</span>
+        <!-- 3. krewire/krewire.com -->
+        <div class="repo-card" data-category="web">
+          <div class="repo-header">
+            <div class="repo-meta-top">
+              <span class="repo-tag site">Product Portal</span>
+              <span class="repo-lang">.kiw DSL</span>
+            </div>
+            <h3 class="repo-title">
+              <a href="https://github.com/krewire/krewire.com" target="_blank" rel="noopener">krewire/krewire.com</a>
+            </h3>
+            <div class="repo-track-name" data-i18n="pathways.track_krewire_com">Official Product &amp; Docs Site</div>
           </div>
-          <h3 data-i18n="workloads.w_site_title">site</h3>
-          <p data-i18n="workloads.w_site_desc">High-speed static websites, marketing portals, and blogs with scoped CSS and the .kiw DSL.</p>
-          <div class="workload-marker">kiw build · kiw serve</div>
+          <div class="repo-body">
+            <p class="repo-match" data-i18n="pathways.match_krewire_com">If you enjoy: High-fidelity web design, interactive documentation, component-driven layouts, and dogfooding the .kiw DSL in production.</p>
+            <div class="repo-pkgs">
+              <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
+              <div class="pkgs-chips">
+                <span class="pkg-chip">pages/</span>
+                <span class="pkg-chip">layouts/</span>
+                <span class="pkg-chip">components/</span>
+                <span class="pkg-chip">content/docs/</span>
+              </div>
+            </div>
+          </div>
+          <div class="repo-footer">
+            <a href="https://github.com/krewire/krewire.com/issues" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire.com" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
+          </div>
         </div>
 
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Documentation</span>
-            <span class="workload-icon">📖</span>
+        <!-- 4. krewire/krewire.github.io -->
+        <div class="repo-card" data-category="web">
+          <div class="repo-header">
+            <div class="repo-meta-top">
+              <span class="repo-tag site">Community</span>
+              <span class="repo-lang">.kiw + i18n</span>
+            </div>
+            <h3 class="repo-title">
+              <a href="https://github.com/krewire/krewire.github.io" target="_blank" rel="noopener">krewire.github.io</a>
+            </h3>
+            <div class="repo-track-name" data-i18n="pathways.track_github_io">Community &amp; Sponsorship Portal</div>
           </div>
-          <h3 data-i18n="workloads.w_book_title">book</h3>
-          <p data-i18n="workloads.w_book_desc">Technical documentation and digital books compiled with the standalone mdbind engine.</p>
-          <div class="workload-marker">kiw build · kiw serve</div>
+          <div class="repo-body">
+            <p class="repo-match" data-i18n="pathways.match_github_io">If you enjoy: Community engagement, sponsorship platforms, localization (i18n), accessible UI components, and contributor onboarding portals.</p>
+            <div class="repo-pkgs">
+              <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
+              <div class="pkgs-chips">
+                <span class="pkg-chip">pages/index.kiw</span>
+                <span class="pkg-chip">layouts/</span>
+                <span class="pkg-chip">lang/</span>
+                <span class="pkg-chip">assets/</span>
+              </div>
+            </div>
+          </div>
+          <div class="repo-footer">
+            <a href="https://github.com/krewire/krewire.github.io/issues" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire.github.io" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
+          </div>
         </div>
 
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Background Queue</span>
-            <span class="workload-icon">⚙</span>
+        <!-- 5. krewire/internal -->
+        <div class="repo-card" data-category="docs">
+          <div class="repo-header">
+            <div class="repo-meta-top">
+              <span class="repo-tag docs">Architecture</span>
+              <span class="repo-lang">Markdown Specs</span>
+            </div>
+            <h3 class="repo-title">
+              <a href="https://github.com/krewire/internal" target="_blank" rel="noopener">krewire/internal</a>
+            </h3>
+            <div class="repo-track-name" data-i18n="pathways.track_internal">Architecture ADRs &amp; Governance</div>
           </div>
-          <h3 data-i18n="workloads.w_worker_title">worker</h3>
-          <p data-i18n="workloads.w_worker_desc">Background task processors, concurrent runners, async queues, and scheduled cron jobs.</p>
-          <div class="workload-marker">kiw worker · kiw dev</div>
-        </div>
-
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Microservice API</span>
-            <span class="workload-icon">⚡</span>
+          <div class="repo-body">
+            <p class="repo-match" data-i18n="pathways.match_internal">If you enjoy: Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and ecosystem governance.</p>
+            <div class="repo-pkgs">
+              <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
+              <div class="pkgs-chips">
+                <span class="pkg-chip">docs/adr/</span>
+                <span class="pkg-chip">docs/specs/</span>
+                <span class="pkg-chip">foundation/</span>
+                <span class="pkg-chip">scripts/</span>
+              </div>
+            </div>
           </div>
-          <h3 data-i18n="workloads.w_service_title">service</h3>
-          <p data-i18n="workloads.w_service_desc">High-throughput microservices, headless daemons, and low-latency JSON/gRPC APIs.</p>
-          <div class="workload-marker">kiw run · kiw dev</div>
-        </div>
-
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">Cloud &amp; Baremetal</span>
-            <span class="workload-icon">🚀</span>
+          <div class="repo-footer">
+            <a href="https://github.com/krewire/internal" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
           </div>
-          <h3 data-i18n="workloads.w_infra_title">infra</h3>
-          <p data-i18n="workloads.w_infra_desc">Zero-downtime raw VM runners, SSH automation, automated TLS provisioning, and systemd manifests.</p>
-          <div class="workload-marker">kiw deploy</div>
-        </div>
-
-        <div class="workload-card">
-          <div class="workload-top">
-            <span class="workload-tag">WebAssembly</span>
-            <span class="workload-icon">◈</span>
-          </div>
-          <h3 data-i18n="workloads.w_runtime_title">runtime</h3>
-          <p data-i18n="workloads.w_runtime_desc">Compile Go into WebAssembly with virtual DOM diffing, reactive interactive islands, and partial client hydration.</p>
-          <div class="workload-marker">kiw build --target wasm</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- QUICKSTART LAUNCHPAD -->
-  <section class="quickstart-section" id="quickstart">
+  <!-- 5-STEP CONTRIBUTOR GUIDE -->
+  <section class="onboarding" id="guide">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="quickstart.badge">Quick Installation</div>
-        <h2 data-i18n="quickstart.title">Get Started in Seconds</h2>
-        <p data-i18n="quickstart.subtitle">Install the kiw developer tool, scaffold an application, or bootstrap the entire 5-repository workspace.</p>
+        <div class="sub-badge" data-i18n="guide.badge">Onboarding Fast-Track</div>
+        <h2 data-i18n="guide.title">Start Contributing in 5 Steps</h2>
+        <p data-i18n="guide.subtitle">From zero to your first merged pull request. Here is how to get your development environment running in minutes.</p>
       </div>
 
       <div class="quickstart-steps">
         <div class="qs-card">
           <div class="qs-num">1</div>
-          <h3 data-i18n="quickstart.step1_title">1. Install kiw CLI</h3>
-          <p data-i18n="quickstart.step1_desc">Install the unified developer toolchain globally via Go:</p>
-          <pre><code>go install github.com/krewire/krewire/tools/kiw/cmd/kiw@latest</code></pre>
+          <h3 data-i18n="guide.s1_title">1. Fork &amp; Clone Repositories</h3>
+          <p data-i18n="guide.s1_desc">Fork any Krewire repository to your personal GitHub account, then clone it locally to begin:</p>
+          <pre><code>git clone https://github.com/your-username/krewire
+cd krewire</code></pre>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">2</div>
-          <h3 data-i18n="quickstart.step2_title">2. Scaffold a Project</h3>
-          <p data-i18n="quickstart.step2_desc">Generate a fullstack application or any of the 8 workloads:</p>
-          <pre><code>kiw new my-app --kind=app
-cd my-app</code></pre>
+          <h3 data-i18n="guide.s2_title">2. Initialize Workspace (go.work)</h3>
+          <p data-i18n="guide.s2_desc">If working across multiple repos, synchronize your local Go workspace seamlessly with Go 1.27.1+:</p>
+          <pre><code>go work init ./krewire ./mdbind
+go work use ./krewire ./mdbind</code></pre>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">3</div>
-          <h3 data-i18n="quickstart.step3_title">3. Run Locally</h3>
-          <p data-i18n="quickstart.step3_desc">Start hot-reloading dev server with instant feedback:</p>
-          <pre><code>kiw dev</code></pre>
-        </div>
-      </div>
-
-      <!-- ONE COMMAND BOOTSTRAP -->
-      <div class="fast-setup-box">
-        <div class="fast-setup-header">
-          <div class="fast-setup-title">
-            <span class="fast-icon">⚡</span>
-            <strong data-i18n="navigator.one_line_title">One-Command Contributor Bootstrap</strong>
+          <h3 data-i18n="guide.s3_title">3. Pick an Open Issue</h3>
+          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment to let maintainers know you are working on it.</p>
+          <div class="mt-4">
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="guide.s3_btn">View Good First Issues →</a>
           </div>
-          <span class="fast-setup-badge" data-i18n="navigator.one_line_badge">Recommended</span>
         </div>
-        <p class="fast-setup-desc" data-i18n-html="navigator.one_line_desc_html">Automatically clones all ecosystem repositories, creates your <code>go.work</code> workspace, builds the <code>kiw</code> devtool, and validates compatibility contracts:</p>
-        <div class="terminal-cmd-bar">
-          <code id="setup-cmd">curl -fsSL https://raw.githubusercontent.com/krewire/internal/main/scripts/setup.sh | bash</code>
-          <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
-            <span class="copy-text" data-i18n="navigator.copy_btn">Copy</span>
-          </button>
+
+        <div class="qs-card">
+          <div class="qs-num">4</div>
+          <h3 data-i18n="guide.s4_title">4. Implement &amp; Verify Locally</h3>
+          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Verify that all 3 Quality Gates pass with zero failures:</p>
+          <pre><code>gofmt -l .
+go vet ./...
+go test -race ./...</code></pre>
         </div>
-        <div class="fast-setup-meta">
-          <span data-i18n="navigator.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
-          <span>•</span>
-          <span data-i18n="navigator.meta_zero">Zero manual configuration required</span>
+
+        <div class="qs-card">
+          <div class="qs-num">5</div>
+          <h3 data-i18n="guide.s5_title">5. Submit PR with Conventional Commits</h3>
+          <p data-i18n="guide.s5_desc">Open a PR following Conventional Commits (feat, fix, docs, refactor, test). Maintainers and AI Boost will review and guide you to merge.</p>
+          <pre><code>git checkout -b feat/my-feature
+git commit -m "feat(web): add handler (ref #123)"
+git push origin feat/my-feature</code></pre>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5 CORE REPOSITORIES MATRIX -->
-  <section class="repos-nav" id="repositories">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="navigator.badge">Codebase Matrix</div>
-        <h2 data-i18n="navigator.title">5 Core Repositories &amp; Where to Start</h2>
-        <p data-i18n="navigator.subtitle">Match your skills and background to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
-      </div>
-
-      <!-- FILTER CONTROLS -->
-      <div class="nav-filter-bar">
-        <span class="filter-label" data-i18n="navigator.filter_label">Filter by Track:</span>
-        <div class="filter-pills" role="tablist">
-          <button class="filter-pill is-active" data-nav-filter="all" data-i18n="navigator.filter_all">All Repositories</button>
-          <button class="filter-pill" data-nav-filter="core" data-i18n="navigator.filter_core">Core Monorepo &amp; Books</button>
-          <button class="filter-pill" data-nav-filter="web" data-i18n="navigator.filter_web">Portals &amp; Sites</button>
-          <button class="filter-pill" data-nav-filter="docs" data-i18n="navigator.filter_docs">Specs &amp; Architecture</button>
-        </div>
-      </div>
-
-      <!-- NAVIGATION CARDS MATRIX -->
-      <div class="nav-map-grid repo-grid">
-        <!-- krewire/krewire -->
-        <div class="nav-map-card repo-card featured" data-category="core">
-          <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_krewire">Core Monorepo &amp; Libraries</span>
-            <span class="nav-curve-badge intermediate" data-i18n="navigator.curve_intermediate">Flagship</span>
-          </div>
-          <h3 class="nav-card-title"><span class="repo-icon">📦</span> krewire/krewire</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_krewire"><strong>If you enjoy:</strong> Modular Go libraries (<code>packages/*</code>), CLI devtool (<code>tools/kiw</code>), fullstack runtimes, background queues, and AI agent templates (<code>templates/boost</code>).</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
-            <div class="pkg-tags">
-              <code>packages/kern</code>
-              <code>packages/web</code>
-              <code>packages/ui</code>
-              <code>tools/kiw</code>
-              <code>templates/boost</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
-              Good First Issues &rarr;
-            </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/krewire" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
-              GitHub Repo &nearr;
-            </a>
-          </div>
-        </div>
-
-        <!-- krewire/mdbind -->
-        <div class="nav-map-card repo-card" data-category="core">
-          <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_mdbind">Static Books &amp; Documentation</span>
-            <span class="nav-curve-badge gentle" data-i18n="navigator.curve_gentle">Gentle Onboarding</span>
-          </div>
-          <h3 class="nav-card-title"><span class="repo-icon">📖</span> krewire/mdbind</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_mdbind"><strong>If you enjoy:</strong> Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
-            <div class="pkg-tags">
-              <code>book/compiler</code>
-              <code>goldmark plugins</code>
-              <code>ast transformations</code>
-              <code>assets embedding</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/mdbind/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
-              Good First Issues &rarr;
-            </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/mdbind" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
-              GitHub Repo &nearr;
-            </a>
-          </div>
-        </div>
-
-        <!-- krewire/krewire.com -->
-        <div class="nav-map-card repo-card" data-category="web">
-          <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_krewire_com">Official Product &amp; Docs Site</span>
-            <span class="nav-curve-badge intermediate" data-i18n="navigator.curve_intermediate">Intermediate</span>
-          </div>
-          <h3 class="nav-card-title"><span class="repo-icon">🌐</span> krewire/krewire.com</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_krewire_com"><strong>If you enjoy:</strong> High-fidelity web design, interactive documentation, component-driven layouts, and dogfooding the .kiw DSL in production.</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
-            <div class="pkg-tags">
-              <code>pages/*.kiw</code>
-              <code>layouts/*.kiw</code>
-              <code>components/</code>
-              <code>styles/</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/krewire.com/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
-              Good First Issues &rarr;
-            </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/krewire.com" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
-              GitHub Repo &nearr;
-            </a>
-          </div>
-        </div>
-
-        <!-- krewire/krewire.github.io -->
-        <div class="nav-map-card repo-card" data-category="web">
-          <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_github_io">Release Launchpad &amp; Community</span>
-            <span class="nav-curve-badge gentle" data-i18n="navigator.curve_gentle">Gentle Onboarding</span>
-          </div>
-          <h3 class="nav-card-title"><span class="repo-icon">🚀</span> krewire/krewire.github.io</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_github_io"><strong>If you enjoy:</strong> Community engagement, release showcases, localization (i18n), accessible UI components, and contributor onboarding portals.</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
-            <div class="pkg-tags">
-              <code>pages/index.kiw</code>
-              <code>lang/en &amp; id</code>
-              <code>layouts/Landing.kiw</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/krewire.github.io/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
-              Good First Issues &rarr;
-            </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/krewire.github.io" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
-              GitHub Repo &nearr;
-            </a>
-          </div>
-        </div>
-
-        <!-- krewire/internal -->
-        <div class="nav-map-card repo-card" data-category="docs">
-          <div class="nav-card-top">
-            <span class="nav-track-tag" data-i18n="navigator.track_internal">Architecture ADRs &amp; Governance</span>
-            <span class="nav-curve-badge specialized" data-i18n="navigator.curve_specialized">Specialized</span>
-          </div>
-          <h3 class="nav-card-title"><span class="repo-icon">📐</span> krewire/internal</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_internal"><strong>If you enjoy:</strong> Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and governance.</p>
-          <div class="nav-card-packages">
-            <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
-            <div class="pkg-tags">
-              <code>docs/adr/*</code>
-              <code>docs/specs/*</code>
-              <code>roadmaps/*</code>
-              <code>scripts/*</code>
-            </div>
-          </div>
-          <div class="nav-card-footer">
-            <a class="nav-action-link" href="https://github.com/krewire/internal/issues" target="_blank" rel="noopener" data-i18n="navigator.action_issues">
-              Good First Issues &rarr;
-            </a>
-            <a class="nav-repo-link" href="https://github.com/krewire/internal" target="_blank" rel="noopener" data-i18n="navigator.action_repo">
-              GitHub Repo &nearr;
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VERSION ROADMAP & RELEASE LADDER -->
-  <section class="roadmap-section" id="roadmap">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="roadmap.badge">Version Roadmap</div>
-        <h2 data-i18n="roadmap.title">Ecosystem Evolution &amp; Release Ladder</h2>
-        <p data-i18n="roadmap.subtitle">Our progressive open core release roadmap across the four-rung ladder: free → pro → team → enterprise.</p>
-      </div>
-
-      <div class="roadmap-grid">
-        <div class="roadmap-card active-card">
-          <div class="roadmap-top">
-            <span class="roadmap-badge active" data-i18n="roadmap.v1_badge">Current GA Baseline</span>
-            <span class="roadmap-tag">v0.1.0</span>
-          </div>
-          <h3 data-i18n="roadmap.v1_title">v0.1.0 — Stable Baseline</h3>
-          <p data-i18n="roadmap.v1_desc">Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and automated quality contracts.</p>
-          <ul class="roadmap-list">
-            <li>✓ Monorepo consolidation (github.com/krewire/krewire)</li>
-            <li>✓ 8 unified workload detections</li>
-            <li>✓ Strict krewire.yaml schema enforcement</li>
-            <li>✓ Developer CLI tools (kiw init/new/dev/build)</li>
-          </ul>
-        </div>
-
-        <div class="roadmap-card">
-          <div class="roadmap-top">
-            <span class="roadmap-badge upcoming" data-i18n="roadmap.v2_badge">Next Milestone</span>
-            <span class="roadmap-tag">v0.2.0</span>
-          </div>
-          <h3 data-i18n="roadmap.v2_title">v0.2.0 — Enterprise Modules</h3>
-          <p data-i18n="roadmap.v2_desc">Advanced worker distributed schedulers, enterprise RBAC/Auth wrappers, multi-cloud infra targets, and telemetry hooks.</p>
-          <ul class="roadmap-list">
-            <li>◈ Distributed queue backends (Redis/NATS adapters)</li>
-            <li>◈ Enterprise RBAC and audit logging modules</li>
-            <li>◈ Zero-overhead OpenTelemetry tracing export</li>
-            <li>◈ Baremetal cluster deployment coordinator</li>
-          </ul>
-        </div>
-
-        <div class="roadmap-card">
-          <div class="roadmap-top">
-            <span class="roadmap-badge future" data-i18n="roadmap.v3_badge">Future Horizon</span>
-            <span class="roadmap-tag">v0.3.0</span>
-          </div>
-          <h3 data-i18n="roadmap.v3_title">v0.3.0 — Autonomous Swarm Mesh</h3>
-          <p data-i18n="roadmap.v3_desc">WASM client-side hydration, automatic canary deployments, and autonomous agent self-healing workflows.</p>
-          <ul class="roadmap-list">
-            <li>◈ Zero-JS WebAssembly client hydration engine</li>
-            <li>◈ Autonomous agent swarm mesh for testing &amp; chaos</li>
-            <li>◈ Self-healing runtime telemetry and auto-rollback</li>
-            <li>◈ Full multi-region multi-cloud target abstraction</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STANDARDS & 3 QUALITY GATES -->
+  <!-- 3 AUTOMATED QUALITY GATES -->
   <section class="standards" id="standards">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
@@ -482,85 +379,199 @@ cd my-app</code></pre>
         <h2 data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
         <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
       </div>
+
       <div class="gates-grid">
         <div class="gate-card">
-          <div class="gate-icon">1</div>
+          <div class="gate-icon">✓</div>
           <h3 data-i18n="standards.gate1_title">Gate 1: Format &amp; Lint</h3>
           <p data-i18n="standards.gate1_desc">Zero lint errors and idiomatic Go formatting. Code must adhere strictly to Go standard conventions.</p>
-          <pre class="gate-cmd"><code>gofmt -s -l .
-go vet ./...</code></pre>
-          <div class="gate-status" data-i18n="standards.gate1_req">Required: Clean exit, 0 warnings</div>
+          <div class="gate-req" data-i18n="standards.gate1_req">Required: gofmt -l . (clean), go vet ./... (clean)</div>
         </div>
+
         <div class="gate-card">
-          <div class="gate-icon">2</div>
+          <div class="gate-icon">🛡️</div>
           <h3 data-i18n="standards.gate2_title">Gate 2: Race &amp; Tests</h3>
           <p data-i18n="standards.gate2_desc">Every commit is verified with race condition detection and comprehensive unit &amp; integration tests.</p>
-          <pre class="gate-cmd"><code>go test -race ./...
-go build ./...</code></pre>
-          <div class="gate-status" data-i18n="standards.gate2_req">Required: 100% test pass, 0 data races</div>
+          <div class="gate-req" data-i18n="standards.gate2_req">Required: 100% test pass, 0 data races</div>
         </div>
+
         <div class="gate-card">
-          <div class="gate-icon">3</div>
+          <div class="gate-icon">📝</div>
           <h3 data-i18n="standards.gate3_title">Gate 3: Spec &amp; Commits</h3>
           <p data-i18n="standards.gate3_desc">Changes must link to a valid Spec or Issue, following Conventional Commits format.</p>
-          <pre class="gate-cmd"><code>feat(scope): implement workload runner
-fix(web): recover panic in http handler</code></pre>
-          <div class="gate-status" data-i18n="standards.gate3_req">Required: Semantic versioning compliance</div>
+          <div class="gate-req" data-i18n="standards.gate3_req">Required: Semantic commit format &amp; spec traceability</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTRIBUTOR BENEFITS & LIFETIME ACCESS -->
-  <section class="benefits" id="benefits">
+  <!-- SPONSORSHIP TIERS HUB -->
+  <section class="sponsorship-section" id="sponsorship">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="benefits.badge">Contributor Privilege</div>
-        <h2 data-i18n="benefits.title">Lifetime Access to Krewire's Paid Ecosystem</h2>
-        <p data-i18n="benefits.subtitle">Genuine appreciation for true builders. By joining and actively contributing to the Krewire open source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
+        <div class="sub-badge" data-i18n="sponsorship.badge">Sustainable Open Source</div>
+        <h2 data-i18n="sponsorship.title">Sponsor Krewire Open Source</h2>
+        <p data-i18n="sponsorship.subtitle">Invest in the future of Indonesian software engineering. The core is 100% free and MIT forever. Your sponsorship funds student fellowships, independent CI infrastructure, and rigorous security audits.</p>
       </div>
 
-      <div class="benefit-grid">
-        <div class="benefit-card highlight">
-          <div class="benefit-badge" data-i18n="benefits.b1_badge">Core Privilege</div>
-          <div class="benefit-icon">★</div>
-          <h3 data-i18n="benefits.b1_title">Commercial Sub-Products Lifetime Access</h3>
-          <p data-i18n="benefits.b1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
-          <ul class="benefit-list">
-            <li data-i18n="benefits.b1_i1">Free lifetime access to all paid Krewire commercial sub-products</li>
-            <li data-i18n="benefits.b1_i2">Priority early-access releases and exclusive roadmap previews</li>
-            <li data-i18n="benefits.b1_i3">Direct private collaboration channels with core maintainers</li>
+      <div class="sponsorship-grid">
+        <!-- Tier 1: Community Backer -->
+        <div class="sponsor-card">
+          <div class="sponsor-tier-head">
+            <span class="sponsor-badge" data-i18n="sponsorship.tier1_badge">Community Backer</span>
+            <h3 class="sponsor-name" data-i18n="sponsorship.tier1_name">Backer / Supporter</h3>
+            <div class="sponsor-price" data-i18n="sponsorship.tier1_price">$5 / month</div>
+          </div>
+          <p class="sponsor-desc" data-i18n="sponsorship.tier1_desc">For individual developers and enthusiasts who believe in open-source independence in Indonesia.</p>
+          <ul class="sponsor-features">
+            <li data-i18n="sponsorship.tier1_f1">Backer badge on Discord &amp; GitHub Discussions</li>
+            <li data-i18n="sponsorship.tier1_f2">Name recognized in Sponsors &amp; Contributors Hall of Fame</li>
+            <li data-i18n="sponsorship.tier1_f3">Monthly ecosystem newsletter &amp; early release notes</li>
           </ul>
+          <div class="sponsor-cta-wrap">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline w-full" data-i18n="sponsorship.tier1_cta">Become a Backer →</a>
+          </div>
         </div>
 
-        <div class="benefit-card condition">
-          <div class="benefit-badge req" data-i18n="benefits.b2_badge">Strict Requirement</div>
-          <div class="benefit-icon">⚡</div>
-          <h3 data-i18n="benefits.b2_title">Active Contributions Required</h3>
-          <p data-i18n="benefits.b2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
-          <ul class="benefit-list">
-            <li data-i18n="benefits.b2_i1">Submit PRs for new features, bugfixes, or kernel optimizations</li>
-            <li data-i18n="benefits.b2_i2">Review open PRs and stress-test high-concurrency scenarios</li>
-            <li data-i18n="benefits.b2_i3">Author KWF architecture specifications or comprehensive docs</li>
+        <!-- Tier 2: Pro Sponsor (Popular) -->
+        <div class="sponsor-card popular">
+          <div class="popular-ribbon" data-i18n="sponsorship.tier2_badge">Most Popular</div>
+          <div class="sponsor-tier-head">
+            <h3 class="sponsor-name" data-i18n="sponsorship.tier2_name">Pro Sponsor</h3>
+            <div class="sponsor-price" data-i18n="sponsorship.tier2_price">$29 / month</div>
+          </div>
+          <p class="sponsor-desc" data-i18n="sponsorship.tier2_desc">For professional developers, freelancers, and indie builders shipping production software with Krewire.</p>
+          <ul class="sponsor-features">
+            <li data-i18n="sponsorship.tier2_f1">All perks from Community Backer</li>
+            <li data-i18n="sponsorship.tier2_f2">Direct access to monthly maintainer AMA &amp; technical office hours</li>
+            <li data-i18n="sponsorship.tier2_f3">Priority issue triaging for reported bugs and feature requests</li>
+            <li data-i18n="sponsorship.tier2_f4">Early preview access to upcoming pro modules (hardened security, vault)</li>
           </ul>
+          <div class="sponsor-cta-wrap">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary w-full" data-i18n="sponsorship.tier2_cta">Sponsor as Pro →</a>
+          </div>
         </div>
 
-        <div class="benefit-card notice">
-          <div class="benefit-badge warn" data-i18n="benefits.b3_badge">Revocation Policy</div>
-          <div class="benefit-icon">⚠</div>
-          <h3 data-i18n="benefits.b3_title">Revocable if Inactive or Dormant</h3>
-          <p data-i18n="benefits.b3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked at any time if a contributor becomes inactive or dormant over an extended period.</p>
-          <ul class="benefit-list">
-            <li data-i18n="benefits.b3_i1">Contributor activity and commits are periodically audited</li>
-            <li data-i18n="benefits.b3_i2">Prolonged inactivity or dormancy leads to license deactivation</li>
-            <li data-i18n="benefits.b3_i3">Access privileges can be promptly reinstated upon resumed contribution</li>
+        <!-- Tier 3: Team Sponsor -->
+        <div class="sponsor-card">
+          <div class="sponsor-tier-head">
+            <span class="sponsor-badge" data-i18n="sponsorship.tier3_badge">Team &amp; Agency</span>
+            <h3 class="sponsor-name" data-i18n="sponsorship.tier3_name">Team Sponsor</h3>
+            <div class="sponsor-price" data-i18n="sponsorship.tier3_price">$199 / month</div>
+          </div>
+          <p class="sponsor-desc" data-i18n="sponsorship.tier3_desc">For agencies, startups, and growing teams relying on Krewire's modular libraries and infrastructure.</p>
+          <ul class="sponsor-features">
+            <li data-i18n="sponsorship.tier3_f1">All perks from Pro Sponsor</li>
+            <li data-i18n="sponsorship.tier3_f2">Company logo &amp; backlink on krewire.github.io and krewire.com</li>
+            <li data-i18n="sponsorship.tier3_f3">Logo featured in README across all 5 core repositories</li>
+            <li data-i18n="sponsorship.tier3_f4">Dedicated private Slack/Discord channel with Krewire core team</li>
+            <li data-i18n="sponsorship.tier3_f5">Advisory voice on non-breaking ecosystem roadmap priorities</li>
           </ul>
+          <div class="sponsor-cta-wrap">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-secondary w-full" data-i18n="sponsorship.tier3_cta">Sponsor as Team →</a>
+          </div>
+        </div>
+
+        <!-- Tier 4: Enterprise Patron -->
+        <div class="sponsor-card">
+          <div class="sponsor-tier-head">
+            <span class="sponsor-badge" data-i18n="sponsorship.tier4_badge">Strategic Patron</span>
+            <h3 class="sponsor-name" data-i18n="sponsorship.tier4_name">Enterprise Patron</h3>
+            <div class="sponsor-price" data-i18n="sponsorship.tier4_price">Custom B2B</div>
+          </div>
+          <p class="sponsor-desc" data-i18n="sponsorship.tier4_desc">For enterprises, financial institutions, and organizations seeking custom SLA, compliance, and dedicated fellowships.</p>
+          <ul class="sponsor-features">
+            <li data-i18n="sponsorship.tier4_f1">All perks from Team Sponsor</li>
+            <li data-i18n="sponsorship.tier4_f2">Prominent hero placement across all official websites and portals</li>
+            <li data-i18n="sponsorship.tier4_f3">Quarterly architecture reviews &amp; security auditing for your team</li>
+            <li data-i18n="sponsorship.tier4_f4">Formal corporate procurement invoicing &amp; tax compliance receipts</li>
+            <li data-i18n="sponsorship.tier4_f5">Dedicated student fellowship program sponsored in your company's honor</li>
+          </ul>
+          <div class="sponsor-cta-wrap">
+            <a href="mailto:sponsorship@krewire.com" class="btn btn-outline w-full" data-i18n="sponsorship.tier4_cta">Contact for Enterprise →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- AI BOOST COLLABORATION -->
+  <!-- FUND ALLOCATION & FINANCIAL TRANSPARENCY -->
+  <section class="transparency-section" id="transparency">
+    <div class="section-inner">
+      <div class="section-head w-full text-center flex flex-col items-center justify-center">
+        <div class="sub-badge" data-i18n="transparency.badge">Financial Transparency</div>
+        <h2 data-i18n="transparency.title">Where Every Dollar &amp; Rupiah Goes</h2>
+        <p data-i18n="transparency.subtitle">We operate with 100% public financial accountability. Your contributions directly empower Indonesian developers and guarantee infrastructure resilience.</p>
+      </div>
+
+      <div class="allocation-grid">
+        <div class="allocation-card">
+          <div class="allocation-top">
+            <span class="allocation-percent" data-i18n="transparency.alloc1_pct">40%</span>
+            <span class="allocation-icon">🎓</span>
+          </div>
+          <h3 data-i18n="transparency.alloc1_title">Student &amp; Contributor Fellowships</h3>
+          <p data-i18n="transparency.alloc1_desc">Direct financial stipends and computing grants for Indonesian students and open-source contributors dedicating time to Krewire libraries.</p>
+          <div class="allocation-progress"><div class="progress-bar p-40"></div></div>
+        </div>
+
+        <div class="allocation-card">
+          <div class="allocation-top">
+            <span class="allocation-percent" data-i18n="transparency.alloc2_pct">30%</span>
+            <span class="allocation-icon">🖥️</span>
+          </div>
+          <h3 data-i18n="transparency.alloc2_title">Cloud Infrastructure &amp; CI/CD</h3>
+          <p data-i18n="transparency.alloc2_desc">High-performance test clusters, continuous fuzzing runners, multi-architecture benchmark servers, and domain hosting.</p>
+          <div class="allocation-progress"><div class="progress-bar p-30"></div></div>
+        </div>
+
+        <div class="allocation-card">
+          <div class="allocation-top">
+            <span class="allocation-percent" data-i18n="transparency.alloc3_pct">20%</span>
+            <span class="allocation-icon">🔒</span>
+          </div>
+          <h3 data-i18n="transparency.alloc3_title">Security &amp; Hardening Audits</h3>
+          <p data-i18n="transparency.alloc3_desc">Professional third-party security audits, CVE mitigations, automated SBOM verifications, and compliance sign-offs.</p>
+          <div class="allocation-progress"><div class="progress-bar p-20"></div></div>
+        </div>
+
+        <div class="allocation-card">
+          <div class="allocation-top">
+            <span class="allocation-percent" data-i18n="transparency.alloc4_pct">10%</span>
+            <span class="allocation-icon">🤝</span>
+          </div>
+          <h3 data-i18n="transparency.alloc4_title">Community Events &amp; Education</h3>
+          <p data-i18n="transparency.alloc4_desc">Hosting campus workshops, open-source hackathons, and localized Go programming tutorials across Indonesian tech communities.</p>
+          <div class="allocation-progress"><div class="progress-bar p-10"></div></div>
+        </div>
+      </div>
+
+      <!-- FUNDING CHANNELS BAR -->
+      <div class="funding-channels-box mt-8">
+        <h4 class="channels-title text-center font-black mb-4" data-i18n="transparency.channels_title">Supported Funding Channels</h4>
+        <div class="funding-channels-grid">
+          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="channel-chip">
+            <span class="channel-icon">💖</span>
+            <span class="channel-text" data-i18n="transparency.ch_gh">GitHub Sponsors (Global Cards &amp; PayPal)</span>
+          </a>
+          <a href="https://opencollective.com/krewire" target="_blank" rel="noopener" class="channel-chip">
+            <span class="channel-icon">🌐</span>
+            <span class="channel-text" data-i18n="transparency.ch_oc">Open Collective (Transparent Public Ledger)</span>
+          </a>
+          <div class="channel-chip">
+            <span class="channel-icon">🇮🇩</span>
+            <span class="channel-text" data-i18n="transparency.ch_local">Indonesian Local Payment (Saweria, QRIS, Bank Transfer)</span>
+          </div>
+          <a href="mailto:sponsorship@krewire.com" class="channel-chip">
+            <span class="channel-icon">📄</span>
+            <span class="channel-text" data-i18n="transparency.ch_invoice">Corporate Direct Invoicing (B2B Procurement)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI BOOST SYNERGY -->
   <section class="guild-section" id="boost">
     <div class="section-inner">
       <div class="guild-card">
@@ -568,39 +579,40 @@ fix(web): recover panic in http handler</code></pre>
           <div class="guild-info">
             <div class="sub-badge" data-i18n="guild.badge">Human + AI Synergy</div>
             <h2 data-i18n="guild.title">Collaborating with AI Boost</h2>
-            <p data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
-            <ul class="guild-list">
+            <p class="guild-lead" data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
+            <ul class="guild-items">
               <li data-i18n-html="guild.item1_html"><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
               <li data-i18n-html="guild.item2_html"><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
               <li data-i18n-html="guild.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
               <li data-i18n-html="guild.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
             </ul>
-            <div class="ctas flex flex-wrap gap-3">
-              <Button Variant="primary" Href="https://github.com/krewire/krewire/tree/main/templates/boost" Target="_blank" DataI18n="guild.cta_repo">Explore AI Boost in Krewire →</Button>
-              <Button Variant="outline" Href="https://github.com/orgs/krewire/discussions" Target="_blank" DataI18n="guild.cta_disc">Join Discussions</Button>
+            <div class="guild-ctas flex flex-wrap gap-3">
+              <a href="https://github.com/krewire/krewire/tree/main/templates/boost" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="guild.cta_repo">Explore AI Boost in Krewire →</a>
+              <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="guild.cta_disc">Join Discussions</a>
             </div>
           </div>
-          <div class="guild-box">
-            <div class="guild-box-head" data-i18n="guild.triad_title">AI Boost Agent Triad</div>
-            <div class="agent-item">
-              <span class="agent-role planner">Planner</span>
-              <div>
-                <strong data-i18n="guild.planner_title">Requirements &amp; SDD</strong>
-                <p data-i18n="guild.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
+          <div class="guild-triad">
+            <div class="guild-box">
+              <div class="guild-box-head">
+                <span class="triad-icon">◈</span>
+                <strong data-i18n="guild.triad_title">AI Boost Agent Triad</strong>
               </div>
-            </div>
-            <div class="agent-item">
-              <span class="agent-role builder">Builder</span>
-              <div>
-                <strong data-i18n="guild.builder_title">Implementation &amp; Refactoring</strong>
-                <p data-i18n="guild.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
-              </div>
-            </div>
-            <div class="agent-item">
-              <span class="agent-role auditor">Auditor</span>
-              <div>
-                <strong data-i18n="guild.auditor_title">Verification &amp; Quality Gates</strong>
-                <p data-i18n="guild.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
+              <div class="triad-roles">
+                <div class="triad-role">
+                  <div class="role-badge planner">Planner</div>
+                  <strong data-i18n="guild.planner_title">Requirements &amp; SDD</strong>
+                  <p data-i18n="guild.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
+                </div>
+                <div class="triad-role">
+                  <div class="role-badge builder">Builder</div>
+                  <strong data-i18n="guild.builder_title">Implementation &amp; Refactoring</strong>
+                  <p data-i18n="guild.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
+                </div>
+                <div class="triad-role">
+                  <div class="role-badge auditor">Auditor</div>
+                  <strong data-i18n="guild.auditor_title">Verification &amp; Quality Gates</strong>
+                  <p data-i18n="guild.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -609,16 +621,16 @@ fix(web): recover panic in http handler</code></pre>
     </div>
   </section>
 
-  <!-- FINAL CALLOUT -->
-  <section class="final-cta">
+  <!-- FINAL CALL TO ACTION -->
+  <section class="final-cta" id="cta">
     <div class="section-inner">
-      <div class="cta-card text-center">
-        <div class="sub-badge" data-i18n="cta.badge">Release Launchpad</div>
-        <h2 data-i18n="cta.title">Ready to build on Krewire v0.1.0?</h2>
-        <p class="cta-lead" data-i18n="cta.lead">Join an open-source collective delivering modular, fast, and sustainable Go software. Explore the source on GitHub or start a new project with kiw.</p>
+      <div class="cta-card">
+        <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
+        <h2 data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
+        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our student fellowships, you are laying the foundation for open-source self-reliance.</p>
         <div class="ctas flex flex-wrap gap-3 justify-center">
-          <Button Variant="primary" Size="lg" Href="https://github.com/krewire/krewire/releases" Target="_blank" DataI18n="cta.github">View GitHub Releases →</Button>
-          <Button Variant="outline" Size="lg" Href="https://krewire.com" Target="_blank" DataI18n="cta.quickstart">Read Documentation</Button>
+          <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.github">Explore Open Issues on GitHub →</a>
+          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Become a Sponsor 💖</a>
         </div>
         <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
       </div>
@@ -629,239 +641,93 @@ fix(web): recover panic in http handler</code></pre>
 
 <style>
 /* ==========================================================================
-   KREWIRE RELEASE PORTAL — MOBILE-FIRST DESIGN SYSTEM (sm, md, lg)
+   KREWIRE COMMUNITY PORTAL STYLING
+   Neo-brutalist, accessible, responsive
    ========================================================================== */
 
-/* 1. BASE MOBILE DEFAULTS (< 640px) */
-.contributors-portal {
-  width: 100%;
-  min-width: 0;
-  overflow-x: hidden;
-}
-.contributors-portal * {
-  box-sizing: border-box;
-}
-.contributors-portal pre {
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* CONTAINER & SECTION COMMON */
-.section-inner {
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 16px;
-  min-width: 0;
-}
-.section-head {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 24px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.sub-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary-content);
-  background: var(--primary);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  padding: 3px 10px;
-  border-radius: 6px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-  align-self: center;
-}
-.section-head h2 {
-  font-size: clamp(22px, 6vw, 32px);
-  font-weight: 900;
-  letter-spacing: -0.035em;
-  margin: 0 auto 10px;
-  line-height: 1.2;
-  word-break: break-word;
-  text-align: center;
-  width: 100%;
-  max-width: 52rem;
-}
-.section-head p {
-  color: var(--muted);
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.6;
-  max-width: 44rem;
-  word-break: break-word;
-  text-align: center;
-  width: 100%;
-}
-
-/* CARD SYSTEM (UNIFIED BOX-SHADOW & HOVER) */
-.feature-card,
-.workload-card,
-.qs-card,
-.roadmap-card,
-.benefit-card,
-.repo-card,
-.nav-map-card,
-.gate-card {
-  min-width: 0;
-  width: 100%;
-  word-break: break-word;
-  border: var(--pop-border);
-  border-radius: 14px;
-  padding: 18px 16px;
-  background: var(--bg);
-  box-shadow: var(--pop-shadow);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.feature-card:hover,
-.workload-card:hover,
-.qs-card:hover,
-.roadmap-card:hover,
-.benefit-card:hover,
-.repo-card:hover,
-.nav-map-card:hover,
-.gate-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--pop-shadow-lg);
-}
-
-/* SECTION PADDINGS & BACKGROUNDS */
-.releases-section,
-.quickstart-section,
-.roadmap-section {
-  padding: 38px 0 28px;
-  background-color: var(--bg);
-  border-bottom: var(--pop-border);
-}
-.workloads-section,
-.repos-nav,
-.standards,
-.benefits {
-  padding: 38px 0 28px;
-  background-color: var(--bg-2);
-  background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
-  background-size: 18px 18px;
-  border-bottom: var(--pop-border);
-}
-
-/* HERO SECTION (MOBILE) */
+/* 1. HERO SECTION */
 .hero {
-  padding: 32px 0 24px;
-  background-color: var(--bg);
-  background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
-  background-size: 18px 18px;
-  border-bottom: var(--pop-border);
-  width: 100%;
+  padding: 38px 0 28px;
+  background: var(--bg);
+  position: relative;
 }
 .hero-inner {
-  width: 100%;
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: center;
 }
 .hero-copy {
-  min-width: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .eyebrow {
-  font-size: 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--primary-content);
   background: var(--primary);
   border: var(--pop-border-thin);
   box-shadow: var(--pop-shadow-sm);
-  padding: 4px 10px;
+  padding: 3px 9px;
   border-radius: 6px;
-  font-weight: 900;
-  margin-bottom: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
   width: fit-content;
-  line-height: 1.4;
 }
 .hero h1 {
-  font-size: clamp(26px, 7vw, 48px);
+  font-size: clamp(26px, 5vw, 44px);
   font-weight: 900;
-  line-height: 1.12;
-  letter-spacing: -0.035em;
-  margin: 0 0 14px;
-  word-break: break-word;
-  text-wrap: balance;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: var(--fg);
 }
 .hero .lead {
   font-size: 14.5px;
-  color: color-mix(in srgb, var(--fg) 80%, var(--muted));
-  line-height: 1.6;
-  margin: 0;
-  word-break: break-word;
-}
-.hero .ctas {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-  width: 100%;
-}
-.hero .ctas .btn {
-  width: 100%;
-  min-height: 48px;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 900;
-}
-.meta {
-  margin-top: 14px;
-  font-size: 12px;
+  line-height: 1.65;
   color: var(--muted);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  font-weight: 600;
-  word-break: break-word;
+  margin: 0;
+  max-width: 580px;
 }
-.hero-art {
-  min-width: 0;
-  width: 100%;
+.hero .meta {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
+
+/* TERMINAL CARD */
 .code-terminal-card {
   background: #0B1F3B;
-  color: #FAF8F4;
-  border: var(--pop-border);
-  border-radius: 14px;
-  box-shadow: var(--pop-shadow-lg);
+  border: 2.5px solid var(--border);
+  box-shadow: var(--pop-shadow);
+  border-radius: 12px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  color: #FAF8F4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+}
+:root[data-theme="dark"] .code-terminal-card {
+  border-color: #FAF8F4;
+  box-shadow: 4px 4px 0px var(--primary);
 }
 .code-terminal-bar {
-  background: #061326;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 14px;
+  background: #112646;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
   gap: 10px;
+  border-bottom: 2px solid rgba(250, 248, 244, 0.12);
 }
 .terminal-dots {
   display: flex;
@@ -873,241 +739,248 @@ fix(web): recover panic in http handler</code></pre>
   border-radius: 50%;
   display: inline-block;
 }
-.term-dot.red { background: #ff5f56; }
-.term-dot.yellow { background: #ffbd2e; }
-.term-dot.green { background: #27c93f; }
+.term-dot.red { background: #FF3B2E; }
+.term-dot.yellow { background: #ffb703; }
+.term-dot.green { background: #39D353; }
 .term-title {
-  font-family: ui-monospace, monospace;
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 700;
-  color: #94a3b8;
-  letter-spacing: 0.02em;
+  color: #9ab0ce;
 }
 .code-terminal-body {
-  padding: 14px 14px;
-  font-family: ui-monospace, monospace;
-  font-size: 12px;
-  line-height: 1.6;
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  line-height: 1.5;
 }
 .term-line {
-  display: flex;
-  gap: 8px;
-  white-space: nowrap;
+  word-break: break-all;
 }
 .term-prompt {
-  color: var(--primary);
-  font-weight: 900;
-  user-select: none;
+  color: #39D353;
+  font-weight: 800;
+  margin-right: 6px;
 }
 .term-cmd {
-  color: #f8fafc;
+  color: #FAF8F4;
   font-weight: 700;
 }
 .term-info {
-  color: #94a3b8;
+  color: #00D1C1;
+  font-size: 11.5px;
 }
 .term-success {
-  color: #4ade80;
+  color: #39D353;
+  font-size: 11.5px;
   font-weight: 700;
 }
+.term-muted {
+  color: #8fa2bc;
+  font-size: 11px;
+}
 
-/* TRUST / MATRIX BAR */
+/* 2. TRUST BAR */
 .trust {
+  border-top: var(--pop-border);
   border-bottom: var(--pop-border);
   background: var(--bg-2);
-  width: 100%;
-  padding: 12px 0;
+  padding: 12px 16px;
 }
 .trust-inner {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 16px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12.5px;
+  font-weight: 700;
 }
 .trust-label {
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--secondary-content);
-  background: var(--secondary);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  padding: 3px 9px;
-  border-radius: 6px;
-  width: fit-content;
+  letter-spacing: 0.05em;
+  font-size: 11px;
+  color: var(--muted);
 }
 .trust-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 10px;
-  font-size: 12.5px;
-  color: var(--muted);
-  line-height: 1.4;
-  font-weight: 600;
   align-items: center;
-}
-.trust-item {
-  display: inline-flex;
-  align-items: center;
-  padding: 2px 8px;
-  background: var(--bg);
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  font-size: 12px;
+  justify-content: center;
+  gap: 10px;
 }
 .trust-item b {
-  color: var(--fg);
-  margin-right: 3px;
-}
-.trust-items .dot {
-  display: none;
-}
-
-/* v0.1.0 RELEASES HIGHLIGHTS */
-.feature-card.highlight-card {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 10%, var(--bg)), var(--bg));
-  border-color: var(--primary);
-}
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--secondary);
-  color: var(--secondary-content);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  font-size: 19px;
-  margin-bottom: 12px;
-}
-.feature-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-}
-.feature-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
-}
-
-/* 8 UNIFIED WORKLOADS */
-.workload-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.workload-icon {
-  font-size: 20px;
-  line-height: 1;
-}
-.workload-tag {
-  font-family: ui-monospace, monospace;
-  font-size: 10.5px;
-  font-weight: 900;
-  padding: 2px 7px;
-  border-radius: 6px;
-  background: var(--secondary);
-  color: var(--secondary-content);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  text-transform: uppercase;
-}
-.workload-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 900;
-}
-.workload-card p {
-  margin: 0 0 12px;
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.5;
-  flex-grow: 1;
-}
-.workload-marker {
-  margin-top: auto;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: var(--muted);
-  padding-top: 8px;
-  border-top: 1.5px solid var(--border-subtle);
-  word-break: break-all;
-}
-
-/* QUICKSTART */
-.qs-num {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background: var(--primary);
   color: var(--primary-content);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  font-size: 13px;
-  font-family: ui-monospace, monospace;
-  margin-bottom: 10px;
+  background: var(--primary);
+  padding: 1px 6px;
+  border-radius: 4px;
 }
-.qs-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 900;
+:root[data-theme="dark"] .trust-item b {
+  color: #0B1F3B;
+  background: var(--primary);
 }
-.qs-card p {
-  margin: 0 0 10px;
-  font-size: 13px;
+.dot {
   color: var(--muted);
-  line-height: 1.5;
-}
-.qs-card pre {
-  margin: auto 0 0;
-  background: #0B1F3B;
-  color: #FAF8F4;
-  border: 1.5px solid var(--border);
-  border-radius: 8px;
-  box-shadow: var(--pop-shadow-sm);
-  padding: 8px 10px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.qs-card code {
-  font-family: ui-monospace, monospace;
-  font-size: 12px;
-  display: block;
-  white-space: pre;
+  opacity: 0.6;
 }
 
-/* ONE-COMMAND BOOTSTRAP BOX */
-.fast-setup-box {
+/* SECTION COMMONS */
+.section-inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.section-head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.sub-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--secondary);
+  color: var(--secondary-content);
+  padding: 3px 9px;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  box-shadow: 1.5px 1.5px 0px var(--border);
+  margin-bottom: 10px;
+}
+.section-head h2 {
+  font-size: clamp(22px, 3.5vw, 32px);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin: 0 0 8px;
+}
+.section-head p {
+  font-size: 14.5px;
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* 3. CONTRIBUTOR PRIVILEGES (BENEFITS) */
+.benefits {
+  padding: 42px 0 28px;
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.benefit-card {
   background: var(--bg);
   border: var(--pop-border);
-  border-radius: 14px;
   box-shadow: var(--pop-shadow);
-  padding: 18px 16px;
-  margin-top: 24px;
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.benefit-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pop-shadow-lg);
+}
+.benefit-card.highlight-card {
+  background: var(--bg-2);
+  border-color: var(--primary);
+}
+:root[data-theme="dark"] .benefit-card.highlight-card {
+  border-color: var(--primary);
+  box-shadow: 4px 4px 0px var(--primary);
+}
+.benefit-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  background: var(--primary);
+  color: var(--primary-content);
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border);
+  width: fit-content;
+}
+.benefit-card h3 {
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+}
+.benefit-card p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.benefit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.benefit-list li::before {
+  content: "✓";
+  color: var(--primary);
+  font-weight: 900;
+}
+.meritocracy-callout {
+  background: var(--bg-2);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow-sm);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+.meritocracy-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.meritocracy-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.meritocracy-body strong {
+  display: block;
+  font-size: 14.5px;
+  margin-bottom: 3px;
+}
+.meritocracy-body p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 4. CODEBASE MATRIX & REPOSITORIES */
+.repos-nav {
+  padding: 42px 0 28px;
+}
+.fast-setup-box {
+  background: var(--bg-2);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow);
+  border-radius: var(--radius);
+  padding: 18px 20px;
 }
 .fast-setup-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
-  gap: 8px;
-  flex-wrap: wrap;
 }
 .fast-setup-title {
   display: flex;
@@ -1116,25 +989,17 @@ fix(web): recover panic in http handler</code></pre>
   font-size: 15px;
   font-weight: 900;
 }
-.fast-icon {
-  color: var(--primary);
-  font-size: 17px;
-}
 .fast-setup-badge {
-  font-size: 10px;
-  font-weight: 900;
-  padding: 2px 7px;
-  border-radius: 6px;
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
+  font-size: 10.5px;
+  font-weight: 800;
   background: var(--primary);
   color: var(--primary-content);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border);
 }
 .fast-setup-desc {
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 13.5px;
   color: var(--muted);
   margin: 0 0 12px;
 }
@@ -1142,305 +1007,240 @@ fix(web): recover panic in http handler</code></pre>
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-2);
-  border: var(--pop-border-thin);
-  border-radius: 8px;
-  box-shadow: var(--pop-shadow-sm);
-  padding: 8px 12px;
   gap: 10px;
-  overflow-x: auto;
-}
-.terminal-cmd-bar code {
+  background: #0B1F3B;
+  color: #FAF8F4;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 12.5px;
-  font-weight: 700;
-  color: var(--fg);
+}
+.terminal-cmd-bar code {
+  overflow-x: auto;
   white-space: nowrap;
 }
 .btn-copy {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px 12px;
-  background: var(--secondary);
-  color: var(--secondary-content);
-  border: var(--pop-border-thin);
+  background: var(--primary);
+  color: var(--primary-content);
+  border: 1.5px solid #0B1F3B;
+  box-shadow: 1.5px 1.5px 0px #0B1F3B;
   border-radius: 6px;
-  box-shadow: var(--pop-shadow-sm);
-  font-size: 12px;
-  font-weight: 900;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.15s ease;
   flex-shrink: 0;
-  min-height: 36px;
+  transition: all 0.12s ease;
 }
 .btn-copy:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--border);
-  background: var(--primary);
-  color: var(--primary-content);
-}
-.btn-copy:active {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0px var(--border);
+  box-shadow: 2.5px 2.5px 0px #0B1F3B;
 }
 .btn-copy.copied {
-  background: var(--primary);
-  color: var(--primary-content);
+  background: var(--secondary);
 }
 .fast-setup-meta {
   display: flex;
-  gap: 8px 12px;
+  align-items: center;
+  gap: 8px;
   font-size: 11.5px;
-  font-weight: 600;
   color: var(--muted);
+  font-weight: 700;
   margin-top: 10px;
   flex-wrap: wrap;
 }
 
-/* REPOSITORIES CODEBASE MATRIX */
-.nav-filter-bar {
+/* FILTERS */
+.nav-filters {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 18px;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 .filter-label {
-  font-size: 11.5px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--fg);
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--muted);
 }
 .filter-pills {
   display: flex;
   gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 6px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.filter-pills::-webkit-scrollbar {
-  display: none;
+  flex-wrap: wrap;
 }
 .filter-pill {
-  background: var(--bg);
   border: var(--pop-border-thin);
-  color: var(--fg);
   box-shadow: var(--pop-shadow-sm);
-  border-radius: 8px;
-  padding: 6px 12px;
+  background: var(--bg);
+  color: var(--fg);
   font-size: 12px;
   font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.15s ease;
-  flex-shrink: 0;
-  min-height: 36px;
+  transition: all 0.12s ease;
 }
 .filter-pill:hover {
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 0px var(--border);
   background: var(--bg-2);
 }
-.filter-pill:active {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0px var(--border);
-}
 .filter-pill.is-active {
   background: var(--primary);
   color: var(--primary-content);
 }
 
-.repo-card.featured,
-.nav-map-card.featured {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 8%, var(--bg)), var(--bg));
-  border-color: var(--primary);
+/* REPOSITORIES GRID */
+.repo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
-.nav-card-top {
+.repo-card {
+  background: var(--bg);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.repo-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pop-shadow-lg);
+}
+.repo-meta-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
-  gap: 8px;
-  flex-wrap: wrap;
+  margin-bottom: 6px;
 }
-.nav-track-tag {
-  font-size: 11px;
-  font-weight: 900;
-  color: var(--primary);
+.repo-tag {
+  font-size: 10.5px;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.nav-curve-badge {
-  font-size: 10px;
-  font-weight: 900;
   padding: 2px 7px;
   border-radius: 5px;
   border: 1.5px solid var(--border);
-  box-shadow: 1.5px 1.5px 0px var(--border);
-  text-transform: uppercase;
 }
-.nav-curve-badge.gentle {
-  background: var(--primary);
-  color: var(--primary-content);
-}
-.nav-curve-badge.intermediate {
-  background: var(--secondary);
-  color: var(--secondary-content);
-}
-.nav-curve-badge.specialized {
-  background: var(--accent);
-  color: #ffffff;
-}
-.nav-card-title {
-  font-size: 17px;
-  font-weight: 900;
-  margin: 0 0 6px;
-  font-family: ui-monospace, monospace;
-}
-.repo-icon {
-  color: var(--primary);
-  margin-right: 4px;
-}
-.nav-card-match {
-  font-size: 12.5px;
-  line-height: 1.55;
-  color: var(--muted);
-  margin: 0 0 12px;
-  flex-grow: 1;
-}
-.nav-card-match strong {
-  color: var(--fg);
-}
-.nav-card-packages {
-  margin-bottom: 14px;
-  font-size: 11.5px;
-}
-.pkg-label {
-  display: block;
-  color: var(--muted);
-  font-size: 10.5px;
-  margin-bottom: 4px;
+.repo-tag.core { background: var(--primary); color: var(--primary-content); }
+.repo-tag.tool { background: var(--secondary); color: var(--secondary-content); }
+.repo-tag.site { background: var(--accent); color: #fff; }
+.repo-tag.docs { background: #ffb703; color: #0B1F3B; }
+.repo-lang {
+  font-size: 11px;
   font-weight: 800;
-  text-transform: uppercase;
+  color: var(--muted);
 }
-.pkg-tags {
+.repo-title {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+}
+.repo-title a:hover {
+  color: var(--primary);
+}
+.repo-track-name {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.repo-match {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+.repo-pkgs {
+  margin-top: 8px;
+}
+.pkgs-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pkgs-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
-.pkg-tags code {
+.pkg-chip {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 11px;
   font-weight: 700;
   background: var(--bg-2);
-  border: 1.5px solid var(--border);
-  padding: 1.5px 5px;
-  border-radius: 4px;
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+  border-radius: 5px;
 }
-.nav-card-footer {
+.repo-footer {
+  display: flex;
+  gap: 10px;
   margin-top: auto;
-  padding-top: 12px;
-  border-top: 1.5px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-subtle);
 }
-.nav-action-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 12.5px;
-  font-weight: 900;
-  color: var(--primary);
-  text-decoration: none;
-  transition: gap 0.15s ease;
-}
-.nav-action-link:hover {
-  gap: 7px;
-  text-decoration: underline;
-}
-.nav-repo-link {
+.repo-action {
   font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-  text-decoration: none;
-}
-.nav-repo-link:hover {
-  color: var(--fg);
-  text-decoration: underline;
-}
-
-/* ROADMAP */
-.roadmap-card.active-card {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 10%, var(--bg)), var(--bg));
-  border-color: var(--primary);
-}
-.roadmap-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  gap: 8px;
-}
-.roadmap-badge {
-  font-size: 10.5px;
-  font-weight: 900;
-  padding: 2px 8px;
+  font-weight: 800;
+  padding: 5px 11px;
   border-radius: 6px;
   border: var(--pop-border-thin);
   box-shadow: var(--pop-shadow-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  transition: all 0.12s ease;
+  display: inline-flex;
+  align-items: center;
 }
-.roadmap-badge.active {
+.repo-action.primary {
   background: var(--primary);
   color: var(--primary-content);
 }
-.roadmap-badge.upcoming {
-  background: var(--secondary);
-  color: var(--secondary-content);
-}
-.roadmap-badge.future {
-  background: var(--bg-2);
+.repo-action.secondary {
+  background: var(--bg);
   color: var(--fg);
 }
-.roadmap-tag {
-  font-family: ui-monospace, monospace;
-  font-size: 11px;
-  font-weight: 900;
-  color: var(--muted);
-}
-.roadmap-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 900;
-}
-.roadmap-card p {
-  margin: 0 0 12px;
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.roadmap-list {
-  margin: auto 0 0;
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.45;
-  font-weight: 600;
+.repo-action:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--border);
 }
 
-/* STANDARDS & 3 QUALITY GATES */
-.gate-icon {
-  width: 30px;
-  height: 30px;
+/* 5. ONBOARDING QUICKSTART & QUALITY GATES */
+.onboarding,
+.standards {
+  padding: 42px 0 28px;
+}
+.quickstart-steps,
+.gates-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.qs-card,
+.gate-card {
+  background: var(--bg);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.qs-card:hover,
+.gate-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pop-shadow-lg);
+}
+.qs-num {
+  width: 28px;
+  height: 28px;
   border-radius: 8px;
   background: var(--primary);
   color: var(--primary-content);
@@ -1448,498 +1248,477 @@ fix(web): recover panic in http handler</code></pre>
   box-shadow: var(--pop-shadow-sm);
   display: grid;
   place-items: center;
-  font-weight: 900;
   font-size: 13px;
-  margin-bottom: 10px;
+  font-weight: 900;
 }
+.qs-card h3,
 .gate-card h3 {
-  margin: 0 0 6px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 800;
+  margin: 0;
 }
+.qs-card p,
 .gate-card p {
-  margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--muted);
-  line-height: 1.5;
+  margin: 0;
+  line-height: 1.55;
 }
-.gate-cmd {
-  margin: 0 0 10px;
+.qs-card pre {
   background: #0B1F3B;
   color: #FAF8F4;
   border: 1.5px solid var(--border);
   border-radius: 8px;
-  box-shadow: var(--pop-shadow-sm);
-  padding: 8px 10px;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   overflow-x: auto;
-  max-width: 100%;
+  margin: 4px 0 0;
 }
-.gate-cmd code {
-  font-family: ui-monospace, monospace;
-  font-size: 11.5px;
-  line-height: 1.5;
-  display: block;
-  white-space: pre;
-}
-.gate-status {
-  margin-top: auto;
-  font-size: 11.5px;
-  font-weight: 800;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* CONTRIBUTOR BENEFITS */
-.benefit-card.highlight {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 12%, var(--bg)), var(--bg));
-}
-.benefit-badge {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 10.5px;
-  font-weight: 900;
-  padding: 2px 8px;
-  border-radius: 6px;
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.benefit-card.highlight .benefit-badge {
-  background: var(--primary);
-  color: var(--primary-content);
-}
-.benefit-badge.req {
+.tag-issue {
   background: var(--secondary);
   color: var(--secondary-content);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 11px;
 }
-.benefit-badge.warn {
-  background: var(--accent);
-  color: #ffffff;
-}
-.benefit-icon {
+.gate-icon {
   font-size: 24px;
-  margin-bottom: 8px;
-  line-height: 1;
 }
-.benefit-card.highlight .benefit-icon { color: var(--primary); }
-.benefit-card.condition .benefit-icon { color: var(--secondary); }
-.benefit-card.notice .benefit-icon { color: var(--accent); }
-.benefit-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  font-weight: 900;
+.gate-req {
+  font-size: 11.5px;
+  font-weight: 800;
+  background: var(--bg-2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  margin-top: auto;
 }
-.benefit-card p {
-  margin: 0 0 12px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
+
+/* 6. SPONSORSHIP TIERS */
+.sponsorship-section {
+  padding: 42px 0 28px;
+  background: var(--bg);
 }
-.benefit-list {
-  margin: auto 0 0;
-  padding-left: 16px;
+.sponsorship-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.sponsor-card {
+  background: var(--bg);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow);
+  border-radius: var(--radius);
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  font-size: 12px;
+  gap: 14px;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.sponsor-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pop-shadow-lg);
+}
+.sponsor-card.popular {
+  background: var(--bg-2);
+  border-color: var(--primary);
+  box-shadow: 5px 5px 0px var(--border);
+}
+:root[data-theme="dark"] .sponsor-card.popular {
+  box-shadow: 5px 5px 0px var(--primary);
+}
+.popular-ribbon {
+  position: absolute;
+  top: -12px;
+  right: 18px;
+  background: var(--primary);
+  color: var(--primary-content);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 2px solid var(--border);
+  box-shadow: 2px 2px 0px var(--border);
+}
+.sponsor-badge {
+  font-size: 11px;
+  font-weight: 800;
+  background: var(--secondary);
+  color: var(--secondary-content);
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1.5px solid var(--border);
+  width: fit-content;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.sponsor-name {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 0 4px;
+}
+.sponsor-price {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--fg);
+}
+.sponsor-desc {
+  font-size: 13.5px;
   color: var(--muted);
-  line-height: 1.45;
+  margin: 0;
+  line-height: 1.55;
+}
+.sponsor-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13px;
   font-weight: 600;
 }
-.benefit-list li::marker { color: var(--primary); }
-.benefit-card.condition .benefit-list li::marker { color: var(--secondary); }
-.benefit-card.notice .benefit-list li::marker { color: var(--accent); }
-
-/* AI BOOST & GUILD */
-.guild-section {
-  padding: 38px 0 28px;
-  background-color: var(--bg-2);
-  border-bottom: var(--pop-border);
-  width: 100%;
-}
-.guild-card {
-  border: var(--pop-border);
-  border-radius: 16px;
-  background: var(--bg);
-  box-shadow: var(--pop-shadow-lg);
-  padding: 20px 16px;
-}
-.guild-grid {
+.sponsor-features li {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.guild-info h2 {
-  font-size: clamp(22px, 5.5vw, 32px);
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  margin: 0 0 10px;
-}
-.guild-info p {
-  color: var(--muted);
-  font-size: 13.5px;
-  line-height: 1.6;
-  margin: 0 0 14px;
-}
-.guild-list {
-  margin: 0 0 18px;
-  padding-left: 16px;
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.45;
 }
-.guild-list b { color: var(--fg); }
-.guild-info .ctas {
+.sponsor-features li::before {
+  content: "💖";
+  font-size: 12px;
+}
+.sponsor-cta-wrap {
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+/* 7. FINANCIAL TRANSPARENCY & ALLOCATION */
+.transparency-section {
+  padding: 42px 0 28px;
+}
+.allocation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.allocation-card {
+  background: var(--bg);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow);
+  border-radius: var(--radius);
+  padding: 20px 18px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.guild-info .ctas .btn {
-  width: 100%;
-  justify-content: center;
+.allocation-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pop-shadow-lg);
 }
-.guild-box {
+.allocation-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allocation-percent {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+.allocation-icon {
+  font-size: 24px;
+}
+.allocation-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+.allocation-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+.allocation-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-2);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-top: auto;
+}
+.progress-bar {
+  height: 100%;
+  background: var(--primary);
+}
+.progress-bar.p-40 { width: 40%; background: var(--primary); }
+.progress-bar.p-30 { width: 30%; background: var(--secondary); }
+.progress-bar.p-20 { width: 20%; background: #ffb703; }
+.progress-bar.p-10 { width: 10%; background: var(--accent); }
+
+.funding-channels-box {
   background: var(--bg-2);
   border: var(--pop-border);
-  border-radius: 12px;
+  box-shadow: var(--pop-shadow-sm);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+}
+.funding-channels-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.channel-chip {
+  background: var(--bg);
+  border: var(--pop-border-thin);
+  box-shadow: var(--pop-shadow-sm);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--fg);
+  transition: all 0.12s ease;
+}
+.channel-chip:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--border);
+  background: var(--bg);
+}
+.channel-icon {
+  font-size: 18px;
+}
+
+/* 8. AI BOOST SYNERGY */
+.guild-section {
+  padding: 38px 0 28px;
+}
+.guild-card {
+  background: var(--bg-2);
+  border: var(--pop-border);
   box-shadow: var(--pop-shadow);
-  padding: 16px 14px;
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+.guild-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.guild-info h2 {
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 900;
+  margin: 6px 0 10px;
+}
+.guild-lead {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+.guild-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.guild-items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.guild-items li::before {
+  content: "◈";
+  color: var(--primary);
+  font-weight: 900;
+}
+.guild-box {
+  background: var(--bg);
+  border: var(--pop-border);
+  box-shadow: var(--pop-shadow-sm);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+}
+.guild-box-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  font-weight: 900;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px dashed var(--border-subtle);
+}
+.triad-roles {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.guild-box-head {
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--fg);
-  padding-bottom: 8px;
-  border-bottom: 1.5px solid var(--border-subtle);
-}
-.agent-item {
+.triad-role {
   display: flex;
-  gap: 10px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
 }
-.agent-role {
+.role-badge {
   font-size: 10px;
   font-weight: 900;
-  padding: 2px 7px;
-  border-radius: 5px;
-  border: 1.5px solid var(--border);
-  box-shadow: 1.5px 1.5px 0px var(--border);
-  font-family: ui-monospace, monospace;
   text-transform: uppercase;
-  white-space: nowrap;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  width: fit-content;
 }
-.agent-role.planner { background: var(--secondary); color: var(--secondary-content); }
-.agent-role.builder { background: var(--primary); color: var(--primary-content); }
-.agent-role.auditor { background: var(--accent); color: #ffffff; }
-.agent-item strong {
-  font-size: 13px;
-  font-weight: 800;
-  display: block;
-  margin-bottom: 2px;
+.role-badge.planner { background: var(--secondary); color: var(--secondary-content); }
+.role-badge.builder { background: var(--primary); color: var(--primary-content); }
+.role-badge.auditor { background: var(--accent); color: #fff; }
+.triad-role strong {
+  font-size: 13.5px;
 }
-.agent-item p {
-  margin: 0;
+.triad-role p {
   font-size: 12px;
   color: var(--muted);
+  margin: 0;
   line-height: 1.45;
 }
 
-/* FINAL CALLOUT (CTA) */
+/* 9. FINAL CTA */
 .final-cta {
-  padding: 34px 0 48px;
-  background-color: var(--bg);
-  width: 100%;
+  padding: 28px 0 52px;
 }
 .cta-card {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 28px 16px;
-  border: var(--pop-border);
-  border-radius: 16px;
   background: var(--bg-2);
-  background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
-  background-size: 16px 16px;
+  border: var(--pop-border);
   box-shadow: var(--pop-shadow-lg);
+  border-radius: 18px;
+  padding: 32px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 14px;
 }
 .cta-card h2 {
-  font-size: clamp(22px, 5.5vw, 34px);
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: 900;
-  margin: 0 0 10px;
-  letter-spacing: -0.03em;
-  text-align: center;
+  margin: 0;
+  max-width: 650px;
 }
-.cta-card p {
+.cta-lead {
+  font-size: 14.5px;
   color: var(--muted);
-  margin: 0 auto 18px;
   max-width: 580px;
-  font-size: 13.5px;
+  margin: 0;
   line-height: 1.6;
-  text-align: center;
-}
-.cta-card .ctas {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
-.cta-card .ctas .btn {
-  width: 100%;
-  justify-content: center;
 }
 .cta-meta {
-  margin-top: 14px;
-  font-size: 11.5px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--muted);
+  margin-top: 6px;
 }
 
-
 /* ==========================================================================
-   2. VIEWPORT SM: TABLET PORTRAIT / LARGE PHONES (min-width: 640px)
+   RESPONSIVE BREAKPOINTS (SM: 640px+, MD: 768px+, LG: 1024px+)
    ========================================================================== */
 @media (min-width: 640px) {
-  .section-inner {
-    padding: 0 20px;
-  }
-  .section-head {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 28px;
-  }
-  .section-head h2 {
-    font-size: clamp(24px, 4vw, 32px);
-    max-width: 54rem;
-  }
-  .section-head p {
-    font-size: 14.5px;
-    max-width: 46rem;
-  }
-
-  /* HERO ON SM */
-  .hero {
-    padding: 38px 0 28px;
-  }
   .hero-inner {
-    padding: 0 20px;
-    gap: 26px;
+    padding: 0 24px;
   }
-  .hero .ctas {
-    flex-direction: row;
-    width: auto;
-    align-items: center;
+  .section-inner {
+    padding: 0 24px;
   }
-  .hero .ctas .btn {
-    width: auto;
+  .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  /* TRUST BAR ON SM */
-  .trust-inner {
-    padding: 0 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .benefit-card:nth-child(3) {
+    grid-column: span 2;
   }
-  .trust-items {
-    width: auto;
-    gap: 8px 12px;
+  .repo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .trust-items .dot {
-    display: inline;
-    opacity: 0.4;
+  .repo-card.featured {
+    grid-column: span 2;
   }
-
-
-  /* FILTER BAR ON SM */
-  .nav-filter-bar {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+  .quickstart-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  /* GUILD & CTA ON SM */
-  .guild-card {
-    padding: 24px 20px;
+  .gates-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .guild-info .ctas {
-    flex-direction: row;
-    width: auto;
+  .sponsorship-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .guild-info .ctas .btn {
-    width: auto;
+  .allocation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .cta-card {
-    padding: 34px 22px;
-  }
-  .cta-card .ctas {
-    flex-direction: row;
-    width: auto;
-    justify-content: center;
-  }
-  .cta-card .ctas .btn {
-    width: auto;
+  .funding-channels-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-
-/* ==========================================================================
-   3. VIEWPORT MD: TABLET LANDSCAPE / SMALL LAPTOPS (min-width: 768px)
-   ========================================================================== */
 @media (min-width: 768px) {
-  .section-inner {
-    padding: 0 24px;
-  }
-  .section-head {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 32px;
-  }
-  .section-head h2 {
-    font-size: clamp(26px, 3.6vw, 36px);
-    max-width: 56rem;
-  }
-
-  /* HERO 2-COLUMN GRID ON MD */
   .hero {
-    padding: 44px 0 32px;
+    padding: 48px 0 32px;
   }
-  .hero-inner {
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: 32px;
-    align-items: center;
+  .benefit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .hero .lead {
-    font-size: 15px;
-  }
-
-
-  /* AI BOOST 2-COLUMN ON MD */
-  .guild-card {
-    padding: 28px 24px;
-    border-radius: 18px;
-  }
-  .guild-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    gap: 28px;
-    align-items: center;
-  }
-
-  .cta-card {
-    padding: 38px 24px;
-    border-radius: 20px;
+  .benefit-card:nth-child(3) {
+    grid-column: auto;
   }
 }
 
-
-/* ==========================================================================
-   4. VIEWPORT LG: LARGE SCREENS / DESKTOPS (min-width: 1024px)
-   ========================================================================== */
 @media (min-width: 1024px) {
-  .section-inner {
-    padding: 0 32px;
-  }
-  .section-head {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 36px;
-  }
-  .section-head h2 {
-    font-size: clamp(28px, 3.2vw, 38px);
-    max-width: 58rem;
-  }
-  .section-head p {
-    font-size: 15px;
-    max-width: 48rem;
-  }
-
-  /* HERO ON LG */
   .hero {
-    padding: 56px 0 38px;
+    padding: 56px 0 42px;
   }
   .hero-inner {
-    padding: 0 32px;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 48px;
+    padding: 0 32px;
   }
-  .hero h1 {
-    font-size: clamp(34px, 4vw, 54px);
-    margin: 0 0 16px;
+  .section-inner {
+    padding: 0 32px;
   }
-  .hero .lead {
-    font-size: 16px;
-    max-width: 620px;
+  .repo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  /* SECTION PADDINGS ON LG */
-  .releases-section,
-  .quickstart-section,
-  .roadmap-section,
-  .workloads-section,
-  .repos-nav,
-  .standards,
-  .benefits {
-    padding: 52px 0 36px;
+  .repo-card.featured {
+    grid-column: span 2;
   }
-
-
-  /* CARD PADDING ON LG */
-  .feature-card,
-  .workload-card,
-  .qs-card,
-  .roadmap-card,
-  .benefit-card,
-  .repo-card,
-  .nav-map-card,
-  .gate-card {
-    padding: 22px 20px;
+  .quickstart-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
-  /* AI BOOST ON LG */
-  .guild-section {
-    padding: 38px 0 52px;
+  .sponsorship-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .guild-card {
-    padding: 34px 30px;
+  .allocation-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .funding-channels-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .guild-grid {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 36px;
   }
-  .guild-box {
-    padding: 20px 18px;
-  }
-
-  /* FINAL CTA ON LG */
-  .final-cta {
-    padding: 32px 0 60px;
-  }
   .cta-card {
-    padding: 46px 32px;
-    border-radius: 24px;
+    padding: 48px 32px;
   }
 }
 </style>
-
