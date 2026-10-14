@@ -1,0 +1,207 @@
+name: Emergency Hotfix Deploy to Contributor Portal (Protocol Bypass)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EMERGENCY HOTFIX DEPLOYMENT WORKFLOW
+#
+# Bypasses standard production deployment protocols (stable git tag requirement,
+# release gating, and multi-stage approval).
+#
+# Triggered immediately upon any push/commit to 'hotfix' or 'hotfix/**' branches.
+# ─────────────────────────────────────────────────────────────────────────────
+on:
+  push:
+    branches:
+      - 'hotfix'
+      - 'hotfix/**'
+      - 'hotfix-*'
+  workflow_dispatch:
+    inputs:
+      hotfix_description:
+        description: 'Brief description of emergency hotfix reason'
+        required: false
+        default: 'Emergency patch via workflow_dispatch'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-contributor-portal
+  cancel-in-progress: false # Do not abort in-flight hotfix deployments
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 1 — Fast Build Portal Site Artifacts
+  # ─────────────────────────────────────────────────────────────────────────────
+  build-hotfix:
+    name: Build Hotfix (Fast Track)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Hotfix Branch
+        uses: actions/checkout@v4
+
+      - name: Log Hotfix Trigger & Audit Trail
+        run: |
+          echo "=========================================================="
+          echo "🚨 EMERGENCY HOTFIX PIPELINE TRIGGERED (PORTAL)"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Actor:  ${{ github.actor }}"
+          echo "Note:   Standard Git Tag release protocol BYPASSED."
+          echo "=========================================================="
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+          check-latest: true
+          cache: true
+
+      - name: Setup Node (Tailwind plugin)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install kiw CLI
+        run: |
+          git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/mdbind.git" "${RUNNER_TEMP}/mdbind"
+          cd "${RUNNER_TEMP}/krewire"
+          go build -o "${RUNNER_TEMP}/bin/kiw" ./tools/kiw/cmd/kiw
+          echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
+
+      - name: Build website (Hotfix)
+        run: |
+          kiw build
+          touch .krewire/build/.nojekyll
+          echo "launchpad.krewire.com" > .krewire/build/CNAME
+
+      - name: Fast sanity check of build outputs
+        run: |
+          test -f .krewire/build/index.html || { echo "✗ Missing index.html"; exit 1; }
+          test -f .krewire/build/CNAME || { echo "✗ Missing CNAME"; exit 1; }
+          echo "✓ Fast sanity checks passed."
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hotfix-build-${{ github.sha }}
+          path: .krewire/build
+          retention-days: 1
+          if-no-files-found: error
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 2 — Fast Deploy to GitHub Pages
+  # ─────────────────────────────────────────────────────────────────────────────
+  deploy-hotfix-gh-pages:
+    name: Deploy Hotfix to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: build-hotfix
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hotfix-build-${{ github.sha }}
+          path: .krewire/build
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .krewire/build
+          publish_branch: gh-pages
+          cname: launchpad.krewire.com
+          commit_message: "hotfix(emergency): fast deploy from ${{ github.sha }} [bypass release protocol]"
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 3 — Direct Emergency Deploy to VPS
+  # ─────────────────────────────────────────────────────────────────────────────
+  deploy-hotfix-vps:
+    name: Deploy Hotfix to VPS (launchpad.krewire.com)
+    runs-on: ubuntu-latest
+    needs: build-hotfix
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hotfix-build-${{ github.sha }}
+          path: .krewire/build
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Backup Current Stable Directory on VPS
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=yes \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'REMOTE'
+            set -euo pipefail
+            if [ -d /var/www/launchpad.krewire.com ]; then
+              echo "▶ Creating snapshot of current stable portal directory..."
+              rm -rf /var/www/launchpad.krewire.com.stable.bak
+              cp -a /var/www/launchpad.krewire.com /var/www/launchpad.krewire.com.stable.bak
+              echo "✓ Stable snapshot created."
+            fi
+          REMOTE
+
+      - name: Apply Hotfix to launchpad.krewire.com via rsync
+        run: |
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+            .krewire/build/ \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/launchpad.krewire.com/
+
+      - name: Record emergency hotfix audit trail
+        env:
+          BRANCH: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=yes \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash -s "${BRANCH}" "${SHA}" "${ACTOR}" << 'REMOTE'
+            BRANCH="$1"
+            SHA="$2"
+            ACTOR="$3"
+            mkdir -p ~/workspace/krewire
+            echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] 🚨 EMERGENCY HOTFIX APPLIED: portal branch=${BRANCH} commit=${SHA} actor=${ACTOR} (Protocol Bypass)" >> ~/workspace/krewire/deploy.log
+            echo "✓ Emergency hotfix audit recorded."
+          REMOTE
+
+      - name: Hotfix Smoke Test
+        run: |
+          echo "▶ Verifying hotfix response on https://launchpad.krewire.com ..."
+          sleep 3
+          HTTP_CODE="$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 https://launchpad.krewire.com/ 2>/dev/null || true)"
+          if [ "${HTTP_CODE}" = "200" ]; then
+            echo "✓ Portal live site responded HTTP 200 after emergency hotfix."
+          else
+            echo "✗ Smoke test failed: HTTP ${HTTP_CODE} — triggering fallback to stable!"
+            exit 1
+          fi
+
+      - name: Emergency Fallback to Stable Snapshot on Failure
+        if: failure()
+        run: |
+          echo "🚨 HOTFIX FAILED! Restoring stable snapshot on VPS..."
+          ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=yes \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'REMOTE'
+            set -euo pipefail
+            if [ -d /var/www/launchpad.krewire.com.stable.bak ]; then
+              echo "▶ Restoring portal from stable backup..."
+              rsync -az --delete /var/www/launchpad.krewire.com.stable.bak/ /var/www/launchpad.krewire.com/
+              echo "✓ Fallback to stable version completed."
+              echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] ⚠️ HOTFIX FAILED: Restored stable snapshot" >> ~/workspace/krewire/deploy.log
+            else
+              echo "⚠ No stable backup snapshot available."
+            fi
+          REMOTE

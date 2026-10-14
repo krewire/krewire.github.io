@@ -1,25 +1,49 @@
-name: Deploy Contributor Portal
+name: Deploy Contributor Portal (Production)
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Trigger on stable version git tags only (e.g. v0.1.0, v1.0.0, v2.1.3).
+# Pre-releases, development branches, and raw commits must pass through
+# the release process before reaching production.
+# ─────────────────────────────────────────────────────────────────────────────
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
   workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual production deployment'
+        required: false
+        default: 'Manual maintenance trigger'
 
 permissions:
   contents: write
 
 concurrency:
-  group: pages
+  group: deploy-contributor-portal
   cancel-in-progress: true
 
 jobs:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 1 — Build the contributor portal site
+  # ─────────────────────────────────────────────────────────────────────────────
   build:
-    name: Build contributor portal
+    name: Build portal (Production Gate)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Validate Release Tag
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          echo "▶ Validating stable release tag: ${TAG}"
+          if [[ ! "${TAG}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "✗ Error: '${TAG}' is not a valid stable SemVer tag."
+            exit 1
+          fi
+          echo "✓ Stable version tag validated: ${TAG}"
 
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -53,15 +77,26 @@ jobs:
         run: |
           kiw build
           touch .krewire/build/.nojekyll
-          echo "release.krewire.com" > .krewire/build/CNAME
+          echo "launchpad.krewire.com" > .krewire/build/CNAME
+
+      - name: Verify build outputs
+        run: |
+          test -f .krewire/build/index.html || { echo "✗ Missing index.html"; exit 1; }
+          test -f .krewire/build/CNAME || { echo "✗ Missing CNAME"; exit 1; }
+          test -d .krewire/build/assets || { echo "✗ Missing assets"; exit 1; }
+          echo "✓ Build outputs verified."
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: site-build
+          name: site-build-${{ github.sha }}
           path: .krewire/build
-          retention-days: 1
+          retention-days: 3
+          if-no-files-found: error
 
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 2 — Deploy to GitHub Pages
+  # ─────────────────────────────────────────────────────────────────────────────
   deploy-gh-pages:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
@@ -70,7 +105,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: site-build
+          name: site-build-${{ github.sha }}
           path: .krewire/build
 
       - name: Deploy to gh-pages branch
@@ -79,18 +114,21 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .krewire/build
           publish_branch: gh-pages
-          cname: release.krewire.com
-          commit_message: "deploy: site from ${{ github.sha }}"
+          cname: launchpad.krewire.com
+          commit_message: "release(portal): production release ${{ github.ref_name }} (${{ github.sha }})"
 
+  # ─────────────────────────────────────────────────────────────────────────────
+  # JOB 3 — Deploy to VPS (launchpad.krewire.com)
+  # ─────────────────────────────────────────────────────────────────────────────
   deploy-vps:
-    name: Deploy to VPS (release.krewire.com)
+    name: Deploy to VPS (launchpad.krewire.com)
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: site-build
+          name: site-build-${{ github.sha }}
           path: .krewire/build
 
       - name: Setup SSH
@@ -100,10 +138,35 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to release.krewire.com
+      - name: Deploy to launchpad.krewire.com via rsync
         run: |
           rsync -az --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
             .krewire/build/ \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/release.krewire.com/
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/launchpad.krewire.com/
 
+      - name: Record deployment audit log
+        env:
+          TAG: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -o StrictHostKeyChecking=yes \
+            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash -s "${TAG}" "${SHA}" << 'REMOTE'
+            TAG="$1"
+            SHA="$2"
+            mkdir -p ~/workspace/krewire
+            echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] PRODUCTION DEPLOY: portal version=${TAG} sha=${SHA}" >> ~/workspace/krewire/deploy.log
+            echo "✓ Deployment audit recorded."
+          REMOTE
+
+      - name: Smoke test
+        run: |
+          echo "▶ Smoke testing https://launchpad.krewire.com ..."
+          sleep 3
+          HTTP_CODE="$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 https://launchpad.krewire.com/ 2>/dev/null || true)"
+          if [ "${HTTP_CODE}" = "200" ]; then
+            echo "✓ Portal live site returned HTTP ${HTTP_CODE}."
+          else
+            echo "⚠ Smoke test returned HTTP ${HTTP_CODE} (DNS/routing check if applicable)."
+          fi

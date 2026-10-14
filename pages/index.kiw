@@ -18,7 +18,7 @@ layout: Landing
           <Button Variant="outline" Size="lg" Href="#quickstart" DataI18n="hero.cta_quickstart">Install CLI (kiw)</Button>
           <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/releases" Target="_blank" DataI18n="hero.cta_releases_gh">GitHub Releases ↗</Button>
         </div>
-        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Spec-Driven Testing</div>
+        <div class="meta" data-i18n="hero.meta">Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Verified Quality Gates</div>
       </div>
       <div class="hero-art">
         <div class="code-terminal-card">
@@ -393,7 +393,7 @@ cd my-app</code></pre>
             <span class="nav-curve-badge specialized" data-i18n="navigator.curve_specialized">Specialized</span>
           </div>
           <h3 class="nav-card-title"><span class="repo-icon">📐</span> krewire/internal</h3>
-          <p class="nav-card-match" data-i18n="navigator.match_internal"><strong>If you enjoy:</strong> Architectural Decision Records (ADRs), Spec-Driven Development (KWF-*), long-term roadmaps, and ecosystem governance.</p>
+          <p class="nav-card-match" data-i18n="navigator.match_internal"><strong>If you enjoy:</strong> Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and governance.</p>
           <div class="nav-card-packages">
             <span class="pkg-label" data-i18n="navigator.pkg_label">Key Packages &amp; Paths:</span>
             <div class="pkg-tags">
@@ -432,7 +432,7 @@ cd my-app</code></pre>
             <span class="roadmap-tag">v0.1.0</span>
           </div>
           <h3 data-i18n="roadmap.v1_title">v0.1.0 — Stable Baseline</h3>
-          <p data-i18n="roadmap.v1_desc">Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and Spec-Driven Testing contracts.</p>
+          <p data-i18n="roadmap.v1_desc">Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and automated quality contracts.</p>
           <ul class="roadmap-list">
             <li>✓ Monorepo consolidation (github.com/krewire/krewire)</li>
             <li>✓ 8 unified workload detections</li>

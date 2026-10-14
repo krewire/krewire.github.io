@@ -20,7 +20,7 @@
     "cta_release": "Explore v0.1.0 Highlights →",
     "cta_quickstart": "Install CLI (kiw)",
     "cta_releases_gh": "GitHub Releases ↗",
-    "meta": "Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Spec-Driven Testing"
+    "meta": "Go 1.27.1+ · Single Monorepo · 8 Unified Workloads · Verified Quality Gates"
   },
   "trust": {
     "label": "v0.1.0 Release Baseline",
@@ -111,7 +111,7 @@
     "match_mdbind": "If you enjoy: Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.",
     "match_krewire_com": "If you enjoy: High-fidelity web design, interactive documentation, component-driven layouts, and dogfooding the .kiw DSL in production.",
     "match_github_io": "If you enjoy: Community engagement, release showcases, localization (i18n), accessible UI components, and contributor onboarding portals.",
-    "match_internal": "If you enjoy: Architectural Decision Records (ADRs), Spec-Driven Development (KWF-*), long-term roadmaps, and ecosystem governance."
+    "match_internal": "If you enjoy: Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and ecosystem governance."
   },
   "roadmap": {
     "badge": "Version Roadmap",
@@ -119,7 +119,7 @@
     "subtitle": "Our progressive open core release roadmap across the four-rung ladder: free → pro → team → enterprise.",
     "v1_badge": "Current GA Baseline",
     "v1_title": "v0.1.0 — Stable Baseline",
-    "v1_desc": "Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and Spec-Driven Testing contracts.",
+    "v1_desc": "Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and automated quality contracts.",
     "v2_badge": "Next Milestone",
     "v2_title": "v0.2.0 — Enterprise Modules",
     "v2_desc": "Advanced worker distributed schedulers, enterprise RBAC/Auth wrappers, multi-cloud infra targets, and telemetry hooks.",
@@ -133,8 +133,8 @@
     "subtitle": "Krewire is not just another web framework. It is an open architectural collective solving software fragmentation, ballooning cloud costs, and developer fatigue.",
     "p1_title": "Autonomous by Design",
     "p1_desc": "Built from ground up to support self-healing, self-building pipelines, and native orchestration by autonomous AI agents (Boost).",
-    "p2_title": "Spec-Driven Development (SDD)",
-    "p2_desc": "Zero hand-waving. Every architectural boundary begins with formal specifications (KWF-*) and clear contract interfaces before implementation.",
+    "p2_title": "Architecture-First Design",
+    "p2_desc": "Zero hand-waving. Every architectural boundary begins with formal ADRs and clear contract interfaces before implementation.",
     "p3_title": "Near-Zero Cloud Cost",
     "p3_desc": "Radical resource efficiency. Go standard-library minimalism designed to operate smoothly on $5 VPS nodes up to hyperscale infrastructure.",
     "p4_title": "Human-AI Synergy",

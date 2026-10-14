@@ -245,7 +245,7 @@
       "cta_release": "Explore v0.1.0 Highlights \u2192",
       "cta_quickstart": "Install CLI (kiw)",
       "cta_releases_gh": "GitHub Releases \u2197",
-      "meta": "Go 1.27.1+ \u00b7 Single Monorepo \u00b7 8 Unified Workloads \u00b7 Spec-Driven Testing"
+      "meta": "Go 1.27.1+ \u00b7 Single Monorepo \u00b7 8 Unified Workloads \u00b7 Verified Quality Gates"
     },
     "trust": {
       "label": "v0.1.0 Release Baseline",
@@ -336,7 +336,7 @@
       "match_mdbind": "If you enjoy: Lightning-fast static documentation builders, Markdown AST transformations, instant live reload, search indexing, and syntax highlighters.",
       "match_krewire_com": "If you enjoy: High-fidelity web design, interactive documentation, component-driven layouts, and dogfooding the .kiw DSL in production.",
       "match_github_io": "If you enjoy: Community engagement, release showcases, localization (i18n), accessible UI components, and contributor onboarding portals.",
-      "match_internal": "If you enjoy: Architectural Decision Records (ADRs), Spec-Driven Development (KWF-*), long-term roadmaps, and ecosystem governance."
+      "match_internal": "If you enjoy: Architectural Decision Records (ADRs), ecosystem specifications, long-term roadmaps, and ecosystem governance."
     },
     "roadmap": {
       "badge": "Version Roadmap",
@@ -344,7 +344,7 @@
       "subtitle": "Our progressive open core release roadmap across the four-rung ladder: free \u2192 pro \u2192 team \u2192 enterprise.",
       "v1_badge": "Current GA Baseline",
       "v1_title": "v0.1.0 \u2014 Stable Baseline",
-      "v1_desc": "Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and Spec-Driven Testing contracts.",
+      "v1_desc": "Single monorepo, 8 workload kinds, unified kiw CLI, mdbind compiler, and automated quality contracts.",
       "v2_badge": "Next Milestone",
       "v2_title": "v0.2.0 \u2014 Enterprise Modules",
       "v2_desc": "Advanced worker distributed schedulers, enterprise RBAC/Auth wrappers, multi-cloud infra targets, and telemetry hooks.",
@@ -358,8 +358,8 @@
       "subtitle": "Krewire is not just another web framework. It is an open architectural collective solving software fragmentation, ballooning cloud costs, and developer fatigue.",
       "p1_title": "Autonomous by Design",
       "p1_desc": "Built from ground up to support self-healing, self-building pipelines, and native orchestration by autonomous AI agents (Boost).",
-      "p2_title": "Spec-Driven Development (SDD)",
-      "p2_desc": "Zero hand-waving. Every architectural boundary begins with formal specifications (KWF-*) and clear contract interfaces before implementation.",
+      "p2_title": "Architecture-First Design",
+      "p2_desc": "Zero hand-waving. Every architectural boundary begins with formal ADRs and clear contract interfaces before implementation.",
       "p3_title": "Near-Zero Cloud Cost",
       "p3_desc": "Radical resource efficiency. Go standard-library minimalism designed to operate smoothly on $5 VPS nodes up to hyperscale infrastructure.",
       "p4_title": "Human-AI Synergy",
@@ -579,7 +579,7 @@
       "match_mdbind": "Jika Anda menyukai: Pembangun dokumentasi statis kilat, transformasi AST Markdown, live reload instan, pengindeks pencarian, dan syntax highlighter.",
       "match_krewire_com": "Jika Anda menyukai: Desain web presisi tinggi, dokumentasi interaktif, tata letak berbasis komponen, dan dogfooding DSL .kiw di produksi.",
       "match_github_io": "Jika Anda menyukai: Interaksi komunitas, showcase peluncuran rilis, lokalisasi (i18n), komponen UI aksesibel, dan portal orientasi kontributor.",
-      "match_internal": "Jika Anda menyukai: Architectural Decision Records (ADR), Pengembangan Berbasis Spesifikasi (KWF-*), peta jalan jangka panjang, dan tata kelola ekosistem."
+      "match_internal": "Jika Anda menyukai: Architectural Decision Records (ADR), spesifikasi ekosistem, peta jalan jangka panjang, dan tata kelola ekosistem."
     },
     "roadmap": {
       "badge": "Peta Jalan Versi",
@@ -601,8 +601,8 @@
       "subtitle": "Krewire bukan sekadar framework web biasa. Ini adalah kolektif arsitektur terbuka yang memecahkan fragmentasi perangkat lunak, ledakan biaya cloud, dan kelelahan developer.",
       "p1_title": "Otonom Sejak Fondasi",
       "p1_desc": "Dibangun dari dasar untuk mendukung perbaikan mandiri, pipeline self-building, dan orkestrasi bawaan oleh agen AI otonom (Boost).",
-      "p2_title": "Pengembangan Berbasis Spesifikasi (SDD)",
-      "p2_desc": "Tanpa asumsi sepihak. Setiap batas arsitektur diawali spesifikasi formal (KWF-*) dan kontrak antarmuka yang presisi sebelum implementasi.",
+      "p2_title": "Desain Berbasis Arsitektur",
+      "p2_desc": "Tanpa asumsi sepihak. Setiap batas arsitektur diawali ADR formal dan kontrak antarmuka yang presisi sebelum implementasi.",
       "p3_title": "Biaya Cloud Mendekati Nol",
       "p3_desc": "Efisiensi sumber daya radikal. Minimalisme pustaka standar Go yang dirancang beroperasi mulus di VPS $5 hingga infrastruktur skala besar.",
       "p4_title": "Sinergi Manusia & AI",
