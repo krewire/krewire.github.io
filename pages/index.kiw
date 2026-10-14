@@ -12,10 +12,10 @@ layout: Landing
       <div class="hero-copy">
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
         <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.</h1>
-        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while generous sponsors fund student fellowships and independent infrastructure.</p>
+        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.</p>
         <div class="ctas flex flex-wrap gap-3">
           <Button Variant="primary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing →</Button>
-          <Button Variant="secondary" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Become a Sponsor 💖</Button>
+          <Button Variant="secondary" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Sponsorship &amp; Tiers 💖</Button>
           <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" Target="_blank" DataI18n="hero.cta_issues">Good First Issues ↗</Button>
         </div>
         <div class="meta" data-i18n="hero.meta">100% Open Source Core (MIT) · Free Forever · Four-Rung Tier Ladder · AI-Assisted Synergy</div>
@@ -35,8 +35,8 @@ layout: Landing
             <div class="term-line term-info">✓ cloned 5 ecosystem repos behind go.work</div>
             <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">kiw test</span></div>
             <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
-            <div class="term-line term-muted mt-2"># Active Sponsorship Impact</div>
-            <div class="term-line term-info">⚡ 40% Student Fellowships · 30% CI Clusters · 20% Security Audits</div>
+            <div class="term-line term-muted mt-2"># Open Core Architecture (ADR-6CAB8C)</div>
+            <div class="term-line term-info">⚡ free (MIT, forever) → pro → team → enterprise</div>
           </div>
         </div>
       </div>
@@ -405,167 +405,101 @@ git push origin feat/my-feature</code></pre>
     </div>
   </section>
 
-  <!-- SPONSORSHIP TIERS HUB -->
+  <!-- SPONSORSHIP & OPEN CORE MODEL HUB -->
   <section class="sponsorship-section" id="sponsorship">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="sponsorship.badge">Sustainable Open Source</div>
-        <h2 data-i18n="sponsorship.title">Sponsor Krewire Open Source</h2>
-        <p data-i18n="sponsorship.subtitle">Invest in the future of Indonesian software engineering. The core is 100% free and MIT forever. Your sponsorship funds student fellowships, independent CI infrastructure, and rigorous security audits.</p>
+        <div class="sub-badge" data-i18n="sponsorship.badge">Open Core Model</div>
+        <h2 data-i18n="sponsorship.title">The Four-Rung Tier Ladder &amp; Sponsorship</h2>
+        <p data-i18n="sponsorship.subtitle">Krewire operates on an open core model: every line of code inside krewire/krewire is 100% open source (MIT). The ecosystem starts on the free tier — free forever — and climbs a four-rung ladder of pro, team, and enterprise.</p>
       </div>
 
-      <div class="sponsorship-grid">
-        <!-- Tier 1: Community Backer -->
-        <div class="sponsor-card">
-          <div class="sponsor-tier-head">
-            <span class="sponsor-badge" data-i18n="sponsorship.tier1_badge">Community Backer</span>
-            <h3 class="sponsor-name" data-i18n="sponsorship.tier1_name">Backer / Supporter</h3>
-            <div class="sponsor-price" data-i18n="sponsorship.tier1_price">$5 / month</div>
+      <!-- THE 4-RUNG TIER LADDER (SSOT: open-core.md) -->
+      <div class="open-core-grid">
+        <!-- Tier 1: free -->
+        <div class="open-core-card">
+          <div class="tier-top">
+            <span class="tier-badge free" data-i18n="sponsorship.tier1_badge">Free Forever</span>
+            <h3 class="tier-name font-mono" data-i18n="sponsorship.tier1_name">free</h3>
+            <span class="tier-target" data-i18n="sponsorship.tier1_target">Students, UMKM, hobbyists, evaluation</span>
           </div>
-          <p class="sponsor-desc" data-i18n="sponsorship.tier1_desc">For individual developers and enthusiasts who believe in open-source independence in Indonesia.</p>
-          <ul class="sponsor-features">
-            <li data-i18n="sponsorship.tier1_f1">Backer badge on Discord &amp; GitHub Discussions</li>
-            <li data-i18n="sponsorship.tier1_f2">Name recognized in Sponsors &amp; Contributors Hall of Fame</li>
-            <li data-i18n="sponsorship.tier1_f3">Monthly ecosystem newsletter &amp; early release notes</li>
+          <p class="tier-desc" data-i18n="sponsorship.tier1_desc">The whole path from requirement to running product. A project built entirely on free modules builds, deploys, and operates with no license key, no seat count, no telemetry, and no expiry.</p>
+          <ul class="tier-features">
+            <li data-i18n="sponsorship.tier1_f1">100% Open source (MIT License)</li>
+            <li data-i18n="sponsorship.tier1_f2">Self-serve, no account or license key needed</li>
+            <li data-i18n="sponsorship.tier1_f3">All core modules (kern, web, ui, tui, runtime, i18n, assets, cloud, testing, hub)</li>
           </ul>
-          <div class="sponsor-cta-wrap">
-            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline w-full" data-i18n="sponsorship.tier1_cta">Become a Backer →</a>
+          <div class="tier-footer">
+            <a href="#pathways" class="btn btn-outline w-full" data-i18n="sponsorship.tier1_cta">Get Started (Free) →</a>
           </div>
         </div>
 
-        <!-- Tier 2: Pro Sponsor (Popular) -->
-        <div class="sponsor-card popular">
-          <div class="popular-ribbon" data-i18n="sponsorship.tier2_badge">Most Popular</div>
-          <div class="sponsor-tier-head">
-            <h3 class="sponsor-name" data-i18n="sponsorship.tier2_name">Pro Sponsor</h3>
-            <div class="sponsor-price" data-i18n="sponsorship.tier2_price">$29 / month</div>
+        <!-- Tier 2: pro -->
+        <div class="open-core-card highlight-card">
+          <div class="tier-top">
+            <span class="tier-badge pro" data-i18n="sponsorship.tier2_badge">Planned Tier</span>
+            <h3 class="tier-name font-mono" data-i18n="sponsorship.tier2_name">pro</h3>
+            <span class="tier-target" data-i18n="sponsorship.tier2_target">Individual developers, freelancers, advanced products</span>
           </div>
-          <p class="sponsor-desc" data-i18n="sponsorship.tier2_desc">For professional developers, freelancers, and indie builders shipping production software with Krewire.</p>
-          <ul class="sponsor-features">
-            <li data-i18n="sponsorship.tier2_f1">All perks from Community Backer</li>
-            <li data-i18n="sponsorship.tier2_f2">Direct access to monthly maintainer AMA &amp; technical office hours</li>
-            <li data-i18n="sponsorship.tier2_f3">Priority issue triaging for reported bugs and feature requests</li>
-            <li data-i18n="sponsorship.tier2_f4">Early preview access to upcoming pro modules (hardened security, vault)</li>
+          <p class="tier-desc" data-i18n="sponsorship.tier2_desc">Self-serve production reliability: distinguishes production-grade operational commitments, hardened security, managed secrets, and commercial sponsorship entitlements.</p>
+          <ul class="tier-features">
+            <li data-i18n="sponsorship.tier2_f1">100% Open source (MIT License)</li>
+            <li data-i18n="sponsorship.tier2_f2">Hardened security &amp; signed release pipeline</li>
+            <li data-i18n="sponsorship.tier2_f3">Managed secrets &amp; KMS-backed credential rotation</li>
           </ul>
-          <div class="sponsor-cta-wrap">
-            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary w-full" data-i18n="sponsorship.tier2_cta">Sponsor as Pro →</a>
+          <div class="tier-footer">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary w-full" data-i18n="sponsorship.tier2_cta">Sponsor on GitHub →</a>
           </div>
         </div>
 
-        <!-- Tier 3: Team Sponsor -->
-        <div class="sponsor-card">
-          <div class="sponsor-tier-head">
-            <span class="sponsor-badge" data-i18n="sponsorship.tier3_badge">Team &amp; Agency</span>
-            <h3 class="sponsor-name" data-i18n="sponsorship.tier3_name">Team Sponsor</h3>
-            <div class="sponsor-price" data-i18n="sponsorship.tier3_price">$199 / month</div>
+        <!-- Tier 3: team -->
+        <div class="open-core-card">
+          <div class="tier-top">
+            <span class="tier-badge team" data-i18n="sponsorship.tier3_badge">Planned Tier</span>
+            <h3 class="tier-name font-mono" data-i18n="sponsorship.tier3_name">team</h3>
+            <span class="tier-target" data-i18n="sponsorship.tier3_target">Growing teams and agencies (multi-contributor)</span>
           </div>
-          <p class="sponsor-desc" data-i18n="sponsorship.tier3_desc">For agencies, startups, and growing teams relying on Krewire's modular libraries and infrastructure.</p>
-          <ul class="sponsor-features">
-            <li data-i18n="sponsorship.tier3_f1">All perks from Pro Sponsor</li>
-            <li data-i18n="sponsorship.tier3_f2">Company logo &amp; backlink on krewire.github.io and krewire.com</li>
-            <li data-i18n="sponsorship.tier3_f3">Logo featured in README across all 5 core repositories</li>
-            <li data-i18n="sponsorship.tier3_f4">Dedicated private Slack/Discord channel with Krewire core team</li>
-            <li data-i18n="sponsorship.tier3_f5">Advisory voice on non-breaking ecosystem roadmap priorities</li>
+          <p class="tier-desc" data-i18n="sponsorship.tier3_desc">Collaboration and fleet policy: shared configuration, team-wide policy, role separation across environments, and aggregate reporting.</p>
+          <ul class="tier-features">
+            <li data-i18n="sponsorship.tier3_f1">100% Open source (MIT License)</li>
+            <li data-i18n="sponsorship.tier3_f2">Team-wide policy &amp; role separation</li>
+            <li data-i18n="sponsorship.tier3_f3">Fleet-level dashboards, cost &amp; usage visibility</li>
           </ul>
-          <div class="sponsor-cta-wrap">
-            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-secondary w-full" data-i18n="sponsorship.tier3_cta">Sponsor as Team →</a>
+          <div class="tier-footer">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-secondary w-full" data-i18n="sponsorship.tier3_cta">Sponsor on GitHub →</a>
           </div>
         </div>
 
-        <!-- Tier 4: Enterprise Patron -->
-        <div class="sponsor-card">
-          <div class="sponsor-tier-head">
-            <span class="sponsor-badge" data-i18n="sponsorship.tier4_badge">Strategic Patron</span>
-            <h3 class="sponsor-name" data-i18n="sponsorship.tier4_name">Enterprise Patron</h3>
-            <div class="sponsor-price" data-i18n="sponsorship.tier4_price">Custom B2B</div>
+        <!-- Tier 4: enterprise -->
+        <div class="open-core-card">
+          <div class="tier-top">
+            <span class="tier-badge enterprise" data-i18n="sponsorship.tier4_badge">Custom B2B</span>
+            <h3 class="tier-name font-mono" data-i18n="sponsorship.tier4_name">enterprise</h3>
+            <span class="tier-target" data-i18n="sponsorship.tier4_target">Organizations with procurement, compliance, or SLA needs</span>
           </div>
-          <p class="sponsor-desc" data-i18n="sponsorship.tier4_desc">For enterprises, financial institutions, and organizations seeking custom SLA, compliance, and dedicated fellowships.</p>
-          <ul class="sponsor-features">
-            <li data-i18n="sponsorship.tier4_f1">All perks from Team Sponsor</li>
-            <li data-i18n="sponsorship.tier4_f2">Prominent hero placement across all official websites and portals</li>
-            <li data-i18n="sponsorship.tier4_f3">Quarterly architecture reviews &amp; security auditing for your team</li>
-            <li data-i18n="sponsorship.tier4_f4">Formal corporate procurement invoicing &amp; tax compliance receipts</li>
-            <li data-i18n="sponsorship.tier4_f5">Dedicated student fellowship program sponsored in your company's honor</li>
+          <p class="tier-desc" data-i18n="sponsorship.tier4_desc">Deliberately not a self-serve product. Negotiated contract with compliance guarantees, named support contacts, immutable audit logging, and private registry support.</p>
+          <ul class="tier-features">
+            <li data-i18n="sponsorship.tier4_f1">100% Open source core (MIT License)</li>
+            <li data-i18n="sponsorship.tier4_f2">Immutable audit logs &amp; data retention enforcement</li>
+            <li data-i18n="sponsorship.tier4_f3">Defined availability SLA &amp; named support contact</li>
           </ul>
-          <div class="sponsor-cta-wrap">
-            <a href="mailto:sponsorship@krewire.com" class="btn btn-outline w-full" data-i18n="sponsorship.tier4_cta">Contact for Enterprise →</a>
+          <div class="tier-footer">
+            <a href="mailto:sponsorship@krewire.com" class="btn btn-outline w-full" data-i18n="sponsorship.tier4_cta">Inquire for Enterprise B2B →</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- FUND ALLOCATION & FINANCIAL TRANSPARENCY -->
-  <section class="transparency-section" id="transparency">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="transparency.badge">Financial Transparency</div>
-        <h2 data-i18n="transparency.title">Where Every Dollar &amp; Rupiah Goes</h2>
-        <p data-i18n="transparency.subtitle">We operate with 100% public financial accountability. Your contributions directly empower Indonesian developers and guarantee infrastructure resilience.</p>
-      </div>
-
-      <div class="allocation-grid">
-        <div class="allocation-card">
-          <div class="allocation-top">
-            <span class="allocation-percent" data-i18n="transparency.alloc1_pct">40%</span>
-            <span class="allocation-icon">🎓</span>
+      <!-- SPONSORSHIP CHANNELS HUB -->
+      <div class="sponsor-hub-box mt-8">
+        <div class="sponsor-hub-inner">
+          <div class="sponsor-hub-info">
+            <h3 class="font-black text-lg mb-1" data-i18n="sponsorship.sponsor_box_title">Sponsoring the Krewire Collective</h3>
+            <p class="text-sm text-muted" data-i18n="sponsorship.sponsor_box_desc">Sponsorship fuels independent infrastructure, code signing attestations, and sustained open-source development. Choose your preferred channel to support:</p>
           </div>
-          <h3 data-i18n="transparency.alloc1_title">Student &amp; Contributor Fellowships</h3>
-          <p data-i18n="transparency.alloc1_desc">Direct financial stipends and computing grants for Indonesian students and open-source contributors dedicating time to Krewire libraries.</p>
-          <div class="allocation-progress"><div class="progress-bar p-40"></div></div>
-        </div>
-
-        <div class="allocation-card">
-          <div class="allocation-top">
-            <span class="allocation-percent" data-i18n="transparency.alloc2_pct">30%</span>
-            <span class="allocation-icon">🖥️</span>
+          <div class="sponsor-hub-actions flex flex-wrap gap-3">
+            <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="sponsorship.sponsor_gh_btn">Sponsor via GitHub Sponsors 💖</a>
+            <a href="mailto:sponsorship@krewire.com" class="btn btn-outline" data-i18n="sponsorship.sponsor_b2b_btn">Contact for Enterprise B2B Inquiry →</a>
           </div>
-          <h3 data-i18n="transparency.alloc2_title">Cloud Infrastructure &amp; CI/CD</h3>
-          <p data-i18n="transparency.alloc2_desc">High-performance test clusters, continuous fuzzing runners, multi-architecture benchmark servers, and domain hosting.</p>
-          <div class="allocation-progress"><div class="progress-bar p-30"></div></div>
-        </div>
-
-        <div class="allocation-card">
-          <div class="allocation-top">
-            <span class="allocation-percent" data-i18n="transparency.alloc3_pct">20%</span>
-            <span class="allocation-icon">🔒</span>
-          </div>
-          <h3 data-i18n="transparency.alloc3_title">Security &amp; Hardening Audits</h3>
-          <p data-i18n="transparency.alloc3_desc">Professional third-party security audits, CVE mitigations, automated SBOM verifications, and compliance sign-offs.</p>
-          <div class="allocation-progress"><div class="progress-bar p-20"></div></div>
-        </div>
-
-        <div class="allocation-card">
-          <div class="allocation-top">
-            <span class="allocation-percent" data-i18n="transparency.alloc4_pct">10%</span>
-            <span class="allocation-icon">🤝</span>
-          </div>
-          <h3 data-i18n="transparency.alloc4_title">Community Events &amp; Education</h3>
-          <p data-i18n="transparency.alloc4_desc">Hosting campus workshops, open-source hackathons, and localized Go programming tutorials across Indonesian tech communities.</p>
-          <div class="allocation-progress"><div class="progress-bar p-10"></div></div>
-        </div>
-      </div>
-
-      <!-- FUNDING CHANNELS BAR -->
-      <div class="funding-channels-box mt-8">
-        <h4 class="channels-title text-center font-black mb-4" data-i18n="transparency.channels_title">Supported Funding Channels</h4>
-        <div class="funding-channels-grid">
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="channel-chip">
-            <span class="channel-icon">💖</span>
-            <span class="channel-text" data-i18n="transparency.ch_gh">GitHub Sponsors (Global Cards &amp; PayPal)</span>
-          </a>
-          <a href="https://opencollective.com/krewire" target="_blank" rel="noopener" class="channel-chip">
-            <span class="channel-icon">🌐</span>
-            <span class="channel-text" data-i18n="transparency.ch_oc">Open Collective (Transparent Public Ledger)</span>
-          </a>
-          <div class="channel-chip">
-            <span class="channel-icon">🇮🇩</span>
-            <span class="channel-text" data-i18n="transparency.ch_local">Indonesian Local Payment (Saweria, QRIS, Bank Transfer)</span>
-          </div>
-          <a href="mailto:sponsorship@krewire.com" class="channel-chip">
-            <span class="channel-icon">📄</span>
-            <span class="channel-text" data-i18n="transparency.ch_invoice">Corporate Direct Invoicing (B2B Procurement)</span>
-          </a>
         </div>
       </div>
     </div>
@@ -627,10 +561,10 @@ git push origin feat/my-feature</code></pre>
       <div class="cta-card">
         <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
         <h2 data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
-        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our student fellowships, you are laying the foundation for open-source self-reliance.</p>
+        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our developer community, you are laying the foundation for open-source self-reliance.</p>
         <div class="ctas flex flex-wrap gap-3 justify-center">
           <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.github">Explore Open Issues on GitHub →</a>
-          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Become a Sponsor 💖</a>
+          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Sponsor on GitHub 💖</a>
         </div>
         <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
       </div>
@@ -1296,17 +1230,17 @@ git push origin feat/my-feature</code></pre>
   margin-top: auto;
 }
 
-/* 6. SPONSORSHIP TIERS */
+/* 6. OPEN CORE TIER LADDER (SSOT: open-core.md) */
 .sponsorship-section {
   padding: 42px 0 28px;
   background: var(--bg);
 }
-.sponsorship-grid {
+.open-core-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
-.sponsor-card {
+.open-core-card {
   background: var(--bg);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
@@ -1314,193 +1248,98 @@ git push origin feat/my-feature</code></pre>
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  position: relative;
+  gap: 12px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.sponsor-card:hover {
+.open-core-card:hover {
   transform: translate(-2px, -2px);
   box-shadow: var(--pop-shadow-lg);
 }
-.sponsor-card.popular {
+.open-core-card.highlight-card {
   background: var(--bg-2);
   border-color: var(--primary);
-  box-shadow: 5px 5px 0px var(--border);
+  box-shadow: 4px 4px 0px var(--primary);
 }
-:root[data-theme="dark"] .sponsor-card.popular {
-  box-shadow: 5px 5px 0px var(--primary);
+.tier-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-.popular-ribbon {
-  position: absolute;
-  top: -12px;
-  right: 18px;
-  background: var(--primary);
-  color: var(--primary-content);
-  font-size: 11px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 3px 10px;
-  border-radius: 6px;
-  border: 2px solid var(--border);
-  box-shadow: 2px 2px 0px var(--border);
-}
-.sponsor-badge {
+.tier-badge {
   font-size: 11px;
   font-weight: 800;
-  background: var(--secondary);
-  color: var(--secondary-content);
   padding: 2px 8px;
   border-radius: 5px;
   border: 1.5px solid var(--border);
   width: fit-content;
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
-.sponsor-name {
-  font-size: 20px;
-  font-weight: 900;
-  margin: 0 0 4px;
-}
-.sponsor-price {
+.tier-badge.free { background: var(--primary); color: var(--primary-content); }
+.tier-badge.pro { background: var(--secondary); color: var(--secondary-content); }
+.tier-badge.team { background: #ffb703; color: #0B1F3B; }
+.tier-badge.enterprise { background: var(--accent); color: #fff; }
+.tier-name {
   font-size: 24px;
   font-weight: 900;
-  color: var(--fg);
+  margin: 0;
+  letter-spacing: -0.02em;
 }
-.sponsor-desc {
+.tier-target {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.tier-desc {
   font-size: 13.5px;
   color: var(--muted);
   margin: 0;
   line-height: 1.55;
 }
-.sponsor-features {
+.tier-features {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
   font-size: 13px;
   font-weight: 600;
 }
-.sponsor-features li {
+.tier-features li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
   line-height: 1.45;
 }
-.sponsor-features li::before {
-  content: "💖";
-  font-size: 12px;
+.tier-features li::before {
+  content: "◈";
+  color: var(--primary);
+  font-weight: 900;
 }
-.sponsor-cta-wrap {
+.tier-footer {
   margin-top: auto;
   padding-top: 14px;
 }
 
-/* 7. FINANCIAL TRANSPARENCY & ALLOCATION */
-.transparency-section {
-  padding: 42px 0 28px;
-}
-.allocation-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-.allocation-card {
-  background: var(--bg);
+.sponsor-hub-box {
+  background: var(--bg-2);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
   border-radius: var(--radius);
-  padding: 20px 18px;
+  padding: 24px 20px;
+}
+.sponsor-hub-inner {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  gap: 16px;
 }
-.allocation-card:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--pop-shadow-lg);
-}
-.allocation-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.allocation-percent {
-  font-size: 28px;
-  font-weight: 900;
-  color: var(--primary);
-  line-height: 1;
-}
-.allocation-icon {
-  font-size: 24px;
-}
-.allocation-card h3 {
-  font-size: 16px;
-  font-weight: 800;
+.sponsor-hub-info p {
   margin: 0;
-}
-.allocation-card p {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0;
-  line-height: 1.5;
-}
-.allocation-progress {
-  width: 100%;
-  height: 8px;
-  background: var(--bg-2);
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-  margin-top: auto;
-}
-.progress-bar {
-  height: 100%;
-  background: var(--primary);
-}
-.progress-bar.p-40 { width: 40%; background: var(--primary); }
-.progress-bar.p-30 { width: 30%; background: var(--secondary); }
-.progress-bar.p-20 { width: 20%; background: #ffb703; }
-.progress-bar.p-10 { width: 10%; background: var(--accent); }
-
-.funding-channels-box {
-  background: var(--bg-2);
-  border: var(--pop-border);
-  box-shadow: var(--pop-shadow-sm);
-  border-radius: var(--radius);
-  padding: 20px 18px;
-}
-.funding-channels-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-.channel-chip {
-  background: var(--bg);
-  border: var(--pop-border-thin);
-  box-shadow: var(--pop-shadow-sm);
-  border-radius: 8px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--fg);
-  transition: all 0.12s ease;
-}
-.channel-chip:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0px var(--border);
-  background: var(--bg);
-}
-.channel-icon {
-  font-size: 18px;
+  line-height: 1.55;
 }
 
-/* 8. AI BOOST SYNERGY */
+/* 7. AI BOOST SYNERGY */
 .guild-section {
   padding: 38px 0 28px;
 }
@@ -1596,7 +1435,7 @@ git push origin feat/my-feature</code></pre>
   line-height: 1.45;
 }
 
-/* 9. FINAL CTA */
+/* 8. FINAL CTA */
 .final-cta {
   padding: 28px 0 52px;
 }
@@ -1660,13 +1499,7 @@ git push origin feat/my-feature</code></pre>
   .gates-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .sponsorship-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .allocation-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .funding-channels-grid {
+  .open-core-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1680,6 +1513,11 @@ git push origin feat/my-feature</code></pre>
   }
   .benefit-card:nth-child(3) {
     grid-column: auto;
+  }
+  .sponsor-hub-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -1704,13 +1542,7 @@ git push origin feat/my-feature</code></pre>
   .quickstart-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .sponsorship-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .allocation-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .funding-channels-grid {
+  .open-core-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .guild-grid {
