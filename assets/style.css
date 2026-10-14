@@ -984,89 +984,88 @@
 }[data-kiw-component="page:/"] .sponsorship-section, [data-kiw-component="page:/"].sponsorship-section{
   padding: 42px 0 28px;
   background: var(--bg);
-}[data-kiw-component="page:/"] .open-core-grid, [data-kiw-component="page:/"].open-core-grid{
+}[data-kiw-component="page:/"] .sponsor-channels-grid, [data-kiw-component="page:/"].sponsor-channels-grid{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
-}[data-kiw-component="page:/"] .open-core-card, [data-kiw-component="page:/"].open-core-card{
+  gap: 20px;
+}[data-kiw-component="page:/"] .sponsor-channel-card, [data-kiw-component="page:/"].sponsor-channel-card{
   background: var(--bg);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
   border-radius: var(--radius);
-  padding: 24px 20px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-}[data-kiw-component="page:/"] .open-core-card:hover, [data-kiw-component="page:/"].open-core-card:hover{
+}[data-kiw-component="page:/"] .sponsor-channel-card:hover, [data-kiw-component="page:/"].sponsor-channel-card:hover{
   transform: translate(-2px, -2px);
   box-shadow: var(--pop-shadow-lg);
-}[data-kiw-component="page:/"] .open-core-card.highlight-card, [data-kiw-component="page:/"].open-core-card.highlight-card{
+}[data-kiw-component="page:/"] .sponsor-channel-card.highlight-card, [data-kiw-component="page:/"].sponsor-channel-card.highlight-card{
   background: var(--bg-2);
-  border-color: var(--primary);
-  box-shadow: 4px 4px 0px var(--primary);
-}[data-kiw-component="page:/"] .tier-top, [data-kiw-component="page:/"].tier-top{
+  border-color: var(--secondary);
+  box-shadow: 4px 4px 0px var(--secondary);
+}[data-kiw-component="page:/"] .sponsor-card-top, [data-kiw-component="page:/"].sponsor-card-top{
   display: flex;
   flex-direction: column;
-  gap: 4px;
-}[data-kiw-component="page:/"] .tier-badge, [data-kiw-component="page:/"].tier-badge{
+  gap: 8px;
+}[data-kiw-component="page:/"] .channel-badge, [data-kiw-component="page:/"].channel-badge{
   font-size: 11px;
   font-weight: 800;
-  padding: 2px 8px;
+  padding: 3px 9px;
   border-radius: 5px;
   border: 1.5px solid var(--border);
   width: fit-content;
   display: inline-block;
-  margin-bottom: 4px;
-}[data-kiw-component="page:/"] .tier-badge.free, [data-kiw-component="page:/"].tier-badge.free{ background: var(--primary); color: var(--primary-content); }[data-kiw-component="page:/"] .tier-badge.pro, [data-kiw-component="page:/"].tier-badge.pro{ background: var(--secondary); color: var(--secondary-content); }[data-kiw-component="page:/"] .tier-badge.team, [data-kiw-component="page:/"].tier-badge.team{ background: #ffb703; color: #0B1F3B; }[data-kiw-component="page:/"] .tier-badge.enterprise, [data-kiw-component="page:/"].tier-badge.enterprise{ background: var(--accent); color: #fff; }[data-kiw-component="page:/"] .tier-name, [data-kiw-component="page:/"].tier-name{
-  font-size: 24px;
+}[data-kiw-component="page:/"] .channel-badge.community, [data-kiw-component="page:/"].channel-badge.community{ background: var(--primary); color: var(--primary-content); }[data-kiw-component="page:/"] .channel-badge.corporate, [data-kiw-component="page:/"].channel-badge.corporate{ background: var(--secondary); color: var(--secondary-content); }[data-kiw-component="page:/"] .channel-title, [data-kiw-component="page:/"].channel-title{
+  font-size: 22px;
   font-weight: 900;
   margin: 0;
   letter-spacing: -0.02em;
-}[data-kiw-component="page:/"] .tier-target, [data-kiw-component="page:/"].tier-target{
-  font-size: 12px;
-  font-weight: 800;
-  color: var(--muted);
-}[data-kiw-component="page:/"] .tier-desc, [data-kiw-component="page:/"].tier-desc{
-  font-size: 13.5px;
+}[data-kiw-component="page:/"] .channel-desc, [data-kiw-component="page:/"].channel-desc{
+  font-size: 14px;
   color: var(--muted);
   margin: 0;
   line-height: 1.55;
-}[data-kiw-component="page:/"] .tier-features, [data-kiw-component="page:/"].tier-features{
+}[data-kiw-component="page:/"] .channel-perks, [data-kiw-component="page:/"].channel-perks{
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 13px;
+  gap: 10px;
+  font-size: 13.5px;
   font-weight: 600;
-}[data-kiw-component="page:/"] .tier-features li{
+}[data-kiw-component="page:/"] .channel-perks li{
   display: flex;
   align-items: flex-start;
   gap: 8px;
   line-height: 1.45;
-}[data-kiw-component="page:/"] .tier-features li::before{
+}[data-kiw-component="page:/"] .channel-perks li::before{
   content: "◈";
   color: var(--primary);
   font-weight: 900;
-}[data-kiw-component="page:/"] .tier-footer, [data-kiw-component="page:/"].tier-footer{
+}[data-kiw-component="page:/"] .channel-footer, [data-kiw-component="page:/"].channel-footer{
   margin-top: auto;
-  padding-top: 14px;
-}[data-kiw-component="page:/"] .sponsor-hub-box, [data-kiw-component="page:/"].sponsor-hub-box{
+  padding-top: 16px;
+}[data-kiw-component="page:/"] .sponsor-trust-banner, [data-kiw-component="page:/"].sponsor-trust-banner{
   background: var(--bg-2);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
   border-radius: var(--radius);
-  padding: 24px 20px;
-}[data-kiw-component="page:/"] .sponsor-hub-inner, [data-kiw-component="page:/"].sponsor-hub-inner{
+  padding: 20px 24px;
+}[data-kiw-component="page:/"] .sponsor-trust-inner, [data-kiw-component="page:/"].sponsor-trust-inner{
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-}[data-kiw-component="page:/"] .sponsor-hub-info p{
+  align-items: center;
+  justify-content: space-between;
+}[data-kiw-component="page:/"] .trust-content p{
   margin: 0;
-  line-height: 1.55;
-}[data-kiw-component="page:/"] .guild-section, [data-kiw-component="page:/"].guild-section{
+  line-height: 1.5;
+}[data-kiw-component="page:/"] line-height: 1.55;
+}
+
+/* 7. AI BOOST SYNERGY */
+.guild-section{
   padding: 38px 0 28px;
 }[data-kiw-component="page:/"] .guild-card, [data-kiw-component="page:/"].guild-card{
   background: var(--bg-2);
@@ -1187,7 +1186,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }[data-kiw-component="page:/"] .gates-grid, [data-kiw-component="page:/"].gates-grid{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }[data-kiw-component="page:/"] .open-core-grid, [data-kiw-component="page:/"].open-core-grid{
+  }[data-kiw-component="page:/"] .sponsor-channels-grid, [data-kiw-component="page:/"].sponsor-channels-grid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }}@media (min-width: 768px) {[data-kiw-component="page:/"] .hero, [data-kiw-component="page:/"].hero{
     padding: 48px 0 32px;
@@ -1195,7 +1194,7 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }[data-kiw-component="page:/"] .benefit-card:nth-child(3), [data-kiw-component="page:/"].benefit-card:nth-child(3){
     grid-column: auto;
-  }[data-kiw-component="page:/"] .sponsor-hub-inner, [data-kiw-component="page:/"].sponsor-hub-inner{
+  }[data-kiw-component="page:/"] .sponsor-trust-inner, [data-kiw-component="page:/"].sponsor-trust-inner{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1208,13 +1207,11 @@
   }[data-kiw-component="page:/"] .section-inner, [data-kiw-component="page:/"].section-inner{
     padding: 0 32px;
   }[data-kiw-component="page:/"] .repo-grid, [data-kiw-component="page:/"].repo-grid{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }[data-kiw-component="page:/"] .repo-card.featured, [data-kiw-component="page:/"].repo-card.featured{
     grid-column: span 2;
   }[data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }[data-kiw-component="page:/"] .open-core-grid, [data-kiw-component="page:/"].open-core-grid{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }[data-kiw-component="page:/"] .guild-grid, [data-kiw-component="page:/"].guild-grid{
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 36px;
