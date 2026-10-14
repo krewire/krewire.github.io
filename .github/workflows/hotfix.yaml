@@ -146,8 +146,8 @@ jobs:
             set -euo pipefail
             if [ -d /var/www/launchpad.krewire.com ]; then
               echo "▶ Creating snapshot of current stable portal directory..."
-              rm -rf /var/www/launchpad.krewire.com.stable.bak
-              cp -a /var/www/launchpad.krewire.com /var/www/launchpad.krewire.com.stable.bak
+              rm -rf /tmp/launchpad.krewire.com.stable.bak
+              cp -a /var/www/launchpad.krewire.com /tmp/launchpad.krewire.com.stable.bak
               echo "✓ Stable snapshot created."
             fi
           REMOTE
@@ -196,9 +196,9 @@ jobs:
             -o StrictHostKeyChecking=yes \
             ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'REMOTE'
             set -euo pipefail
-            if [ -d /var/www/launchpad.krewire.com.stable.bak ]; then
+            if [ -d /tmp/launchpad.krewire.com.stable.bak ]; then
               echo "▶ Restoring portal from stable backup..."
-              rsync -az --delete /var/www/launchpad.krewire.com.stable.bak/ /var/www/launchpad.krewire.com/
+              rsync -az --delete /tmp/launchpad.krewire.com.stable.bak/ /var/www/launchpad.krewire.com/
               echo "✓ Fallback to stable version completed."
               echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] ⚠️ HOTFIX FAILED: Restored stable snapshot" >> ~/workspace/krewire/deploy.log
             else
