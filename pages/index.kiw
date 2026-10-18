@@ -438,46 +438,46 @@ git push origin feat/my-feature</code></pre>
   </section>
 
   <!-- AI BOOST SYNERGY -->
-  <section class="guild-section" id="boost">
+  <section class="boost-section" id="boost">
     <div class="section-inner">
-      <div class="guild-card">
-        <div class="guild-grid">
-          <div class="guild-info">
-            <div class="sub-badge" data-i18n="guild.badge">Human + AI Synergy</div>
-            <h2 data-i18n="guild.title">Collaborating with AI Boost</h2>
-            <p class="guild-lead" data-i18n="guild.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
-            <ul class="guild-items">
-              <li data-i18n-html="guild.item1_html"><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
-              <li data-i18n-html="guild.item2_html"><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
-              <li data-i18n-html="guild.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
-              <li data-i18n-html="guild.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
+      <div class="boost-card">
+        <div class="boost-grid">
+          <div class="boost-info">
+            <div class="sub-badge" data-i18n="boost.badge">Human + AI Synergy</div>
+            <h2 data-i18n="boost.title">Collaborating with AI Boost</h2>
+            <p class="boost-lead" data-i18n="boost.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
+            <ul class="boost-items">
+              <li data-i18n-html="boost.item1_html"><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
+              <li data-i18n-html="boost.item2_html"><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
+              <li data-i18n-html="boost.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
+              <li data-i18n-html="boost.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
             </ul>
-            <div class="guild-ctas flex flex-wrap gap-3">
-              <a href="https://github.com/krewire/krewire/tree/main/templates/boost" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="guild.cta_repo">Explore AI Boost in Krewire →</a>
-              <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="guild.cta_disc">Join Discussions</a>
+            <div class="boost-ctas flex flex-wrap gap-3">
+              <a href="https://github.com/krewire/krewire/tree/main/templates/boost" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="boost.cta_repo">Explore AI Boost in Krewire →</a>
+              <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="boost.cta_disc">Join Discussions</a>
             </div>
           </div>
-          <div class="guild-triad">
-            <div class="guild-box">
-              <div class="guild-box-head">
+          <div class="boost-triad">
+            <div class="boost-box">
+              <div class="boost-box-head">
                 <span class="triad-icon">◈</span>
-                <strong data-i18n="guild.triad_title">AI Boost Agent Triad</strong>
+                <strong data-i18n="boost.triad_title">AI Boost Agent Triad</strong>
               </div>
               <div class="triad-roles">
                 <div class="triad-role">
                   <div class="role-badge planner">Planner</div>
-                  <strong data-i18n="guild.planner_title">Requirements &amp; SDD</strong>
-                  <p data-i18n="guild.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
+                  <strong data-i18n="boost.planner_title">Requirements &amp; SDD</strong>
+                  <p data-i18n="boost.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
                 </div>
                 <div class="triad-role">
                   <div class="role-badge builder">Builder</div>
-                  <strong data-i18n="guild.builder_title">Implementation &amp; Refactoring</strong>
-                  <p data-i18n="guild.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
+                  <strong data-i18n="boost.builder_title">Implementation &amp; Refactoring</strong>
+                  <p data-i18n="boost.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
                 </div>
                 <div class="triad-role">
                   <div class="role-badge auditor">Auditor</div>
-                  <strong data-i18n="guild.auditor_title">Verification &amp; Quality Gates</strong>
-                  <p data-i18n="guild.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
+                  <strong data-i18n="boost.auditor_title">Verification &amp; Quality Gates</strong>
+                  <p data-i18n="boost.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
                 </div>
               </div>
             </div>
@@ -1265,33 +1265,33 @@ git push origin feat/my-feature</code></pre>
 }
 
 /* 7. AI BOOST SYNERGY */
-.guild-section {
+.boost-section {
   padding: 38px 0 28px;
 }
-.guild-card {
+.boost-card {
   background: var(--bg-2);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
   border-radius: 16px;
   padding: 24px 20px;
 }
-.guild-grid {
+.boost-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
-.guild-info h2 {
+.boost-info h2 {
   font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 900;
   margin: 6px 0 10px;
 }
-.guild-lead {
+.boost-lead {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.6;
   margin: 0 0 16px;
 }
-.guild-items {
+.boost-items {
   list-style: none;
   padding: 0;
   margin: 0 0 20px;
@@ -1301,24 +1301,24 @@ git push origin feat/my-feature</code></pre>
   font-size: 13.5px;
   line-height: 1.5;
 }
-.guild-items li {
+.boost-items li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
 }
-.guild-items li::before {
+.boost-items li::before {
   content: "◈";
   color: var(--primary);
   font-weight: 900;
 }
-.guild-box {
+.boost-box {
   background: var(--bg);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow-sm);
   border-radius: var(--radius);
   padding: 18px 16px;
 }
-.guild-box-head {
+.boost-box-head {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1467,7 +1467,7 @@ git push origin feat/my-feature</code></pre>
   .quickstart-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .guild-grid {
+  .boost-grid {
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 36px;
   }

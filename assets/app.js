@@ -118,7 +118,7 @@
       '.pathway-card',
       '.gate-card',
       '.flow-step',
-      '.guild-card',
+      '.boost-card',
       '.cta-card',
       '.hero-copy',
       '.hero-art',
@@ -358,7 +358,7 @@
             "trust_desc": "Sponsorship is purely an investment into public goods. No paid paywalls, no proprietary gates in core packages — all code remains free and open under the MIT license.",
             "trust_btn": "Become a Sponsor →"
         },
-        "guild": {
+        "boost": {
             "badge": "Human + AI Synergy",
             "title": "Collaborating with AI Boost",
             "lead": "Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:",
@@ -395,7 +395,7 @@
             "getting_started": "5-Step Contributor Guide",
             "pathways": "Contribution Pathways",
             "standards": "3 Quality Gates",
-            "guild": "AI Boost Synergy",
+            "boost": "AI Boost Synergy",
             "kwf_specs": "KWF Specifications",
             "gh_org": "GitHub Organization",
             "discussions": "Community Discussions",
@@ -539,7 +539,7 @@
             "trust_desc": "Sponsorship murni merupakan investasi untuk barang publik (public goods). Tidak ada paywall berbayar atau fitur terkunci pada paket inti — seluruh kode tetap bebas dan terbuka di bawah lisensi MIT.",
             "trust_btn": "Menjadi Sponsor →"
         },
-        "guild": {
+        "boost": {
             "badge": "Sinergi Manusia + AI",
             "title": "Berkolaborasi dengan AI Boost",
             "lead": "Krewire memelopori kolaborasi antara pengelola manusia dan agen AI otonom. Kerangka kerja AI Boost kami beroperasi dengan standar verifikasi yang ketat:",
@@ -576,7 +576,7 @@
             "getting_started": "Panduan Kontributor 5 Langkah",
             "pathways": "Jalur Kontribusi",
             "standards": "3 Quality Gate",
-            "guild": "Sinergi AI Boost",
+            "boost": "Sinergi AI Boost",
             "kwf_specs": "Spesifikasi KWF",
             "gh_org": "Organisasi GitHub",
             "discussions": "Diskusi Komunitas",

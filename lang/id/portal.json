@@ -133,7 +133,7 @@
     "trust_desc": "Sponsorship murni merupakan investasi untuk barang publik (public goods). Tidak ada paywall berbayar atau fitur terkunci pada paket inti — seluruh kode tetap bebas dan terbuka di bawah lisensi MIT.",
     "trust_btn": "Menjadi Sponsor →"
   },
-  "guild": {
+  "boost": {
     "badge": "Sinergi Manusia + AI",
     "title": "Berkolaborasi dengan AI Boost",
     "lead": "Krewire memelopori kolaborasi antara pengelola manusia dan agen AI otonom. Kerangka kerja AI Boost kami beroperasi dengan standar verifikasi yang ketat:",
@@ -170,7 +170,7 @@
     "getting_started": "Panduan Kontributor 5 Langkah",
     "pathways": "Jalur Kontribusi",
     "standards": "3 Quality Gate",
-    "guild": "Sinergi AI Boost",
+    "boost": "Sinergi AI Boost",
     "kwf_specs": "Spesifikasi KWF",
     "gh_org": "Organisasi GitHub",
     "discussions": "Diskusi Komunitas",
