@@ -66,44 +66,65 @@
     };
   }
 
-  // 2. MOBILE NAVBAR TOGGLER
+  // 2. MOBILE NAVBAR TOGGLER & DRAWER CONTROLLER
   function initNav() {
-    var toggler = document.querySelector('.nav-toggler');
-    var mobileMenu = document.querySelector('.nav-mobile-menu');
+    var mobileMenu = document.querySelector('.nav-mobile-menu') || document.getElementById('mobile-nav-menu');
     var nav = document.getElementById('main-nav') || document.querySelector('.nav');
 
-    if (!toggler || !mobileMenu) return;
-
     function toggleNav(open) {
+      if (!mobileMenu) mobileMenu = document.querySelector('.nav-mobile-menu') || document.getElementById('mobile-nav-menu');
+      if (!mobileMenu) return;
       var isOpen = typeof open === 'boolean' ? open : !mobileMenu.classList.contains('is-open');
-      toggler.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       mobileMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
       mobileMenu.classList.toggle('is-open', isOpen);
-      toggler.classList.toggle('is-active', isOpen);
+      mobileMenu.classList.toggle('drawer-open', isOpen);
+      document.querySelectorAll('.nav-toggler, [data-drawer-toggle="mobile-nav-menu"], [aria-controls="mobile-nav-menu"]').forEach(function(btn){
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.classList.toggle('is-active', isOpen);
+      });
+      document.body.classList.toggle('drawer-active', isOpen);
     }
 
-    toggler.addEventListener('click', function (e) {
-      e.stopPropagation();
+    window.toggleNav = toggleNav;
+    window.uiDrawer = {
+      open: function() { toggleNav(true); },
+      close: function() { toggleNav(false); },
+      toggle: function() { toggleNav(); }
+    };
+    window.forgeDrawer = window.uiDrawer;
+
+    window.uiToggleDrawer = function (btn, id) {
       toggleNav();
-    });
+    };
+    window.uiCloseDrawer = function (id) {
+      toggleNav(false);
+    };
 
-    // Close when tapping navigation link
-    mobileMenu.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
+    // Delegated click handler for buttons
+    document.addEventListener('click', function (e) {
+      var toggler = e.target.closest('.nav-toggler, [data-drawer-toggle], [aria-controls="mobile-nav-menu"]');
+      if (toggler) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleNav();
+        return;
+      }
+
+      // Close when tapping navigation link inside mobile menu
+      if (e.target.closest('.nav-mobile-menu a, .mobile-link')) {
         toggleNav(false);
-      });
-    });
+        return;
+      }
 
-    // Close on Escape key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+      // Close when clicking outside navbar
+      if (mobileMenu && mobileMenu.classList.contains('is-open') && nav && !nav.contains(e.target)) {
         toggleNav(false);
       }
     });
 
-    // Close when clicking outside navbar
-    document.addEventListener('click', function (e) {
-      if (mobileMenu.classList.contains('is-open') && nav && !nav.contains(e.target)) {
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('is-open')) {
         toggleNav(false);
       }
     });
