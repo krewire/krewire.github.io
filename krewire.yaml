@@ -58,3 +58,7 @@ i18n:
   locales:
     - "en"
     - "id"
+
+auto_assets:
+  bundle: true
+

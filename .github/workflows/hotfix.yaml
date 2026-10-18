@@ -81,7 +81,11 @@ jobs:
           test -f .krewire/build/index.html || { echo "✗ Missing root index.html"; exit 1; }
           test -f .krewire/build/contribute/index.html || { echo "✗ Missing contribute/index.html"; exit 1; }
           test -d .krewire/build/assets || { echo "✗ Missing assets"; exit 1; }
+          test -f .krewire/build/assets/krewire.css || { echo "✗ Missing assets/krewire.css"; exit 1; }
+          test -f .krewire/build/assets/krewire.js || { echo "✗ Missing assets/krewire.js"; exit 1; }
           test -d .krewire/build/contribute/assets || { echo "✗ Missing contribute/assets"; exit 1; }
+          test -f .krewire/build/contribute/assets/krewire.css || { echo "✗ Missing contribute/assets/krewire.css"; exit 1; }
+          test -f .krewire/build/contribute/assets/krewire.js || { echo "✗ Missing contribute/assets/krewire.js"; exit 1; }
           test ! -f .krewire/build/CNAME || { echo "✗ CNAME must not exist"; exit 1; }
           echo "✓ Fast sanity checks passed."
 

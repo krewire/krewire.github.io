@@ -85,7 +85,6 @@
   </header>
   <main class="landing-main">{content}</main>
   <Footer Variant="contributors" />
-  <script src="{basePath}assets/app.js" defer></script>
 </body>
 </html>
 
