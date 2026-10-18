@@ -1065,28 +1065,28 @@
 }
 
 /* 7. AI BOOST SYNERGY */
-.guild-section{
+.boost-section{
   padding: 38px 0 28px;
-}[data-kiw-component="page:/"] .guild-card, [data-kiw-component="page:/"].guild-card{
+}[data-kiw-component="page:/"] .boost-card, [data-kiw-component="page:/"].boost-card{
   background: var(--bg-2);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow);
   border-radius: 16px;
   padding: 24px 20px;
-}[data-kiw-component="page:/"] .guild-grid, [data-kiw-component="page:/"].guild-grid{
+}[data-kiw-component="page:/"] .boost-grid, [data-kiw-component="page:/"].boost-grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-}[data-kiw-component="page:/"] .guild-info h2{
+}[data-kiw-component="page:/"] .boost-info h2{
   font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 900;
   margin: 6px 0 10px;
-}[data-kiw-component="page:/"] .guild-lead, [data-kiw-component="page:/"].guild-lead{
+}[data-kiw-component="page:/"] .boost-lead, [data-kiw-component="page:/"].boost-lead{
   font-size: 14px;
   color: var(--muted);
   line-height: 1.6;
   margin: 0 0 16px;
-}[data-kiw-component="page:/"] .guild-items, [data-kiw-component="page:/"].guild-items{
+}[data-kiw-component="page:/"] .boost-items, [data-kiw-component="page:/"].boost-items{
   list-style: none;
   padding: 0;
   margin: 0 0 20px;
@@ -1095,21 +1095,21 @@
   gap: 10px;
   font-size: 13.5px;
   line-height: 1.5;
-}[data-kiw-component="page:/"] .guild-items li{
+}[data-kiw-component="page:/"] .boost-items li{
   display: flex;
   align-items: flex-start;
   gap: 8px;
-}[data-kiw-component="page:/"] .guild-items li::before{
+}[data-kiw-component="page:/"] .boost-items li::before{
   content: "◈";
   color: var(--primary);
   font-weight: 900;
-}[data-kiw-component="page:/"] .guild-box, [data-kiw-component="page:/"].guild-box{
+}[data-kiw-component="page:/"] .boost-box, [data-kiw-component="page:/"].boost-box{
   background: var(--bg);
   border: var(--pop-border);
   box-shadow: var(--pop-shadow-sm);
   border-radius: var(--radius);
   padding: 18px 16px;
-}[data-kiw-component="page:/"] .guild-box-head, [data-kiw-component="page:/"].guild-box-head{
+}[data-kiw-component="page:/"] .boost-box-head, [data-kiw-component="page:/"].boost-box-head{
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1212,7 +1212,7 @@
     grid-column: span 2;
   }[data-kiw-component="page:/"] .quickstart-steps, [data-kiw-component="page:/"].quickstart-steps{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }[data-kiw-component="page:/"] .guild-grid, [data-kiw-component="page:/"].guild-grid{
+  }[data-kiw-component="page:/"] .boost-grid, [data-kiw-component="page:/"].boost-grid{
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 36px;
   }[data-kiw-component="page:/"] .cta-card, [data-kiw-component="page:/"].cta-card{
