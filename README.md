@@ -32,12 +32,11 @@ There is no workflow in this repository that builds from or publishes to another
 ```
 krewire.yaml          # kind: site, title, nav, footer, theme
 pages/                # file-based routes
-layouts/              # Base (shell) + Docs (sidebar)
-components/           # Hero, FeatureCard, CodeWindow, Ecosystem, Callout, DocNav (frontmatter-free)
-content/docs/         # Markdown collections (getting-started, workloads, dsl)
-public/               # favicon.svg, copied verbatim
+layouts/              # Base (shell) and portal layouts
+lang/                 # Locale translation dictionaries (en, id)
+public/               # Static assets (favicon, images, client JS/CSS)
 ```
 
 ## Ecosystem
 
-Krewire consists of 4 public repositories (`krewire`, `mdbind`, `krewire.com`, `krewire.github.io`). This site dogfoods `packages/web/ssg` + `packages/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
+Krewire consists of 5 repositories (`krewire`, `mdbind`, `internal`, `krewire.com`, `krewire.github.io`). This site dogfoods `packages/web/ssg` + `packages/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.

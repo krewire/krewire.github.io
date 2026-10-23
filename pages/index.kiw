@@ -178,7 +178,8 @@ layout: Landing
             <div class="repo-pkgs">
               <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
               <div class="pkgs-chips">
-                <span class="pkg-chip">packages/kern</span>
+                <span class="pkg-chip">packages/model</span>
+                <span class="pkg-chip">packages/lifecycle</span>
                 <span class="pkg-chip">packages/web</span>
                 <span class="pkg-chip">packages/ui</span>
                 <span class="pkg-chip">tools/kiw</span>
