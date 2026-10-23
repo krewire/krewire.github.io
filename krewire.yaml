@@ -6,7 +6,7 @@ project:
 
 build:
   output: ".krewire/build"
-  base: "/contribute/"
+  base: "/"
 
 title: "Krewire Community — Contribution & Sponsorship Portal"
 description: "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem."
