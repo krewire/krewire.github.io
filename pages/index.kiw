@@ -32,7 +32,7 @@ layout: Landing
           </div>
           <div class="code-terminal-body">
             <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire</span></div>
-            <div class="term-line term-info">✓ cloned core repository (packages, kiw CLI, starters)</div>
+            <div class="term-line term-info">✓ cloned core repository (pkg, kiw CLI, starters)</div>
             <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go test ./...</span></div>
             <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
             <div class="term-line term-muted mt-2"># 100% Open Source Community (MIT License)</div>
