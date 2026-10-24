@@ -47,24 +47,47 @@
 
   // 1. THEME SWITCHER
   function initTheme() {
+    var themeKey = 'krewire-theme';
+    var saved = 'auto';
     try {
-      var saved = localStorage.getItem('krewire-theme') || 'auto';
-      var mode = saved === 'auto'
-        ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-        : saved;
-      document.documentElement.dataset.theme = mode;
+      saved = localStorage.getItem(themeKey) || 'auto';
     } catch (e) {}
 
+    function apply(mode) {
+      var isDark = mode === 'dark' || (mode === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+      document.documentElement.classList.toggle('dark', isDark);
+      document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+      var meta = document.querySelector('meta[name="color-scheme"]');
+      if (meta) meta.content = isDark ? 'dark' : 'light';
+    }
+
+    apply(saved);
+
     window.krewireTheme = {
-      toggle: function () {
-        var cur = document.documentElement.dataset.theme;
-        var nxt = cur === 'dark' ? 'light' : 'dark';
-        document.documentElement.dataset.theme = nxt;
+      get: function () {
+        return saved;
+      },
+      set: function (mode) {
+        saved = mode;
         try {
-          localStorage.setItem('krewire-theme', nxt);
+          localStorage.setItem(themeKey, mode);
         } catch (e) {}
+        apply(mode);
+      },
+      toggle: function () {
+        var isDark = document.documentElement.dataset.theme === 'dark';
+        window.krewireTheme.set(isDark ? 'light' : 'dark');
       }
     };
+
+    document.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('[data-theme-toggle]') : null;
+      if (btn) {
+        e.preventDefault();
+        window.krewireTheme.toggle();
+      }
+    });
   }
 
   // 2. MOBILE NAVBAR TOGGLER & DRAWER CONTROLLER
@@ -92,7 +115,6 @@
       close: function() { toggleNav(false); },
       toggle: function() { toggleNav(); }
     };
-    window.forgeDrawer = window.uiDrawer;
 
     window.uiToggleDrawer = function (btn, id) {
       toggleNav();

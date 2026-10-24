@@ -26,30 +26,102 @@
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
-}[data-kiw-component="Button"] .btn-sm, [data-kiw-component="Button"].btn-sm{ padding: 0.35rem 0.75rem; font-size: 0.8rem; }[data-kiw-component="Button"] .btn-md, [data-kiw-component="Button"].btn-md{ padding: 0.55rem 1.15rem; font-size: 0.88rem; }[data-kiw-component="Button"] .btn-lg, [data-kiw-component="Button"].btn-lg{ padding: 0.75rem 1.6rem; font-size: 1rem; }[data-kiw-component="Button"] .btn-primary, [data-kiw-component="Button"].btn-primary{
+}[data-kiw-component="Button"] .btn-sm, [data-kiw-component="Button"].btn-sm{ padding: 0.35rem 0.75rem; font-size: 0.8rem; }[data-kiw-component="Button"] .btn-md, [data-kiw-component="Button"].btn-md{ padding: 0.55rem 1.15rem; font-size: 0.88rem; }[data-kiw-component="Button"] .btn-lg, [data-kiw-component="Button"].btn-lg{ padding: 0.75rem 1.6rem; font-size: 1rem; }[data-kiw-component="Button"] .btn-primary, [data-kiw-component="Button"].btn-primary, [data-kiw-component="Button"] a.btn-primary, [data-kiw-component="Button"]a.btn-primary{
   background: var(--primary, #39D353);
-  color: var(--primary-content, #0B1F3B);
-}[data-kiw-component="Button"] .btn-secondary, [data-kiw-component="Button"].btn-secondary{
+  color: var(--primary-content, #0B1F3B) !important;
+  border-color: var(--border, #0B1F3B);
+}[data-kiw-component="Button"] .btn-primary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-primary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"] a.btn-primary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"]a.btn-primary:hover:not(:disabled):not([aria-disabled="true"]){
+  background: #2ecc50;
+  color: var(--primary-content, #0B1F3B) !important;
+}[data-kiw-component="Button"] .btn-secondary, [data-kiw-component="Button"].btn-secondary, [data-kiw-component="Button"] a.btn-secondary, [data-kiw-component="Button"]a.btn-secondary{
   background: var(--secondary, #00D1C1);
-  color: var(--secondary-content, #0B1F3B);
-}[data-kiw-component="Button"] .btn-accent, [data-kiw-component="Button"].btn-accent{
+  color: var(--secondary-content, #0B1F3B) !important;
+  border-color: var(--border, #0B1F3B);
+}[data-kiw-component="Button"] .btn-secondary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-secondary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"] a.btn-secondary:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"]a.btn-secondary:hover:not(:disabled):not([aria-disabled="true"]){
+  background: #00b8aa;
+  color: var(--secondary-content, #0B1F3B) !important;
+}[data-kiw-component="Button"] .btn-accent, [data-kiw-component="Button"].btn-accent, [data-kiw-component="Button"] a.btn-accent, [data-kiw-component="Button"]a.btn-accent{
   background: var(--accent, #FF3B2E);
-  color: #ffffff;
-}[data-kiw-component="Button"] .btn-error, [data-kiw-component="Button"].btn-error{
+  color: #ffffff !important;
+}[data-kiw-component="Button"] .btn-accent:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-accent:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"] a.btn-accent:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"]a.btn-accent:hover:not(:disabled):not([aria-disabled="true"]){
+  background: #e02f23;
+  color: #ffffff !important;
+}[data-kiw-component="Button"] .btn-error, [data-kiw-component="Button"].btn-error, [data-kiw-component="Button"] a.btn-error, [data-kiw-component="Button"]a.btn-error{
   background: var(--error, #FF3B2E);
-  color: #ffffff;
-}[data-kiw-component="Button"] .btn-outline, [data-kiw-component="Button"].btn-outline{
+  color: #ffffff !important;
+}[data-kiw-component="Button"] .btn-outline, [data-kiw-component="Button"].btn-outline, [data-kiw-component="Button"] a.btn-outline, [data-kiw-component="Button"]a.btn-outline{
   background: var(--bg, #FAF8F4);
-  color: var(--fg, #0B1F3B);
-}[data-kiw-component="Button"] .btn-ghost, [data-kiw-component="Button"].btn-ghost{
+  color: var(--fg, #0B1F3B) !important;
+  border-color: var(--border, #0B1F3B);
+}[data-kiw-component="Button"] .btn-outline:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-outline:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"] a.btn-outline:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"]a.btn-outline:hover:not(:disabled):not([aria-disabled="true"]){
+  background: var(--bg-2, #f0ede5);
+  color: var(--fg, #0B1F3B) !important;
+}[data-kiw-component="Button"] .btn-ghost, [data-kiw-component="Button"].btn-ghost, [data-kiw-component="Button"] a.btn-ghost, [data-kiw-component="Button"]a.btn-ghost{
   background: transparent;
   border-color: transparent;
   box-shadow: none;
-  color: var(--fg, #0B1F3B);
-}[data-kiw-component="Button"] .btn-ghost:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-ghost:hover:not(:disabled):not([aria-disabled="true"]){
+  color: var(--fg, #0B1F3B) !important;
+}[data-kiw-component="Button"] .btn-ghost:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"].btn-ghost:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"] a.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]), [data-kiw-component="Button"]a.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]){
   background: var(--bg-2, #f0ede5);
+  color: var(--fg, #0B1F3B) !important;
   transform: none;
   box-shadow: none;
+}html[data-theme="dark"] .btn-primary,
+.dark .btn-primary,
+html[data-theme="dark"] a.btn-primary,
+.dark a.btn-primary{
+  background: #39D353;
+  color: #0B1F3B !important;
+  border-color: #FAF8F4;
+  box-shadow: var(--pop-shadow-sm, 2px 2px 0px #39D353);
+}html[data-theme="dark"] .btn-primary:hover:not(:disabled):not([aria-disabled="true"]),
+.dark .btn-primary:hover:not(:disabled):not([aria-disabled="true"]),
+html[data-theme="dark"] a.btn-primary:hover:not(:disabled):not([aria-disabled="true"]),
+.dark a.btn-primary:hover:not(:disabled):not([aria-disabled="true"]){
+  background: #4ae664;
+  color: #0B1F3B !important;
+  box-shadow: var(--pop-shadow, 4px 4px 0px #39D353);
+}html[data-theme="dark"] .btn-secondary,
+.dark .btn-secondary,
+html[data-theme="dark"] a.btn-secondary,
+.dark a.btn-secondary{
+  background: #112646;
+  color: #FAF8F4 !important;
+  border-color: #FAF8F4;
+  box-shadow: var(--pop-shadow-sm, 2px 2px 0px #FAF8F4);
+}html[data-theme="dark"] .btn-secondary:hover:not(:disabled):not([aria-disabled="true"]),
+.dark .btn-secondary:hover:not(:disabled):not([aria-disabled="true"]),
+html[data-theme="dark"] a.btn-secondary:hover:not(:disabled):not([aria-disabled="true"]),
+.dark a.btn-secondary:hover:not(:disabled):not([aria-disabled="true"]){
+  background: #1a3865;
+  color: #ffffff !important;
+  box-shadow: var(--pop-shadow, 4px 4px 0px #FAF8F4);
+}html[data-theme="dark"] .btn-outline,
+.dark .btn-outline,
+html[data-theme="dark"] a.btn-outline,
+.dark a.btn-outline{
+  background: transparent;
+  color: #FAF8F4 !important;
+  border-color: #FAF8F4;
+  box-shadow: var(--pop-shadow-sm, 2px 2px 0px #FAF8F4);
+}html[data-theme="dark"] .btn-outline:hover:not(:disabled):not([aria-disabled="true"]),
+.dark .btn-outline:hover:not(:disabled):not([aria-disabled="true"]),
+html[data-theme="dark"] a.btn-outline:hover:not(:disabled):not([aria-disabled="true"]),
+.dark a.btn-outline:hover:not(:disabled):not([aria-disabled="true"]){
+  background: rgba(250, 248, 244, 0.12);
+  color: #ffffff !important;
+  box-shadow: var(--pop-shadow, 4px 4px 0px #FAF8F4);
+}html[data-theme="dark"] .btn-ghost,
+.dark .btn-ghost,
+html[data-theme="dark"] a.btn-ghost,
+.dark a.btn-ghost{
+  color: #FAF8F4 !important;
+}html[data-theme="dark"] .btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.dark .btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+html[data-theme="dark"] a.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]),
+.dark a.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]){
+  background: rgba(250, 248, 244, 0.08);
+  color: #ffffff !important;
 }[data-kiw-component="Button"] .btn-icon, [data-kiw-component="Button"].btn-icon, [data-kiw-component="Button"] .btn-icon-right, [data-kiw-component="Button"].btn-icon-right{
   display: inline-flex;
   align-items: center;

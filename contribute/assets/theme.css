@@ -29,8 +29,8 @@
 :root[data-theme="dark"], [data-theme="dark"], html[data-theme="dark"]{
   --primary:#39D353 !important;
   --primary-content:#0B1F3B !important;
-  --secondary:#00D1C1 !important;
-  --secondary-content:#0B1F3B !important;
+  --secondary:#112646 !important;
+  --secondary-content:#FAF8F4 !important;
   --bg:#0B1F3B;
   --bg-2:#112646;
   --fg:#FAF8F4;
@@ -46,4 +46,20 @@
   --shadow:4px 4px 0px #39D353;
   --show-sun:none;
   --show-moon:inline;
+}
+
+.theme-toggle { border: 1px solid var(--border-subtle); border-radius: 999px; background: transparent; color: var(--fg); padding: .35rem .5rem; line-height: 0; cursor: pointer; transition: border-color .2s ease, color .2s ease; }
+.theme-toggle:hover { border-color: var(--primary); color: var(--primary); }
+.theme-toggle svg { width: 1.05rem; height: 1.05rem; display: block; }
+.theme-toggle .icon-sun { display: var(--show-sun); }
+.theme-toggle .icon-moon { display: var(--show-moon); }
+
+/* Ensure button text remains legible on hover and distinct across modes */
+.btn-primary:hover, a.btn-primary:hover {
+  background: var(--primary) !important;
+  color: var(--primary-content) !important;
+}
+.btn-secondary:hover, a.btn-secondary:hover {
+  background: var(--secondary) !important;
+  color: var(--secondary-content) !important;
 }
