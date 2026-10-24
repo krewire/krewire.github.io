@@ -2,20 +2,20 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
-  <link rel="icon" href="/contribute/favicon.svg" type="image/svg+xml"/>
-  <link rel="icon" href="/contribute/favicon.ico" type="image/x-icon"/>
-  <link rel="icon" href="/contribute/favicon-32x32.png" sizes="32x32" type="image/png"/>
-  <link rel="icon" href="/contribute/favicon-16x16.png" sizes="16x16" type="image/png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="/contribute/apple-touch-icon.png"/>
-  <link rel="manifest" href="/contribute/site.webmanifest"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png"/>
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
   <meta name="theme-color" content="#0B1F3B"/>
 
   
-<link rel="stylesheet" href="/contribute/assets/krewire.css?v=0.1.0"/><script src="/contribute/assets/krewire.js?v=0.1.0"></script></head>
+<link rel="stylesheet" href="/assets/krewire.css?v=0.1.0"/><script src="/assets/krewire.js?v=0.1.0"></script></head>
 <body>
   <header class="nav" id="main-nav">
     <div class="nav-inner">
-      <a class="brand flex items-center gap-2 font-black tracking-tight text-fg dark:text-fg-dark shrink-0 no-underline hover:no-underline hover:text-fg dark:hover:text-fg-dark brand" data-kiw-component="Brand" href="/contribute/">
+      <a class="brand flex items-center gap-2 font-black tracking-tight text-fg dark:text-fg-dark shrink-0 no-underline hover:no-underline hover:text-fg dark:hover:text-fg-dark brand" data-kiw-component="Brand" href="/">
   <span class="brand-icon icon-box bg-primary text-primary-content w-8 h-8 text-base flex items-center justify-center">◈</span>
   <span class="brand-name text-base font-black tracking-tighter">Krewire</span>
   <span class="brand-badge badge badge-secondary font-mono text-2xs" data-i18n="nav.badge">Community &amp; Sponsors</span>
@@ -30,7 +30,7 @@
         <a class="gh-link" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank"><span>💬</span> <span data-i18n="nav.discussions">Discussions ↗</span></a>
       </nav>
       <div class="nav-actions">
-        <button type="button" class="lang-switch btn btn-outline lang-toggle" data-lang-toggle="" aria-label="Toggle language" onclick="window.krewireI18n &amp;&amp; window.krewireI18n.toggle()" data-kiw-component="LangSwitch">
+        <button type="button" class="lang-switch btn btn-outline lang-toggle" data-lang-toggle="" aria-label="Toggle language" data-kiw-component="LangSwitch">
   <span class="lang-icon" aria-hidden="true">🌐</span>
   <span class="lang-code font-bold">EN</span>
 </button>
@@ -38,7 +38,7 @@
   <span class="sun sun-icon">☀</span>
   <span class="moon moon-icon">☾</span>
 </button>
-        <button type="button" class="hamburger inline-flex items-center justify-center p-0 min-h-0 shrink-0 cursor-pointer select-none nav-toggler" style="display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; min-width: 2.25rem; min-height: 2.25rem; padding: 0; background: var(--bg, #FAF8F4); border: 2px solid var(--border, #0B1F3B); border-radius: 6px; box-shadow: 2px 2px 0px var(--border, #0B1F3B); cursor: pointer;" id="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu" data-drawer-toggle="mobile-nav-menu" onclick="window.uiToggleDrawer &amp;&amp; window.uiToggleDrawer(this, &#39;mobile-nav-menu&#39;)" data-kiw-component="Hamburger">
+        <button type="button" class="hamburger inline-flex items-center justify-center p-0 min-h-0 shrink-0 cursor-pointer select-none nav-toggler" style="display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; min-width: 2.25rem; min-height: 2.25rem; padding: 0; background: var(--bg, #FAF8F4); border: 2px solid var(--border, #0B1F3B); border-radius: 6px; box-shadow: 2px 2px 0px var(--border, #0B1F3B); cursor: pointer;" id="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu" data-drawer-toggle="mobile-nav-menu" data-kiw-component="Hamburger">
   <span class="hamburger-box" aria-hidden="true" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 1.125rem; height: 0.875rem; flex-shrink: 0;">
     <span class="hamburger-line line-1" style="display: block; width: 100%; height: 2px; min-height: 2px; background-color: var(--fg, #0B1F3B); border-radius: 1px;"></span>
     <span class="hamburger-line line-2" style="display: block; width: 100%; height: 2px; min-height: 2px; background-color: var(--fg, #0B1F3B); border-radius: 1px;"></span>
@@ -127,7 +127,7 @@
           </div>
           <div class="code-terminal-body">
             <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire</span></div>
-            <div class="term-line term-info">✓ cloned core repository (packages, kiw CLI, starters)</div>
+            <div class="term-line term-info">✓ cloned core repository (pkg, kiw CLI, starters)</div>
             <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go test ./...</span></div>
             <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
             <div class="term-line term-muted mt-2"># 100% Open Source Community (MIT License)</div>
@@ -269,11 +269,12 @@
             <div class="repo-track-name" data-i18n="pathways.track_krewire">Core Monorepo &amp; Libraries</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match" data-i18n="pathways.match_krewire">If you enjoy: Modular Go libraries (packages/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).</p>
+            <p class="repo-match" data-i18n="pathways.match_krewire">If you enjoy: Modular Go libraries (pkg/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).</p>
             <div class="repo-pkgs">
               <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
               <div class="pkgs-chips">
-                <span class="pkg-chip">packages/kern</span>
+                <span class="pkg-chip">packages/model</span>
+                <span class="pkg-chip">packages/lifecycle</span>
                 <span class="pkg-chip">packages/web</span>
                 <span class="pkg-chip">packages/ui</span>
                 <span class="pkg-chip">tools/kiw</span>
@@ -655,4 +656,4 @@ git push origin feat/my-feature</code></pre>
 </footer>
 
 
-<script src="/contribute/assets/layout-Landing-0.js"></script></body>
+<script src="/assets/layout-Landing-0.js"></script></body>
