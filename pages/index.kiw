@@ -174,7 +174,7 @@ layout: Landing
             <div class="repo-track-name" data-i18n="pathways.track_krewire">Core Monorepo &amp; Libraries</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match" data-i18n="pathways.match_krewire">If you enjoy: Modular Go libraries (packages/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).</p>
+            <p class="repo-match" data-i18n="pathways.match_krewire">If you enjoy: Modular Go libraries (pkg/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent templates (templates/boost).</p>
             <div class="repo-pkgs">
               <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
               <div class="pkgs-chips">
