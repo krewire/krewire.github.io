@@ -193,33 +193,33 @@ layout: Landing
           </div>
         </div>
 
-        <!-- 2. krewire/workspace -->
+        <!-- 2. krewire/dash -->
         <div class="repo-card" data-category="core">
           <div class="repo-header">
             <div class="repo-meta-top">
-              <span class="repo-tag tool">Workspace</span>
+              <span class="repo-tag tool">Dash</span>
               <span class="repo-lang">Go</span>
             </div>
             <h3 class="repo-title">
-              <a href="https://github.com/krewire/workspace" target="_blank" rel="noopener">krewire/workspace</a>
+              <a href="https://github.com/krewire/dash" target="_blank" rel="noopener">krewire/dash</a>
             </h3>
-            <div class="repo-track-name" data-i18n="pathways.track_workspace">Cloud Workspace &amp; Dev Environments</div>
+            <div class="repo-track-name" data-i18n="pathways.track_workspace">Krewire Dash — Virtual Workspace &amp; Automation Hub</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match" data-i18n="pathways.match_workspace">If you enjoy: Cloud IDE integrations, virtual dev environments, container sandboxes, remote agent execution, and terminal streaming.</p>
+            <p class="repo-match" data-i18n="pathways.match_workspace">If you enjoy: AI-native virtual workspaces, autonomous agent integration, sandboxed cloud runtimes, container sandboxes, and web terminal streaming.</p>
             <div class="repo-pkgs">
               <span class="pkgs-label" data-i18n="pathways.pkg_label">Key Packages &amp; Paths:</span>
               <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/env/</span>
-                <span class="pkg-chip">pkg/session/</span>
-                <span class="pkg-chip">pkg/runner/</span>
-                <span class="pkg-chip">cmd/ws/</span>
+                <span class="pkg-chip">pkg/sandbox/</span>
+                <span class="pkg-chip">pkg/ai/</span>
+                <span class="pkg-chip">pkg/terminal/</span>
+                <span class="pkg-chip">cmd/krewire-dash-server/</span>
               </div>
             </div>
           </div>
           <div class="repo-footer">
-            <a href="https://github.com/krewire/workspace/issues" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
-            <a href="https://github.com/krewire/workspace" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
+            <a href="https://github.com/krewire/dash/issues" target="_blank" rel="noopener" class="repo-action primary" data-i18n="pathways.action_issues">Good First Issues →</a>
+            <a href="https://github.com/krewire/dash" target="_blank" rel="noopener" class="repo-action secondary" data-i18n="pathways.action_repo">GitHub Repo ↗</a>
           </div>
         </div>
 
@@ -308,7 +308,7 @@ cd krewire</code></pre>
           <div class="qs-num">2</div>
           <h3 data-i18n="guide.s2_title">2. Initialize Workspace (go.work)</h3>
           <p data-i18n="guide.s2_desc">If working across multiple repos, synchronize your local Go workspace seamlessly with Go 1.27.1+:</p>
-          <pre><code>go work init ./krewire ./krew ./cloud ./auth ./workspace
+          <pre><code>go work init ./krewire ./krew ./cloud ./auth ./dash
 go work sync</code></pre>
         </div>
 
