@@ -54,7 +54,7 @@
   },
   "pathways": {
     "badge": "Codebase Matrix",
-    "title": "4 Public Repositories & Where to Start",
+    "title": "8 Repositories & Ecosystem Matrix",
     "subtitle": "Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.",
     "one_line_title": "One-Command Contributor Bootstrap",
     "one_line_badge": "Recommended",
@@ -166,7 +166,7 @@
     "col_contrib": "Contribution",
     "col_community": "Community & Sponsors",
     "perks": "Contributor Perks & Access",
-    "where_start": "4 Public Repositories Matrix",
+    "where_start": "8 Repositories Matrix",
     "getting_started": "5-Step Contributor Guide",
     "pathways": "Contribution Pathways",
     "standards": "3 Quality Gates",

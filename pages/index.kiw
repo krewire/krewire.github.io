@@ -340,13 +340,13 @@ layout: Landing
         <div class="repo-card" data-category="core">
           <div class="repo-header">
             <div class="repo-meta-top">
-              <span class="repo-tag tool">Virtual Workspace</span>
+              <span class="repo-tag tool">Krewire Dash</span>
               <span class="repo-lang">Go 1.27.1</span>
             </div>
             <h3 class="repo-title">
               <a href="https://github.com/krewire/dash" target="_blank" rel="noopener">krewire/dash</a>
             </h3>
-            <div class="repo-track-name">AI Virtual Workspace &amp; IDE</div>
+            <div class="repo-track-name">Virtual Workspace &amp; Automation Hub</div>
           </div>
           <div class="repo-body">
             <p class="repo-match">Containerized sandbox runner, xterm.js PTY WebSocket streaming, Monaco editor, collaborative presence, and streaming AI assistant.</p>

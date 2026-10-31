@@ -2,7 +2,7 @@
 
 Welcome to the internal contributor documentation for **`krewire.github.io`**, the official community and contributor portal for the Krewire ecosystem.
 
-This site is hosted at **https://krewire.github.io/** and serves as the open-source hub for community guides, contributor onboarding, meritocracy privileges, ecosystem directory, and sponsorship tiers.
+The portal is published at **https://open.krewire.com/** (GitHub Pages hosting via the `gh-pages` branch) and serves as the open-source hub for community guides, contributor onboarding, meritocracy privileges, ecosystem directory, and sponsorship tiers.
 
 ---
 
