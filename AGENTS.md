@@ -47,3 +47,8 @@ Verify that the output builds without errors.
 - **Conventional Commits**: `feat|fix|docs|style|refactor|chore(site): desc`.
 - Atomic commits (≤~300 LOC).
 - Run `git` inside `krewire.github.io/`.
+
+## Deployment Pathways (Production vs Hotfix)
+
+- **Standard Production Release**: Triggered exclusively by pushing stable SemVer Git tags (`vX.Y.Z`) on `main`. Workflow: `.github/workflows/deploy.yaml`.
+- **Emergency Hotfix Deployment**: Bypasses the release protocol and Git tags entirely. Push directly to the dedicated `hotfix` branch (`git checkout hotfix && git merge main --ff-only && git push origin hotfix`). Workflow: `.github/workflows/hotfix.yaml`. Never tag hotfixes or deploy them from `main`.
