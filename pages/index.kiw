@@ -228,9 +228,9 @@ layout: Landing
         <div class="pathway-content" id="pathwayDetails">
           <div class="pathway-info">
             <h4 id="pathwayTitle" class="font-bold text-base mb-2">New to Go? (Beginner Friendly)</h4>
-            <p id="pathwayDesc" class="text-sm text-muted mb-4">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs marked with <code>good-first-issue</code>.</p>
+            <p id="pathwayDesc" class="text-sm text-muted mb-4">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs labeled <code>good first issue</code>.</p>
             <div class="pathway-links flex gap-3">
-              <a id="pathwayCta" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Find Good First Issues →</a>
+              <a id="pathwayCta" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Find Good First Issues →</a>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@ layout: Landing
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
         <div class="sub-badge" data-i18n="pathways.badge">Codebase Matrix</div>
-        <h2 data-i18n="pathways.title">8 Repositories &amp; Ecosystem Matrix</h2>
+        <h2 data-i18n="pathways.title">Public Repositories &amp; Contribution Matrix</h2>
         <p data-i18n="pathways.subtitle">Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
       </div>
 
@@ -256,7 +256,7 @@ layout: Landing
           </div>
           <span class="fast-setup-badge" data-i18n="pathways.one_line_badge">Recommended</span>
         </div>
-        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Clone the core repository, run the test suites, and verify all 3 automated quality gates:</p>
+        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Clone the core repository and run its test suite. Before opening a pull request, run the full quality gates listed in <code>CONTRIBUTING.md</code>:</p>
         <div class="terminal-cmd-bar">
           <code id="setup-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire &amp;&amp; go test ./...</code>
           <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
@@ -266,7 +266,7 @@ layout: Landing
         <div class="fast-setup-meta">
           <span class="meta-item" data-i18n="pathways.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
           <span class="meta-dot">·</span>
-          <span class="meta-item" data-i18n="pathways.meta_zero">Zero manual configuration required</span>
+          <span class="meta-item" data-i18n="pathways.meta_zero">No extra configuration needed</span>
         </div>
       </div>
 
@@ -280,7 +280,7 @@ layout: Landing
         </div>
       </div>
 
-      <!-- REPOSITORIES GRID (8 REPOSITORIES) -->
+      <!-- REPOSITORIES GRID (PUBLIC REPOSITORIES) -->
       <div class="repo-grid">
         <!-- 1. krewire/krewire -->
         <div class="repo-card featured" data-category="core">
@@ -308,7 +308,7 @@ layout: Landing
             </div>
           </div>
           <div class="repo-footer">
-            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="repo-action primary">Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="repo-action primary">Good First Issues →</a>
             <a href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
           </div>
         </div>
@@ -343,126 +343,36 @@ layout: Landing
           </div>
         </div>
 
-        <!-- 3. krewire/cloud -->
+        <!-- 3. krewire/ui -->
         <div class="repo-card" data-category="core">
           <div class="repo-header">
             <div class="repo-meta-top">
-              <span class="repo-tag core">Hybrid PaaS</span>
-              <span class="repo-lang">Go 1.27.1</span>
+              <span class="repo-tag tool">Design System</span>
+              <span class="repo-lang">.kiw</span>
             </div>
             <h3 class="repo-title">
-              <a href="https://github.com/krewire/cloud" target="_blank" rel="noopener">krewire/cloud</a>
+              <a href="https://github.com/krewire/ui" target="_blank" rel="noopener">krewire/ui</a>
             </h3>
-            <div class="repo-track-name">Enterprise Hybrid PaaS Engine</div>
+            <div class="repo-track-name" data-i18n="pathways.track_ui">UI Components &amp; Design System</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match">Multi-tenant hybrid cloud control plane, supervisor process management, ACME TLS gateway, mTLS mesh, and UU PDP compliance.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/controlplane</span>
-                <span class="pkg-chip">pkg/supervisor</span>
-                <span class="pkg-chip">pkg/gateway</span>
-                <span class="pkg-chip">pkg/compliance</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/cloud/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/cloud/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 4. krewire/auth -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Identity &amp; SSO</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/auth" target="_blank" rel="noopener">krewire/auth</a>
-            </h3>
-            <div class="repo-track-name">Enterprise Identity &amp; RBAC Platform</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Multi-tenant identity, OIDC/SAML2 single sign-on, TOTP 2FA, session tokens, audit logging, and CSRF protection.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/identity</span>
-                <span class="pkg-chip">pkg/webauth</span>
-                <span class="pkg-chip">pkg/audit</span>
-                <span class="pkg-chip">pkg/middleware</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/auth/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/auth/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 5. krewire/dash -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Krewire Dash</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/dash" target="_blank" rel="noopener">krewire/dash</a>
-            </h3>
-            <div class="repo-track-name">Virtual Workspace &amp; Automation Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Containerized sandbox runner, xterm.js PTY WebSocket streaming, Monaco editor, collaborative presence, and streaming AI assistant.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/sandbox</span>
-                <span class="pkg-chip">pkg/terminal</span>
-                <span class="pkg-chip">pkg/session</span>
-                <span class="pkg-chip">pkg/ai</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/dash/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/dash/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 6. krewire/internal -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag core">Docs Hub</span>
-              <span class="repo-lang">ADR / Specs</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/internal" target="_blank" rel="noopener">krewire/internal</a>
-            </h3>
-            <div class="repo-track-name">Architecture &amp; ADR Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Architectural Decision Records (ADRs), ecosystem specifications, roadmaps, security threat models, and contributor guidelines.</p>
+            <p class="repo-match" data-i18n="pathways.match_ui">If you enjoy: Zero-dependency .kiw components, layout primitives, design tokens, dark mode, and accessible HTML.</p>
             <div class="repo-pkgs">
               <span class="pkgs-label">Key Paths:</span>
               <div class="pkgs-chips">
-                <span class="pkg-chip">docs/adr/</span>
-                <span class="pkg-chip">docs/foundation/</span>
-                <span class="pkg-chip">docs/roadmap/</span>
+                <span class="pkg-chip">components/</span>
+                <span class="pkg-chip">styles/</span>
+                <span class="pkg-chip">examples/</span>
               </div>
             </div>
           </div>
           <div class="repo-footer">
-            <a href="https://github.com/krewire/internal/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/internal/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
+            <a href="https://github.com/krewire/ui/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
+            <a href="https://github.com/krewire/ui/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">README ↗</a>
           </div>
         </div>
 
-        <!-- 7. krewire/krewire.com -->
+        <!-- 4. krewire/krewire.com -->
         <div class="repo-card" data-category="web">
           <div class="repo-header">
             <div class="repo-meta-top">
@@ -492,7 +402,7 @@ layout: Landing
           </div>
         </div>
 
-        <!-- 8. krewire/krewire.github.io -->
+        <!-- 5. krewire/krewire.github.io -->
         <div class="repo-card" data-category="web">
           <div class="repo-header">
             <div class="repo-meta-top">
@@ -502,10 +412,10 @@ layout: Landing
             <h3 class="repo-title">
               <a href="https://github.com/krewire/krewire.github.io" target="_blank" rel="noopener">krewire.github.io</a>
             </h3>
-            <div class="repo-track-name">Contributor &amp; Sponsorship Portal</div>
+            <div class="repo-track-name">Community &amp; Support Portal</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match">Contributor onboarding pathways, meritocracy ladder, transparent Open Collective ledger, meetups calendar, and community showcase.</p>
+            <p class="repo-match">Start-here onboarding path, contributor pathways, community channels, and support information.</p>
             <div class="repo-pkgs">
               <span class="pkgs-label">Key Paths:</span>
               <div class="pkgs-chips">
@@ -521,6 +431,7 @@ layout: Landing
           </div>
         </div>
       </div>
+      <p class="private-repos-note" data-i18n-html="pathways.private_note_html">Other Krewire repositories (<code>cloud</code>, <code>auth</code>, <code>dash</code>, <code>panel</code>, and <code>internal</code>) are private. Their code and issue trackers are not publicly accessible, so the repositories above are where external contributions happen.</p>
     </div>
   </section>
 
@@ -544,28 +455,29 @@ cd krewire</code></pre>
 
         <div class="qs-card">
           <div class="qs-num">2</div>
-          <h3 data-i18n="guide.s2_title">2. Initialize Workspace (go.work)</h3>
-          <p data-i18n="guide.s2_desc">If working across multiple repos, synchronize your local Go workspace seamlessly with Go 1.27.1+:</p>
-          <pre><code>go work init ./krewire ./krew ./cloud ./auth ./dash
-go work sync</code></pre>
+          <h3 data-i18n="guide.s2_title">2. Build the kiw CLI from Source</h3>
+          <p data-i18n="guide.s2_desc">Inside your clone of the core repository (Go 1.27.1+), build the CLI you are changing:</p>
+          <pre><code>go build -o bin/kiw ./tools/kiw/cmd/kiw
+./bin/kiw version</code></pre>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">3</div>
           <h3 data-i18n="guide.s3_title">3. Pick an Open Issue</h3>
-          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment to let maintainers know you are working on it.</p>
+          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good first issue</span> or <span class="tag-issue">help wanted</span>. Comment to let maintainers know you are working on it.</p>
           <div class="mt-4">
-            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="guide.s3_btn">View Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="guide.s3_btn">View Good First Issues →</a>
           </div>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">4</div>
           <h3 data-i18n="guide.s4_title">4. Implement &amp; Verify Locally</h3>
-          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Verify that all 3 Quality Gates pass with zero failures:</p>
+          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Run the quality gates from CONTRIBUTING.md before opening a pull request:</p>
           <pre><code>gofmt -l .
 go vet ./...
-go test -race ./...</code></pre>
+go test ./...
+kiw compat</code></pre>
         </div>
 
         <div class="qs-card">
@@ -586,7 +498,7 @@ git push origin feat/my-feature</code></pre>
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
         <div class="sub-badge" data-i18n="standards.badge">Quality Assurance</div>
         <h2 data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
-        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
+        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request must pass three gates. The canonical list lives in the core repository's CONTRIBUTING.md.</p>
       </div>
 
       <div class="gates-grid">
@@ -599,9 +511,9 @@ git push origin feat/my-feature</code></pre>
 
         <div class="gate-card">
           <div class="gate-icon">🛡️</div>
-          <h3 data-i18n="standards.gate2_title">Gate 2: Race &amp; Tests</h3>
-          <p data-i18n="standards.gate2_desc">Every commit is verified with race condition detection and comprehensive unit &amp; integration tests.</p>
-          <div class="gate-req" data-i18n="standards.gate2_req">Required: 100% test pass, 0 data races</div>
+          <h3 data-i18n="standards.gate2_title">Gate 2: Tests</h3>
+          <p data-i18n="standards.gate2_desc">Every change must pass the module's unit and integration tests, and kiw compat must report ok after version.go changes.</p>
+          <div class="gate-req" data-i18n="standards.gate2_req">Required: go test ./... passes, kiw compat prints ok</div>
         </div>
 
         <div class="gate-card">
@@ -1804,6 +1716,15 @@ git push origin feat/my-feature</code></pre>
   margin-top: 6px;
 }
 
+.private-repos-note {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  max-width: 720px;
+  margin: 20px auto 0;
+  line-height: 1.55;
+}
+
 /* START HERE (canonical onboarding path) */
 .start-section {
   padding: 42px 0 28px;
@@ -1954,23 +1875,23 @@ git push origin feat/my-feature</code></pre>
 const pathways = {
   newbie: {
     title: "🌱 New to Go? (Beginner Friendly)",
-    desc: "Start by polishing documentation in krewire.com, writing unit tests for krewire/pkg/model, or fixing starter bugs marked with good-first-issue.",
-    url: "https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue"
+    desc: "Start by polishing documentation in krewire.com, writing unit tests for krewire/pkg/model, or fixing starter bugs labeled good first issue.",
+    url: "https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
   },
   backend: {
     title: "⚙️ Backend Engineer",
-    desc: "Contribute to core packages (pkg/model, pkg/web, pkg/resilience), implement microservices in krewire/cloud, or build autonomous agent tools in krewire/krew.",
+    desc: "Contribute to core packages (pkg/model, pkg/web, pkg/resilience, pkg/cloud), or build autonomous agent tools in krewire/krew.",
     url: "https://github.com/krewire/krewire/issues"
   },
   frontend: {
     title: "🎨 Frontend & UI Engineer",
-    desc: "Help design high-fidelity components using the .kiw DSL, expand Monaco Web IDE features in krewire/dash, or create interactive playground widgets.",
-    url: "https://github.com/krewire/krewire.com/issues"
+    desc: "Help design components with the .kiw DSL in krewire/ui, or improve layouts and interactive docs on krewire.com.",
+    url: "https://github.com/krewire/ui/issues"
   },
   devops: {
     title: "☁️ DevOps & Infrastructure Engineer",
-    desc: "Improve container sandbox runners in krewire/dash, enhance ACME TLS and rate limiters in krewire/cloud gateway, or automate CI/CD release pipelines.",
-    url: "https://github.com/krewire/cloud/issues"
+    desc: "Improve deploy targets and runners in pkg/cloud, the HTTP gateway in pkg/web/gateway, or the kiw build and release tooling in the core repository.",
+    url: "https://github.com/krewire/krewire/issues"
   }
 };
 
