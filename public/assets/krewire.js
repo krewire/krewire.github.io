@@ -224,24 +224,25 @@ card.style.display = 'none';
 var translations = {
 "en": {
 "nav": {
-"badge": "Community & Sponsors",
+"badge": "Community",
 "privileges": "Why Contribute",
 "pathways": "Pathways & Repos",
 "guide": "Contributor Guide",
 "standards": "Quality Gates",
-"sponsorship": "Sponsorship",
+"sponsorship": "Support",
 "boost": "AI Boost",
 "discussions": "Discussions ↗",
-"github_org": "GitHub Organization"
+"github_org": "GitHub Organization",
+"start": "Start Here"
 },
 "hero": {
 "eyebrow": "◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD",
 "title_html": "Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.",
-"lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.",
-"cta_contribute": "Start Contributing →",
-"cta_sponsor": "Sponsor Collective 💖",
-"cta_issues": "Good First Issues ↗",
-"meta": "100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy"
+"lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our modular Go libraries, active contributors earn lifetime commercial product licenses, while community support helps sustain long-term maintenance.",
+"cta_contribute": "Start Contributing",
+"cta_sponsor": "Support Krewire",
+"meta": "100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy",
+"cta_start": "Get Started →"
 },
 "trust": {
 "label": "Community & Stewardship Baseline",
@@ -357,7 +358,7 @@ var translations = {
 "trust_desc": "Sponsorship is purely an investment into public goods. No paid paywalls, no proprietary gates in core packages — all code remains free and open under the MIT license.",
 "trust_btn": "Become a Sponsor →"
 },
-"guild": {
+"boost": {
 "badge": "Human + AI Synergy",
 "title": "Collaborating with AI Boost",
 "lead": "Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:",
@@ -394,35 +395,68 @@ var translations = {
 "getting_started": "5-Step Contributor Guide",
 "pathways": "Contribution Pathways",
 "standards": "3 Quality Gates",
-"guild": "AI Boost Synergy",
+"boost": "AI Boost Synergy",
 "kwf_specs": "KWF Specifications",
 "gh_org": "GitHub Organization",
 "discussions": "Community Discussions",
 "good_first": "Good First Issues",
 "coc": "Code of Conduct",
 "bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload."
+},
+"start": {
+"badge": "Start Here",
+"title": "From Discovery to Your First Krewire Project",
+"subtitle": "This portal is the community front door. It does not host technical documentation: installation, the quickstart, and reference guides live on krewire.com and are maintained alongside the core repository. Follow these four steps in order.",
+"s1_title": "Understand Krewire",
+"s1_desc": "Read the overview to learn what Krewire is, its design principles, and which workload kinds it supports.",
+"s1_link": "Read the overview on krewire.com ↗",
+"s2_title": "Install the kiw CLI",
+"s2_desc": "Follow the canonical installation guide. It covers the shell installer, go install, and how to verify the install.",
+"s2_link": "Installation guide ↗",
+"s3_title": "Build Your First Project",
+"s3_desc": "Work through the hands-on quickstart: scaffold a project, run the dev server, make a change, and build it.",
+"s3_link": "5-minute quickstart ↗",
+"s4_title": "Choose Your Next Step",
+"s4_desc": "Once your first project builds, pick the workload guide that matches what you want to ship next. Ask questions or share what you built in GitHub Discussions.",
+"s4_link": "Workload guides ↗",
+"dest_title": "Where Things Live",
+"d1_label": "Discovery & Community",
+"d1_desc": "This portal: how to get started, how to contribute, and how to support the project.",
+"d1_link": "You are here",
+"d2_label": "Documentation",
+"d2_desc": "The canonical source for installation, quickstart, guides, and CLI reference, in English and Indonesian.",
+"d3_label": "Source & Releases",
+"d3_desc": "The core repository holds the Go packages and the kiw CLI. Versions are published as Git tags.",
+"d3_link": "Release tags ↗",
+"d4_label": "Contribution",
+"d4_desc": "Workflow, commit conventions, and quality gates are defined in the core repository's CONTRIBUTING.md.",
+"d4_link": "CONTRIBUTING.md ↗",
+"d5_label": "Questions & Bugs",
+"d5_desc": "Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.",
+"d5_link": "GitHub Discussions ↗"
 }
 },
 "id": {
 "nav": {
-"badge": "Komunitas & Sponsor",
+"badge": "Komunitas",
 "privileges": "Mengapa Berkontribusi",
 "pathways": "Jalur & Repositori",
 "guide": "Panduan Kontributor",
 "standards": "Standar Mutu",
-"sponsorship": "Sponsor",
+"sponsorship": "Dukungan",
 "boost": "AI Boost",
 "discussions": "Diskusi ↗",
-"github_org": "Organisasi GitHub"
+"github_org": "Organisasi GitHub",
+"start": "Mulai di Sini"
 },
 "hero": {
 "eyebrow": "◈ KOLEKTIF SUMBER TERBUKA · LAHIR DI INDONESIA · UNTUK DUNIA",
 "title_html": "Berkontribusi Kode. Sponsori Sumber Terbuka.<br>Berdayakan Rekayasawan Indonesia.",
-"lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara para sponsor mendukung infrastruktur mandiri dan para pengelola.",
-"cta_contribute": "Mulai Berkontribusi →",
-"cta_sponsor": "Sponsori Kolektif 💖",
-"cta_issues": "Good First Issues ↗",
-"meta": "100% Inti Sumber Terbuka (MIT) · Milik Komunitas · Infrastruktur Mandiri · Sinergi AI Boost"
+"lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara dukungan komunitas membantu menjaga pemeliharaan jangka panjang.",
+"cta_contribute": "Mulai Berkontribusi",
+"cta_sponsor": "Dukung Krewire",
+"meta": "100% Inti Sumber Terbuka (MIT) · Milik Komunitas · Infrastruktur Mandiri · Sinergi AI Boost",
+"cta_start": "Mulai →"
 },
 "trust": {
 "label": "Fondasi Komunitas & Tata Kelola",
@@ -538,7 +572,7 @@ var translations = {
 "trust_desc": "Sponsorship murni merupakan investasi untuk barang publik (public goods). Tidak ada paywall berbayar atau fitur terkunci pada paket inti — seluruh kode tetap bebas dan terbuka di bawah lisensi MIT.",
 "trust_btn": "Menjadi Sponsor →"
 },
-"guild": {
+"boost": {
 "badge": "Sinergi Manusia + AI",
 "title": "Berkolaborasi dengan AI Boost",
 "lead": "Krewire memelopori kolaborasi antara pengelola manusia dan agen AI otonom. Kerangka kerja AI Boost kami beroperasi dengan standar verifikasi yang ketat:",
@@ -575,13 +609,45 @@ var translations = {
 "getting_started": "Panduan Kontributor 5 Langkah",
 "pathways": "Jalur Kontribusi",
 "standards": "3 Quality Gate",
-"guild": "Sinergi AI Boost",
+"boost": "Sinergi AI Boost",
 "kwf_specs": "Spesifikasi KWF",
 "gh_org": "Organisasi GitHub",
 "discussions": "Diskusi Komunitas",
 "good_first": "Good First Issues",
 "coc": "Kode Etik",
 "bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire."
+},
+"start": {
+"badge": "Mulai di Sini",
+"title": "Dari Mengenal Krewire hingga Proyek Pertama Anda",
+"subtitle": "Portal ini adalah pintu masuk komunitas. Portal ini tidak memuat dokumentasi teknis: instalasi, quickstart, dan panduan referensi ada di krewire.com dan dipelihara bersama repositori inti. Ikuti empat langkah berikut secara berurutan.",
+"s1_title": "Pahami Krewire",
+"s1_desc": "Baca ikhtisar untuk memahami apa itu Krewire, prinsip desainnya, dan jenis workload yang didukung.",
+"s1_link": "Baca ikhtisar di krewire.com ↗",
+"s2_title": "Pasang CLI kiw",
+"s2_desc": "Ikuti panduan instalasi resmi. Panduan ini mencakup installer shell, go install, dan cara memverifikasi instalasi.",
+"s2_link": "Panduan instalasi ↗",
+"s3_title": "Bangun Proyek Pertama Anda",
+"s3_desc": "Ikuti quickstart praktis: buat kerangka proyek, jalankan server pengembangan, ubah sesuatu, lalu build.",
+"s3_link": "Quickstart 5 menit ↗",
+"s4_title": "Pilih Langkah Berikutnya",
+"s4_desc": "Setelah proyek pertama berhasil di-build, pilih panduan workload yang sesuai dengan apa yang ingin Anda rilis berikutnya. Ajukan pertanyaan atau bagikan hasil karya Anda di GitHub Discussions.",
+"s4_link": "Panduan workload ↗",
+"dest_title": "Ke Mana Harus Pergi",
+"d1_label": "Pengenalan & Komunitas",
+"d1_desc": "Portal ini: cara memulai, cara berkontribusi, dan cara mendukung proyek.",
+"d1_link": "Anda di sini",
+"d2_label": "Dokumentasi",
+"d2_desc": "Sumber resmi untuk instalasi, quickstart, panduan, dan referensi CLI, dalam bahasa Inggris dan Indonesia.",
+"d3_label": "Kode Sumber & Rilis",
+"d3_desc": "Repositori inti berisi paket Go dan CLI kiw. Versi diterbitkan sebagai tag Git.",
+"d3_link": "Tag rilis ↗",
+"d4_label": "Kontribusi",
+"d4_desc": "Alur kerja, konvensi commit, dan quality gate ditetapkan di CONTRIBUTING.md repositori inti.",
+"d4_link": "CONTRIBUTING.md ↗",
+"d5_label": "Pertanyaan & Bug",
+"d5_desc": "Ajukan pertanyaan di GitHub Discussions. Laporkan bug di issue tracker repositori yang terdampak.",
+"d5_link": "GitHub Discussions ↗"
 }
 }
 };

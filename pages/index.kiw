@@ -12,11 +12,11 @@ layout: Landing
       <div class="hero-copy">
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
         <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.</h1>
-        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.</p>
+        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while community support helps sustain long-term maintenance.</p>
         <div class="ctas flex flex-wrap gap-3">
-          <Button Variant="primary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing →</Button>
-          <Button Variant="secondary" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Sponsor Collective 💖</Button>
-          <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" Target="_blank" DataI18n="hero.cta_issues">Good First Issues ↗</Button>
+          <Button Variant="primary" Size="lg" Href="#start" DataI18n="hero.cta_start">Get Started →</Button>
+          <Button Variant="secondary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing</Button>
+          <Button Variant="outline" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Support Krewire</Button>
         </div>
         <div class="meta" data-i18n="hero.meta">100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy</div>
       </div>
@@ -28,15 +28,15 @@ layout: Landing
               <span class="term-dot yellow"></span>
               <span class="term-dot green"></span>
             </div>
-            <span class="term-title">kiw — contributor &amp; sponsor hub</span>
+            <span class="term-title">kiw — your first project</span>
           </div>
           <div class="code-terminal-body">
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire</span></div>
-            <div class="term-line term-info">✓ cloned core repository (pkg, kiw CLI, starters)</div>
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go test ./...</span></div>
-            <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
-            <div class="term-line term-muted mt-2"># 100% Open Source Community (MIT License)</div>
-            <div class="term-line term-info">⚡ Crafted in Indonesia · Sustained by community &amp; sponsors</div>
+            <div class="term-line term-muted"># install kiw first: krewire.com/docs/getting-started/installation</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">kiw new my-site --site</span></div>
+            <div class="term-line term-success">✓ scaffolded Krewire project (variant=static)</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cd my-site &amp;&amp; kiw dev</span></div>
+            <div class="term-line term-muted mt-2"># full quickstart: krewire.com/docs/getting-started</div>
+            <div class="term-line term-info">⚡ 100% Open Source Core (MIT) · Crafted in Indonesia</div>
           </div>
         </div>
       </div>
@@ -57,6 +57,73 @@ layout: Landing
         <span class="trust-item" data-i18n-html="trust.free_html"><b>100%</b> Free Core (MIT)</span>
         <span class="dot">·</span>
         <span class="trust-item" data-i18n="trust.cost">Near-Zero Cloud Cost</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- START HERE: CANONICAL PATH FROM DISCOVERY TO FIRST PROJECT (Issue #8) -->
+  <section class="start-section" id="start">
+    <div class="section-inner">
+      <div class="section-head w-full text-center flex flex-col items-center justify-center">
+        <div class="sub-badge" data-i18n="start.badge">Start Here</div>
+        <h2 data-i18n="start.title">From Discovery to Your First Krewire Project</h2>
+        <p data-i18n="start.subtitle">This portal is the community front door. It does not host technical documentation: installation, the quickstart, and reference guides live on krewire.com and are maintained alongside the core repository. Follow these four steps in order.</p>
+      </div>
+
+      <ol class="start-steps">
+        <li class="qs-card">
+          <div class="qs-num">1</div>
+          <h3 data-i18n="start.s1_title">Understand Krewire</h3>
+          <p data-i18n="start.s1_desc">Read the overview to learn what Krewire is, its design principles, and which workload kinds it supports.</p>
+          <a href="https://krewire.com/docs" target="_blank" rel="noopener" class="start-link" data-i18n="start.s1_link">Read the overview on krewire.com ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">2</div>
+          <h3 data-i18n="start.s2_title">Install the kiw CLI</h3>
+          <p data-i18n="start.s2_desc">Follow the canonical installation guide. It covers the shell installer, go install, and how to verify the install.</p>
+          <a href="https://krewire.com/docs/getting-started/installation" target="_blank" rel="noopener" class="start-link" data-i18n="start.s2_link">Installation guide ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">3</div>
+          <h3 data-i18n="start.s3_title">Build Your First Project</h3>
+          <p data-i18n="start.s3_desc">Work through the hands-on quickstart: scaffold a project, run the dev server, make a change, and build it.</p>
+          <a href="https://krewire.com/docs/getting-started#4-hands-on-5-minute-quickstart" target="_blank" rel="noopener" class="start-link" data-i18n="start.s3_link">5-minute quickstart ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">4</div>
+          <h3 data-i18n="start.s4_title">Choose Your Next Step</h3>
+          <p data-i18n="start.s4_desc">Once your first project builds, pick the workload guide that matches what you want to ship next. Ask questions or share what you built in GitHub Discussions.</p>
+          <a href="https://krewire.com/docs/workloads" target="_blank" rel="noopener" class="start-link" data-i18n="start.s4_link">Workload guides ↗</a>
+        </li>
+      </ol>
+
+      <h3 class="start-dest-title" data-i18n="start.dest_title">Where Things Live</h3>
+      <div class="start-dest-grid">
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d1_label">Discovery &amp; Community</span>
+          <p data-i18n="start.d1_desc">This portal: how to get started, how to contribute, and how to support the project.</p>
+          <a href="#start" class="start-link" data-i18n="start.d1_link">You are here</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d2_label">Documentation</span>
+          <p data-i18n="start.d2_desc">The canonical source for installation, quickstart, guides, and CLI reference, in English and Indonesian.</p>
+          <a href="https://krewire.com/docs" target="_blank" rel="noopener" class="start-link">krewire.com/docs ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d3_label">Source &amp; Releases</span>
+          <p data-i18n="start.d3_desc">The core repository holds the Go packages and the kiw CLI. Versions are published as Git tags.</p>
+          <a href="https://github.com/krewire/krewire/tags" target="_blank" rel="noopener" class="start-link" data-i18n="start.d3_link">Release tags ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d4_label">Contribution</span>
+          <p data-i18n="start.d4_desc">Workflow, commit conventions, and quality gates are defined in the core repository's CONTRIBUTING.md.</p>
+          <a href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="start-link" data-i18n="start.d4_link">CONTRIBUTING.md ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d5_label">Questions &amp; Bugs</span>
+          <p data-i18n="start.d5_desc">Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.</p>
+          <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="start-link" data-i18n="start.d5_link">GitHub Discussions ↗</a>
+        </div>
       </div>
     </div>
   </section>
@@ -1737,10 +1804,69 @@ git push origin feat/my-feature</code></pre>
   margin-top: 6px;
 }
 
+/* START HERE (canonical onboarding path) */
+.start-section {
+  padding: 42px 0 28px;
+}
+.start-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.start-link {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+.start-link:hover {
+  text-decoration: underline;
+}
+.start-dest-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin: 32px 0 16px;
+}
+.start-dest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.start-dest {
+  background: var(--bg-2);
+  border: var(--pop-border-thin);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.start-dest-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.start-dest p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS (SM: 640px+, MD: 768px+, LG: 1024px+)
    ========================================================================== */
 @media (min-width: 640px) {
+  .start-steps,
+  .start-dest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .hero-inner {
     padding: 0 24px;
   }
@@ -1807,6 +1933,12 @@ git push origin feat/my-feature</code></pre>
   }
   .quickstart-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .start-steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .start-dest-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .boost-grid {
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);

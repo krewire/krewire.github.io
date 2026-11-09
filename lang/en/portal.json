@@ -1,23 +1,24 @@
 {
   "nav": {
-    "badge": "Community & Sponsors",
+    "badge": "Community",
     "privileges": "Why Contribute",
     "pathways": "Pathways & Repos",
     "guide": "Contributor Guide",
     "standards": "Quality Gates",
-    "sponsorship": "Sponsorship",
+    "sponsorship": "Support",
     "boost": "AI Boost",
     "discussions": "Discussions ↗",
-    "github_org": "GitHub Organization"
+    "github_org": "GitHub Organization",
+    "start": "Start Here"
   },
   "hero": {
     "eyebrow": "◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD",
     "title_html": "Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.",
-    "lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.",
-    "cta_contribute": "Start Contributing →",
-    "cta_sponsor": "Sponsor Collective 💖",
-    "cta_issues": "Good First Issues ↗",
-    "meta": "100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy"
+    "lead": "Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our modular Go libraries, active contributors earn lifetime commercial product licenses, while community support helps sustain long-term maintenance.",
+    "cta_contribute": "Start Contributing",
+    "cta_sponsor": "Support Krewire",
+    "meta": "100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy",
+    "cta_start": "Get Started →"
   },
   "trust": {
     "label": "Community & Stewardship Baseline",
@@ -177,5 +178,37 @@
     "good_first": "Good First Issues",
     "coc": "Code of Conduct",
     "bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload."
+  },
+  "start": {
+    "badge": "Start Here",
+    "title": "From Discovery to Your First Krewire Project",
+    "subtitle": "This portal is the community front door. It does not host technical documentation: installation, the quickstart, and reference guides live on krewire.com and are maintained alongside the core repository. Follow these four steps in order.",
+    "s1_title": "Understand Krewire",
+    "s1_desc": "Read the overview to learn what Krewire is, its design principles, and which workload kinds it supports.",
+    "s1_link": "Read the overview on krewire.com ↗",
+    "s2_title": "Install the kiw CLI",
+    "s2_desc": "Follow the canonical installation guide. It covers the shell installer, go install, and how to verify the install.",
+    "s2_link": "Installation guide ↗",
+    "s3_title": "Build Your First Project",
+    "s3_desc": "Work through the hands-on quickstart: scaffold a project, run the dev server, make a change, and build it.",
+    "s3_link": "5-minute quickstart ↗",
+    "s4_title": "Choose Your Next Step",
+    "s4_desc": "Once your first project builds, pick the workload guide that matches what you want to ship next. Ask questions or share what you built in GitHub Discussions.",
+    "s4_link": "Workload guides ↗",
+    "dest_title": "Where Things Live",
+    "d1_label": "Discovery & Community",
+    "d1_desc": "This portal: how to get started, how to contribute, and how to support the project.",
+    "d1_link": "You are here",
+    "d2_label": "Documentation",
+    "d2_desc": "The canonical source for installation, quickstart, guides, and CLI reference, in English and Indonesian.",
+    "d3_label": "Source & Releases",
+    "d3_desc": "The core repository holds the Go packages and the kiw CLI. Versions are published as Git tags.",
+    "d3_link": "Release tags ↗",
+    "d4_label": "Contribution",
+    "d4_desc": "Workflow, commit conventions, and quality gates are defined in the core repository's CONTRIBUTING.md.",
+    "d4_link": "CONTRIBUTING.md ↗",
+    "d5_label": "Questions & Bugs",
+    "d5_desc": "Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.",
+    "d5_link": "GitHub Discussions ↗"
   }
 }

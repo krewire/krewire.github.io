@@ -1,23 +1,24 @@
 {
   "nav": {
-    "badge": "Komunitas & Sponsor",
+    "badge": "Komunitas",
     "privileges": "Mengapa Berkontribusi",
     "pathways": "Jalur & Repositori",
     "guide": "Panduan Kontributor",
     "standards": "Standar Mutu",
-    "sponsorship": "Sponsor",
+    "sponsorship": "Dukungan",
     "boost": "AI Boost",
     "discussions": "Diskusi ↗",
-    "github_org": "Organisasi GitHub"
+    "github_org": "Organisasi GitHub",
+    "start": "Mulai di Sini"
   },
   "hero": {
     "eyebrow": "◈ KOLEKTIF SUMBER TERBUKA · LAHIR DI INDONESIA · UNTUK DUNIA",
     "title_html": "Berkontribusi Kode. Sponsori Sumber Terbuka.<br>Berdayakan Rekayasawan Indonesia.",
-    "lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara para sponsor mendukung infrastruktur mandiri dan para pengelola.",
-    "cta_contribute": "Mulai Berkontribusi →",
-    "cta_sponsor": "Sponsori Kolektif 💖",
-    "cta_issues": "Good First Issues ↗",
-    "meta": "100% Inti Sumber Terbuka (MIT) · Milik Komunitas · Infrastruktur Mandiri · Sinergi AI Boost"
+    "lead": "Krewire adalah gerakan sumber terbuka yang direkayasa di Indonesia untuk mengubah para pengembang dari konsumen perangkat lunak menjadi pencipta kelas dunia. Melalui pustaka Go modular, kontributor aktif mendapatkan lisensi komersial seumur hidup, sementara dukungan komunitas membantu menjaga pemeliharaan jangka panjang.",
+    "cta_contribute": "Mulai Berkontribusi",
+    "cta_sponsor": "Dukung Krewire",
+    "meta": "100% Inti Sumber Terbuka (MIT) · Milik Komunitas · Infrastruktur Mandiri · Sinergi AI Boost",
+    "cta_start": "Mulai →"
   },
   "trust": {
     "label": "Fondasi Komunitas & Tata Kelola",
@@ -177,5 +178,37 @@
     "good_first": "Good First Issues",
     "coc": "Kode Etik",
     "bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire."
+  },
+  "start": {
+    "badge": "Mulai di Sini",
+    "title": "Dari Mengenal Krewire hingga Proyek Pertama Anda",
+    "subtitle": "Portal ini adalah pintu masuk komunitas. Portal ini tidak memuat dokumentasi teknis: instalasi, quickstart, dan panduan referensi ada di krewire.com dan dipelihara bersama repositori inti. Ikuti empat langkah berikut secara berurutan.",
+    "s1_title": "Pahami Krewire",
+    "s1_desc": "Baca ikhtisar untuk memahami apa itu Krewire, prinsip desainnya, dan jenis workload yang didukung.",
+    "s1_link": "Baca ikhtisar di krewire.com ↗",
+    "s2_title": "Pasang CLI kiw",
+    "s2_desc": "Ikuti panduan instalasi resmi. Panduan ini mencakup installer shell, go install, dan cara memverifikasi instalasi.",
+    "s2_link": "Panduan instalasi ↗",
+    "s3_title": "Bangun Proyek Pertama Anda",
+    "s3_desc": "Ikuti quickstart praktis: buat kerangka proyek, jalankan server pengembangan, ubah sesuatu, lalu build.",
+    "s3_link": "Quickstart 5 menit ↗",
+    "s4_title": "Pilih Langkah Berikutnya",
+    "s4_desc": "Setelah proyek pertama berhasil di-build, pilih panduan workload yang sesuai dengan apa yang ingin Anda rilis berikutnya. Ajukan pertanyaan atau bagikan hasil karya Anda di GitHub Discussions.",
+    "s4_link": "Panduan workload ↗",
+    "dest_title": "Ke Mana Harus Pergi",
+    "d1_label": "Pengenalan & Komunitas",
+    "d1_desc": "Portal ini: cara memulai, cara berkontribusi, dan cara mendukung proyek.",
+    "d1_link": "Anda di sini",
+    "d2_label": "Dokumentasi",
+    "d2_desc": "Sumber resmi untuk instalasi, quickstart, panduan, dan referensi CLI, dalam bahasa Inggris dan Indonesia.",
+    "d3_label": "Kode Sumber & Rilis",
+    "d3_desc": "Repositori inti berisi paket Go dan CLI kiw. Versi diterbitkan sebagai tag Git.",
+    "d3_link": "Tag rilis ↗",
+    "d4_label": "Kontribusi",
+    "d4_desc": "Alur kerja, konvensi commit, dan quality gate ditetapkan di CONTRIBUTING.md repositori inti.",
+    "d4_link": "CONTRIBUTING.md ↗",
+    "d5_label": "Pertanyaan & Bug",
+    "d5_desc": "Ajukan pertanyaan di GitHub Discussions. Laporkan bug di issue tracker repositori yang terdampak.",
+    "d5_link": "GitHub Discussions ↗"
   }
 }
