@@ -1,6 +1,6 @@
 ---
-title: "Krewire Community — Contribution & Sponsorship Portal"
-description: "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem. Empowering Indonesian and global engineers to build and sustain modular Go systems."
+title: "Krewire Community — Get Started, Contribute & Support"
+description: "The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."
 layout: Landing
 ---
 
@@ -11,12 +11,12 @@ layout: Landing
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
-        <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.</h1>
-        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.</p>
+        <h1 data-i18n-html="hero.title_html">Build with Krewire. Contribute Code.<br>Empower Indonesian Engineers.</h1>
+        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. Its modular Go libraries are MIT-licensed and free to use, and community support helps sustain long-term maintenance.</p>
         <div class="ctas flex flex-wrap gap-3">
-          <Button Variant="primary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing →</Button>
-          <Button Variant="secondary" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Sponsor Collective 💖</Button>
-          <Button Variant="outline" Size="lg" Href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" Target="_blank" DataI18n="hero.cta_issues">Good First Issues ↗</Button>
+          <Button Variant="primary" Size="lg" Href="#start" DataI18n="hero.cta_start">Get Started →</Button>
+          <Button Variant="secondary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing</Button>
+          <Button Variant="outline" Size="lg" Href="#sponsorship" DataI18n="hero.cta_sponsor">Support Krewire</Button>
         </div>
         <div class="meta" data-i18n="hero.meta">100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy</div>
       </div>
@@ -28,15 +28,15 @@ layout: Landing
               <span class="term-dot yellow"></span>
               <span class="term-dot green"></span>
             </div>
-            <span class="term-title">kiw — contributor &amp; sponsor hub</span>
+            <span class="term-title">kiw — your first project</span>
           </div>
           <div class="code-terminal-body">
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire</span></div>
-            <div class="term-line term-info">✓ cloned core repository (pkg, kiw CLI, starters)</div>
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go test ./...</span></div>
-            <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
-            <div class="term-line term-muted mt-2"># 100% Open Source Community (MIT License)</div>
-            <div class="term-line term-info">⚡ Crafted in Indonesia · Sustained by community &amp; sponsors</div>
+            <div class="term-line term-muted"># install kiw first: krewire.com/docs/getting-started/installation</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">kiw new my-site --site</span></div>
+            <div class="term-line term-success">✓ scaffolded Krewire project (variant=static)</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cd my-site &amp;&amp; kiw dev</span></div>
+            <div class="term-line term-muted mt-2"># full quickstart: krewire.com/docs/getting-started</div>
+            <div class="term-line term-info">⚡ 100% Open Source Core (MIT) · Crafted in Indonesia</div>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ layout: Landing
       <div class="trust-items">
         <span class="trust-item" data-i18n-html="trust.indonesia_html"><b>Indonesian</b> Collective</span>
         <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Meritocracy</b> Perks</span>
+        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Open</b> Contribution</span>
         <span class="dot">·</span>
         <span class="trust-item" data-i18n-html="trust.opencore_html"><b>Open Core</b> Sustainability</span>
         <span class="dot">·</span>
@@ -61,87 +61,108 @@ layout: Landing
     </div>
   </section>
 
-  <!-- WHY CONTRIBUTE & CONTRIBUTOR PRIVILEGES -->
+  <!-- START HERE: CANONICAL PATH FROM DISCOVERY TO FIRST PROJECT (Issue #8) -->
+  <section class="start-section" id="start">
+    <div class="section-inner">
+      <div class="section-head w-full text-center flex flex-col items-center justify-center">
+        <div class="sub-badge" data-i18n="start.badge">Start Here</div>
+        <h2 data-i18n="start.title">From Discovery to Your First Krewire Project</h2>
+        <p data-i18n="start.subtitle">This portal is the community front door. It does not host technical documentation: installation, the quickstart, and reference guides live on krewire.com and are maintained alongside the core repository. Follow these four steps in order.</p>
+      </div>
+
+      <ol class="start-steps">
+        <li class="qs-card">
+          <div class="qs-num">1</div>
+          <h3 data-i18n="start.s1_title">Understand Krewire</h3>
+          <p data-i18n="start.s1_desc">Read the overview to learn what Krewire is, its design principles, and which workload kinds it supports.</p>
+          <a href="https://krewire.com/docs" target="_blank" rel="noopener" class="start-link" data-i18n="start.s1_link">Read the overview on krewire.com ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">2</div>
+          <h3 data-i18n="start.s2_title">Install the kiw CLI</h3>
+          <p data-i18n="start.s2_desc">Follow the canonical installation guide. It covers the shell installer, go install, and how to verify the install.</p>
+          <a href="https://krewire.com/docs/getting-started/installation" target="_blank" rel="noopener" class="start-link" data-i18n="start.s2_link">Installation guide ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">3</div>
+          <h3 data-i18n="start.s3_title">Build Your First Project</h3>
+          <p data-i18n="start.s3_desc">Work through the hands-on quickstart: scaffold a project, run the dev server, make a change, and build it.</p>
+          <a href="https://krewire.com/docs/getting-started#4-hands-on-5-minute-quickstart" target="_blank" rel="noopener" class="start-link" data-i18n="start.s3_link">5-minute quickstart ↗</a>
+        </li>
+        <li class="qs-card">
+          <div class="qs-num">4</div>
+          <h3 data-i18n="start.s4_title">Choose Your Next Step</h3>
+          <p data-i18n="start.s4_desc">Once your first project builds, pick the workload guide that matches what you want to ship next. Ask questions or share what you built in GitHub Discussions.</p>
+          <a href="https://krewire.com/docs/workloads" target="_blank" rel="noopener" class="start-link" data-i18n="start.s4_link">Workload guides ↗</a>
+        </li>
+      </ol>
+
+      <h3 class="start-dest-title" data-i18n="start.dest_title">Where Things Live</h3>
+      <div class="start-dest-grid">
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d1_label">Discovery &amp; Community</span>
+          <p data-i18n="start.d1_desc">This portal: how to get started, how to contribute, and how to support the project.</p>
+          <a href="#start" class="start-link" data-i18n="start.d1_link">You are here</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d2_label">Documentation</span>
+          <p data-i18n="start.d2_desc">The canonical source for installation, quickstart, guides, and CLI reference, in English and Indonesian.</p>
+          <a href="https://krewire.com/docs" target="_blank" rel="noopener" class="start-link">krewire.com/docs ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d3_label">Source &amp; Releases</span>
+          <p data-i18n="start.d3_desc">The core repository holds the Go packages and the kiw CLI. Versions are published as Git tags.</p>
+          <a href="https://github.com/krewire/krewire/tags" target="_blank" rel="noopener" class="start-link" data-i18n="start.d3_link">Release tags ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d4_label">Contribution</span>
+          <p data-i18n="start.d4_desc">Workflow, commit conventions, and quality gates are defined in the core repository's CONTRIBUTING.md.</p>
+          <a href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="start-link" data-i18n="start.d4_link">CONTRIBUTING.md ↗</a>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="start.d5_label">Questions &amp; Bugs</span>
+          <p data-i18n="start.d5_desc">Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.</p>
+          <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="start-link" data-i18n="start.d5_link">GitHub Discussions ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CONTRIBUTE (no unapproved perks or license promises) -->
   <section class="benefits" id="privileges">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="privileges.badge">Contributor Privileges</div>
-        <h2 data-i18n="privileges.title">Lifetime Access to Krewire's Paid Ecosystem</h2>
-        <p data-i18n="privileges.subtitle">True builders deserve shared ownership. By joining and actively contributing to the Krewire open-source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
+        <div class="sub-badge" data-i18n="privileges.badge">Why Contribute</div>
+        <h2 data-i18n="privileges.title">Why Contribute to Krewire</h2>
+        <p data-i18n="privileges.subtitle">Contributions land in an MIT-licensed open-source core that anyone can use. There is no paid perk or license program attached to contributing today.</p>
       </div>
 
       <div class="benefit-grid">
         <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p1_badge">Core Privilege</div>
-          <h3 data-i18n="privileges.p1_title">Commercial Sub-Products Lifetime Access</h3>
-          <p data-i18n="privileges.p1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p1_i1">Free lifetime access to all paid Krewire commercial sub-products</li>
-            <li data-i18n="privileges.p1_i2">Priority early-access releases and exclusive roadmap previews</li>
-            <li data-i18n="privileges.p1_i3">Direct private collaboration channels with core maintainers</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p1_badge">Open Core</div>
+          <h3 data-i18n="privileges.p1_title">Your Work Ships in the Open</h3>
+          <p data-i18n="privileges.p1_desc">Merged changes become part of the MIT-licensed core that anyone can use, study, and build on.</p>
         </div>
 
         <div class="benefit-card highlight-card">
-          <div class="benefit-badge" data-i18n="privileges.p2_badge">Strict Requirement</div>
-          <h3 data-i18n="privileges.p2_title">Active Contributions Required</h3>
-          <p data-i18n="privileges.p2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p2_i1">Submit PRs for new features, bugfixes, or kernel optimizations</li>
-            <li data-i18n="privileges.p2_i2">Review open PRs and stress-test high-concurrency scenarios</li>
-            <li data-i18n="privileges.p2_i3">Author KWF architecture specifications or comprehensive docs</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p2_badge">Review</div>
+          <h3 data-i18n="privileges.p2_title">Learn Through Code Review</h3>
+          <p data-i18n="privileges.p2_desc">Every pull request is reviewed before merge and checked against the quality gates in CONTRIBUTING.md.</p>
         </div>
 
         <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p3_badge">Revocation Policy</div>
-          <h3 data-i18n="privileges.p3_title">Revocable if Inactive or Dormant</h3>
-          <p data-i18n="privileges.p3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked if a contributor becomes inactive or dormant over an extended period.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p3_i1">Contributor activity and commits are periodically audited</li>
-            <li data-i18n="privileges.p3_i2">Prolonged inactivity or dormancy leads to license deactivation</li>
-            <li data-i18n="privileges.p3_i3">Access privileges can be promptly reinstated upon resumed contribution</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p3_badge">Credit</div>
+          <h3 data-i18n="privileges.p3_title">Public, Lasting Credit</h3>
+          <p data-i18n="privileges.p3_desc">Your commits stay attributed to you in the project's public Git history.</p>
         </div>
       </div>
 
       <div class="meritocracy-callout mt-8">
         <div class="meritocracy-inner">
-          <div class="meritocracy-icon">⚖️</div>
+          <div class="meritocracy-icon">ℹ️</div>
           <div class="meritocracy-body">
-            <strong data-i18n="privileges.policy_title">Krewire Meritocracy Policy:</strong>
-            <p data-i18n="privileges.policy_text">We believe those who lay the foundation should share in its fruits. Commercial access is free for all active contributors, provided ongoing dedication to the collective is consistently maintained.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4-TIER MERITOCRACY PRIVILEGE LADDER (Issue #3) -->
-      <div class="meritocracy-ladder-section mt-12">
-        <h3 class="text-center font-bold text-xl mb-6">The 4-Tier Meritocracy Ladder</h3>
-        <div class="ladder-grid">
-          <div class="ladder-card">
-            <div class="ladder-badge tier-1">Tier 1</div>
-            <h4>Contributor</h4>
-            <span class="ladder-req">1st Merged Pull Request</span>
-            <p>Listed on community Wall of Fame, Contributor badge on Discord, and lifetime access to starter developer tools.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-2">Tier 2</div>
-            <h4>Collaborator</h4>
-            <span class="ladder-req">5+ Merged Pull Requests</span>
-            <p>Issue triage and labeling permissions, invitation to bi-weekly maintainer sync calls, and roadmap voting rights.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-3">Tier 3</div>
-            <h4>Maintainer</h4>
-            <span class="ladder-req">Subsystem Owner</span>
-            <p>Full review &amp; merge authority for designated repository/package, RFC voting power, and sponsored conference travel.</p>
-          </div>
-          <div class="ladder-card highlight-ladder">
-            <div class="ladder-badge tier-4">Tier 4</div>
-            <h4>Steering Committee</h4>
-            <span class="ladder-req">Ecosystem Governance</span>
-            <p>Security signing keys, foundation budget oversight, strategic industry partnerships, and grant disbursements.</p>
+            <strong data-i18n="privileges.policy_title">About perks and privileges:</strong>
+            <p data-i18n="privileges.policy_text">Earlier versions of this page described lifetime commercial licenses and a four-tier privilege ladder. Those programs are not approved or operational and have been withdrawn. If maintainers introduce a recognition program, it will be documented here with its actual terms.</p>
           </div>
         </div>
       </div>
@@ -161,9 +182,9 @@ layout: Landing
         <div class="pathway-content" id="pathwayDetails">
           <div class="pathway-info">
             <h4 id="pathwayTitle" class="font-bold text-base mb-2">New to Go? (Beginner Friendly)</h4>
-            <p id="pathwayDesc" class="text-sm text-muted mb-4">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs marked with <code>good-first-issue</code>.</p>
+            <p id="pathwayDesc" class="text-sm text-muted mb-4">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs labeled <code>good first issue</code>.</p>
             <div class="pathway-links flex gap-3">
-              <a id="pathwayCta" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Find Good First Issues →</a>
+              <a id="pathwayCta" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Find Good First Issues →</a>
             </div>
           </div>
         </div>
@@ -176,7 +197,7 @@ layout: Landing
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
         <div class="sub-badge" data-i18n="pathways.badge">Codebase Matrix</div>
-        <h2 data-i18n="pathways.title">8 Repositories &amp; Ecosystem Matrix</h2>
+        <h2 data-i18n="pathways.title">Public Repositories &amp; Contribution Matrix</h2>
         <p data-i18n="pathways.subtitle">Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
       </div>
 
@@ -189,7 +210,7 @@ layout: Landing
           </div>
           <span class="fast-setup-badge" data-i18n="pathways.one_line_badge">Recommended</span>
         </div>
-        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Clone the core repository, run the test suites, and verify all 3 automated quality gates:</p>
+        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Clone the core repository and run its test suite. Before opening a pull request, run the full quality gates listed in <code>CONTRIBUTING.md</code>:</p>
         <div class="terminal-cmd-bar">
           <code id="setup-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire &amp;&amp; go test ./...</code>
           <button class="btn-copy" data-copy-cmd aria-label="Copy setup command">
@@ -199,7 +220,7 @@ layout: Landing
         <div class="fast-setup-meta">
           <span class="meta-item" data-i18n="pathways.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
           <span class="meta-dot">·</span>
-          <span class="meta-item" data-i18n="pathways.meta_zero">Zero manual configuration required</span>
+          <span class="meta-item" data-i18n="pathways.meta_zero">No extra configuration needed</span>
         </div>
       </div>
 
@@ -213,7 +234,7 @@ layout: Landing
         </div>
       </div>
 
-      <!-- REPOSITORIES GRID (8 REPOSITORIES) -->
+      <!-- REPOSITORIES GRID (PUBLIC REPOSITORIES) -->
       <div class="repo-grid">
         <!-- 1. krewire/krewire -->
         <div class="repo-card featured" data-category="core">
@@ -241,7 +262,7 @@ layout: Landing
             </div>
           </div>
           <div class="repo-footer">
-            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="repo-action primary">Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="repo-action primary">Good First Issues →</a>
             <a href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
           </div>
         </div>
@@ -276,126 +297,36 @@ layout: Landing
           </div>
         </div>
 
-        <!-- 3. krewire/cloud -->
+        <!-- 3. krewire/ui -->
         <div class="repo-card" data-category="core">
           <div class="repo-header">
             <div class="repo-meta-top">
-              <span class="repo-tag core">Hybrid PaaS</span>
-              <span class="repo-lang">Go 1.27.1</span>
+              <span class="repo-tag tool">Design System</span>
+              <span class="repo-lang">.kiw</span>
             </div>
             <h3 class="repo-title">
-              <a href="https://github.com/krewire/cloud" target="_blank" rel="noopener">krewire/cloud</a>
+              <a href="https://github.com/krewire/ui" target="_blank" rel="noopener">krewire/ui</a>
             </h3>
-            <div class="repo-track-name">Enterprise Hybrid PaaS Engine</div>
+            <div class="repo-track-name" data-i18n="pathways.track_ui">UI Components &amp; Design System</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match">Multi-tenant hybrid cloud control plane, supervisor process management, ACME TLS gateway, mTLS mesh, and UU PDP compliance.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/controlplane</span>
-                <span class="pkg-chip">pkg/supervisor</span>
-                <span class="pkg-chip">pkg/gateway</span>
-                <span class="pkg-chip">pkg/compliance</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/cloud/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/cloud/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 4. krewire/auth -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Identity &amp; SSO</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/auth" target="_blank" rel="noopener">krewire/auth</a>
-            </h3>
-            <div class="repo-track-name">Enterprise Identity &amp; RBAC Platform</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Multi-tenant identity, OIDC/SAML2 single sign-on, TOTP 2FA, session tokens, audit logging, and CSRF protection.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/identity</span>
-                <span class="pkg-chip">pkg/webauth</span>
-                <span class="pkg-chip">pkg/audit</span>
-                <span class="pkg-chip">pkg/middleware</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/auth/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/auth/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 5. krewire/dash -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Krewire Dash</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/dash" target="_blank" rel="noopener">krewire/dash</a>
-            </h3>
-            <div class="repo-track-name">Virtual Workspace &amp; Automation Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Containerized sandbox runner, xterm.js PTY WebSocket streaming, Monaco editor, collaborative presence, and streaming AI assistant.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/sandbox</span>
-                <span class="pkg-chip">pkg/terminal</span>
-                <span class="pkg-chip">pkg/session</span>
-                <span class="pkg-chip">pkg/ai</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a href="https://github.com/krewire/dash/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/dash/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
-          </div>
-        </div>
-
-        <!-- 6. krewire/internal -->
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag core">Docs Hub</span>
-              <span class="repo-lang">ADR / Specs</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/internal" target="_blank" rel="noopener">krewire/internal</a>
-            </h3>
-            <div class="repo-track-name">Architecture &amp; ADR Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Architectural Decision Records (ADRs), ecosystem specifications, roadmaps, security threat models, and contributor guidelines.</p>
+            <p class="repo-match" data-i18n="pathways.match_ui">If you enjoy: Zero-dependency .kiw components, layout primitives, design tokens, dark mode, and accessible HTML.</p>
             <div class="repo-pkgs">
               <span class="pkgs-label">Key Paths:</span>
               <div class="pkgs-chips">
-                <span class="pkg-chip">docs/adr/</span>
-                <span class="pkg-chip">docs/foundation/</span>
-                <span class="pkg-chip">docs/roadmap/</span>
+                <span class="pkg-chip">components/</span>
+                <span class="pkg-chip">styles/</span>
+                <span class="pkg-chip">examples/</span>
               </div>
             </div>
           </div>
           <div class="repo-footer">
-            <a href="https://github.com/krewire/internal/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
-            <a href="https://github.com/krewire/internal/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">Contributing ↗</a>
+            <a href="https://github.com/krewire/ui/issues" target="_blank" rel="noopener" class="repo-action primary">Issues →</a>
+            <a href="https://github.com/krewire/ui/blob/main/README.md" target="_blank" rel="noopener" class="repo-action secondary">README ↗</a>
           </div>
         </div>
 
-        <!-- 7. krewire/krewire.com -->
+        <!-- 4. krewire/krewire.com -->
         <div class="repo-card" data-category="web">
           <div class="repo-header">
             <div class="repo-meta-top">
@@ -425,7 +356,7 @@ layout: Landing
           </div>
         </div>
 
-        <!-- 8. krewire/krewire.github.io -->
+        <!-- 5. krewire/krewire.github.io -->
         <div class="repo-card" data-category="web">
           <div class="repo-header">
             <div class="repo-meta-top">
@@ -435,10 +366,10 @@ layout: Landing
             <h3 class="repo-title">
               <a href="https://github.com/krewire/krewire.github.io" target="_blank" rel="noopener">krewire.github.io</a>
             </h3>
-            <div class="repo-track-name">Contributor &amp; Sponsorship Portal</div>
+            <div class="repo-track-name">Community &amp; Support Portal</div>
           </div>
           <div class="repo-body">
-            <p class="repo-match">Contributor onboarding pathways, meritocracy ladder, transparent Open Collective ledger, meetups calendar, and community showcase.</p>
+            <p class="repo-match">Start-here onboarding path, contributor pathways, community channels, and support information.</p>
             <div class="repo-pkgs">
               <span class="pkgs-label">Key Paths:</span>
               <div class="pkgs-chips">
@@ -454,6 +385,7 @@ layout: Landing
           </div>
         </div>
       </div>
+      <p class="private-repos-note" data-i18n-html="pathways.private_note_html">Other Krewire repositories (<code>cloud</code>, <code>auth</code>, <code>dash</code>, <code>panel</code>, and <code>internal</code>) are private. Their code and issue trackers are not publicly accessible, so the repositories above are where external contributions happen.</p>
     </div>
   </section>
 
@@ -477,28 +409,29 @@ cd krewire</code></pre>
 
         <div class="qs-card">
           <div class="qs-num">2</div>
-          <h3 data-i18n="guide.s2_title">2. Initialize Workspace (go.work)</h3>
-          <p data-i18n="guide.s2_desc">If working across multiple repos, synchronize your local Go workspace seamlessly with Go 1.27.1+:</p>
-          <pre><code>go work init ./krewire ./krew ./cloud ./auth ./dash
-go work sync</code></pre>
+          <h3 data-i18n="guide.s2_title">2. Build the kiw CLI from Source</h3>
+          <p data-i18n="guide.s2_desc">Inside your clone of the core repository (Go 1.27.1+), build the CLI you are changing:</p>
+          <pre><code>go build -o bin/kiw ./tools/kiw/cmd/kiw
+./bin/kiw version</code></pre>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">3</div>
           <h3 data-i18n="guide.s3_title">3. Pick an Open Issue</h3>
-          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment to let maintainers know you are working on it.</p>
+          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good first issue</span> or <span class="tag-issue">help wanted</span>. Comment to let maintainers know you are working on it.</p>
           <div class="mt-4">
-            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="guide.s3_btn">View Good First Issues →</a>
+            <a href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="guide.s3_btn">View Good First Issues →</a>
           </div>
         </div>
 
         <div class="qs-card">
           <div class="qs-num">4</div>
           <h3 data-i18n="guide.s4_title">4. Implement &amp; Verify Locally</h3>
-          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Verify that all 3 Quality Gates pass with zero failures:</p>
+          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Run the quality gates from CONTRIBUTING.md before opening a pull request:</p>
           <pre><code>gofmt -l .
 go vet ./...
-go test -race ./...</code></pre>
+go test ./...
+kiw compat</code></pre>
         </div>
 
         <div class="qs-card">
@@ -519,7 +452,7 @@ git push origin feat/my-feature</code></pre>
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
         <div class="sub-badge" data-i18n="standards.badge">Quality Assurance</div>
         <h2 data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
-        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
+        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request must pass three gates. The canonical list lives in the core repository's CONTRIBUTING.md.</p>
       </div>
 
       <div class="gates-grid">
@@ -532,9 +465,9 @@ git push origin feat/my-feature</code></pre>
 
         <div class="gate-card">
           <div class="gate-icon">🛡️</div>
-          <h3 data-i18n="standards.gate2_title">Gate 2: Race &amp; Tests</h3>
-          <p data-i18n="standards.gate2_desc">Every commit is verified with race condition detection and comprehensive unit &amp; integration tests.</p>
-          <div class="gate-req" data-i18n="standards.gate2_req">Required: 100% test pass, 0 data races</div>
+          <h3 data-i18n="standards.gate2_title">Gate 2: Tests</h3>
+          <p data-i18n="standards.gate2_desc">Every change must pass the module's unit and integration tests, and kiw compat must report ok after version.go changes.</p>
+          <div class="gate-req" data-i18n="standards.gate2_req">Required: go test ./... passes, kiw compat prints ok</div>
         </div>
 
         <div class="gate-card">
@@ -615,166 +548,94 @@ git push origin feat/my-feature</code></pre>
     </div>
   </section>
 
-  <!-- SPONSORSHIP SECTION (Issue #6) -->
+  <!-- SUPPORT / SPONSORSHIP (verified channels only, Issue #9) -->
   <section class="sponsorship-section" id="sponsorship">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="sponsorship.badge">Community Support</div>
-        <h2 data-i18n="sponsorship.title">Sponsoring Krewire</h2>
-        <p data-i18n="sponsorship.subtitle">Krewire is an independent open-source collective born in Indonesia. Sponsorship sustains full-time engineering, independent infrastructure, security signing, and community education — keeping the ecosystem 100% open and community-owned.</p>
+        <div class="sub-badge" data-i18n="sponsorship.badge">Support Krewire</div>
+        <h2 data-i18n="sponsorship.title">Supporting Krewire's Long-Term Maintenance</h2>
+        <p data-i18n="sponsorship.subtitle">Krewire measures success by what developers build with it, not by money raised. Support, financial or not, is how the project stays maintained: it pays for maintainer time and infrastructure so that the open-source core keeps working for everyone.</p>
       </div>
 
-      <!-- 4 SPONSORSHIP TIERS -->
-      <div class="sponsor-tiers-grid mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Backer</div>
-          <div class="tier-price font-bold text-2xl mb-1">$5 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 75.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Listed on GitHub README &amp; portal backers wall</li>
-            <li>✓ Backer Discord badge</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm w-full">Join as Backer</a>
-        </div>
+      <div class="sponsor-trust-banner support-status">
+        <h3 class="support-h" data-i18n="sponsorship.status_title">Current Status: No Active Funding Channel</h3>
+        <p data-i18n="sponsorship.status_desc">Krewire does not accept donations or sponsorships yet. The core repository's FUNDING.yml names a GitHub Sponsors account, but that profile is not active, so there is nothing to link to. A funding channel will appear here only after it is live and verified. There are no sponsorship tiers, perks, or published financial figures.</p>
+      </div>
 
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Bronze</div>
-          <div class="tier-price font-bold text-2xl mb-1">$25 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 350.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Discord sponsor role &amp; private channel</li>
-            <li>✓ Monthly technical newsletter &amp; roadmap previews</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm w-full">Join as Bronze</a>
+      <h3 class="start-dest-title" data-i18n="sponsorship.impact_title">What Support Makes Possible</h3>
+      <div class="support-impact-grid">
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i1_title">Maintenance</span>
+          <p data-i18n="sponsorship.i1_desc">Reviewing issues and pull requests, and keeping the Go packages and the kiw CLI working across releases.</p>
         </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface highlight-border">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Silver Sponsor</div>
-          <div class="tier-price font-bold text-2xl mb-1">$100 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 1.500.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Medium logo placement on krewire.com &amp; releases</li>
-            <li>✓ Priority bug triage assistance</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary btn-sm w-full">Join as Silver</a>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i2_title">Documentation</span>
+          <p data-i18n="sponsorship.i2_desc">Keeping the guides on krewire.com accurate and in step with the code, in English and Indonesian.</p>
         </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Gold / Enterprise</div>
-          <div class="tier-price font-bold text-2xl mb-1">$500+ <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 7.500.000+ / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Top-tier prominent logo across portals</li>
-            <li>✓ Quarterly roadmap advisory &amp; custom invoicing</li>
-          </ul>
-          <a href="mailto:sponsorship@krewire.com" class="btn btn-secondary btn-sm w-full">Inquire Corporate</a>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i3_title">Security</span>
+          <p data-i18n="sponsorship.i3_desc">Triaging vulnerability reports and keeping dependencies and secure defaults up to date.</p>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i4_title">Community</span>
+          <p data-i18n="sponsorship.i4_desc">Onboarding new contributors and answering questions from people building with Krewire.</p>
         </div>
       </div>
 
-      <!-- LOCAL INDONESIAN PAYMENT RAILS -->
-      <div class="local-payment-banner mt-8 p-6 border rounded-xl bg-surface flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <h4 class="font-bold text-base mb-1">🇮🇩 Local Indonesian Payment Rails (QRIS / GoPay / OVO / Virtual Account)</h4>
-          <p class="text-sm text-muted">Support the collective seamlessly without a credit card via Saweria / Midtrans QRIS integration.</p>
+      <div class="support-ways-grid">
+        <div class="sponsor-channel-card">
+          <span class="channel-badge community" data-i18n="sponsorship.help_badge">Available Today</span>
+          <h3 class="channel-title" data-i18n="sponsorship.help_title">How to Help Right Now</h3>
+          <ul class="channel-perks">
+            <li><a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" data-i18n="sponsorship.help1">Use Krewire and report what breaks ↗</a></li>
+            <li><a href="https://github.com/krewire/krewire.com/issues" target="_blank" rel="noopener" data-i18n="sponsorship.help2">Point out unclear or outdated documentation ↗</a></li>
+            <li><a href="#guide" data-i18n="sponsorship.help3">Contribute code, tests, or translations</a></li>
+            <li><a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" data-i18n="sponsorship.help4">Answer questions and share what you built ↗</a></li>
+          </ul>
         </div>
-        <a href="https://saweria.co/krewire" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Pay with QRIS / E-Wallet →</a>
-      </div>
-
-      <!-- TRANSPARENT OPEN COLLECTIVE FINANCIAL REPORT & STUDENT GRANTS -->
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">📊 Transparent Financial Ledger</h4>
-          <p class="text-sm text-muted mb-3">All incoming sponsorships and operational disbursements (domain renewal, CI build runners, staging clusters) are publicly accounted for.</p>
-          <div class="ledger-summary p-3 bg-dark rounded border text-xs font-mono">
-            <div>Monthly Inflow: ~$1,450 USD (GitHub + QRIS)</div>
-            <div>Infrastructure Costs: $320 USD (CI/CD, Cloud nodes)</div>
-            <div>Community Grants Pool: $800 USD reserved</div>
+        <div class="sponsor-channel-card">
+          <span class="channel-badge corporate" data-i18n="sponsorship.org_badge">Organizations</span>
+          <h3 class="channel-title" data-i18n="sponsorship.org_title">Supporting Krewire as an Organization</h3>
+          <p class="channel-desc" data-i18n="sponsorship.org_desc">If your organization wants to support Krewire with funding, infrastructure, or engineering time, start a conversation in GitHub Discussions, or use the contact listed on the Krewire GitHub organization profile.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-i18n="sponsorship.org_cta1">Start a Discussion ↗</a>
+            <a href="https://github.com/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="sponsorship.org_cta2">Organization Profile ↗</a>
           </div>
         </div>
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎓 Student Developer Grants Hub</h4>
-          <p class="text-sm text-muted mb-3">Are you a student in Indonesia or Southeast Asia building an open-source project or bachelor thesis with Krewire? Apply for a monthly stipend and infrastructure grant.</p>
-          <a href="https://forms.gle/krewire-grant-application" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Apply for Student Grant →</a>
-        </div>
       </div>
+
+      <p class="private-repos-note" data-i18n-html="sponsorship.review_html">Last reviewed: November 2026. Funding configuration source: <a href="https://github.com/krewire/krewire/blob/main/.github/FUNDING.yml" target="_blank" rel="noopener">.github/FUNDING.yml in krewire/krewire</a>.</p>
     </div>
   </section>
 
-  <!-- INDONESIAN DEVELOPER MEETUPS, SHOWCASE & COMMUNITY HUB (Issue #7) -->
+  <!-- COMMUNITY & SUPPORT CHANNELS (verified destinations only, Issue #8) -->
   <section class="events-section" id="events">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge">Community Engagement</div>
-        <h2>Meetups, Events &amp; Official Chat Hub</h2>
-        <p>Connect with fellow Indonesian and global engineers, attend hands-on workshops in your city, and showcase what you've built.</p>
+        <div class="sub-badge" data-i18n="community.badge">Community &amp; Support Channels</div>
+        <h2 data-i18n="community.title">Where to Ask, Report, and Share</h2>
+        <p data-i18n="community.subtitle">Use the public GitHub channels below. They are the places maintainers read today.</p>
       </div>
 
-      <!-- CHAT HUBS -->
       <div class="chat-hubs-grid mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <a href="https://discord.gg/krewire" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
-          <div class="text-3xl mb-2">👾</div>
-          <h4 class="font-bold">Official Discord Server</h4>
-          <p class="text-xs text-muted mt-1">#general, #help, #architecture, #ai-krew</p>
-        </a>
-        <a href="https://t.me/krewire_id" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
-          <div class="text-3xl mb-2">✈️</div>
-          <h4 class="font-bold">Indonesian Telegram Group</h4>
-          <p class="text-xs text-muted mt-1">Community chat &amp; local meetup discussions</p>
-        </a>
-        <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+        <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
           <div class="text-3xl mb-2">💬</div>
-          <h4 class="font-bold">GitHub Discussions</h4>
-          <p class="text-xs text-muted mt-1">RFC proposals, Q&amp;A, and architecture show-and-tell</p>
+          <h4 class="font-bold" data-i18n="community.c1_title">GitHub Discussions</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c1_desc">Questions, ideas, and sharing what you built with Krewire.</p>
+        </a>
+        <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+          <div class="text-3xl mb-2">🐞</div>
+          <h4 class="font-bold" data-i18n="community.c2_title">Core Issue Tracker</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c2_desc">Bug reports and feature requests for the Go packages and the kiw CLI.</p>
+        </a>
+        <a href="https://github.com/krewire/krewire.github.io/issues" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+          <div class="text-3xl mb-2">🧭</div>
+          <h4 class="font-bold" data-i18n="community.c3_title">Portal Issues</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c3_desc">Broken links, outdated information, or translation problems on this site.</p>
         </a>
       </div>
 
-      <!-- UPCOMING MEETUPS CALENDAR -->
-      <div class="meetups-calendar mt-10">
-        <h3 class="font-bold text-lg mb-4">Upcoming Meetups &amp; Webinars Calendar</h3>
-        <div class="meetup-events-list flex flex-col gap-3">
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-primary text-xs font-bold px-2 py-1 rounded">Jakarta · In-Person</span>
-              <h4 class="font-bold text-base mt-2">Krewire Jakarta Meetup #1: Building High-Throughput Microservices with Go</h4>
-              <p class="text-xs text-muted">Saturday, November 28, 2026 · Coworking Space SCBD, South Jakarta</p>
-            </div>
-            <a href="https://lu.ma/krewire-jkt-1" target="_blank" rel="noopener" class="btn btn-primary btn-sm">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-secondary text-xs font-bold px-2 py-1 rounded">Bandung &amp; Online</span>
-              <h4 class="font-bold text-base mt-2">Deep Dive: Embedding Autonomous AI Agents with krewire/krew</h4>
-              <p class="text-xs text-muted">Saturday, December 12, 2026 · ITB Tech Hub &amp; Live YouTube Stream</p>
-            </div>
-            <a href="https://lu.ma/krewire-bdg-1" target="_blank" rel="noopener" class="btn btn-primary btn-sm">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-accent text-xs font-bold px-2 py-1 rounded">Yogyakarta / Surabaya</span>
-              <h4 class="font-bold text-base mt-2">Open Source Community Day: From Consumer to Creator</h4>
-              <p class="text-xs text-muted">January 2027 · Venue announcement soon</p>
-            </div>
-            <a href="https://lu.ma/krewire-jogja" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Notify Me</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- BUILT WITH KREWIRE & CFP -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">⭐ Built with Krewire Showcase</h4>
-          <p class="text-sm text-muted mb-4">Have you deployed a production service, static book, or internal AI assistant using Krewire? Submit your project to get featured on the official showcase.</p>
-          <a href="https://github.com/krewire/krewire/discussions/categories/show-and-tell" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Submit Project to Showcase →</a>
-        </div>
-
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎤 Call for Papers (CFP) &amp; Speaker Request</h4>
-          <p class="text-sm text-muted mb-4">Want to speak at an upcoming Krewire meetup, university seminar, or community workshop? Submit your talk proposal.</p>
-          <a href="https://forms.gle/krewire-cfp" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Submit Talk Proposal →</a>
-        </div>
-      </div>
+      <p class="private-repos-note" data-i18n="community.note">Chat servers, meetups, and events are listed here only once they are confirmed to be active.</p>
     </div>
   </section>
 
@@ -795,7 +656,7 @@ git push origin feat/my-feature</code></pre>
             </ul>
             <div class="boost-ctas flex flex-wrap gap-3">
               <a href="https://github.com/krewire/krewire/tree/main/templates/boost" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="boost.cta_repo">Explore AI Boost in Krewire →</a>
-              <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="boost.cta_disc">Join Discussions</a>
+              <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="boost.cta_disc">Join Discussions</a>
             </div>
           </div>
           <div class="boost-triad">
@@ -834,10 +695,10 @@ git push origin feat/my-feature</code></pre>
       <div class="cta-card">
         <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
         <h2 data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
-        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our developer community, you are laying the foundation for open-source self-reliance.</p>
+        <p class="cta-lead" data-i18n="cta.lead">Whether you are building your first project, writing your first Go pull request, or helping others get started, you are laying the foundation for open-source self-reliance.</p>
         <div class="ctas flex flex-wrap gap-3 justify-center">
           <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.github">Explore Open Issues on GitHub →</a>
-          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Sponsor on GitHub 💖</a>
+          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Ways to Support</a>
         </div>
         <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
       </div>
@@ -1737,10 +1598,138 @@ git push origin feat/my-feature</code></pre>
   margin-top: 6px;
 }
 
+.private-repos-note {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  max-width: 720px;
+  margin: 20px auto 0;
+  line-height: 1.55;
+}
+
+.events-section {
+  padding: 42px 0 36px;
+}
+.chat-hubs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .chat-hubs-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.support-status {
+  margin-bottom: 8px;
+}
+.support-h {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 0 6px;
+}
+.support-status p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+.support-impact-grid,
+.support-ways-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.support-ways-grid {
+  gap: 20px;
+  margin-top: 24px;
+}
+.channel-perks a {
+  color: inherit;
+  text-decoration: none;
+}
+.channel-perks a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+@media (min-width: 640px) {
+  .support-impact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .support-ways-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .support-impact-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* START HERE (canonical onboarding path) */
+.start-section {
+  padding: 42px 0 28px;
+}
+.start-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.start-link {
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+.start-link:hover {
+  text-decoration: underline;
+}
+.start-dest-title {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin: 32px 0 16px;
+}
+.start-dest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.start-dest {
+  background: var(--bg-2);
+  border: var(--pop-border-thin);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.start-dest-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.start-dest p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS (SM: 640px+, MD: 768px+, LG: 1024px+)
    ========================================================================== */
 @media (min-width: 640px) {
+  .start-steps,
+  .start-dest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .hero-inner {
     padding: 0 24px;
   }
@@ -1808,6 +1797,12 @@ git push origin feat/my-feature</code></pre>
   .quickstart-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .start-steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .start-dest-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .boost-grid {
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 36px;
@@ -1822,23 +1817,23 @@ git push origin feat/my-feature</code></pre>
 const pathways = {
   newbie: {
     title: "🌱 New to Go? (Beginner Friendly)",
-    desc: "Start by polishing documentation in krewire.com, writing unit tests for krewire/pkg/model, or fixing starter bugs marked with good-first-issue.",
-    url: "https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue"
+    desc: "Start by polishing documentation in krewire.com, writing unit tests for krewire/pkg/model, or fixing starter bugs labeled good first issue.",
+    url: "https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
   },
   backend: {
     title: "⚙️ Backend Engineer",
-    desc: "Contribute to core packages (pkg/model, pkg/web, pkg/resilience), implement microservices in krewire/cloud, or build autonomous agent tools in krewire/krew.",
+    desc: "Contribute to core packages (pkg/model, pkg/web, pkg/resilience, pkg/cloud), or build autonomous agent tools in krewire/krew.",
     url: "https://github.com/krewire/krewire/issues"
   },
   frontend: {
     title: "🎨 Frontend & UI Engineer",
-    desc: "Help design high-fidelity components using the .kiw DSL, expand Monaco Web IDE features in krewire/dash, or create interactive playground widgets.",
-    url: "https://github.com/krewire/krewire.com/issues"
+    desc: "Help design components with the .kiw DSL in krewire/ui, or improve layouts and interactive docs on krewire.com.",
+    url: "https://github.com/krewire/ui/issues"
   },
   devops: {
     title: "☁️ DevOps & Infrastructure Engineer",
-    desc: "Improve container sandbox runners in krewire/dash, enhance ACME TLS and rate limiters in krewire/cloud gateway, or automate CI/CD release pipelines.",
-    url: "https://github.com/krewire/cloud/issues"
+    desc: "Improve deploy targets and runners in pkg/cloud, the HTTP gateway in pkg/web/gateway, or the kiw build and release tooling in the core repository.",
+    url: "https://github.com/krewire/krewire/issues"
   }
 };
 

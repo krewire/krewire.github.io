@@ -2,7 +2,7 @@
 
 Welcome to the internal contributor documentation for **`krewire.github.io`**, the official community and contributor portal for the Krewire ecosystem.
 
-The portal is published at **https://open.krewire.com/** (GitHub Pages hosting via the `gh-pages` branch) and serves as the open-source hub for community guides, contributor onboarding, meritocracy privileges, ecosystem directory, and sponsorship tiers.
+The portal is published at **https://open.krewire.com/** (GitHub Pages hosting via the `gh-pages` branch) and serves as the community front door: a canonical start path that links to the docs on krewire.com, contributor onboarding, the public repository directory, community channels, and support information.
 
 ---
 
@@ -36,4 +36,4 @@ krewire.github.io/
 
 - [Getting Started](./getting-started.md) — Local setup, previewing with `kiw serve`, and building with `kiw build`.
 - [Architecture](./architecture.md) — SSG rendering pipeline, layout model, i18n architecture, and GitHub Pages hosting.
-- [Contributing](./contributing.md) — Guidelines for updating contributor pathways, community guides, and sponsorship tiers.
+- [Contributing](./contributing.md) — Guidelines for updating contributor pathways, community channels, and support information, including link-verification rules and review cadence.
