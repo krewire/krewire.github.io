@@ -46,11 +46,14 @@ Open `http://localhost:8080` in your web browser.
 ### Page Structure & Routing
 
 - `pages/index.kiw`: The main single-page community portal containing sections for:
-  - Hero and ecosystem statistics.
+  - Hero.
+  - Start Here: canonical path to a first project (links to krewire.com) and a "where things live" map.
   - Contributor privileges & meritocracy tiers.
-  - 8-repository codebase matrix.
-  - Contributor 3 quality gates.
-  - Transparent sponsorship tiers.
+  - Public repository matrix.
+  - Contributor guide and quality gates (mirroring core `CONTRIBUTING.md`).
+  - Governance.
+  - Support information (verified channels only).
+  - Community & support channels.
   - AI Boost workflow intro.
 
 ### Localization & Bilingual Parity
@@ -58,6 +61,7 @@ Open `http://localhost:8080` in your web browser.
 - Content is localized across English (`en`) and Indonesian (`id`).
 - Dictionaries are stored in `lang/en/` and `lang/id/`.
 - Ensure new sections or strings are mirrored across both languages to maintain full parity.
+- The runtime language switcher reads a copy of these dictionaries embedded in `public/assets/krewire.js` (`var translations = {...}`). After editing `lang/*/portal.json`, update that object to match so both stay identical.
 
 ### Theme & Design Tokens
 
