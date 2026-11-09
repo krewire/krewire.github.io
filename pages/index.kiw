@@ -1,6 +1,6 @@
 ---
-title: "Krewire Community — Contribution & Sponsorship Portal"
-description: "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem. Empowering Indonesian and global engineers to build and sustain modular Go systems."
+title: "Krewire Community — Get Started, Contribute & Support"
+description: "The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."
 layout: Landing
 ---
 
@@ -11,7 +11,7 @@ layout: Landing
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
-        <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br>Empower Indonesian Engineers.</h1>
+        <h1 data-i18n-html="hero.title_html">Build with Krewire. Contribute Code.<br>Empower Indonesian Engineers.</h1>
         <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while community support helps sustain long-term maintenance.</p>
         <div class="ctas flex flex-wrap gap-3">
           <Button Variant="primary" Size="lg" Href="#start" DataI18n="hero.cta_start">Get Started →</Button>
@@ -594,88 +594,63 @@ git push origin feat/my-feature</code></pre>
     </div>
   </section>
 
-  <!-- SPONSORSHIP SECTION (Issue #6) -->
+  <!-- SUPPORT / SPONSORSHIP (verified channels only, Issue #9) -->
   <section class="sponsorship-section" id="sponsorship">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="sponsorship.badge">Community Support</div>
-        <h2 data-i18n="sponsorship.title">Sponsoring Krewire</h2>
-        <p data-i18n="sponsorship.subtitle">Krewire is an independent open-source collective born in Indonesia. Sponsorship sustains full-time engineering, independent infrastructure, security signing, and community education — keeping the ecosystem 100% open and community-owned.</p>
+        <div class="sub-badge" data-i18n="sponsorship.badge">Support Krewire</div>
+        <h2 data-i18n="sponsorship.title">Supporting Krewire's Long-Term Maintenance</h2>
+        <p data-i18n="sponsorship.subtitle">Krewire measures success by what developers build with it, not by money raised. Support, financial or not, is how the project stays maintained: it pays for maintainer time and infrastructure so that the open-source core keeps working for everyone.</p>
       </div>
 
-      <!-- 4 SPONSORSHIP TIERS -->
-      <div class="sponsor-tiers-grid mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Backer</div>
-          <div class="tier-price font-bold text-2xl mb-1">$5 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 75.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Listed on GitHub README &amp; portal backers wall</li>
-            <li>✓ Backer Discord badge</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm w-full">Join as Backer</a>
-        </div>
+      <div class="sponsor-trust-banner support-status">
+        <h3 class="support-h" data-i18n="sponsorship.status_title">Current Status: No Active Funding Channel</h3>
+        <p data-i18n="sponsorship.status_desc">Krewire does not accept donations or sponsorships yet. The core repository's FUNDING.yml names a GitHub Sponsors account, but that profile is not active, so there is nothing to link to. A funding channel will appear here only after it is live and verified. There are no sponsorship tiers, perks, or published financial figures.</p>
+      </div>
 
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Bronze</div>
-          <div class="tier-price font-bold text-2xl mb-1">$25 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 350.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Discord sponsor role &amp; private channel</li>
-            <li>✓ Monthly technical newsletter &amp; roadmap previews</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm w-full">Join as Bronze</a>
+      <h3 class="start-dest-title" data-i18n="sponsorship.impact_title">What Support Makes Possible</h3>
+      <div class="support-impact-grid">
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i1_title">Maintenance</span>
+          <p data-i18n="sponsorship.i1_desc">Reviewing issues and pull requests, and keeping the Go packages and the kiw CLI working across releases.</p>
         </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface highlight-border">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Silver Sponsor</div>
-          <div class="tier-price font-bold text-2xl mb-1">$100 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 1.500.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Medium logo placement on krewire.com &amp; releases</li>
-            <li>✓ Priority bug triage assistance</li>
-          </ul>
-          <a href="https://github.com/sponsors/krewire" target="_blank" rel="noopener" class="btn btn-primary btn-sm w-full">Join as Silver</a>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i2_title">Documentation</span>
+          <p data-i18n="sponsorship.i2_desc">Keeping the guides on krewire.com accurate and in step with the code, in English and Indonesian.</p>
         </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Gold / Enterprise</div>
-          <div class="tier-price font-bold text-2xl mb-1">$500+ <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 7.500.000+ / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Top-tier prominent logo across portals</li>
-            <li>✓ Quarterly roadmap advisory &amp; custom invoicing</li>
-          </ul>
-          <a href="mailto:sponsorship@krewire.com" class="btn btn-secondary btn-sm w-full">Inquire Corporate</a>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i3_title">Security</span>
+          <p data-i18n="sponsorship.i3_desc">Triaging vulnerability reports and keeping dependencies and secure defaults up to date.</p>
+        </div>
+        <div class="start-dest">
+          <span class="start-dest-label" data-i18n="sponsorship.i4_title">Community</span>
+          <p data-i18n="sponsorship.i4_desc">Onboarding new contributors and answering questions from people building with Krewire.</p>
         </div>
       </div>
 
-      <!-- LOCAL INDONESIAN PAYMENT RAILS -->
-      <div class="local-payment-banner mt-8 p-6 border rounded-xl bg-surface flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <h4 class="font-bold text-base mb-1">🇮🇩 Local Indonesian Payment Rails (QRIS / GoPay / OVO / Virtual Account)</h4>
-          <p class="text-sm text-muted">Support the collective seamlessly without a credit card via Saweria / Midtrans QRIS integration.</p>
+      <div class="support-ways-grid">
+        <div class="sponsor-channel-card">
+          <span class="channel-badge community" data-i18n="sponsorship.help_badge">Available Today</span>
+          <h3 class="channel-title" data-i18n="sponsorship.help_title">How to Help Right Now</h3>
+          <ul class="channel-perks">
+            <li><a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" data-i18n="sponsorship.help1">Use Krewire and report what breaks ↗</a></li>
+            <li><a href="https://github.com/krewire/krewire.com/issues" target="_blank" rel="noopener" data-i18n="sponsorship.help2">Point out unclear or outdated documentation ↗</a></li>
+            <li><a href="#guide" data-i18n="sponsorship.help3">Contribute code, tests, or translations</a></li>
+            <li><a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" data-i18n="sponsorship.help4">Answer questions and share what you built ↗</a></li>
+          </ul>
         </div>
-        <a href="https://saweria.co/krewire" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Pay with QRIS / E-Wallet →</a>
-      </div>
-
-      <!-- TRANSPARENT OPEN COLLECTIVE FINANCIAL REPORT & STUDENT GRANTS -->
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">📊 Transparent Financial Ledger</h4>
-          <p class="text-sm text-muted mb-3">All incoming sponsorships and operational disbursements (domain renewal, CI build runners, staging clusters) are publicly accounted for.</p>
-          <div class="ledger-summary p-3 bg-dark rounded border text-xs font-mono">
-            <div>Monthly Inflow: ~$1,450 USD (GitHub + QRIS)</div>
-            <div>Infrastructure Costs: $320 USD (CI/CD, Cloud nodes)</div>
-            <div>Community Grants Pool: $800 USD reserved</div>
+        <div class="sponsor-channel-card">
+          <span class="channel-badge corporate" data-i18n="sponsorship.org_badge">Organizations</span>
+          <h3 class="channel-title" data-i18n="sponsorship.org_title">Supporting Krewire as an Organization</h3>
+          <p class="channel-desc" data-i18n="sponsorship.org_desc">If your organization wants to support Krewire with funding, infrastructure, or engineering time, start a conversation in GitHub Discussions, or use the contact listed on the Krewire GitHub organization profile.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-i18n="sponsorship.org_cta1">Start a Discussion ↗</a>
+            <a href="https://github.com/krewire" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-i18n="sponsorship.org_cta2">Organization Profile ↗</a>
           </div>
         </div>
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎓 Student Developer Grants Hub</h4>
-          <p class="text-sm text-muted mb-3">Are you a student in Indonesia or Southeast Asia building an open-source project or bachelor thesis with Krewire? Apply for a monthly stipend and infrastructure grant.</p>
-          <a href="https://forms.gle/krewire-grant-application" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Apply for Student Grant →</a>
-        </div>
       </div>
+
+      <p class="private-repos-note" data-i18n-html="sponsorship.review_html">Last reviewed: November 2026. Funding configuration source: <a href="https://github.com/krewire/krewire/blob/main/.github/FUNDING.yml" target="_blank" rel="noopener">.github/FUNDING.yml in krewire/krewire</a>.</p>
     </div>
   </section>
 
@@ -766,10 +741,10 @@ git push origin feat/my-feature</code></pre>
       <div class="cta-card">
         <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
         <h2 data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
-        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our developer community, you are laying the foundation for open-source self-reliance.</p>
+        <p class="cta-lead" data-i18n="cta.lead">Whether you are building your first project, writing your first Go pull request, or helping others get started, you are laying the foundation for open-source self-reliance.</p>
         <div class="ctas flex flex-wrap gap-3 justify-center">
           <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="cta.github">Explore Open Issues on GitHub →</a>
-          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Sponsor on GitHub 💖</a>
+          <a href="#sponsorship" class="btn btn-secondary btn-lg" data-i18n="cta.sponsor">Ways to Support</a>
         </div>
         <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
       </div>
@@ -1678,6 +1653,9 @@ git push origin feat/my-feature</code></pre>
   line-height: 1.55;
 }
 
+.events-section {
+  padding: 42px 0 36px;
+}
 .chat-hubs-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1686,6 +1664,52 @@ git push origin feat/my-feature</code></pre>
 @media (min-width: 768px) {
   .chat-hubs-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.support-status {
+  margin-bottom: 8px;
+}
+.support-h {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 0 6px;
+}
+.support-status p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.55;
+}
+.support-impact-grid,
+.support-ways-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.support-ways-grid {
+  gap: 20px;
+  margin-top: 24px;
+}
+.channel-perks a {
+  color: inherit;
+  text-decoration: none;
+}
+.channel-perks a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+@media (min-width: 640px) {
+  .support-impact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .support-ways-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .support-impact-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
