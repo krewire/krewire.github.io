@@ -5,7 +5,7 @@ Official community portal (published at **https://open.krewire.com/**) — the c
 - **Stack:** `krewire.yaml` (kind `site`, `build.base: "/"`) + `pages/*.kiw` + `layouts/*.kiw` → `kiw build` → `.krewire/build` (no `go.mod` needed).
 - **Design:** Contributor & sponsorship portal, theme toggle (`auto`/`light`/`dark`) via `localStorage`, bilingual i18n (`en`/`id`), scoped CSS (`data-kiw-*`), theme color tokens.
 - **Version:** `v0.1.0` — single source `krewire.yaml` `project.version`.
-- **Purpose:** Start-here path to a first project, contributor onboarding, meritocracy privileges, public repository matrix, quality gates, community channels, and transparent support information.
+- **Purpose:** Start-here path to a first project, contributor onboarding, why contribute (no perk programs), public repository matrix, quality gates, community channels, and transparent support information.
 
 ## Role in the ecosystem
 

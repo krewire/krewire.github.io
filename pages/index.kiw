@@ -12,7 +12,7 @@ layout: Landing
       <div class="hero-copy">
         <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
         <h1 data-i18n-html="hero.title_html">Build with Krewire. Contribute Code.<br>Empower Indonesian Engineers.</h1>
-        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while community support helps sustain long-term maintenance.</p>
+        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. Its modular Go libraries are MIT-licensed and free to use, and community support helps sustain long-term maintenance.</p>
         <div class="ctas flex flex-wrap gap-3">
           <Button Variant="primary" Size="lg" Href="#start" DataI18n="hero.cta_start">Get Started →</Button>
           <Button Variant="secondary" Size="lg" Href="#pathways" DataI18n="hero.cta_contribute">Start Contributing</Button>
@@ -50,7 +50,7 @@ layout: Landing
       <div class="trust-items">
         <span class="trust-item" data-i18n-html="trust.indonesia_html"><b>Indonesian</b> Collective</span>
         <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Meritocracy</b> Perks</span>
+        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Open</b> Contribution</span>
         <span class="dot">·</span>
         <span class="trust-item" data-i18n-html="trust.opencore_html"><b>Open Core</b> Sustainability</span>
         <span class="dot">·</span>
@@ -128,87 +128,41 @@ layout: Landing
     </div>
   </section>
 
-  <!-- WHY CONTRIBUTE & CONTRIBUTOR PRIVILEGES -->
+  <!-- WHY CONTRIBUTE (no unapproved perks or license promises) -->
   <section class="benefits" id="privileges">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="privileges.badge">Contributor Privileges</div>
-        <h2 data-i18n="privileges.title">Lifetime Access to Krewire's Paid Ecosystem</h2>
-        <p data-i18n="privileges.subtitle">True builders deserve shared ownership. By joining and actively contributing to the Krewire open-source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
+        <div class="sub-badge" data-i18n="privileges.badge">Why Contribute</div>
+        <h2 data-i18n="privileges.title">Why Contribute to Krewire</h2>
+        <p data-i18n="privileges.subtitle">Contributions land in an MIT-licensed open-source core that anyone can use. There is no paid perk or license program attached to contributing today.</p>
       </div>
 
       <div class="benefit-grid">
         <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p1_badge">Core Privilege</div>
-          <h3 data-i18n="privileges.p1_title">Commercial Sub-Products Lifetime Access</h3>
-          <p data-i18n="privileges.p1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p1_i1">Free lifetime access to all paid Krewire commercial sub-products</li>
-            <li data-i18n="privileges.p1_i2">Priority early-access releases and exclusive roadmap previews</li>
-            <li data-i18n="privileges.p1_i3">Direct private collaboration channels with core maintainers</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p1_badge">Open Core</div>
+          <h3 data-i18n="privileges.p1_title">Your Work Ships in the Open</h3>
+          <p data-i18n="privileges.p1_desc">Merged changes become part of the MIT-licensed core that anyone can use, study, and build on.</p>
         </div>
 
         <div class="benefit-card highlight-card">
-          <div class="benefit-badge" data-i18n="privileges.p2_badge">Strict Requirement</div>
-          <h3 data-i18n="privileges.p2_title">Active Contributions Required</h3>
-          <p data-i18n="privileges.p2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem's growth.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p2_i1">Submit PRs for new features, bugfixes, or kernel optimizations</li>
-            <li data-i18n="privileges.p2_i2">Review open PRs and stress-test high-concurrency scenarios</li>
-            <li data-i18n="privileges.p2_i3">Author KWF architecture specifications or comprehensive docs</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p2_badge">Review</div>
+          <h3 data-i18n="privileges.p2_title">Learn Through Code Review</h3>
+          <p data-i18n="privileges.p2_desc">Every pull request is reviewed before merge and checked against the quality gates in CONTRIBUTING.md.</p>
         </div>
 
         <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p3_badge">Revocation Policy</div>
-          <h3 data-i18n="privileges.p3_title">Revocable if Inactive or Dormant</h3>
-          <p data-i18n="privileges.p3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked if a contributor becomes inactive or dormant over an extended period.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p3_i1">Contributor activity and commits are periodically audited</li>
-            <li data-i18n="privileges.p3_i2">Prolonged inactivity or dormancy leads to license deactivation</li>
-            <li data-i18n="privileges.p3_i3">Access privileges can be promptly reinstated upon resumed contribution</li>
-          </ul>
+          <div class="benefit-badge" data-i18n="privileges.p3_badge">Credit</div>
+          <h3 data-i18n="privileges.p3_title">Public, Lasting Credit</h3>
+          <p data-i18n="privileges.p3_desc">Your commits stay attributed to you in the project's public Git history.</p>
         </div>
       </div>
 
       <div class="meritocracy-callout mt-8">
         <div class="meritocracy-inner">
-          <div class="meritocracy-icon">⚖️</div>
+          <div class="meritocracy-icon">ℹ️</div>
           <div class="meritocracy-body">
-            <strong data-i18n="privileges.policy_title">Krewire Meritocracy Policy:</strong>
-            <p data-i18n="privileges.policy_text">We believe those who lay the foundation should share in its fruits. Commercial access is free for all active contributors, provided ongoing dedication to the collective is consistently maintained.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4-TIER MERITOCRACY PRIVILEGE LADDER (Issue #3) -->
-      <div class="meritocracy-ladder-section mt-12">
-        <h3 class="text-center font-bold text-xl mb-6">The 4-Tier Meritocracy Ladder</h3>
-        <div class="ladder-grid">
-          <div class="ladder-card">
-            <div class="ladder-badge tier-1">Tier 1</div>
-            <h4>Contributor</h4>
-            <span class="ladder-req">1st Merged Pull Request</span>
-            <p>Listed on community Wall of Fame, Contributor badge on Discord, and lifetime access to starter developer tools.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-2">Tier 2</div>
-            <h4>Collaborator</h4>
-            <span class="ladder-req">5+ Merged Pull Requests</span>
-            <p>Issue triage and labeling permissions, invitation to bi-weekly maintainer sync calls, and roadmap voting rights.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-3">Tier 3</div>
-            <h4>Maintainer</h4>
-            <span class="ladder-req">Subsystem Owner</span>
-            <p>Full review &amp; merge authority for designated repository/package, RFC voting power, and sponsored conference travel.</p>
-          </div>
-          <div class="ladder-card highlight-ladder">
-            <div class="ladder-badge tier-4">Tier 4</div>
-            <h4>Steering Committee</h4>
-            <span class="ladder-req">Ecosystem Governance</span>
-            <p>Security signing keys, foundation budget oversight, strategic industry partnerships, and grant disbursements.</p>
+            <strong data-i18n="privileges.policy_title">About perks and privileges:</strong>
+            <p data-i18n="privileges.policy_text">Earlier versions of this page described lifetime commercial licenses and a four-tier privilege ladder. Those programs are not approved or operational and have been withdrawn. If maintainers introduce a recognition program, it will be documented here with its actual terms.</p>
           </div>
         </div>
       </div>

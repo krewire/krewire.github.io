@@ -2,7 +2,7 @@
 
 Welcome to the internal contributor documentation for **`krewire.github.io`**, the official community and contributor portal for the Krewire ecosystem.
 
-The portal is published at **https://open.krewire.com/** (GitHub Pages hosting via the `gh-pages` branch) and serves as the community front door: a canonical start path that links to the docs on krewire.com, contributor onboarding, meritocracy privileges, the public repository directory, community channels, and support information.
+The portal is published at **https://open.krewire.com/** (GitHub Pages hosting via the `gh-pages` branch) and serves as the community front door: a canonical start path that links to the docs on krewire.com, contributor onboarding, the public repository directory, community channels, and support information.
 
 ---
 

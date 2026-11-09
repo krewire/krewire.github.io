@@ -48,7 +48,7 @@ Open `http://localhost:8080` in your web browser.
 - `pages/index.kiw`: The main single-page community portal containing sections for:
   - Hero.
   - Start Here: canonical path to a first project (links to krewire.com) and a "where things live" map.
-  - Contributor privileges & meritocracy tiers.
+  - Why Contribute (no unapproved perk or license programs).
   - Public repository matrix.
   - Contributor guide and quality gates (mirroring core `CONTRIBUTING.md`).
   - Governance.
