@@ -164,23 +164,25 @@
     "meta": "Proudly open source · MIT Licensed · Engineered with passion in Indonesia"
   },
   "footer": {
-    "brand_title": "Krewire Community & Sponsors",
-    "desc_html": "Official Contributor Hub & Sponsorship Platform.<br>An open-source collective based in Indonesia, building an autonomous, sustainable, and scalable Go ecosystem.",
-    "col_repos": "Repositories",
+    "brand_title": "Krewire Community",
+    "desc_html": "Community front door for the Krewire ecosystem.<br>Technical documentation lives on krewire.com.",
     "col_contrib": "Contribution",
-    "col_community": "Community & Sponsors",
-    "perks": "Contributor Perks & Access",
+    "col_community": "Community & Support",
     "where_start": "Public Repositories",
     "getting_started": "5-Step Contributor Guide",
-    "pathways": "Contribution Pathways",
     "standards": "3 Quality Gates",
-    "boost": "AI Boost Synergy",
-    "kwf_specs": "KWF Specifications",
-    "gh_org": "GitHub Organization",
-    "discussions": "Community Discussions",
-    "good_first": "Good First Issues",
-    "coc": "Code of Conduct",
-    "bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload."
+    "gh_org": "GitHub Organization ↗",
+    "discussions": "GitHub Discussions ↗",
+    "good_first": "Good First Issues ↗",
+    "bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload.",
+    "col_start": "Get Started",
+    "start": "Start Here",
+    "docs": "Documentation ↗",
+    "install": "Installation ↗",
+    "releases": "Release Tags ↗",
+    "contributing": "CONTRIBUTING.md ↗",
+    "channels": "Support Channels",
+    "support": "Supporting Krewire"
   },
   "start": {
     "badge": "Start Here",
@@ -213,5 +215,17 @@
     "d5_label": "Questions & Bugs",
     "d5_desc": "Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.",
     "d5_link": "GitHub Discussions ↗"
+  },
+  "community": {
+    "badge": "Community & Support Channels",
+    "title": "Where to Ask, Report, and Share",
+    "subtitle": "Use the public GitHub channels below. They are the places maintainers read today.",
+    "c1_title": "GitHub Discussions",
+    "c1_desc": "Questions, ideas, and sharing what you built with Krewire.",
+    "c2_title": "Core Issue Tracker",
+    "c2_desc": "Bug reports and feature requests for the Go packages and the kiw CLI.",
+    "c3_title": "Portal Issues",
+    "c3_desc": "Broken links, outdated information, or translation problems on this site.",
+    "note": "Chat servers, meetups, and events are listed here only once they are confirmed to be active."
   }
 }

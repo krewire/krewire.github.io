@@ -388,23 +388,25 @@ var translations = {
 "meta": "Proudly open source · MIT Licensed · Engineered with passion in Indonesia"
 },
 "footer": {
-"brand_title": "Krewire Community & Sponsors",
-"desc_html": "Official Contributor Hub & Sponsorship Platform.<br>An open-source collective based in Indonesia, building an autonomous, sustainable, and scalable Go ecosystem.",
-"col_repos": "Repositories",
+"brand_title": "Krewire Community",
+"desc_html": "Community front door for the Krewire ecosystem.<br>Technical documentation lives on krewire.com.",
 "col_contrib": "Contribution",
-"col_community": "Community & Sponsors",
-"perks": "Contributor Perks & Access",
+"col_community": "Community & Support",
 "where_start": "Public Repositories",
 "getting_started": "5-Step Contributor Guide",
-"pathways": "Contribution Pathways",
 "standards": "3 Quality Gates",
-"boost": "AI Boost Synergy",
-"kwf_specs": "KWF Specifications",
-"gh_org": "GitHub Organization",
-"discussions": "Community Discussions",
-"good_first": "Good First Issues",
-"coc": "Code of Conduct",
-"bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload."
+"gh_org": "GitHub Organization ↗",
+"discussions": "GitHub Discussions ↗",
+"good_first": "Good First Issues ↗",
+"bottom_rights_html": "© 2026 Krewire Contributors — An open-source collective based in Indonesia. Built 100% with Krewire <code>site</code> workload.",
+"col_start": "Get Started",
+"start": "Start Here",
+"docs": "Documentation ↗",
+"install": "Installation ↗",
+"releases": "Release Tags ↗",
+"contributing": "CONTRIBUTING.md ↗",
+"channels": "Support Channels",
+"support": "Supporting Krewire"
 },
 "start": {
 "badge": "Start Here",
@@ -437,6 +439,18 @@ var translations = {
 "d5_label": "Questions & Bugs",
 "d5_desc": "Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.",
 "d5_link": "GitHub Discussions ↗"
+},
+"community": {
+"badge": "Community & Support Channels",
+"title": "Where to Ask, Report, and Share",
+"subtitle": "Use the public GitHub channels below. They are the places maintainers read today.",
+"c1_title": "GitHub Discussions",
+"c1_desc": "Questions, ideas, and sharing what you built with Krewire.",
+"c2_title": "Core Issue Tracker",
+"c2_desc": "Bug reports and feature requests for the Go packages and the kiw CLI.",
+"c3_title": "Portal Issues",
+"c3_desc": "Broken links, outdated information, or translation problems on this site.",
+"note": "Chat servers, meetups, and events are listed here only once they are confirmed to be active."
 }
 },
 "id": {
@@ -605,23 +619,25 @@ var translations = {
 "meta": "Bangga sumber terbuka · Berlisensi MIT · Direkayasa dengan dedikasi di Indonesia"
 },
 "footer": {
-"brand_title": "Komunitas & Sponsor Krewire",
-"desc_html": "Pusat Kontributor & Platform Sponsorship Resmi.<br>Kolektif sumber terbuka berbasis di Indonesia, membangun ekosistem Go yang mandiri, berkelanjutan, dan berskala.",
-"col_repos": "Repositori",
+"brand_title": "Komunitas Krewire",
+"desc_html": "Pintu masuk komunitas ekosistem Krewire.<br>Dokumentasi teknis tersedia di krewire.com.",
 "col_contrib": "Kontribusi",
-"col_community": "Komunitas & Sponsor",
-"perks": "Hak Istimewa Kontributor",
+"col_community": "Komunitas & Dukungan",
 "where_start": "Repositori Publik",
 "getting_started": "Panduan Kontributor 5 Langkah",
-"pathways": "Jalur Kontribusi",
 "standards": "3 Quality Gate",
-"boost": "Sinergi AI Boost",
-"kwf_specs": "Spesifikasi KWF",
-"gh_org": "Organisasi GitHub",
-"discussions": "Diskusi Komunitas",
-"good_first": "Good First Issues",
-"coc": "Kode Etik",
-"bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire."
+"gh_org": "Organisasi GitHub ↗",
+"discussions": "GitHub Discussions ↗",
+"good_first": "Good First Issues ↗",
+"bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire.",
+"col_start": "Mulai",
+"start": "Mulai di Sini",
+"docs": "Dokumentasi ↗",
+"install": "Instalasi ↗",
+"releases": "Tag Rilis ↗",
+"contributing": "CONTRIBUTING.md ↗",
+"channels": "Kanal Dukungan",
+"support": "Mendukung Krewire"
 },
 "start": {
 "badge": "Mulai di Sini",
@@ -654,6 +670,18 @@ var translations = {
 "d5_label": "Pertanyaan & Bug",
 "d5_desc": "Ajukan pertanyaan di GitHub Discussions. Laporkan bug di issue tracker repositori yang terdampak.",
 "d5_link": "GitHub Discussions ↗"
+},
+"community": {
+"badge": "Kanal Komunitas & Dukungan",
+"title": "Tempat Bertanya, Melapor, dan Berbagi",
+"subtitle": "Gunakan kanal GitHub publik di bawah ini. Kanal inilah yang saat ini dibaca oleh para pengelola.",
+"c1_title": "GitHub Discussions",
+"c1_desc": "Pertanyaan, ide, dan berbagi apa yang Anda bangun dengan Krewire.",
+"c2_title": "Issue Tracker Inti",
+"c2_desc": "Laporan bug dan permintaan fitur untuk paket Go dan CLI kiw.",
+"c3_title": "Isu Portal",
+"c3_desc": "Tautan rusak, informasi usang, atau masalah terjemahan di situs ini.",
+"note": "Server chat, meetup, dan acara baru dicantumkan di sini setelah dipastikan aktif."
 }
 }
 };

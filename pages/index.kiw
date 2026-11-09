@@ -679,81 +679,34 @@ git push origin feat/my-feature</code></pre>
     </div>
   </section>
 
-  <!-- INDONESIAN DEVELOPER MEETUPS, SHOWCASE & COMMUNITY HUB (Issue #7) -->
+  <!-- COMMUNITY & SUPPORT CHANNELS (verified destinations only, Issue #8) -->
   <section class="events-section" id="events">
     <div class="section-inner">
       <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge">Community Engagement</div>
-        <h2>Meetups, Events &amp; Official Chat Hub</h2>
-        <p>Connect with fellow Indonesian and global engineers, attend hands-on workshops in your city, and showcase what you've built.</p>
+        <div class="sub-badge" data-i18n="community.badge">Community &amp; Support Channels</div>
+        <h2 data-i18n="community.title">Where to Ask, Report, and Share</h2>
+        <p data-i18n="community.subtitle">Use the public GitHub channels below. They are the places maintainers read today.</p>
       </div>
 
-      <!-- CHAT HUBS -->
       <div class="chat-hubs-grid mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <a href="https://discord.gg/krewire" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
-          <div class="text-3xl mb-2">👾</div>
-          <h4 class="font-bold">Official Discord Server</h4>
-          <p class="text-xs text-muted mt-1">#general, #help, #architecture, #ai-krew</p>
-        </a>
-        <a href="https://t.me/krewire_id" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
-          <div class="text-3xl mb-2">✈️</div>
-          <h4 class="font-bold">Indonesian Telegram Group</h4>
-          <p class="text-xs text-muted mt-1">Community chat &amp; local meetup discussions</p>
-        </a>
-        <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+        <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
           <div class="text-3xl mb-2">💬</div>
-          <h4 class="font-bold">GitHub Discussions</h4>
-          <p class="text-xs text-muted mt-1">RFC proposals, Q&amp;A, and architecture show-and-tell</p>
+          <h4 class="font-bold" data-i18n="community.c1_title">GitHub Discussions</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c1_desc">Questions, ideas, and sharing what you built with Krewire.</p>
+        </a>
+        <a href="https://github.com/krewire/krewire/issues" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+          <div class="text-3xl mb-2">🐞</div>
+          <h4 class="font-bold" data-i18n="community.c2_title">Core Issue Tracker</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c2_desc">Bug reports and feature requests for the Go packages and the kiw CLI.</p>
+        </a>
+        <a href="https://github.com/krewire/krewire.github.io/issues" target="_blank" rel="noopener" class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition">
+          <div class="text-3xl mb-2">🧭</div>
+          <h4 class="font-bold" data-i18n="community.c3_title">Portal Issues</h4>
+          <p class="text-xs text-muted mt-1" data-i18n="community.c3_desc">Broken links, outdated information, or translation problems on this site.</p>
         </a>
       </div>
 
-      <!-- UPCOMING MEETUPS CALENDAR -->
-      <div class="meetups-calendar mt-10">
-        <h3 class="font-bold text-lg mb-4">Upcoming Meetups &amp; Webinars Calendar</h3>
-        <div class="meetup-events-list flex flex-col gap-3">
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-primary text-xs font-bold px-2 py-1 rounded">Jakarta · In-Person</span>
-              <h4 class="font-bold text-base mt-2">Krewire Jakarta Meetup #1: Building High-Throughput Microservices with Go</h4>
-              <p class="text-xs text-muted">Saturday, November 28, 2026 · Coworking Space SCBD, South Jakarta</p>
-            </div>
-            <a href="https://lu.ma/krewire-jkt-1" target="_blank" rel="noopener" class="btn btn-primary btn-sm">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-secondary text-xs font-bold px-2 py-1 rounded">Bandung &amp; Online</span>
-              <h4 class="font-bold text-base mt-2">Deep Dive: Embedding Autonomous AI Agents with krewire/krew</h4>
-              <p class="text-xs text-muted">Saturday, December 12, 2026 · ITB Tech Hub &amp; Live YouTube Stream</p>
-            </div>
-            <a href="https://lu.ma/krewire-bdg-1" target="_blank" rel="noopener" class="btn btn-primary btn-sm">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-accent text-xs font-bold px-2 py-1 rounded">Yogyakarta / Surabaya</span>
-              <h4 class="font-bold text-base mt-2">Open Source Community Day: From Consumer to Creator</h4>
-              <p class="text-xs text-muted">January 2027 · Venue announcement soon</p>
-            </div>
-            <a href="https://lu.ma/krewire-jogja" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Notify Me</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- BUILT WITH KREWIRE & CFP -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">⭐ Built with Krewire Showcase</h4>
-          <p class="text-sm text-muted mb-4">Have you deployed a production service, static book, or internal AI assistant using Krewire? Submit your project to get featured on the official showcase.</p>
-          <a href="https://github.com/krewire/krewire/discussions/categories/show-and-tell" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Submit Project to Showcase →</a>
-        </div>
-
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎤 Call for Papers (CFP) &amp; Speaker Request</h4>
-          <p class="text-sm text-muted mb-4">Want to speak at an upcoming Krewire meetup, university seminar, or community workshop? Submit your talk proposal.</p>
-          <a href="https://forms.gle/krewire-cfp" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Submit Talk Proposal →</a>
-        </div>
-      </div>
+      <p class="private-repos-note" data-i18n="community.note">Chat servers, meetups, and events are listed here only once they are confirmed to be active.</p>
     </div>
   </section>
 
@@ -774,7 +727,7 @@ git push origin feat/my-feature</code></pre>
             </ul>
             <div class="boost-ctas flex flex-wrap gap-3">
               <a href="https://github.com/krewire/krewire/tree/main/templates/boost" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="boost.cta_repo">Explore AI Boost in Krewire →</a>
-              <a href="https://github.com/orgs/krewire/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="boost.cta_disc">Join Discussions</a>
+              <a href="https://github.com/krewire/krewire.com/discussions" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="boost.cta_disc">Join Discussions</a>
             </div>
           </div>
           <div class="boost-triad">
@@ -1723,6 +1676,17 @@ git push origin feat/my-feature</code></pre>
   max-width: 720px;
   margin: 20px auto 0;
   line-height: 1.55;
+}
+
+.chat-hubs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .chat-hubs-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* START HERE (canonical onboarding path) */

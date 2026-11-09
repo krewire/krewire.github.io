@@ -164,23 +164,25 @@
     "meta": "Bangga sumber terbuka · Berlisensi MIT · Direkayasa dengan dedikasi di Indonesia"
   },
   "footer": {
-    "brand_title": "Komunitas & Sponsor Krewire",
-    "desc_html": "Pusat Kontributor & Platform Sponsorship Resmi.<br>Kolektif sumber terbuka berbasis di Indonesia, membangun ekosistem Go yang mandiri, berkelanjutan, dan berskala.",
-    "col_repos": "Repositori",
+    "brand_title": "Komunitas Krewire",
+    "desc_html": "Pintu masuk komunitas ekosistem Krewire.<br>Dokumentasi teknis tersedia di krewire.com.",
     "col_contrib": "Kontribusi",
-    "col_community": "Komunitas & Sponsor",
-    "perks": "Hak Istimewa Kontributor",
+    "col_community": "Komunitas & Dukungan",
     "where_start": "Repositori Publik",
     "getting_started": "Panduan Kontributor 5 Langkah",
-    "pathways": "Jalur Kontribusi",
     "standards": "3 Quality Gate",
-    "boost": "Sinergi AI Boost",
-    "kwf_specs": "Spesifikasi KWF",
-    "gh_org": "Organisasi GitHub",
-    "discussions": "Diskusi Komunitas",
-    "good_first": "Good First Issues",
-    "coc": "Kode Etik",
-    "bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire."
+    "gh_org": "Organisasi GitHub ↗",
+    "discussions": "GitHub Discussions ↗",
+    "good_first": "Good First Issues ↗",
+    "bottom_rights_html": "© 2026 Kontributor Krewire — Kolektif sumber terbuka berbasis di Indonesia. Dibangun 100% dengan workload <code>site</code> Krewire.",
+    "col_start": "Mulai",
+    "start": "Mulai di Sini",
+    "docs": "Dokumentasi ↗",
+    "install": "Instalasi ↗",
+    "releases": "Tag Rilis ↗",
+    "contributing": "CONTRIBUTING.md ↗",
+    "channels": "Kanal Dukungan",
+    "support": "Mendukung Krewire"
   },
   "start": {
     "badge": "Mulai di Sini",
@@ -213,5 +215,17 @@
     "d5_label": "Pertanyaan & Bug",
     "d5_desc": "Ajukan pertanyaan di GitHub Discussions. Laporkan bug di issue tracker repositori yang terdampak.",
     "d5_link": "GitHub Discussions ↗"
+  },
+  "community": {
+    "badge": "Kanal Komunitas & Dukungan",
+    "title": "Tempat Bertanya, Melapor, dan Berbagi",
+    "subtitle": "Gunakan kanal GitHub publik di bawah ini. Kanal inilah yang saat ini dibaca oleh para pengelola.",
+    "c1_title": "GitHub Discussions",
+    "c1_desc": "Pertanyaan, ide, dan berbagi apa yang Anda bangun dengan Krewire.",
+    "c2_title": "Issue Tracker Inti",
+    "c2_desc": "Laporan bug dan permintaan fitur untuk paket Go dan CLI kiw.",
+    "c3_title": "Isu Portal",
+    "c3_desc": "Tautan rusak, informasi usang, atau masalah terjemahan di situs ini.",
+    "note": "Server chat, meetup, dan acara baru dicantumkan di sini setelah dipastikan aktif."
   }
 }
