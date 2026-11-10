@@ -25,3 +25,15 @@ We welcome contributions to help improve the onboarding experience, guides, and 
 - **Inclusivity & Tone**: Friendly, encouraging, and clear. Krewire is an open-source community rooted in Indonesia with a global reach.
 - **Bilingual Accuracy**: Keep English and Indonesian translations synchronized. Avoid machine-translated phrasing without human review.
 - **Clean Styles**: Keep styles scoped inside `<style>` blocks in `.kiw` files to avoid style bleed. Use existing theme CSS variables (`--primary`, `--accent`, etc.).
+
+---
+
+## Content Ownership & Review
+
+The portal links out instead of duplicating documentation, so most of its content stays correct with little upkeep. Owner for everything below: the maintainers of this repository.
+
+- **Onboarding links (Start Here, footer):** Installation and quickstart live on krewire.com and are maintained with the core repository. Change the steps there, not here. Only update this portal if a docs URL moves.
+- **Contributor instructions:** Commands in the contributor guide and quality gates must match the core repository's `README.md` and `CONTRIBUTING.md`. If they diverge, the core files win.
+- **Community channels:** List a channel (chat server, meetup, form) only after confirming it is live. Do not add placeholder invites or event links.
+- **Support information:** The source of truth for funding channels is `.github/FUNDING.yml` in `krewire/krewire`. Publish a funding link only after confirming it resolves to an active profile. Never publish tiers, perks, prices, or financial figures that maintainers have not approved and cannot deliver.
+- **Review cadence:** Re-check every external link and the support status before each production release tag (`vX.Y.Z`) and whenever `FUNDING.yml` changes, then update the "Last reviewed" note in the support section. A quick check: `curl -sIL <url>` for each link, and confirm `https://github.com/sponsors/<account>` does not redirect to the org page before listing GitHub Sponsors.

@@ -1,11 +1,21 @@
 # Krewire Community Portal — krewire.github.io
 
-Official community portal (published at **https://open.krewire.com/**) — the hub for contributors, open-source collective guides, and sponsorship for the Krewire ecosystem.
+Official community portal (published at **https://open.krewire.com/**) — the community front door for the Krewire ecosystem: a canonical start path, contributor guidance, community channels, and support information.
 
 - **Stack:** `krewire.yaml` (kind `site`, `build.base: "/"`) + `pages/*.kiw` + `layouts/*.kiw` → `kiw build` → `.krewire/build` (no `go.mod` needed).
 - **Design:** Contributor & sponsorship portal, theme toggle (`auto`/`light`/`dark`) via `localStorage`, bilingual i18n (`en`/`id`), scoped CSS (`data-kiw-*`), theme color tokens.
 - **Version:** `v0.1.0` — single source `krewire.yaml` `project.version`.
-- **Purpose:** Contributor onboarding, meritocracy privileges, codebase matrix, 3 quality gates, and transparent sponsorship tiers for the Indonesian & global open-source community.
+- **Purpose:** Start-here path to a first project, contributor onboarding, why contribute (no perk programs), public repository matrix, quality gates, community channels, and transparent support information.
+
+## Role in the ecosystem
+
+| Destination | What lives there |
+| :--- | :--- |
+| **This portal** (`krewire.github.io`) | Discovery and community: where to start, how to contribute, how to get help, how to support the project. Links out; never duplicates technical docs. |
+| **[krewire.com](https://krewire.com/docs)** (`krewire/krewire.com`) | Canonical documentation: installation, quickstart, guides, CLI reference (EN/ID). |
+| **[krewire/krewire](https://github.com/krewire/krewire)** | Source code, the `kiw` CLI, release tags, and `CONTRIBUTING.md` (workflow and quality gates). |
+
+If installation or quickstart steps change, update them on krewire.com, not here.
 
 ## Quick start
 
@@ -37,4 +47,4 @@ public/               # Static assets (favicon, images, client JS/CSS)
 
 ## Ecosystem
 
-Krewire consists of 8 repositories (`krewire`, `krew`, `cloud`, `auth`, `dash`, `internal`, `krewire.com`, `krewire.github.io`). This site dogfoods `pkg/web/ssg` + `pkg/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
+Public repositories: `krewire`, `krew`, `ui`, `krewire.com`, `krewire.github.io`. The remaining ecosystem repositories (`cloud`, `auth`, `dash`, `panel`, `internal`) are private. This site dogfoods `pkg/web/ssg` + `pkg/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.

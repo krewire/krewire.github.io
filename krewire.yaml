@@ -8,9 +8,11 @@ build:
   output: ".krewire/build"
   base: "/"
 
-title: "Krewire Community — Contribution & Sponsorship Portal"
-description: "The official contributor hub and sponsorship platform for the Krewire open-source ecosystem."
+title: "Krewire Community — Get Started, Contribute & Support"
+description: "The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."
 nav:
+  - text: "Start Here"
+    url: "#start"
   - text: "Why Contribute"
     url: "#privileges"
   - text: "Pathways & Repos"
@@ -19,7 +21,7 @@ nav:
     url: "#guide"
   - text: "Quality Gates"
     url: "#standards"
-  - text: "Sponsorship"
+  - text: "Support"
     url: "#sponsorship"
   - text: "AI Boost"
     url: "#boost"
