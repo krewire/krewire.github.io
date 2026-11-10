@@ -2,1000 +2,1471 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
+  <title>Krewire Community — Get Started, Contribute &amp; Support</title>
+  <meta name="description" content="The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."/>
+  <link rel="canonical" href="https://open.krewire.com/"/>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
   <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
   <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png"/>
   <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
   <link rel="manifest" href="/site.webmanifest"/>
+  <link rel="stylesheet" href="/assets/krewire.css"/>
+  <script src="/assets/krewire.js" defer=""></script>
   <meta name="theme-color" content="#0B1F3B"/>
 
   
-<link rel="stylesheet" href="/assets/krewire.css?v=0.1.0"/><script src="/assets/krewire.js?v=0.1.0"></script></head>
-<body>
-  <header class="nav" id="main-nav">
-    <div class="nav-inner">
-      <a class="brand flex items-center gap-2 font-black tracking-tight text-fg dark:text-fg-dark shrink-0 no-underline hover:no-underline hover:text-fg dark:hover:text-fg-dark brand" data-kiw-component="Brand" href="/">
-  <span class="brand-icon icon-box bg-primary text-primary-content w-8 h-8 text-base flex items-center justify-center">◈</span>
-  <span class="brand-name text-base font-black tracking-tighter">Krewire</span>
-  <span class="brand-badge badge badge-secondary font-mono text-2xs" data-i18n="nav.badge">Community &amp; Sponsors</span>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Krewire Community — Get Started, Contribute &amp; Support"/>
+  <meta property="og:description" content="The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."/>
+  <meta property="og:image" content="https://open.krewire.com/assets/images/krewire-with-mark-h-dark.png"/>
+  <meta property="og:url" content="https://open.krewire.com/"/>
+  <meta property="og:site_name" content="Krewire Community"/>
+
+  
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Krewire Community — Get Started, Contribute &amp; Support"/>
+  <meta name="twitter:description" content="The community front door for the Krewire open-source ecosystem: a canonical path to your first project, contributor guidance, and transparent support information."/>
+</head>
+<body class="w-full min-w-0 flex flex-col min-h-screen">
+
+  
+  <header class="sticky top-0 z-50 bg-bg dark:bg-bg-dark border-b border-pop w-full navbar relative" style="border-bottom:var(--pop-border)" data-kiw-component="Navbar">
+  <div class="container-site flex items-center justify-between gap-3 py-2.5 sm:py-3 lg:py-3.5">
+    <div class="flex items-center gap-3 min-w-0">
+      
+      
+        <a class="brand flex items-center gap-2 font-black tracking-tight text-fg dark:text-fg-dark shrink-0 no-underline hover:no-underline hover:text-fg dark:hover:text-fg-dark " data-kiw-component="Brand" href="/">
+  
+    <span class="brand-icon icon-box bg-primary text-primary-content w-8 h-8 rounded-lg flex items-center justify-center p-1.5 shrink-0" style="border:var(--pop-border-thin); box-shadow:1.5px 1.5px 0px var(--border)">
+      
+        <svg class="w-full h-full text-current" viewBox="0 0 1254 1254" fill="currentColor" aria-hidden="true">
+          <g transform="translate(0,1254) scale(0.1,-0.1)">
+            <path d="M4506 8284 c-279 -60 -518 -247 -637 -499 -60 -129 -73 -190 -74 -350 0 -122 3 -149 24 -210 77 -227 217 -389 433 -500 47 -25 162 -74 255 -110 349 -136 589 -254 788 -387 171 -115 244 -177 485 -413 270 -265 279 -270 475 -270 l130 0 80 38 c73 35 95 54 258 218 204 205 297 286 452 392 216 147 440 260 771 388 334 129 455 191 562 292 99 94 171 211 213 347 20 63 24 96 24 210 -1 156 -15 221 -75 348 -49 102 -85 155 -162 238 -119 127 -256 209 -428 256 -73 20 -107 23 -245 22 -145 0 -168 -3 -249 -28 -178 -54 -367 -176 -475 -305 -28 -34 -96 -130 -153 -214 -219 -327 -406 -447 -697 -447 -119 0 -193 15 -289 60 -151 70 -234 152 -385 380 -49 74 -113 164 -142 200 -147 179 -367 310 -589 349 -84 15 -268 12 -350 -5z m308 -494 c79 -30 164 -111 202 -192 26 -56 29 -74 29 -158 0 -82 -4 -103 -27 -152 -111 -237 -404 -299 -593 -127 -222 204 -136 562 155 644 69 19 157 13 234 -15z m3126 19 c112 -26 209 -101 263 -204 30 -56 32 -67 32 -160 0 -93 -2 -105 -33 -167 -67 -137 -187 -211 -342 -212 -75 -1 -93 3 -152 31 -84 39 -141 97 -181 181 -29 61 -32 76 -32 162 0 86 3 102 31 161 75 158 250 246 414 208z"></path>
+            <path d="M3845 6533 c-143 -19 -297 -105 -378 -212 -86 -113 -121 -223 -121 -381 1 -249 120 -512 372 -826 309 -383 793 -694 1285 -824 221 -58 397 -73 535 -44 145 30 232 87 281 184 42 85 55 157 48 270 -13 205 -96 439 -242 680 -412 679 -1252 1223 -1780 1153z"></path>
+            <path d="M8435 6524 c-231 -40 -533 -177 -778 -352 -486 -346 -835 -804 -964 -1262 -23 -81 -27 -115 -28 -230 0 -105 4 -146 18 -186 40 -117 118 -191 247 -236 56 -19 84 -22 205 -22 84 1 176 8 231 17 717 131 1407 636 1710 1252 174 354 157 650 -49 860 -147 148 -347 202 -592 159z"></path>
+          </g>
+        </svg>
+      
+    </span>
+    <span class="brand-name text-base font-black tracking-tighter">Krewire</span>
+    
+      <span class="brand-badge badge badge-secondary font-mono text-2xs">Community</span>
+    
+  
 </a>
-      <nav class="links">
-        <a data-i18n="nav.privileges" href="#privileges">Why Contribute</a>
-        <a data-i18n="nav.pathways" href="#pathways">Pathways &amp; Repos</a>
-        <a data-i18n="nav.guide" href="#guide">Contributor Guide</a>
-        <a data-i18n="nav.standards" href="#standards">Quality Gates</a>
-        <a data-i18n="nav.sponsorship" href="#sponsorship">Sponsorship</a>
-        <a data-i18n="nav.boost" href="#boost">AI Boost</a>
-        <a class="gh-link" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank"><span>💬</span> <span data-i18n="nav.discussions">Discussions ↗</span></a>
-      </nav>
-      <div class="nav-actions">
-        <button type="button" class="lang-switch btn btn-outline lang-toggle" data-lang-toggle="" aria-label="Toggle language" data-kiw-component="LangSwitch">
+      
+    </div>
+
+    
+    <div class="ml-auto hidden md:flex items-center gap-1 nav-menu">
+      
+        <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.start" href="#start">Start Here</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.privileges" href="#privileges">Why Contribute</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.pathways" href="#pathways">Pathways &amp; Repos</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.guide" href="#guide">Contributor Guide</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.standards" href="#standards">Quality Gates</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.sponsorship" href="#sponsorship">Support</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" href="https://github.com/krewire/krewire.com/discussions" rel="noopener" target="_blank"><span>💬</span> <span data-i18n="nav.discussions">Discussions ↗</span></a>
+      
+    </div>
+
+    <div class="flex items-center gap-2 shrink-0">
+      
+      
+      <button type="button" class="lang-switch btn btn-outline " data-lang-toggle="" aria-label="Toggle language" data-kiw-component="LangSwitch">
   <span class="lang-icon" aria-hidden="true">🌐</span>
   <span class="lang-code font-bold">EN</span>
 </button>
-        <button type="button" class="theme-switch btn w-9 h-9 p-0 min-h-0 text-base flex items-center justify-center rounded-full" data-theme-toggle="" aria-label="Toggle theme" data-kiw-component="ThemeSwitch">
-  <span class="sun sun-icon">☀</span>
-  <span class="moon moon-icon">☾</span>
+      
+      
+      <a class="hidden lg:inline-flex items-center gap-1.5 btn btn-primary text-xs px-4 py-2 min-h-0" href="https://github.com/krewire" rel="noopener" target="_blank">
+        <span>★</span><span>GitHub</span>
+      </a>
+      
+      <button type="button" class="theme-switch btn w-9 h-9 p-0 min-h-0 text-base flex items-center justify-center rounded-full " data-theme-toggle="" aria-label="Toggle theme" data-kiw-component="ThemeSwitch">
+  <span class="sun sun-icon" aria-hidden="true">☀</span>
+  <span class="moon moon-icon" aria-hidden="true">☾</span>
 </button>
-        <button type="button" class="hamburger inline-flex items-center justify-center p-0 min-h-0 shrink-0 cursor-pointer select-none nav-toggler" style="display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; min-width: 2.25rem; min-height: 2.25rem; padding: 0; background: var(--bg, #FAF8F4); border: 2px solid var(--border, #0B1F3B); border-radius: 6px; box-shadow: 2px 2px 0px var(--border, #0B1F3B); cursor: pointer;" id="nav-toggler" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-menu" data-drawer-toggle="mobile-nav-menu" data-kiw-component="Hamburger">
-  <span class="hamburger-box" aria-hidden="true" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; width: 1.125rem; height: 0.875rem; flex-shrink: 0;">
-    <span class="hamburger-line line-1" style="display: block; width: 100%; height: 2px; min-height: 2px; background-color: var(--fg, #0B1F3B); border-radius: 1px;"></span>
-    <span class="hamburger-line line-2" style="display: block; width: 100%; height: 2px; min-height: 2px; background-color: var(--fg, #0B1F3B); border-radius: 1px;"></span>
-    <span class="hamburger-line line-3" style="display: block; width: 100%; height: 2px; min-height: 2px; background-color: var(--fg, #0B1F3B); border-radius: 1px;"></span>
+      <button type="button" class="hamburger md:hidden shrink-0" id="nav-toggler" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile-menu" data-drawer-toggle="nav-mobile-menu" data-kiw-component="Hamburger">
+  <span class="hamburger-box" aria-hidden="true">
+    <span class="hamburger-line line-1"></span>
+    <span class="hamburger-line line-2"></span>
+    <span class="hamburger-line line-3"></span>
   </span>
 </button>
-      </div>
     </div>
-    <div class="nav-mobile-menu" id="mobile-nav-menu" aria-hidden="true">
-      <div class="mobile-menu-inner">
-        <a class="mobile-link" href="#privileges">
-          <span class="link-icon">★</span>
-          <span data-i18n="nav.privileges">Why Contribute &amp; Perks</span>
-        </a>
-        <a class="mobile-link" href="#pathways">
-          <span class="link-icon">⬢</span>
-          <span data-i18n="nav.pathways">Contribution Pathways (4 Repos)</span>
-        </a>
-        <a class="mobile-link" href="#guide">
-          <span class="link-icon">⚡</span>
-          <span data-i18n="nav.guide">5-Step Contributor Guide</span>
-        </a>
-        <a class="mobile-link" href="#standards">
-          <span class="link-icon">✓</span>
-          <span data-i18n="nav.standards">3 Quality Gates</span>
-        </a>
-        <a class="mobile-link" href="#sponsorship">
-          <span class="link-icon">💖</span>
-          <span data-i18n="nav.sponsorship">Sponsorship</span>
-        </a>
-        <a class="mobile-link" href="#boost">
-          <span class="link-icon">▲</span>
-          <span data-i18n="nav.boost">AI Boost Synergy</span>
-        </a>
-        <div class="mobile-menu-divider"></div>
-        <a class="mobile-link gh-mobile" href="https://github.com/krewire" rel="noopener" target="_blank">
-          <span>🐙 <span data-i18n="nav.github_org">GitHub Organization</span></span>
-          <span class="link-arrow">↗</span>
-        </a>
-      </div>
-    </div>
-  </header>
-  <main class="landing-main"><div class="contributors-portal" data-kiw-component="page:/">
+  </div>
 
   
-  <section class="hero" id="overview">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <div class="eyebrow" data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</div>
-        <h1 data-i18n-html="hero.title_html">Contribute Code. Sponsor Open Source.<br/>Empower Indonesian Engineers.</h1>
-        <p class="lead" data-i18n="hero.lead">Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. With our open-core modular Go libraries, active contributors earn lifetime commercial product licenses, while sponsors sustain independent infrastructure and maintainers.</p>
-        <div class="ctas flex flex-wrap gap-3">
+  <div id="nav-mobile-menu" class="drawer drawer-right md:hidden" role="dialog" aria-modal="true" aria-label="Menu" data-kiw-component="Drawer">
+    <div class="drawer-panel max-w-sm sm:max-w-md w-full">
+      <div class="drawer-head">
+        <div class="drawer-title-area">
+          <h3 class="drawer-title">Menu</h3>
+        </div>
+        <button type="button" class="drawer-close" aria-label="Close drawer" data-drawer-close="nav-mobile-menu">
+          ✕
+        </button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="flex flex-col gap-1.5 mobile-nav-items">
           
-<a class="btn btn-primary btn-lg" data-i18n="hero.cta_contribute" data-kiw-component="Button" href="#pathways">
+            <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.start" href="#start">Start Here</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.privileges" href="#privileges">Why Contribute</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.pathways" href="#pathways">Pathways &amp; Repos</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.guide" href="#guide">Contributor Guide</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.standards" href="#standards">Quality Gates</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" data-i18n="nav.sponsorship" href="#sponsorship">Support</a>
+    <a class="text-sm font-bold text-fg dark:text-fg-dark px-3 py-1.5 rounded-md hover:bg-bg-2 dark:hover:bg-bg-dark-2 hover:text-primary transition-all duration-150" href="https://github.com/krewire/krewire.com/discussions" rel="noopener" target="_blank"><span>💬</span> <span data-i18n="nav.discussions">Discussions ↗</span></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nav-mobile-menu-backdrop" class="drawer-backdrop md:hidden" data-drawer-backdrop="nav-mobile-menu" aria-hidden="true"></div>
+</header>
+
   
-    Start Contributing →
+  <main id="main" class="w-full min-w-0 flex-1 max-w-none">
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-24 lg:py-28 border-b-2 border-border" id="overview" data-kiw-component="page:/">
+  <div class="container-site">
+    <div class="flex flex-col md:grid md:grid-cols-2 md:items-center gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+
+      
+      <div class="min-w-0 w-full">
+        <div class="flex flex-col items-start w-full">
+          
+          <div class="mb-4 sm:mb-6">
+            <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  <span class="badge-dot" aria-hidden="true"></span>
+  <span class="badge-text"><span data-i18n="hero.eyebrow">◈ OPEN-SOURCE COLLECTIVE · BORN IN INDONESIA · FOR THE WORLD</span></span>
+</span>
+          </div>
+
+          
+          <h1 class="font-black tracking-tighter leading-tight text-fg dark:text-fg-dark break-words mb-5 sm:mb-6" style="font-size:clamp(30px,6.5vw,56px); letter-spacing:-0.04em" data-i18n-html="hero.title_html">
+            Build with Krewire. Contribute Code.<br class="hidden sm:inline"/>
+            <span class="text-primary">Empower Indonesian Engineers.</span>
+          </h1>
+
+          
+          <p class="text-sm sm:text-base md:text-lg text-muted dark:text-muted-dark leading-relaxed max-w-xl lg:max-w-2xl xl:max-w-none mb-6 sm:mb-8" data-i18n="hero.lead">
+            Krewire is an open-source movement engineered in Indonesia to turn builders from software consumers into world-class creators. Its modular Go libraries are MIT-licensed and free to use, and community support helps sustain long-term maintenance.
+          </p>
+
+          
+          <div class="w-full max-w-xl lg:max-w-2xl xl:max-w-none flex flex-col gap-3.5 mb-8 sm:mb-10">
+            <div class="terminal w-full" data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">curl -fsSL https://krewire.com/scripts/install.sh | sh</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div>
+            <div class="terminal w-full" data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#8fa2bc] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">kiw new my-site --site &amp;&amp; cd my-site &amp;&amp; kiw dev</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div>
+          </div>
+
+          
+          <div class="w-full sm:w-auto flex flex-wrap items-center gap-4 sm:gap-5 mb-5 sm:mb-6">
+            
+<a class="btn btn-primary btn-lg" data-kiw-component="Button" href="#start">
+  
+    <span data-i18n="hero.cta_start">Get Started →</span>
   
 </a>
 
-          
-<a class="btn btn-secondary btn-lg" data-i18n="hero.cta_sponsor" data-kiw-component="Button" href="#sponsorship">
+            
+<a class="btn btn-secondary btn-lg" data-kiw-component="Button" href="#pathways">
   
-    Sponsor Collective 💖
-  
-</a>
-
-          
-<a class="btn btn-outline btn-lg" data-i18n="hero.cta_issues" data-kiw-component="Button" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" rel="noopener" target="_blank">
-  
-    Good First Issues ↗
+    <span data-i18n="hero.cta_contribute">Start Contributing</span>
   
 </a>
 
+            
+<a class="btn btn-outline btn-lg" data-kiw-component="Button" href="#sponsorship">
+  
+    <span data-i18n="hero.cta_sponsor">Support Krewire</span>
+  
+</a>
+
+          </div>
+
+          <p class="text-xs font-semibold text-muted dark:text-muted-dark mt-1" data-i18n="hero.meta">
+            100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy
+          </p>
         </div>
-        <div class="meta" data-i18n="hero.meta">100% Open Source Core (MIT) · Community-Owned · Independent Infrastructure · AI-Assisted Synergy</div>
       </div>
-      <div class="hero-art">
-        <div class="code-terminal-card">
-          <div class="code-terminal-bar">
-            <div class="terminal-dots">
-              <span class="term-dot red"></span>
-              <span class="term-dot yellow"></span>
-              <span class="term-dot green"></span>
-            </div>
-            <span class="term-title">kiw — contributor &amp; sponsor hub</span>
-          </div>
-          <div class="code-terminal-body">
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire</span></div>
-            <div class="term-line term-info">✓ cloned core repository (pkg, kiw CLI, starters)</div>
-            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">go test ./...</span></div>
-            <div class="term-line term-success">✓ passed 3 quality gates: gofmt · go vet · race detector</div>
-            <div class="term-line term-muted mt-2"># 100% Open Source Community (MIT License)</div>
-            <div class="term-line term-info">⚡ Crafted in Indonesia · Sustained by community &amp; sponsors</div>
-          </div>
+
+      
+      <div class="min-w-0 w-full mt-6 md:mt-0">
+        <div class="code-window " data-kiw-component="CodeWindow">
+  <div class="code-window-bar">
+    <div class="code-window-dots" aria-hidden="true">
+      <span class="code-window-dot dot-red"></span>
+      <span class="code-window-dot dot-yellow"></span>
+      <span class="code-window-dot dot-green"></span>
+    </div>
+    <span class="code-window-title font-mono">kiw — your first project</span>
+    
+      <button type="button" class="btn-copy-code" aria-label="Copy code to clipboard" onclick="copyCodeWindow(this)">Copy</button>
+    
+  </div>
+  <pre class="code-window-pre"><code class="code-window-code"><span class="c"># install kiw devtool</span>
+<span class="s">$ curl -fsSL https://krewire.com/scripts/install.sh | sh</span>
+
+<span class="c"># scaffold a modern .kiw site workload</span>
+<span class="s">$ kiw new my-site --site</span>
+<span class="k">✓ scaffolded Krewire project (variant=static)</span>
+
+<span class="c"># start the live development server</span>
+<span class="s">$ cd my-site &amp;&amp; kiw dev</span>
+<span class="k">⚡ ready on http://localhost:8080</span>
+<span class="c"># 100% Open Source Core (MIT) · Crafted in Indonesia</span></code></pre>
+</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 py-8 sm:py-10 border-b-2 border-border" id="trust">
+  <div class="container-site">
+    <div class="flex flex-wrap items-center justify-between gap-y-3 gap-x-4">
+      <span class="badge badge-primary badge-md shrink-0" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="trust.label">Community &amp; Stewardship Baseline</span></span>
+</span>
+      <div class="flex flex-wrap items-center text-xs sm:text-xs md:text-sm font-semibold text-muted dark:text-muted-dark gap-y-2 gap-x-3 sm:gap-x-4">
+        <span data-i18n-html="trust.indonesia_html"><b class="text-fg dark:text-fg-dark">Indonesian</b> Collective</span>
+        <span class="hidden sm:inline opacity-40">·</span>
+        <span data-i18n-html="trust.meritocracy_html"><b class="text-fg dark:text-fg-dark">Open</b> Contribution</span>
+        <span class="hidden sm:inline opacity-40">·</span>
+        <span data-i18n-html="trust.opencore_html"><b class="text-fg dark:text-fg-dark">Open Core</b> Sustainability</span>
+        <span class="hidden sm:inline opacity-40">·</span>
+        <span data-i18n-html="trust.free_html"><b class="text-fg dark:text-fg-dark">100%</b> Free Core (MIT)</span>
+        <span class="hidden sm:inline opacity-40">·</span>
+        <span data-i18n="trust.cost">Near-Zero Cloud Cost</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="start">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="start.badge">Start Here</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="start.title">From Discovery to Your First Krewire Project</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="start.subtitle">This portal is the community front door. Technical documentation, installation, and guides live on krewire.com and are maintained alongside the core repository. Follow these four steps in order.</p>
+    </div>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+      
+<div class="card card-default p-6 flex flex-col justify-between h-full bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">1</span>
+          <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="start.s1_title">Understand Krewire</h3>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="start.s1_desc">Read the overview to learn what Krewire is, its design principles, and which workload kinds it supports.</p>
+        </div>
+        <a class="text-xs font-bold text-primary hover:underline flex items-center gap-1" data-i18n="start.s1_link" href="https://krewire.com/docs" rel="noopener" target="_blank">Read the overview on krewire.com ↗</a></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 flex flex-col justify-between h-full bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">2</span>
+          <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="start.s2_title">Install the kiw CLI</h3>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="start.s2_desc">Follow the canonical installation guide. It covers the shell installer, go install, and how to verify the install.</p>
+        </div>
+        <a class="text-xs font-bold text-primary hover:underline flex items-center gap-1" data-i18n="start.s2_link" href="https://krewire.com/docs/getting-started/installation" rel="noopener" target="_blank">Installation guide ↗</a></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 flex flex-col justify-between h-full bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">3</span>
+          <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="start.s3_title">Build Your First Project</h3>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="start.s3_desc">Work through the hands-on quickstart: scaffold a project, run the dev server, make a change, and build it.</p>
+        </div>
+        <a class="text-xs font-bold text-primary hover:underline flex items-center gap-1" data-i18n="start.s3_link" href="https://krewire.com/docs/getting-started#4-hands-on-5-minute-quickstart" rel="noopener" target="_blank">5-minute quickstart ↗</a></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 flex flex-col justify-between h-full bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">4</span>
+          <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="start.s4_title">Choose Your Next Step</h3>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="start.s4_desc">Once your first project builds, pick the workload guide that matches what you want to ship next. Ask questions or share what you built in GitHub Discussions.</p>
+        </div>
+        <a class="text-xs font-bold text-primary hover:underline flex items-center gap-1" data-i18n="start.s4_link" href="https://krewire.com/docs/workloads" rel="noopener" target="_blank">Workload guides ↗</a></div>
+  
+  
+</div>
+
+    </div>
+
+    
+    <div class="mt-8 pt-8 border-t border-border-subtle">
+      <h3 class="text-lg font-black tracking-tight text-fg dark:text-fg-dark mb-6 text-center" data-i18n="start.dest_title">Where Things Live</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between">
+          <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1" data-i18n="start.d1_label">Discovery &amp; Community</strong>
+          <p class="text-xs text-muted dark:text-muted-dark mb-3" data-i18n="start.d1_desc">This portal: how to get started, how to contribute, and how to support the project.</p>
+          <a class="text-xs font-bold text-primary hover:underline" data-i18n="start.d1_link" href="#start">You are here</a>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between">
+          <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1" data-i18n="start.d2_label">Documentation</strong>
+          <p class="text-xs text-muted dark:text-muted-dark mb-3" data-i18n="start.d2_desc">The canonical source for installation, quickstart, guides, and CLI reference, in English and Indonesian.</p>
+          <a class="text-xs font-bold text-primary hover:underline" href="https://krewire.com/docs" rel="noopener" target="_blank">krewire.com/docs ↗</a>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between">
+          <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1" data-i18n="start.d3_label">Source &amp; Releases</strong>
+          <p class="text-xs text-muted dark:text-muted-dark mb-3" data-i18n="start.d3_desc">The core repository holds the Go packages and the kiw CLI. Versions are published as Git tags.</p>
+          <a class="text-xs font-bold text-primary hover:underline" data-i18n="start.d3_link" href="https://github.com/krewire/krewire/tags" rel="noopener" target="_blank">Release tags ↗</a>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between">
+          <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1" data-i18n="start.d4_label">Contribution</strong>
+          <p class="text-xs text-muted dark:text-muted-dark mb-3" data-i18n="start.d4_desc">Workflow, commit conventions, and quality gates are defined in the core repository&#39;s CONTRIBUTING.md.</p>
+          <a class="text-xs font-bold text-primary hover:underline" data-i18n="start.d4_link" href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" rel="noopener" target="_blank">CONTRIBUTING.md ↗</a>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between">
+          <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1" data-i18n="start.d5_label">Questions &amp; Bugs</strong>
+          <p class="text-xs text-muted dark:text-muted-dark mb-3" data-i18n="start.d5_desc">Ask questions in GitHub Discussions. Report bugs in the issue tracker of the repository they affect.</p>
+          <a class="text-xs font-bold text-primary hover:underline" data-i18n="start.d5_link" href="https://github.com/krewire/krewire.com/discussions" rel="noopener" target="_blank">GitHub Discussions ↗</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="privileges">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
   
-  <section class="trust" id="trust">
-    <div class="trust-inner">
-      <span class="trust-label" data-i18n="trust.label">Community &amp; Stewardship Baseline</span>
-      <div class="trust-items">
-        <span class="trust-item" data-i18n-html="trust.indonesia_html"><b>Indonesian</b> Collective</span>
-        <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.meritocracy_html"><b>Meritocracy</b> Perks</span>
-        <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.opencore_html"><b>Open Core</b> Sustainability</span>
-        <span class="dot">·</span>
-        <span class="trust-item" data-i18n-html="trust.free_html"><b>100%</b> Free Core (MIT)</span>
-        <span class="dot">·</span>
-        <span class="trust-item" data-i18n="trust.cost">Near-Zero Cloud Cost</span>
+  <span class="badge-text"><span data-i18n="privileges.badge">Why Contribute</span></span>
+</span>
       </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="privileges.title">Why Contribute to Krewire</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="privileges.subtitle">Contributions land in an MIT-licensed open-source core that anyone can use. There is no paid perk or license program attached to contributing today.</p>
     </div>
-  </section>
 
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
   
-  <section class="benefits" id="privileges">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="privileges.badge">Contributor Privileges</div>
-        <h2 data-i18n="privileges.title">Lifetime Access to Krewire&#39;s Paid Ecosystem</h2>
-        <p data-i18n="privileges.subtitle">True builders deserve shared ownership. By joining and actively contributing to the Krewire open-source collective, you earn lifetime access to our upcoming commercial sub-products and premium ecosystem tools.</p>
-      </div>
+  
+  
+  <div class="card-body"><span class="badge badge-secondary badge-sm mb-3" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="privileges.p1_badge">Open Core</span></span>
+</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="privileges.p1_title">Your Work Ships in the Open</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed" data-i18n="privileges.p1_desc">Merged changes become part of the MIT-licensed core that anyone can use, study, and build on.</p></div>
+  
+  
+</div>
 
-      <div class="benefit-grid">
-        <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p1_badge">Core Privilege</div>
-          <h3 data-i18n="privileges.p1_title">Commercial Sub-Products Lifetime Access</h3>
-          <p data-i18n="privileges.p1_desc">Receive free lifetime licenses for upcoming commercial Krewire products — including managed cloud orchestration tools, enterprise modules, and premium services.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p1_i1">Free lifetime access to all paid Krewire commercial sub-products</li>
-            <li data-i18n="privileges.p1_i2">Priority early-access releases and exclusive roadmap previews</li>
-            <li data-i18n="privileges.p1_i3">Direct private collaboration channels with core maintainers</li>
-          </ul>
-        </div>
-
-        <div class="benefit-card highlight-card">
-          <div class="benefit-badge" data-i18n="privileges.p2_badge">Strict Requirement</div>
-          <h3 data-i18n="privileges.p2_title">Active Contributions Required</h3>
-          <p data-i18n="privileges.p2_desc">This privilege is a two-way commitment. Your access remains active as long as you regularly contribute and help nurture the ecosystem&#39;s growth.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p2_i1">Submit PRs for new features, bugfixes, or kernel optimizations</li>
-            <li data-i18n="privileges.p2_i2">Review open PRs and stress-test high-concurrency scenarios</li>
-            <li data-i18n="privileges.p2_i3">Author KWF architecture specifications or comprehensive docs</li>
-          </ul>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-badge" data-i18n="privileges.p3_badge">Revocation Policy</div>
-          <h3 data-i18n="privileges.p3_title">Revocable if Inactive or Dormant</h3>
-          <p data-i18n="privileges.p3_desc">To protect community fairness and true meritocracy, commercial access licenses may be revoked if a contributor becomes inactive or dormant over an extended period.</p>
-          <ul class="benefit-list">
-            <li data-i18n="privileges.p3_i1">Contributor activity and commits are periodically audited</li>
-            <li data-i18n="privileges.p3_i2">Prolonged inactivity or dormancy leads to license deactivation</li>
-            <li data-i18n="privileges.p3_i3">Access privileges can be promptly reinstated upon resumed contribution</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="meritocracy-callout mt-8">
-        <div class="meritocracy-inner">
-          <div class="meritocracy-icon">⚖️</div>
-          <div class="meritocracy-body">
-            <strong data-i18n="privileges.policy_title">Krewire Meritocracy Policy:</strong>
-            <p data-i18n="privileges.policy_text">We believe those who lay the foundation should share in its fruits. Commercial access is free for all active contributors, provided ongoing dedication to the collective is consistently maintained.</p>
-          </div>
-        </div>
-      </div>
 
       
-      <div class="meritocracy-ladder-section mt-12">
-        <h3 class="text-center font-bold text-xl mb-6">The 4-Tier Meritocracy Ladder</h3>
-        <div class="ladder-grid">
-          <div class="ladder-card">
-            <div class="ladder-badge tier-1">Tier 1</div>
-            <h4>Contributor</h4>
-            <span class="ladder-req">1st Merged Pull Request</span>
-            <p>Listed on community Wall of Fame, Contributor badge on Discord, and lifetime access to starter developer tools.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-2">Tier 2</div>
-            <h4>Collaborator</h4>
-            <span class="ladder-req">5+ Merged Pull Requests</span>
-            <p>Issue triage and labeling permissions, invitation to bi-weekly maintainer sync calls, and roadmap voting rights.</p>
-          </div>
-          <div class="ladder-card">
-            <div class="ladder-badge tier-3">Tier 3</div>
-            <h4>Maintainer</h4>
-            <span class="ladder-req">Subsystem Owner</span>
-            <p>Full review &amp; merge authority for designated repository/package, RFC voting power, and sponsored conference travel.</p>
-          </div>
-          <div class="ladder-card highlight-ladder">
-            <div class="ladder-badge tier-4">Tier 4</div>
-            <h4>Steering Committee</h4>
-            <span class="ladder-req">Ecosystem Governance</span>
-            <p>Security signing keys, foundation budget oversight, strategic industry partnerships, and grant disbursements.</p>
-          </div>
-        </div>
-      </div>
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="badge badge-primary badge-sm mb-3" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="privileges.p2_badge">Review</span></span>
+</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="privileges.p2_title">Learn Through Code Review</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed" data-i18n="privileges.p2_desc">Every pull request is reviewed before merge and checked against the quality gates in CONTRIBUTING.md.</p></div>
+  
+  
+</div>
+
 
       
-      <div class="pathways-selector-card mt-10">
-        <div class="pathways-selector-head">
-          <h3 class="font-bold text-lg mb-2">Choose Your Contributor Pathway</h3>
-          <p class="text-sm text-muted">Select your background to see curated tasks, recommended starter repositories, and architecture resources.</p>
-        </div>
-        <div class="pathway-tabs flex flex-wrap gap-2 mt-4 mb-4">
-          <button class="pathway-tab active btn btn-sm btn-primary" onclick="selectPathway(&#39;newbie&#39;)">🌱 New to Go?</button>
-          <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;backend&#39;)">⚙️ Backend Engineer</button>
-          <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;frontend&#39;)">🎨 Frontend &amp; UI</button>
-          <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;devops&#39;)">☁️ DevOps &amp; Infra</button>
-        </div>
-        <div class="pathway-content" id="pathwayDetails">
-          <div class="pathway-info">
-            <h4 id="pathwayTitle" class="font-bold text-base mb-2">New to Go? (Beginner Friendly)</h4>
-            <p id="pathwayDesc" class="text-sm text-muted mb-4">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs marked with <code>good-first-issue</code>.</p>
-            <div class="pathway-links flex gap-3">
-              <a class="btn btn-primary btn-sm" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" id="pathwayCta" rel="noopener" target="_blank">Find Good First Issues →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="badge badge-secondary badge-sm mb-3" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="privileges.p3_badge">Credit</span></span>
+</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="privileges.p3_title">Public, Lasting Credit</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed" data-i18n="privileges.p3_desc">Your commits stay attributed to you in the project&#39;s public Git history.</p></div>
+  
+  
+</div>
+
     </div>
-  </section>
 
-  
-  <section class="repos-nav" id="pathways">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="pathways.badge">Codebase Matrix</div>
-        <h2 data-i18n="pathways.title">8 Repositories &amp; Ecosystem Matrix</h2>
-        <p data-i18n="pathways.subtitle">Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
-      </div>
-
-      
-      <div class="fast-setup-box mb-8">
-        <div class="fast-setup-header">
-          <div class="fast-setup-title">
-            <span class="fast-icon">⚡</span>
-            <strong data-i18n="pathways.one_line_title">One-Command Contributor Bootstrap</strong>
-          </div>
-          <span class="fast-setup-badge" data-i18n="pathways.one_line_badge">Recommended</span>
-        </div>
-        <p class="fast-setup-desc" data-i18n-html="pathways.one_line_desc_html">Clone the core repository, run the test suites, and verify all 3 automated quality gates:</p>
-        <div class="terminal-cmd-bar">
-          <code id="setup-cmd">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire &amp;&amp; go test ./...</code>
-          <button class="btn-copy" data-copy-cmd="" aria-label="Copy setup command">
-            <span class="copy-text" data-i18n="pathways.copy_btn">Copy</span>
-          </button>
-        </div>
-        <div class="fast-setup-meta">
-          <span class="meta-item" data-i18n="pathways.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
-          <span class="meta-dot">·</span>
-          <span class="meta-item" data-i18n="pathways.meta_zero">Zero manual configuration required</span>
-        </div>
-      </div>
-
-      
-      <div class="nav-filters mb-6">
-        <span class="filter-label" data-i18n="pathways.filter_label">Filter by Track:</span>
-        <div class="filter-pills">
-          <button class="filter-pill is-active" data-nav-filter="all" data-i18n="pathways.filter_all">All Repositories</button>
-          <button class="filter-pill" data-nav-filter="core" data-i18n="pathways.filter_core">Core Monorepo &amp; Books</button>
-          <button class="filter-pill" data-nav-filter="web" data-i18n="pathways.filter_web">Portals &amp; Sites</button>
-        </div>
-      </div>
-
-      
-      <div class="repo-grid">
-        
-        <div class="repo-card featured" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag core">Core Engine</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/krewire" rel="noopener" target="_blank">krewire/krewire</a>
-            </h3>
-            <div class="repo-track-name">Core Monorepo &amp; Libraries</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Modular Go libraries (pkg/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent starters.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/model</span>
-                <span class="pkg-chip">pkg/lifecycle</span>
-                <span class="pkg-chip">pkg/web</span>
-                <span class="pkg-chip">pkg/ui</span>
-                <span class="pkg-chip">tools/kiw</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" rel="noopener" target="_blank">Good First Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">AI Agent</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/krew" rel="noopener" target="_blank">krewire/krew</a>
-            </h3>
-            <div class="repo-track-name">Autonomous Agent Monorepo</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Platform-agnostic autonomous agent: in-process embed, CLI REPL, HTTP/SSE transport, MCP tools, and multi-model LLM engine.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/agent</span>
-                <span class="pkg-chip">pkg/embed</span>
-                <span class="pkg-chip">pkg/tools</span>
-                <span class="pkg-chip">pkg/transport</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/krew/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/krew/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag core">Hybrid PaaS</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/cloud" rel="noopener" target="_blank">krewire/cloud</a>
-            </h3>
-            <div class="repo-track-name">Enterprise Hybrid PaaS Engine</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Multi-tenant hybrid cloud control plane, supervisor process management, ACME TLS gateway, mTLS mesh, and UU PDP compliance.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/controlplane</span>
-                <span class="pkg-chip">pkg/supervisor</span>
-                <span class="pkg-chip">pkg/gateway</span>
-                <span class="pkg-chip">pkg/compliance</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/cloud/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/cloud/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Identity &amp; SSO</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/auth" rel="noopener" target="_blank">krewire/auth</a>
-            </h3>
-            <div class="repo-track-name">Enterprise Identity &amp; RBAC Platform</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Multi-tenant identity, OIDC/SAML2 single sign-on, TOTP 2FA, session tokens, audit logging, and CSRF protection.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/identity</span>
-                <span class="pkg-chip">pkg/webauth</span>
-                <span class="pkg-chip">pkg/audit</span>
-                <span class="pkg-chip">pkg/middleware</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/auth/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/auth/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag tool">Krewire Dash</span>
-              <span class="repo-lang">Go 1.27.1</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/dash" rel="noopener" target="_blank">krewire/dash</a>
-            </h3>
-            <div class="repo-track-name">Virtual Workspace &amp; Automation Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Containerized sandbox runner, xterm.js PTY WebSocket streaming, Monaco editor, collaborative presence, and streaming AI assistant.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Packages:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pkg/sandbox</span>
-                <span class="pkg-chip">pkg/terminal</span>
-                <span class="pkg-chip">pkg/session</span>
-                <span class="pkg-chip">pkg/ai</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/dash/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/dash/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="core">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag core">Docs Hub</span>
-              <span class="repo-lang">ADR / Specs</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/internal" rel="noopener" target="_blank">krewire/internal</a>
-            </h3>
-            <div class="repo-track-name">Architecture &amp; ADR Hub</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Architectural Decision Records (ADRs), ecosystem specifications, roadmaps, security threat models, and contributor guidelines.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Paths:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">docs/adr/</span>
-                <span class="pkg-chip">docs/foundation/</span>
-                <span class="pkg-chip">docs/roadmap/</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/internal/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/internal/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="web">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag site">Documentation</span>
-              <span class="repo-lang">.kiw DSL</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/krewire.com" rel="noopener" target="_blank">krewire/krewire.com</a>
-            </h3>
-            <div class="repo-track-name">Official Docs &amp; Portal</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Canonical documentation site, offline search index, interactive code playground, multi-version switcher, and Diátaxis framework.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Paths:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">content/en/docs</span>
-                <span class="pkg-chip">content/id/docs</span>
-                <span class="pkg-chip">layouts/Docs.kiw</span>
-                <span class="pkg-chip">components/</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/krewire.com/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/krewire.com/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-
-        
-        <div class="repo-card" data-category="web">
-          <div class="repo-header">
-            <div class="repo-meta-top">
-              <span class="repo-tag site">Community</span>
-              <span class="repo-lang">.kiw + i18n</span>
-            </div>
-            <h3 class="repo-title">
-              <a href="https://github.com/krewire/krewire.github.io" rel="noopener" target="_blank">krewire.github.io</a>
-            </h3>
-            <div class="repo-track-name">Contributor &amp; Sponsorship Portal</div>
-          </div>
-          <div class="repo-body">
-            <p class="repo-match">Contributor onboarding pathways, meritocracy ladder, transparent Open Collective ledger, meetups calendar, and community showcase.</p>
-            <div class="repo-pkgs">
-              <span class="pkgs-label">Key Paths:</span>
-              <div class="pkgs-chips">
-                <span class="pkg-chip">pages/index.kiw</span>
-                <span class="pkg-chip">lang/en/</span>
-                <span class="pkg-chip">lang/id/</span>
-              </div>
-            </div>
-          </div>
-          <div class="repo-footer">
-            <a class="repo-action primary" href="https://github.com/krewire/krewire.github.io/issues" rel="noopener" target="_blank">Issues →</a>
-            <a class="repo-action secondary" href="https://github.com/krewire/krewire.github.io/blob/main/README.md" rel="noopener" target="_blank">Contributing ↗</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="onboarding" id="guide">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="guide.badge">Onboarding Fast-Track</div>
-        <h2 data-i18n="guide.title">Start Contributing in 5 Steps</h2>
-        <p data-i18n="guide.subtitle">From zero to your first merged pull request. Here is how to get your development environment running in minutes.</p>
-      </div>
-
-      <div class="quickstart-steps">
-        <div class="qs-card">
-          <div class="qs-num">1</div>
-          <h3 data-i18n="guide.s1_title">1. Fork &amp; Clone Repositories</h3>
-          <p data-i18n="guide.s1_desc">Fork any Krewire repository to your personal GitHub account, then clone it locally to begin:</p>
-          <pre><code>git clone https://github.com/your-username/krewire
-cd krewire</code></pre>
-        </div>
-
-        <div class="qs-card">
-          <div class="qs-num">2</div>
-          <h3 data-i18n="guide.s2_title">2. Initialize Workspace (go.work)</h3>
-          <p data-i18n="guide.s2_desc">If working across multiple repos, synchronize your local Go workspace seamlessly with Go 1.27.1+:</p>
-          <pre><code>go work init ./krewire ./krew ./cloud ./auth ./dash
-go work sync</code></pre>
-        </div>
-
-        <div class="qs-card">
-          <div class="qs-num">3</div>
-          <h3 data-i18n="guide.s3_title">3. Pick an Open Issue</h3>
-          <p data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="tag-issue">good-first-issue</span> or <span class="tag-issue">help-wanted</span>. Comment to let maintainers know you are working on it.</p>
-          <div class="mt-4">
-            <a class="btn btn-outline btn-sm" data-i18n="guide.s3_btn" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue" rel="noopener" target="_blank">View Good First Issues →</a>
-          </div>
-        </div>
-
-        <div class="qs-card">
-          <div class="qs-num">4</div>
-          <h3 data-i18n="guide.s4_title">4. Implement &amp; Verify Locally</h3>
-          <p data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Verify that all 3 Quality Gates pass with zero failures:</p>
-          <pre><code>gofmt -l .
-go vet ./...
-go test -race ./...</code></pre>
-        </div>
-
-        <div class="qs-card">
-          <div class="qs-num">5</div>
-          <h3 data-i18n="guide.s5_title">5. Submit PR with Conventional Commits</h3>
-          <p data-i18n="guide.s5_desc">Open a PR following Conventional Commits (feat, fix, docs, refactor, test). Maintainers and AI Boost will review and guide you to merge.</p>
-          <pre><code>git checkout -b feat/my-feature
-git commit -m &#34;feat(web): add handler (ref #123)&#34;
-git push origin feat/my-feature</code></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="standards" id="standards">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="standards.badge">Quality Assurance</div>
-        <h2 data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
-        <p data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request passes through three automated gates.</p>
-      </div>
-
-      <div class="gates-grid">
-        <div class="gate-card">
-          <div class="gate-icon">✓</div>
-          <h3 data-i18n="standards.gate1_title">Gate 1: Format &amp; Lint</h3>
-          <p data-i18n="standards.gate1_desc">Zero lint errors and idiomatic Go formatting. Code must adhere strictly to Go standard conventions.</p>
-          <div class="gate-req" data-i18n="standards.gate1_req">Required: gofmt -l . (clean), go vet ./... (clean)</div>
-        </div>
-
-        <div class="gate-card">
-          <div class="gate-icon">🛡️</div>
-          <h3 data-i18n="standards.gate2_title">Gate 2: Race &amp; Tests</h3>
-          <p data-i18n="standards.gate2_desc">Every commit is verified with race condition detection and comprehensive unit &amp; integration tests.</p>
-          <div class="gate-req" data-i18n="standards.gate2_req">Required: 100% test pass, 0 data races</div>
-        </div>
-
-        <div class="gate-card">
-          <div class="gate-icon">📝</div>
-          <h3 data-i18n="standards.gate3_title">Gate 3: Spec &amp; Commits</h3>
-          <p data-i18n="standards.gate3_desc">Changes must link to a valid Spec or Issue, following Conventional Commits format.</p>
-          <div class="gate-req" data-i18n="standards.gate3_req">Required: Semantic commit format &amp; spec traceability</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="governance-section" id="governance">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge">Ecosystem Governance</div>
-        <h2>Public RFC Workflow &amp; Architectural Decisions</h2>
-        <p>Krewire operates under transparent open-source governance. All major architectural shifts follow the Request for Comments (RFC) process before becoming permanent Architectural Decision Records (ADRs).</p>
-      </div>
-
-      
-      <div class="rfc-steps-grid mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="rfc-card p-5 border rounded-xl bg-surface">
-          <div class="rfc-step-num text-xs font-bold text-primary mb-2">Phase 1</div>
-          <h3 class="font-bold text-base mb-2">Proposal &amp; Problem</h3>
-          <p class="text-xs text-muted">Open a GitHub Discussion in <code>krewire/internal</code> outlining the motivation, trade-offs, and ecosystem impact.</p>
-        </div>
-        <div class="rfc-card p-5 border rounded-xl bg-surface">
-          <div class="rfc-step-num text-xs font-bold text-primary mb-2">Phase 2</div>
-          <h3 class="font-bold text-base mb-2">Formal RFC Draft</h3>
-          <p class="text-xs text-muted">Submit an RFC PR using the standard template covering API design, failure modes, and migration plans.</p>
-        </div>
-        <div class="rfc-card p-5 border rounded-xl bg-surface">
-          <div class="rfc-step-num text-xs font-bold text-primary mb-2">Phase 3</div>
-          <h3 class="font-bold text-base mb-2">14-Day Review</h3>
-          <p class="text-xs text-muted">Public comment period for Indonesian and global contributors to review, benchmark, and propose refinements.</p>
-        </div>
-        <div class="rfc-card p-5 border rounded-xl bg-surface highlight-card">
-          <div class="rfc-step-num text-xs font-bold text-primary mb-2">Phase 4</div>
-          <h3 class="font-bold text-base mb-2">Consensus &amp; ADR</h3>
-          <p class="text-xs text-muted">Consensus among Maintainers promotes the RFC into an immutable ADR (e.g., ADR-6CAB8C) committed to <code>internal/</code>.</p>
-        </div>
-      </div>
-
-      
-      <div class="adr-digest-box mt-10">
-        <h3 class="font-bold text-lg mb-4">Canonical Architectural Decision Records (ADR Digest)</h3>
-        <div class="adr-list flex flex-col gap-3">
-          <div class="adr-item p-4 border rounded-lg bg-surface">
-            <span class="adr-id font-bold text-primary">ADR-6CAB8C</span>: <strong>Ecosystem Architecture Baseline &amp; Strict Downward-Only Dependencies</strong>
-            <p class="text-sm text-muted mt-1">Defines strict unidirectional boundaries: <code>templates/boost → tools/kiw → pkg/* → pkg/model</code>. Zero upward edges allowed.</p>
-          </div>
-          <div class="adr-item p-4 border rounded-lg bg-surface">
-            <span class="adr-id font-bold text-primary">ADR-C9L2P</span>: <strong>Multi-Workload Single Binary Dispatch</strong>
-            <p class="text-sm text-muted mt-1">Standardizes 8 workload kinds behind <code>krewire.yaml</code> and unified CLI <code>kiw</code> with zero framework lock-in.</p>
-          </div>
-          <div class="adr-item p-4 border rounded-lg bg-surface">
-            <span class="adr-id font-bold text-primary">ADR-D1F3N</span>: <strong>Zero-Trust Defense-in-Depth Edge Security</strong>
-            <p class="text-sm text-muted mt-1">Requires CSRF token verification, ACME automated TLS, token bucket rate limiting, and secure HTTP response headers across all daemons.</p>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="coc-security-grid mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">📜 Contributor Covenant Code of Conduct (v2.1)</h4>
-          <p class="text-sm text-muted mb-3">We pledge to make participation in Krewire a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity, or experience level.</p>
-          <a class="text-sm text-primary font-bold" href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" rel="noopener" target="_blank">Read Full Code of Conduct (EN/ID) →</a>
-        </div>
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🔒 Security Vulnerability Reporting</h4>
-          <p class="text-sm text-muted mb-3">Never open a public issue for suspected security vulnerabilities. Please report any potential vulnerability responsibly via our encrypted reporting channel.</p>
-          <p class="text-sm font-mono text-primary">security@krewire.com (PGP key in internal/docs/security/)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="sponsorship-section" id="sponsorship">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge" data-i18n="sponsorship.badge">Community Support</div>
-        <h2 data-i18n="sponsorship.title">Sponsoring Krewire</h2>
-        <p data-i18n="sponsorship.subtitle">Krewire is an independent open-source collective born in Indonesia. Sponsorship sustains full-time engineering, independent infrastructure, security signing, and community education — keeping the ecosystem 100% open and community-owned.</p>
-      </div>
-
-      
-      <div class="sponsor-tiers-grid mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Backer</div>
-          <div class="tier-price font-bold text-2xl mb-1">$5 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 75.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Listed on GitHub README &amp; portal backers wall</li>
-            <li>✓ Backer Discord badge</li>
-          </ul>
-          <a class="btn btn-outline btn-sm w-full" href="https://github.com/sponsors/krewire" rel="noopener" target="_blank">Join as Backer</a>
-        </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Bronze</div>
-          <div class="tier-price font-bold text-2xl mb-1">$25 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 350.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Discord sponsor role &amp; private channel</li>
-            <li>✓ Monthly technical newsletter &amp; roadmap previews</li>
-          </ul>
-          <a class="btn btn-outline btn-sm w-full" href="https://github.com/sponsors/krewire" rel="noopener" target="_blank">Join as Bronze</a>
-        </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface highlight-border">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Silver Sponsor</div>
-          <div class="tier-price font-bold text-2xl mb-1">$100 <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 1.500.000 / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Medium logo placement on krewire.com &amp; releases</li>
-            <li>✓ Priority bug triage assistance</li>
-          </ul>
-          <a class="btn btn-primary btn-sm w-full" href="https://github.com/sponsors/krewire" rel="noopener" target="_blank">Join as Silver</a>
-        </div>
-
-        <div class="tier-card p-5 border rounded-xl bg-surface">
-          <div class="tier-badge text-xs font-bold text-primary mb-2">Gold / Enterprise</div>
-          <div class="tier-price font-bold text-2xl mb-1">$500+ <span class="text-sm text-muted">/mo</span></div>
-          <div class="tier-idr text-xs text-muted mb-3">Rp 7.500.000+ / bulan</div>
-          <ul class="text-xs text-muted flex flex-col gap-2 mb-4">
-            <li>✓ Top-tier prominent logo across portals</li>
-            <li>✓ Quarterly roadmap advisory &amp; custom invoicing</li>
-          </ul>
-          <a class="btn btn-secondary btn-sm w-full" href="mailto:sponsorship@krewire.com">Inquire Corporate</a>
-        </div>
-      </div>
-
-      
-      <div class="local-payment-banner mt-8 p-6 border rounded-xl bg-surface flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <h4 class="font-bold text-base mb-1">🇮🇩 Local Indonesian Payment Rails (QRIS / GoPay / OVO / Virtual Account)</h4>
-          <p class="text-sm text-muted">Support the collective seamlessly without a credit card via Saweria / Midtrans QRIS integration.</p>
-        </div>
-        <a class="btn btn-primary btn-sm" href="https://saweria.co/krewire" rel="noopener" target="_blank">Pay with QRIS / E-Wallet →</a>
-      </div>
-
-      
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">📊 Transparent Financial Ledger</h4>
-          <p class="text-sm text-muted mb-3">All incoming sponsorships and operational disbursements (domain renewal, CI build runners, staging clusters) are publicly accounted for.</p>
-          <div class="ledger-summary p-3 bg-dark rounded border text-xs font-mono">
-            <div>Monthly Inflow: ~$1,450 USD (GitHub + QRIS)</div>
-            <div>Infrastructure Costs: $320 USD (CI/CD, Cloud nodes)</div>
-            <div>Community Grants Pool: $800 USD reserved</div>
-          </div>
-        </div>
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎓 Student Developer Grants Hub</h4>
-          <p class="text-sm text-muted mb-3">Are you a student in Indonesia or Southeast Asia building an open-source project or bachelor thesis with Krewire? Apply for a monthly stipend and infrastructure grant.</p>
-          <a class="btn btn-outline btn-sm" href="https://forms.gle/krewire-grant-application" rel="noopener" target="_blank">Apply for Student Grant →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="events-section" id="events">
-    <div class="section-inner">
-      <div class="section-head w-full text-center flex flex-col items-center justify-center">
-        <div class="sub-badge">Community Engagement</div>
-        <h2>Meetups, Events &amp; Official Chat Hub</h2>
-        <p>Connect with fellow Indonesian and global engineers, attend hands-on workshops in your city, and showcase what you&#39;ve built.</p>
-      </div>
-
-      
-      <div class="chat-hubs-grid mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <a class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition" href="https://discord.gg/krewire" rel="noopener" target="_blank">
-          <div class="text-3xl mb-2">👾</div>
-          <h4 class="font-bold">Official Discord Server</h4>
-          <p class="text-xs text-muted mt-1">#general, #help, #architecture, #ai-krew</p>
-        </a>
-        <a class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition" href="https://t.me/krewire_id" rel="noopener" target="_blank">
-          <div class="text-3xl mb-2">✈️</div>
-          <h4 class="font-bold">Indonesian Telegram Group</h4>
-          <p class="text-xs text-muted mt-1">Community chat &amp; local meetup discussions</p>
-        </a>
-        <a class="chat-card p-5 border rounded-xl bg-surface text-center hover:border-primary transition" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank">
-          <div class="text-3xl mb-2">💬</div>
-          <h4 class="font-bold">GitHub Discussions</h4>
-          <p class="text-xs text-muted mt-1">RFC proposals, Q&amp;A, and architecture show-and-tell</p>
-        </a>
-      </div>
-
-      
-      <div class="meetups-calendar mt-10">
-        <h3 class="font-bold text-lg mb-4">Upcoming Meetups &amp; Webinars Calendar</h3>
-        <div class="meetup-events-list flex flex-col gap-3">
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-primary text-xs font-bold px-2 py-1 rounded">Jakarta · In-Person</span>
-              <h4 class="font-bold text-base mt-2">Krewire Jakarta Meetup #1: Building High-Throughput Microservices with Go</h4>
-              <p class="text-xs text-muted">Saturday, November 28, 2026 · Coworking Space SCBD, South Jakarta</p>
-            </div>
-            <a class="btn btn-primary btn-sm" href="https://lu.ma/krewire-jkt-1" rel="noopener" target="_blank">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-secondary text-xs font-bold px-2 py-1 rounded">Bandung &amp; Online</span>
-              <h4 class="font-bold text-base mt-2">Deep Dive: Embedding Autonomous AI Agents with krewire/krew</h4>
-              <p class="text-xs text-muted">Saturday, December 12, 2026 · ITB Tech Hub &amp; Live YouTube Stream</p>
-            </div>
-            <a class="btn btn-primary btn-sm" href="https://lu.ma/krewire-bdg-1" rel="noopener" target="_blank">RSVP Free →</a>
-          </div>
-
-          <div class="meetup-item p-4 border rounded-xl bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <span class="badge bg-accent text-xs font-bold px-2 py-1 rounded">Yogyakarta / Surabaya</span>
-              <h4 class="font-bold text-base mt-2">Open Source Community Day: From Consumer to Creator</h4>
-              <p class="text-xs text-muted">January 2027 · Venue announcement soon</p>
-            </div>
-            <a class="btn btn-outline btn-sm" href="https://lu.ma/krewire-jogja" rel="noopener" target="_blank">Notify Me</a>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">⭐ Built with Krewire Showcase</h4>
-          <p class="text-sm text-muted mb-4">Have you deployed a production service, static book, or internal AI assistant using Krewire? Submit your project to get featured on the official showcase.</p>
-          <a class="btn btn-outline btn-sm" href="https://github.com/krewire/krewire/discussions/categories/show-and-tell" rel="noopener" target="_blank">Submit Project to Showcase →</a>
-        </div>
-
-        <div class="p-6 border rounded-xl bg-surface">
-          <h4 class="font-bold text-base mb-2">🎤 Call for Papers (CFP) &amp; Speaker Request</h4>
-          <p class="text-sm text-muted mb-4">Want to speak at an upcoming Krewire meetup, university seminar, or community workshop? Submit your talk proposal.</p>
-          <a class="btn btn-outline btn-sm" href="https://forms.gle/krewire-cfp" rel="noopener" target="_blank">Submit Talk Proposal →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="boost-section" id="boost">
-    <div class="section-inner">
-      <div class="boost-card">
-        <div class="boost-grid">
-          <div class="boost-info">
-            <div class="sub-badge" data-i18n="boost.badge">Human + AI Synergy</div>
-            <h2 data-i18n="boost.title">Collaborating with AI Boost</h2>
-            <p class="boost-lead" data-i18n="boost.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
-            <ul class="boost-items">
-              <li data-i18n-html="boost.item1_html"><b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
-              <li data-i18n-html="boost.item2_html"><b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
-              <li data-i18n-html="boost.item3_html"><b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
-              <li data-i18n-html="boost.item4_html"><b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
-            </ul>
-            <div class="boost-ctas flex flex-wrap gap-3">
-              <a class="btn btn-primary" data-i18n="boost.cta_repo" href="https://github.com/krewire/krewire/tree/main/templates/boost" rel="noopener" target="_blank">Explore AI Boost in Krewire →</a>
-              <a class="btn btn-outline" data-i18n="boost.cta_disc" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank">Join Discussions</a>
-            </div>
-          </div>
-          <div class="boost-triad">
-            <div class="boost-box">
-              <div class="boost-box-head">
-                <span class="triad-icon">◈</span>
-                <strong data-i18n="boost.triad_title">AI Boost Agent Triad</strong>
-              </div>
-              <div class="triad-roles">
-                <div class="triad-role">
-                  <div class="role-badge planner">Planner</div>
-                  <strong data-i18n="boost.planner_title">Requirements &amp; SDD</strong>
-                  <p data-i18n="boost.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
-                </div>
-                <div class="triad-role">
-                  <div class="role-badge builder">Builder</div>
-                  <strong data-i18n="boost.builder_title">Implementation &amp; Refactoring</strong>
-                  <p data-i18n="boost.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
-                </div>
-                <div class="triad-role">
-                  <div class="role-badge auditor">Auditor</div>
-                  <strong data-i18n="boost.auditor_title">Verification &amp; Quality Gates</strong>
-                  <p data-i18n="boost.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <section class="final-cta" id="cta">
-    <div class="section-inner">
-      <div class="cta-card">
-        <div class="sub-badge" data-i18n="cta.badge">Join the Collective</div>
-        <h2 data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
-        <p class="cta-lead" data-i18n="cta.lead">Whether you are writing your first Go pull request or sponsoring our developer community, you are laying the foundation for open-source self-reliance.</p>
-        <div class="ctas flex flex-wrap gap-3 justify-center">
-          <a class="btn btn-primary btn-lg" data-i18n="cta.github" href="https://github.com/krewire/krewire/issues" rel="noopener" target="_blank">Explore Open Issues on GitHub →</a>
-          <a class="btn btn-secondary btn-lg" data-i18n="cta.sponsor" href="#sponsorship">Sponsor on GitHub 💖</a>
-        </div>
-        <div class="cta-meta" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</div>
-      </div>
-    </div>
-  </section>
-
-</div></main>
-  
-<footer class="bg-bg-2 dark:bg-bg-dark-2 footer" style="border-top:var(--pop-border)" data-kiw-component="Footer">
-  <div class="container-site pt-12 pb-8 footer-inner">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-8 footer-grid" style="border-bottom:var(--pop-border-thin)">
-      
-      <div class="sm:col-span-2 md:col-span-1">
-        <div class="flex items-center gap-2 font-black text-lg mb-3 footer-brand">
-          <span class="icon-box bg-primary text-primary-content w-7 h-7 text-sm flex items-center justify-center brand-mark">◈</span>
-          <span data-i18n="footer.brand_title">Krewire Contributors</span>
-        </div>
-        <p class="text-sm text-muted dark:text-muted-dark leading-relaxed mb-4 footer-desc" data-i18n-html="footer.desc_html">
-          Home of the Open Source Collective.<br/>
-          Crafting an autonomous, sustainable, and scalable Go ecosystem at near-zero cost.
-        </p>
-      </div>
-
-      
-      <div class="flex flex-col gap-2 footer-col">
-        <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.col_repos">Repositories</strong>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire" rel="noopener" target="_blank">krewire (core monorepo)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krew" rel="noopener" target="_blank">krew (AI agent)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/dash" rel="noopener" target="_blank">dash (virtual workspace &amp; automation)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/internal" rel="noopener" target="_blank">internal (docs hub)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.com" rel="noopener" target="_blank">krewire.com (portal)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.github.io" rel="noopener" target="_blank">krewire.github.io (community)</a>
-      </div>
-
-      
-      <div class="flex flex-col gap-2 footer-col">
-        <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.col_contrib">Contribution</strong>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.perks" href="#benefits">Contributor Perks &amp; Access</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.where_start" href="#where-to-start">Where to Start (Nav Map)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.getting_started" href="/docs/getting-started">Getting Started</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.pathways" href="#pathways">Contribution Pathways</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.standards" href="#standards">The Krewire Way (Gates)</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.boost" href="#boost">AI Boost Collaboration</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.kwf_specs" href="https://github.com/krewire/krewire/tree/main/docs/specs" rel="noopener" target="_blank">Specs</a>
-      </div>
-
-      
-      <div class="flex flex-col gap-2 footer-col">
-        <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.col_community">Community</strong>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.gh_org" href="https://github.com/krewire" rel="noopener" target="_blank">GitHub Organization</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.discussions" href="https://github.com/orgs/krewire/discussions" rel="noopener" target="_blank">Discussions</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.good_first" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" rel="noopener" target="_blank">Good First Issues</a>
-        <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" data-i18n="footer.coc" href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" rel="noopener" target="_blank">Code of Conduct</a>
+    
+    <div class="p-4 sm:p-5 rounded-xl border-2 border-border bg-bg dark:bg-bg-dark mb-10 flex items-start gap-3" style="box-shadow:var(--pop-shadow-sm)">
+      <span class="text-xl shrink-0">ℹ️</span>
+      <div class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed">
+        <strong class="text-fg dark:text-fg-dark" data-i18n="privileges.policy_title">About perks and privileges: </strong>
+        <span data-i18n="privileges.policy_text">Earlier versions of this page described lifetime commercial licenses and a four-tier privilege ladder. Those programs are not approved or operational and have been withdrawn. If maintainers introduce a recognition program, it will be documented here with its actual terms.</span>
       </div>
     </div>
 
     
-    <div class="pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 text-xs font-semibold text-muted dark:text-muted-dark footer-bottom">
-      <span data-i18n-html="footer.bottom_rights_html">© 2026 Krewire Contributors — Built 100% with Krewire <code class="code-inline">site</code> workload (Dogfooding).</span>
-      <a class="hover:text-primary transition-colors" href="https://github.com/krewire" rel="noopener" target="_blank">github.com/krewire</a>
+    
+<div class="card card-default p-6 sm:p-8 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="mb-4">
+        <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">Choose Your Contributor Pathway</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark">Select your background to see curated tasks, recommended starter repositories, and architecture resources.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button class="pathway-tab active btn btn-sm btn-primary" onclick="selectPathway(&#39;newbie&#39;)">🌱 New to Go?</button>
+        <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;backend&#39;)">⚙️ Backend Engineer</button>
+        <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;frontend&#39;)">🎨 Frontend &amp; UI</button>
+        <button class="pathway-tab btn btn-sm btn-outline" onclick="selectPathway(&#39;devops&#39;)">☁️ DevOps &amp; Infra</button>
+      </div>
+
+      <div class="p-5 rounded-xl bg-bg-2 dark:bg-bg-dark-2 border border-border-subtle" id="pathwayDetails">
+        <h4 id="pathwayTitle" class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">New to Go? (Beginner Friendly)</h4>
+        <p id="pathwayDesc" class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Start by polishing documentation in <code>krewire.com</code>, writing unit tests for <code>krewire/pkg/model</code>, or fixing starter bugs labeled <code>good first issue</code>.</p>
+        <a class="btn btn-primary btn-sm" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" id="pathwayCta" rel="noopener" target="_blank">Find Good First Issues →</a>
+      </div></div>
+  
+  
+</div>
+
+  </div>
+</section>
+
+
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="pathways">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="pathways.badge">Codebase Matrix</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="pathways.title">Public Repositories &amp; Contribution Matrix</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="pathways.subtitle">Match your skills and passions to the right repository, bootstrap your local environment, and dive straight into active issues.</p>
+    </div>
+
+    
+    <div class="mb-10 max-w-3xl mx-auto">
+      <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-2">
+          <span class="text-primary font-bold">⚡</span>
+          <strong class="text-sm font-extrabold text-fg dark:text-fg-dark" data-i18n="pathways.one_line_title">One-Command Contributor Bootstrap</strong>
+        </div>
+        <span class="badge badge-secondary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="pathways.one_line_badge">Recommended</span></span>
+</span>
+      </div>
+      <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-3" data-i18n-html="pathways.one_line_desc_html">Clone the core repository and run its test suite. Before opening a pull request, run the full quality gates listed in <code>CONTRIBUTING.md</code>:</p>
+      <div class="terminal w-full" data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">git clone https://github.com/krewire/krewire.git &amp;&amp; cd krewire &amp;&amp; go test ./...</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div>
+      <div class="flex items-center gap-2 text-2xs text-muted dark:text-muted-dark mt-2 font-semibold">
+        <span data-i18n="pathways.meta_prereq">Prerequisites: Go 1.27.1+ and Git</span>
+        <span>·</span>
+        <span data-i18n="pathways.meta_zero">No extra configuration needed</span>
+      </div>
+    </div>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      
+<div class="card card-default p-6 flex flex-col justify-between bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="badge badge-primary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Core Engine</span>
+</span>
+            <span class="text-2xs font-mono font-bold text-muted dark:text-muted-dark">Go 1.27.1</span>
+          </div>
+          <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">
+            <a class="hover:text-primary transition-colors" href="https://github.com/krewire/krewire" rel="noopener" target="_blank">krewire/krewire ↗</a>
+          </h3>
+          <div class="text-xs font-bold text-primary mb-3">Core Monorepo &amp; Libraries</div>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Modular Go libraries (pkg/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent starters.</p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/model</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/lifecycle</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/web</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/ui</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">tools/kiw</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
+          
+<a class="btn btn-primary btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
+  
+    Good First Issues →
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire/blob/main/CONTRIBUTING.md">
+  
+    Contributing ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+
+      
+      
+<div class="card card-default p-6 flex flex-col justify-between bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="badge badge-secondary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">AI Agent</span>
+</span>
+            <span class="text-2xs font-mono font-bold text-muted dark:text-muted-dark">Go 1.27.1</span>
+          </div>
+          <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">
+            <a class="hover:text-primary transition-colors" href="https://github.com/krewire/krew" rel="noopener" target="_blank">krewire/krew ↗</a>
+          </h3>
+          <div class="text-xs font-bold text-secondary mb-3">Autonomous Agent Monorepo</div>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Platform-agnostic autonomous agent: in-process embed, CLI REPL, HTTP/SSE transport, MCP tools, and multi-model LLM engine.</p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/agent</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/embed</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/tools</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/transport</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
+          
+<a class="btn btn-primary btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krew/issues">
+  
+    Issues →
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krew/blob/main/README.md">
+  
+    Contributing ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+
+      
+      
+<div class="card card-default p-6 flex flex-col justify-between bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="badge badge-primary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Design System</span>
+</span>
+            <span class="text-2xs font-mono font-bold text-muted dark:text-muted-dark">.kiw</span>
+          </div>
+          <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">
+            <a class="hover:text-primary transition-colors" href="https://github.com/krewire/ui" rel="noopener" target="_blank">krewire/ui ↗</a>
+          </h3>
+          <div class="text-xs font-bold text-primary mb-3" data-i18n="pathways.track_ui">UI Components &amp; Design System</div>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="pathways.match_ui">If you enjoy: Zero-dependency .kiw components, layout primitives, design tokens, dark mode, and accessible HTML.</p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">components/</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">styles/</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">examples/</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
+          
+<a class="btn btn-primary btn-sm" data-kiw-component="Button" href="https://github.com/krewire/ui/issues">
+  
+    Issues →
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/ui/blob/main/README.md">
+  
+    README ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+
+      
+      
+<div class="card card-default p-6 flex flex-col justify-between bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="badge badge-secondary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Documentation</span>
+</span>
+            <span class="text-2xs font-mono font-bold text-muted dark:text-muted-dark">.kiw DSL</span>
+          </div>
+          <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">
+            <a class="hover:text-primary transition-colors" href="https://github.com/krewire/krewire.com" rel="noopener" target="_blank">krewire/krewire.com ↗</a>
+          </h3>
+          <div class="text-xs font-bold text-secondary mb-3">Official Docs &amp; Portal</div>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Canonical documentation site, offline search index, interactive code playground, multi-version switcher, and Diátaxis framework.</p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">content/en/docs</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">content/id/docs</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">components/</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
+          
+<a class="btn btn-primary btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.com/issues">
+  
+    Issues →
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.com/blob/main/README.md">
+  
+    Contributing ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+
+      
+      
+<div class="card card-default p-6 flex flex-col justify-between bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="badge badge-primary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Community</span>
+</span>
+            <span class="text-2xs font-mono font-bold text-muted dark:text-muted-dark">.kiw + i18n</span>
+          </div>
+          <h3 class="text-lg font-black text-fg dark:text-fg-dark mb-1">
+            <a class="hover:text-primary transition-colors" href="https://github.com/krewire/krewire.github.io" rel="noopener" target="_blank">krewire.github.io ↗</a>
+          </h3>
+          <div class="text-xs font-bold text-primary mb-3">Community &amp; Support Portal</div>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Start-here onboarding path, contributor pathways, community channels, and support information.</p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pages/index.kiw</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">lang/en/</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">lang/id/</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
+          
+<a class="btn btn-primary btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.github.io/issues">
+  
+    Issues →
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.github.io/blob/main/README.md">
+  
+    Contributing ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+    </div>
+
+    <p class="text-xs text-muted dark:text-muted-dark mt-8 text-center" data-i18n-html="pathways.private_note_html">Other Krewire repositories (<code>cloud</code>, <code>auth</code>, <code>dash</code>, <code>forge</code>, and <code>internal</code>) are private enterprise platforms. External contributions happen in the public repositories above.</p>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="guide">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="guide.badge">Onboarding Fast-Track</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="guide.title">Start Contributing in 5 Steps</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="guide.subtitle">From zero to your first merged pull request. Here is how to get your development environment running in minutes.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">1</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s1_title">1. Fork &amp; Clone Repositories</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s1_desc">Fork any Krewire repository to your personal GitHub account, then clone it locally to begin:</p>
+        <div class="terminal " data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">git clone https://github.com/your-username/krewire &amp;&amp; cd krewire</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">2</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s2_title">2. Build the kiw CLI from Source</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s2_desc">Inside your clone of the core repository (Go 1.27.1+), build the CLI you are changing:</p>
+        <div class="terminal " data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">go build -o bin/kiw ./tools/kiw/cmd/kiw &amp;&amp; ./bin/kiw version</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">3</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s3_title">3. Pick an Open Issue</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n-html="guide.s3_desc_html">Browse our curated issues list tagged with <span class="badge badge-primary text-2xs">good first issue</span> or <span class="badge badge-secondary text-2xs">help wanted</span>. Comment to let maintainers know you are working on it.</p>
+        
+<a class="btn btn-outline btn-sm" data-i18n="guide.s3_btn" data-kiw-component="Button" href="https://github.com/krewire/krewire/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">
+  
+    View Good First Issues →
+  
+</a>
+</div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">4</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s4_title">4. Implement &amp; Verify Locally</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s4_desc">Write clean, idiomatic Go code and tests. Run the quality gates from CONTRIBUTING.md before opening a pull request:</p>
+        <div class="terminal " data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">gofmt -l . &amp;&amp; go vet ./... &amp;&amp; go test ./...</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">5</span>
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s5_title">5. Submit PR with Conventional Commits</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s5_desc">Open a PR following Conventional Commits (feat, fix, docs, refactor, test). Maintainers and AI Boost will review and guide you to merge.</p>
+        <div class="terminal " data-kiw-component="Terminal">
+  
+  <div class="terminal-body flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3.5 sm:py-2.5 lg:px-4 lg:py-3 overflow-x-auto min-w-0">
+    <span class="terminal-prompt font-mono font-black text-[#39D353] text-sm shrink-0 select-none">$</span>
+    <code class="terminal-code font-mono text-xs sm:text-[13px] font-bold text-[#FAF8F4] whitespace-nowrap overflow-x-auto flex-1 min-w-0">git commit -m &amp;quot;feat(web): add handler (ref #123)&amp;quot;</code>
+    
+      <button type="button" class="terminal-copy-btn shrink-0 ml-auto" aria-label="Copy command to clipboard" onclick="copyTerminal(this)">Copy</button>
+    
+  </div>
+</div></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="standards">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="standards.badge">Quality Assurance</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="standards.title">The Krewire Way: 3 Quality Gates</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="standards.subtitle">To keep the codebase reliable, predictable, and production-ready, every pull request must pass three gates. The canonical list lives in the core repository&#39;s CONTRIBUTING.md.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+<div class="card card-default p-6 bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-3xl mb-3">✓</div>
+        <h3 class="text-base font-black text-fg dark:text-fg-dark mb-2" data-i18n="standards.gate1_title">Gate 1: Format &amp; Lint</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="standards.gate1_desc">Zero lint errors and idiomatic Go formatting. Code must adhere strictly to Go standard conventions.</p>
+        <div class="p-3 rounded-lg bg-bg dark:bg-bg-dark border border-border-subtle text-xs font-mono font-bold text-primary" data-i18n="standards.gate1_req">Required: gofmt -l . (clean), go vet ./... (clean)</div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-3xl mb-3">🛡️</div>
+        <h3 class="text-base font-black text-fg dark:text-fg-dark mb-2" data-i18n="standards.gate2_title">Gate 2: Tests</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="standards.gate2_desc">Every change must pass the module&#39;s unit and integration tests, and kiw compat must report ok after version.go changes.</p>
+        <div class="p-3 rounded-lg bg-bg dark:bg-bg-dark border border-border-subtle text-xs font-mono font-bold text-primary" data-i18n="standards.gate2_req">Required: go test ./... passes, kiw compat prints ok</div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-3xl mb-3">📝</div>
+        <h3 class="text-base font-black text-fg dark:text-fg-dark mb-2" data-i18n="standards.gate3_title">Gate 3: Spec &amp; Commits</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="standards.gate3_desc">Changes must link to a valid Spec or Issue, following Conventional Commits format.</p>
+        <div class="p-3 rounded-lg bg-bg dark:bg-bg-dark border border-border-subtle text-xs font-mono font-bold text-primary" data-i18n="standards.gate3_req">Required: Semantic commit format &amp; spec traceability</div></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="governance">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-secondary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text">Ecosystem Governance</span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4">Public RFC Workflow &amp; Architectural Decisions</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed">Krewire operates under transparent open-source governance. All major architectural shifts follow the Request for Comments (RFC) process before becoming permanent Architectural Decision Records (ADRs).</p>
+    </div>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-xs font-black uppercase tracking-wider text-primary mb-2 font-mono">Phase 1</div>
+        <h3 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">Proposal &amp; Problem</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed">Open a GitHub Discussion in <code>krewire/internal</code> outlining the motivation, trade-offs, and ecosystem impact.</p></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-xs font-black uppercase tracking-wider text-primary mb-2 font-mono">Phase 2</div>
+        <h3 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">Formal RFC Draft</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed">Submit an RFC PR using the standard template covering API design, failure modes, and migration plans.</p></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-xs font-black uppercase tracking-wider text-primary mb-2 font-mono">Phase 3</div>
+        <h3 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">14-Day Review</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed">Public comment period for Indonesian and global contributors to review, benchmark, and propose refinements.</p></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-xs font-black uppercase tracking-wider text-primary mb-2 font-mono">Phase 4</div>
+        <h3 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">Consensus &amp; ADR</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed">Consensus among Maintainers promotes the RFC into an immutable ADR (e.g., ADR-6CAB8C) committed to <code>internal/</code>.</p></div>
+  
+  
+</div>
+
+    </div>
+
+    
+    
+<div class="card card-default p-6 sm:p-8 bg-bg dark:bg-bg-dark mb-10" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><h3 class="font-black text-lg text-fg dark:text-fg-dark mb-5">Canonical Architectural Decision Records (ADR Digest)</h3>
+      <div class="flex flex-col gap-4">
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+          <span class="font-mono font-bold text-primary">ADR-6CAB8C</span>: <strong class="text-fg dark:text-fg-dark">Ecosystem Architecture Baseline &amp; Strict Downward-Only Dependencies</strong>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Defines strict unidirectional boundaries: <code>templates/boost → tools/kiw → pkg/* → pkg/model</code>. Zero upward edges allowed.</p>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+          <span class="font-mono font-bold text-primary">ADR-C9L2P</span>: <strong class="text-fg dark:text-fg-dark">Multi-Workload Single Binary Dispatch</strong>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Standardizes 8 workload kinds behind <code>krewire.yaml</code> and unified CLI <code>kiw</code> with zero framework lock-in.</p>
+        </div>
+        <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+          <span class="font-mono font-bold text-primary">ADR-D1F3N</span>: <strong class="text-fg dark:text-fg-dark">Zero-Trust Defense-in-Depth Edge Security</strong>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Requires CSRF token verification, ACME automated TLS, token bucket rate limiting, and secure HTTP response headers across all daemons.</p>
+        </div>
+      </div></div>
+  
+  
+</div>
+
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">📜 Contributor Covenant Code of Conduct (v2.1)</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">We pledge to make participation in Krewire a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity, or experience level.</p>
+        <a class="text-xs font-bold text-primary hover:underline" href="https://github.com/krewire/.github/blob/main/CODE_OF_CONDUCT.md" rel="noopener" target="_blank">Read Full Code of Conduct (EN/ID) →</a></div>
+  
+  
+</div>
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">🔒 Security Vulnerability Reporting</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Never open a public issue for suspected security vulnerabilities. Please report any potential vulnerability responsibly via our encrypted reporting channel.</p>
+        <p class="text-xs font-mono font-bold text-primary">security@krewire.com (PGP key in internal/docs/security/)</p></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="sponsorship">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="sponsorship.badge">Support Krewire</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="sponsorship.title">Supporting Krewire&#39;s Long-Term Maintenance</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.subtitle">Krewire measures success by what developers build with it, not by money raised. Support, financial or not, is how the project stays maintained: it pays for maintainer time and infrastructure so that the open-source core keeps working for everyone.</p>
+    </div>
+
+    
+    <div class="p-5 sm:p-6 rounded-xl border-2 border-border bg-bg-2 dark:bg-bg-dark-2 mb-10" style="box-shadow:var(--pop-shadow-sm)">
+      <h3 class="text-base font-black text-fg dark:text-fg-dark mb-2" data-i18n="sponsorship.status_title">Current Status: No Active Funding Channel</h3>
+      <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.status_desc">Krewire does not accept donations or sponsorships yet. The core repository&#39;s FUNDING.yml names a GitHub Sponsors account, but that profile is not active, so there is nothing to link to. A funding channel will appear here only after it is live and verified. There are no sponsorship tiers, perks, or published financial figures.</p>
+    </div>
+
+    <h3 class="text-lg font-black tracking-tight text-fg dark:text-fg-dark mb-6 text-center" data-i18n="sponsorship.impact_title">What Support Makes Possible</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <div class="p-5 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+        <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1 block" data-i18n="sponsorship.i1_title">Maintenance</strong>
+        <p class="text-xs text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.i1_desc">Reviewing issues and pull requests, and keeping the Go packages and the kiw CLI working across releases.</p>
+      </div>
+      <div class="p-5 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+        <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1 block" data-i18n="sponsorship.i2_title">Documentation</strong>
+        <p class="text-xs text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.i2_desc">Keeping the guides on krewire.com accurate and in step with the code, in English and Indonesian.</p>
+      </div>
+      <div class="p-5 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+        <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1 block" data-i18n="sponsorship.i3_title">Security</strong>
+        <p class="text-xs text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.i3_desc">Triaging vulnerability reports and keeping dependencies and secure defaults up to date.</p>
+      </div>
+      <div class="p-5 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+        <strong class="text-xs font-black uppercase tracking-wider text-fg dark:text-fg-dark mb-1 block" data-i18n="sponsorship.i4_title">Community</strong>
+        <p class="text-xs text-muted dark:text-muted-dark leading-relaxed" data-i18n="sponsorship.i4_desc">Onboarding new contributors and answering questions from people building with Krewire.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+<div class="card card-default p-6 bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="badge badge-primary badge-sm mb-3" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="sponsorship.help_badge">Available Today</span></span>
+</span>
+          <h3 class="text-base font-black text-fg dark:text-fg-dark mb-3" data-i18n="sponsorship.help_title">How to Help Right Now</h3>
+          <ul class="flex flex-col gap-2.5 text-xs sm:text-sm text-muted dark:text-muted-dark">
+            <li><a class="hover:text-primary transition-colors" data-i18n="sponsorship.help1" href="https://github.com/krewire/krewire/issues" rel="noopener" target="_blank">Use Krewire and report what breaks ↗</a></li>
+            <li><a class="hover:text-primary transition-colors" data-i18n="sponsorship.help2" href="https://github.com/krewire/krewire.com/issues" rel="noopener" target="_blank">Point out unclear or outdated documentation ↗</a></li>
+            <li><a class="hover:text-primary transition-colors" data-i18n="sponsorship.help3" href="#guide">Contribute code, tests, or translations</a></li>
+            <li><a class="hover:text-primary transition-colors" data-i18n="sponsorship.help4" href="https://github.com/krewire/krewire.com/discussions" rel="noopener" target="_blank">Answer questions and share what you built ↗</a></li>
+          </ul>
+        </div></div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg-2 dark:bg-bg-dark-2 flex flex-col justify-between" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div>
+          <span class="badge badge-secondary badge-sm mb-3" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="sponsorship.org_badge">Organizations</span></span>
+</span>
+          <h3 class="text-base font-black text-fg dark:text-fg-dark mb-2" data-i18n="sponsorship.org_title">Supporting Krewire as an Organization</h3>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="sponsorship.org_desc">If your organization wants to support Krewire with funding, infrastructure, or engineering time, start a conversation in GitHub Discussions, or use the contact listed on the Krewire GitHub organization profile.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          
+<a class="btn btn-primary btn-sm" data-i18n="sponsorship.org_cta1" data-kiw-component="Button" href="https://github.com/krewire/krewire.com/discussions">
+  
+    Start a Discussion ↗
+  
+</a>
+
+          
+<a class="btn btn-outline btn-sm" data-i18n="sponsorship.org_cta2" data-kiw-component="Button" href="https://github.com/krewire">
+  
+    Organization Profile ↗
+  
+</a>
+
+        </div></div>
+  
+  
+</div>
+
+    </div>
+
+    <p class="text-xs text-muted dark:text-muted-dark mt-8 text-center" data-i18n-html="sponsorship.review_html">Last reviewed: November 2026. Funding configuration source: <a class="hover:text-primary transition-colors" href="https://github.com/krewire/krewire/blob/main/.github/FUNDING.yml" rel="noopener" target="_blank">.github/FUNDING.yml in krewire/krewire</a>.</p>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="events">
+  <div class="container-site">
+    <div class="w-full text-center flex flex-col items-center justify-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="community.badge">Community &amp; Support Channels</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="community.title">Where to Ask, Report, and Share</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed" data-i18n="community.subtitle">Use the public GitHub channels below. They are the places maintainers read today.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark text-center flex flex-col items-center justify-between" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-4xl mb-3">💬</div>
+        <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2" data-i18n="community.c1_title">GitHub Discussions</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="community.c1_desc">Questions, ideas, and sharing what you built with Krewire.</p>
+        
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.com/discussions">
+  
+    Open Discussions ↗
+  
+</a>
+</div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark text-center flex flex-col items-center justify-between" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-4xl mb-3">🐞</div>
+        <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2" data-i18n="community.c2_title">Core Issue Tracker</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="community.c2_desc">Bug reports and feature requests for the Go packages and the kiw CLI.</p>
+        
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire/issues">
+  
+    Browse Issues ↗
+  
+</a>
+</div>
+  
+  
+</div>
+
+
+      
+<div class="card card-default p-6 bg-bg dark:bg-bg-dark text-center flex flex-col items-center justify-between" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="text-4xl mb-3">🧭</div>
+        <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2" data-i18n="community.c3_title">Portal Issues</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n="community.c3_desc">Broken links, outdated information, or translation problems on this site.</p>
+        
+<a class="btn btn-outline btn-sm" data-kiw-component="Button" href="https://github.com/krewire/krewire.github.io/issues">
+  
+    Report Issue ↗
+  
+</a>
+</div>
+  
+  
+</div>
+
+    </div>
+
+    <p class="text-xs text-muted dark:text-muted-dark mt-8 text-center" data-i18n="community.note">Chat servers, meetups, and events are listed here only once they are confirmed to be active.</p>
+  </div>
+</section>
+
+
+<section class="w-full bg-bg dark:bg-bg-dark bg-dots py-14 sm:py-18 md:py-22 border-b-2 border-border" id="boost">
+  <div class="container-site">
+    
+<div class="card card-default p-6 sm:p-10 lg:p-12 bg-bg-2 dark:bg-bg-dark-2" data-kiw-component="Card">
+  
+  
+  
+  <div class="card-body"><div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div>
+          <div class="mb-4">
+            <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="boost.badge">Human + AI Synergy</span></span>
+</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="boost.title">Collaborating with AI Boost</h2>
+          <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed mb-6" data-i18n="boost.lead">Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:</p>
+          <ul class="flex flex-col gap-3 text-xs sm:text-sm text-muted dark:text-muted-dark mb-8">
+            <li data-i18n-html="boost.item1_html"><b class="text-fg dark:text-fg-dark">Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.</li>
+            <li data-i18n-html="boost.item2_html"><b class="text-fg dark:text-fg-dark">Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.</li>
+            <li data-i18n-html="boost.item3_html"><b class="text-fg dark:text-fg-dark">Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.</li>
+            <li data-i18n-html="boost.item4_html"><b class="text-fg dark:text-fg-dark">Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.</li>
+          </ul>
+          <div class="flex flex-wrap gap-4">
+            
+<a class="btn btn-primary btn-md" data-i18n="boost.cta_repo" data-kiw-component="Button" href="https://github.com/krewire/krewire/tree/main/templates/boost">
+  
+    Explore AI Boost in Krewire →
+  
+</a>
+
+            
+<a class="btn btn-outline btn-md" data-i18n="boost.cta_disc" data-kiw-component="Button" href="https://github.com/krewire/krewire.com/discussions">
+  
+    Join Discussions
+  
+</a>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="p-6 rounded-2xl bg-bg dark:bg-bg-dark border-2 border-border" style="box-shadow:var(--pop-shadow)">
+            <div class="flex items-center gap-2 mb-6">
+              <span class="text-primary font-black text-xl">◈</span>
+              <strong class="text-base font-black text-fg dark:text-fg-dark" data-i18n="boost.triad_title">AI Boost Agent Triad</strong>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-sm font-extrabold text-fg dark:text-fg-dark" data-i18n="boost.planner_title">Requirements &amp; SDD</strong>
+                  <span class="badge badge-secondary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Planner</span>
+</span>
+                </div>
+                <p class="text-xs text-muted dark:text-muted-dark" data-i18n="boost.planner_desc">Translates feature ideas into formal specs and architectural blueprints.</p>
+              </div>
+              <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-sm font-extrabold text-fg dark:text-fg-dark" data-i18n="boost.builder_title">Implementation &amp; Refactoring</strong>
+                  <span class="badge badge-primary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Builder</span>
+</span>
+                </div>
+                <p class="text-xs text-muted dark:text-muted-dark" data-i18n="boost.builder_desc">Generates clean Go implementations adhering to idiomatic patterns.</p>
+              </div>
+              <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-sm font-extrabold text-fg dark:text-fg-dark" data-i18n="boost.auditor_title">Verification &amp; Quality Gates</strong>
+                  <span class="badge badge-secondary badge-sm" data-kiw-component="Badge">
+  
+  <span class="badge-text">Auditor</span>
+</span>
+                </div>
+                <p class="text-xs text-muted dark:text-muted-dark" data-i18n="boost.auditor_desc">Validates concurrency, zero data races, and performance benchmarks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+  
+  
+</div>
+
+  </div>
+</section>
+
+
+<section class="w-full bg-bg-2 dark:bg-bg-dark-2 bg-dots py-16 sm:py-20 md:py-24" id="cta">
+  <div class="container-site">
+    <div class="rounded-2xl text-center bg-bg dark:bg-bg-dark px-6 py-10 sm:px-10 sm:py-14 md:px-16 md:py-16 flex flex-col items-center justify-center max-w-4xl mx-auto" style="border:var(--pop-border); box-shadow:var(--pop-shadow-lg)">
+      <div class="mb-4">
+        <span class="badge badge-primary badge-md" data-kiw-component="Badge">
+  
+  <span class="badge-text"><span data-i18n="cta.badge">Join the Collective</span></span>
+</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight text-fg dark:text-fg-dark mb-4" data-i18n="cta.title">Ready to Shape the Future of Indonesian Tech?</h2>
+      <p class="text-sm sm:text-base text-muted dark:text-muted-dark leading-relaxed max-w-2xl mb-8" data-i18n="cta.lead">Whether you are building your first project, writing your first Go pull request, or helping others get started, you are laying the foundation for open-source self-reliance.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
+        
+<a class="btn btn-primary btn-lg" data-i18n="cta.github" data-kiw-component="Button" href="https://github.com/krewire/krewire/issues">
+  
+    Explore Open Issues on GitHub →
+  
+</a>
+
+        
+<a class="btn btn-secondary btn-lg" data-i18n="cta.sponsor" data-kiw-component="Button" href="#sponsorship">
+  
+    Ways to Support
+  
+</a>
+
+      </div>
+      <p class="text-xs font-semibold text-muted dark:text-muted-dark" data-i18n="cta.meta">Proudly open source · MIT Licensed · Engineered with passion in Indonesia</p>
+    </div>
+  </div>
+</section></main>
+
+  
+  
+<footer class="bg-bg-2 dark:bg-bg-dark-2 " style="border-top:var(--pop-border)" data-kiw-component="Footer">
+  <div class="container-site pt-8 pb-6 sm:pt-10 sm:pb-8 lg:pt-12 lg:pb-10">
+    
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 pb-6 sm:pb-8" style="border-bottom:var(--pop-border-thin)">
+        
+        <div class="sm:col-span-2 md:col-span-1">
+          
+            <div class="flex items-center gap-2 font-black text-lg mb-3">
+              <span class="icon-box bg-primary text-primary-content w-7 h-7 text-sm flex items-center justify-center">◈</span>
+              <span>Krewire</span>
+            </div>
+            <p class="text-sm text-muted dark:text-muted-dark leading-relaxed mb-4" data-i18n-html="footer.tagline_html">
+              Modular Go Libraries for Every Workload.<br/>One CLI <code class="code-inline">kiw</code>, one config <code class="code-inline">krewire.yaml</code>.
+            </p>
+            
+              <span class="badge badge-secondary text-2xs" data-i18n="footer.badge">Compiled Go · Zero Bloat</span>
+            
+          
+        </div>
+
+        
+          
+          <div class="flex flex-col gap-2">
+            <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.workloads_title">8 Workloads</strong>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/app">app — Fullstack Monolith</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/cli">cli — Terminal TUI</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/site">site — Scoped SSG</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/book">book — Docs &amp; Books</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/worker">worker — Async Queues</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/service">service — Microservices</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/infra">infra — Cloud IaC</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads/gateway">gateway — Reverse Proxy</a>
+          </div>
+
+          
+          <div class="flex flex-col gap-2">
+            <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.docs_title">Documentation</strong>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/overview">1. Overview</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/getting-started">2. Getting Started</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/workloads">3. Workloads in Depth</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/cli-reference">4. CLI Reference</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/packages">5. Packages &amp; Libraries</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="/docs/guides">6. Architecture &amp; Guides</a>
+          </div>
+
+          
+          <div class="flex flex-col gap-2">
+            <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mb-1" data-i18n="footer.products_title">Products</strong>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://dash.krewire.com" rel="noopener" target="_blank">Workspace</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://cloud.krewire.com" rel="noopener" target="_blank">Cloud</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://auth.krewire.com" rel="noopener" target="_blank">Auth</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://panel.krewire.com" rel="noopener" target="_blank">Panel</a>
+            <strong class="text-2xs font-black tracking-widest uppercase text-fg dark:text-fg-dark mt-2 mb-1" data-i18n="footer.ecosystem_title">Open Source Repos</strong>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire" rel="noopener" target="_blank">krewire (core monorepo)</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krew" rel="noopener" target="_blank">krew (AI agent)</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/dash" rel="noopener" target="_blank">dash (workspace runtime)</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.com" rel="noopener" target="_blank">krewire.com (portal)</a>
+            <a class="text-sm font-semibold text-muted dark:text-muted-dark hover:text-primary transition-colors" href="https://github.com/krewire/krewire.github.io" rel="noopener" target="_blank">krewire.github.io (community)</a>
+          </div>
+        
+      </div>
+    
+
+    
+    <div class="pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 text-xs font-semibold text-muted dark:text-muted-dark">
+      
+        <span data-i18n-html="footer.copyright_html">© 2026 Krewire Team — Built with Krewire <code class="code-inline">site</code> workload.</span>
+        
+          <a class="hover:text-primary transition-colors" href="https://github.com/krewire" rel="noopener" target="_blank">github.com/krewire</a>
+        
+      
     </div>
   </div>
 </footer>
 
 
-<script src="/assets/layout-Landing-0.js"></script><script src="/assets/page-0.js"></script></body>
+<script src="/assets/page-0.js"></script></body>
