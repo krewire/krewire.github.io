@@ -2009,3 +2009,62 @@ html[data-theme="dark"] .dark\:text-muted-dark,
 .hover\:border-primary:hover { border-color: var(--primary, #39D353) !important; }
 .hover\:text-\[\#0B1F3B\]:hover { color: #0B1F3B !important; }
 .shadow-\[2px_2px_0px_var\(--border\)\] { box-shadow: 2px 2px 0px var(--border, #0B1F3B) !important; }
+
+/* =============================================================================
+   Navbar Normalization & Desktop Menu Display Guarantee
+   ============================================================================= */
+.navbar,
+header.navbar {
+  border: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: var(--pop-border, 2.5px solid var(--border, #0B1F3B)) !important;
+  box-sizing: border-box !important;
+}
+
+:root[data-theme="dark"] .navbar,
+html[data-theme="dark"] .navbar,
+.dark .navbar {
+  border-bottom: var(--pop-border, 2.5px solid var(--border, #FAF8F4)) !important;
+}
+
+.navbar .container-site {
+  padding-top: 0.875rem !important;
+  padding-bottom: 0.875rem !important;
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-menu,
+  div.nav-menu,
+  nav.nav-menu,
+  .navbar .nav-menu {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .md\:flex {
+    display: flex !important;
+  }
+  .md\:inline-flex {
+    display: inline-flex !important;
+  }
+  .md\:hidden {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex !important;
+  }
+  .lg\:inline-flex {
+    display: inline-flex !important;
+  }
+  .lg\:hidden {
+    display: none !important;
+  }
+}
