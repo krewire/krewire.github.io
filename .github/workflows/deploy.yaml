@@ -10,6 +10,9 @@ on:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
       - 'v[0-9]+.[0-9]+.[0-9]+-lts*'
+  workflow_run:
+    workflows: ["Release Pipeline"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       reason:
