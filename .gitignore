@@ -2,3 +2,10 @@ site/
 .krewire/
 node_modules/
 .DS_Store
+
+# Environment & Secrets
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
