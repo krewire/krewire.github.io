@@ -406,7 +406,7 @@ layout: Landing
       </Card>
     </div>
 
-    <p class="text-xs text-muted dark:text-muted-dark mt-8 text-center" data-i18n-html="pathways.private_note_html">Other Krewire repositories (<code>cloud</code>, <code>auth</code>, <code>dash</code>, <code>forge</code>, and <code>internal</code>) are private enterprise platforms. External contributions happen in the public repositories above.</p>
+    <p class="text-xs text-muted dark:text-muted-dark mt-8 text-center" data-i18n-html="pathways.private_note_html">Other Krewire repositories (<code>cloud</code>, <code>auth</code>, <code>dash</code>, <code>krew</code>, and <code>internal</code>) are private enterprise platforms. External contributions happen in the public repositories above.</p>
   </div>
 </section>
 
