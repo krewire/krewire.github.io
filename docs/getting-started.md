@@ -9,7 +9,7 @@ This guide explains how to develop, preview, and build the **`krewire.github.io`
 1. **`kiw` CLI**: Built from the `krewire` repository:
    ```bash
    cd /home/reasvyn/workspace/krewire/krewire
-   go build -o ../bin/kiw ./tools/kiw/cmd/kiw
+   go build -o ../bin/krew ./cmd/krew
    ```
 2. **Git**: Configured for interacting with the repository.
 3. **No Local Go Dependencies**: As a static site project, `krewire.github.io` runs directly via the `kiw` devtool without needing a `go.mod` file.

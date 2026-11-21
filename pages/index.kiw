@@ -293,13 +293,13 @@ layout: Landing
             <a href="https://github.com/krewire/krewire" target="_blank" rel="noopener" class="hover:text-primary transition-colors">krewire/krewire ↗</a>
           </h3>
           <div class="text-xs font-bold text-primary mb-3">Core Monorepo &amp; Libraries</div>
-          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Modular Go libraries (pkg/*), CLI devtool (tools/kiw), fullstack runtimes, background queues, and AI agent starters.</p>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-4">Modular Go libraries (pkg/*), fullstack runtimes, background queues, and AI agent starters.</p>
           <div class="flex flex-wrap gap-1.5 mb-6">
             <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/model</span>
             <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/lifecycle</span>
             <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/web</span>
-            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/ui</span>
-            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">tools/kiw</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/orm</span>
+            <span class="text-2xs font-mono font-semibold px-2 py-0.5 rounded bg-bg dark:bg-bg-dark border border-border-subtle">pkg/sec</span>
           </div>
         </div>
         <div class="flex items-center gap-2 pt-4 border-t border-border-subtle">
@@ -433,9 +433,9 @@ layout: Landing
 
       <Card variant="default" class="p-6 bg-bg dark:bg-bg-dark" style="border:var(--pop-border); box-shadow:var(--pop-shadow)">
         <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-content font-black text-sm mb-4">2</span>
-        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s2_title">2. Build the kiw CLI from Source</h3>
-        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s2_desc">Inside your clone of the core repository (Go 1.27.1+), build the CLI you are changing:</p>
-        <Terminal Command="go build -o bin/kiw ./tools/kiw/cmd/kiw && ./bin/kiw version" />
+        <h3 class="text-base font-extrabold text-fg dark:text-fg-dark mb-2" data-i18n="guide.s2_title">2. Build the krew CLI from Source</h3>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark leading-relaxed mb-3" data-i18n="guide.s2_desc">Inside your clone of the krew repository (Go 1.27.1+), build the CLI and toolchain:</p>
+        <Terminal Command="go build -o bin/krew ./cmd/krew && ./bin/krew version" />
       </Card>
 
       <Card variant="default" class="p-6 bg-bg dark:bg-bg-dark" style="border:var(--pop-border); box-shadow:var(--pop-shadow)">
@@ -546,11 +546,11 @@ layout: Landing
       <div class="flex flex-col gap-4">
         <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
           <span class="font-mono font-bold text-primary">ADR-6CAB8C</span>: <strong class="text-fg dark:text-fg-dark">Ecosystem Architecture Baseline &amp; Strict Downward-Only Dependencies</strong>
-          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Defines strict unidirectional boundaries: <code>templates/boost → tools/kiw → pkg/* → pkg/model</code>. Zero upward edges allowed.</p>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Defines strict unidirectional boundaries: <code>templates/boost → krew → pkg/* → pkg/model</code>. Zero upward edges allowed.</p>
         </div>
         <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
           <span class="font-mono font-bold text-primary">ADR-C9L2P</span>: <strong class="text-fg dark:text-fg-dark">Multi-Workload Single Binary Dispatch</strong>
-          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Standardizes 8 workload kinds behind <code>krewire.yaml</code> and unified CLI <code>kiw</code> with zero framework lock-in.</p>
+          <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mt-1">Standardizes 8 workload kinds behind <code>krewire.yaml</code> and unified CLI <code>krew</code> with zero framework lock-in.</p>
         </div>
         <div class="p-4 rounded-xl border border-border-subtle bg-bg-2 dark:bg-bg-dark-2">
           <span class="font-mono font-bold text-primary">ADR-D1F3N</span>: <strong class="text-fg dark:text-fg-dark">Zero-Trust Defense-in-Depth Edge Security</strong>
