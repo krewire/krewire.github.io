@@ -559,8 +559,8 @@ layout: Landing
       </div>
     </Card>
 
-    <!-- Code of Conduct & Security Reporting -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Code of Conduct, Security & AI Contributions -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <Card variant="default" class="p-6 bg-bg dark:bg-bg-dark" style="border:var(--pop-border); box-shadow:var(--pop-shadow)">
         <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">📜 Contributor Covenant Code of Conduct (v2.1)</h4>
         <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">We pledge to make participation in Krewire a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity, or experience level.</p>
@@ -570,6 +570,11 @@ layout: Landing
         <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">🔒 Security Vulnerability Reporting</h4>
         <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">Never open a public issue for suspected security vulnerabilities. Please report any potential vulnerability responsibly via our encrypted reporting channel.</p>
         <p class="text-xs font-mono font-bold text-primary">security@krewire.com (PGP key in internal/docs/security/)</p>
+      </Card>
+      <Card variant="default" class="p-6 bg-bg dark:bg-bg-dark" style="border:var(--pop-border); box-shadow:var(--pop-shadow)">
+        <h4 class="font-extrabold text-base text-fg dark:text-fg-dark mb-2">🤖 AI-Assisted Contribution Policy</h4>
+        <p class="text-xs sm:text-sm text-muted dark:text-muted-dark mb-4 leading-relaxed">We welcome AI-assisted contributions with strict human accountability, zero secrets, verified provenance, deterministic tests, and maintainer sovereignty.</p>
+        <a href="https://github.com/krewire/krewire.github.io/blob/main/docs/ai-contributions.md" target="_blank" rel="noopener" class="text-xs font-bold text-primary hover:underline">Read AI Contribution Policy →</a>
       </Card>
     </div>
   </div>

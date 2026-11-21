@@ -7,16 +7,17 @@ We welcome contributions to help improve the onboarding experience, guides, and 
 ## Contribution Workflow
 
 1. **Find or Open an Issue**: Check GitHub Issues under `krewire/krewire.github.io`.
-2. **Branch**: Create a branch off `main` (e.g., `feat/add-event-banner` or `fix/sponsorship-link`).
-3. **Edit**:
+2. **Review Policies**: Ensure your work complies with our [Safe & Transparent AI-Assisted Contribution Policy](ai-contributions.md) if utilizing autonomous agents or LLMs.
+3. **Branch**: Create a branch off `main` (e.g., `feat/add-event-banner` or `fix/sponsorship-link`).
+4. **Edit**:
    - Update `pages/index.kiw`, layouts, or language files in `lang/`.
    - Maintain clean, semantic HTML and avoid unnecessary JavaScript dependencies.
-4. **Verify Locally**:
+5. **Verify Locally**:
    - Run `kiw build` inside `krewire.github.io` to ensure a clean build.
    - Run `kiw serve` and check responsive views on desktop and mobile viewports.
    - Verify both light and dark modes.
-5. **Commit**: Use Conventional Commits (`feat(community): ...`, `fix(ui): ...`, `docs: ...`).
-6. **Submit PR**: Submit a pull request to `main` with a clear explanation of changes.
+6. **Commit**: Use Conventional Commits (`feat(community): ...`, `fix(ui): ...`, `docs: ...`).
+7. **Submit PR**: Submit a pull request to `main` with a clear explanation of changes.
 
 ---
 

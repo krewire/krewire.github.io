@@ -45,6 +45,11 @@ lang/                 # Locale translation dictionaries (en, id)
 public/               # Static assets (favicon, images, client JS/CSS)
 ```
 
+## Contributing & AI Policy
+
+- [Community Contributor Guide](docs/contributing.md)
+- [Safe & Transparent AI-Assisted Contribution Policy](docs/ai-contributions.md)
+
 ## Ecosystem
 
-Public repositories: `krewire`, `krew`, `ui`, `krewire.com`, `krewire.github.io`. The remaining ecosystem repositories (`cloud`, `auth`, `dash`, `panel`, `internal`) are private. This site dogfoods `pkg/web/ssg` + `pkg/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
+Public repositories: `krewire`, `krew`, `ui`, `krewire.com`, `krewire.github.io`. The remaining ecosystem repositories (`cloud`, `auth`, `dash`, `internal`) are private. This site dogfoods `pkg/web/ssg` + `pkg/kiw` DSL (`<markdown>`, `dict` helper, optional frontmatter) and validates the `site` path end-to-end.
