@@ -81,7 +81,7 @@ Every AI-assisted contribution is subject to the identical, uncompromising quali
 2. **Gate 2: Conformance & Testing**:
    ```bash
    go test -v ./...  # All unit and integration tests must pass
-   kiw compat        # Cross-module compatibility check must return OK
+   krew compat       # Cross-module compatibility check must return OK
    ```
 3. **Gate 3: Pure-Go Compilation**:
    ```bash

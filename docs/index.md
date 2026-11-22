@@ -9,7 +9,7 @@ The portal is published at **https://open.krewire.com/** (GitHub Pages hosting v
 ## Repository Overview
 
 - **Workload Kind**: `site` (declared in `krewire.yaml`).
-- **Build Engine**: `kiw build` (powered by `pkg/kiw` and `pkg/web/ssg`).
+- **Build Engine**: `krew build` (powered by `pkg/kiw` and `pkg/web/ssg`).
 - **Target Platform**: GitHub Pages (`gh-pages` branch).
 - **Go Module Requirement**: None (`go.mod` is not needed for `site` workloads).
 
@@ -34,7 +34,7 @@ krewire.github.io/
 
 ## Documentation Navigation
 
-- [Getting Started](./getting-started.md) — Local setup, previewing with `kiw serve`, and building with `kiw build`.
+- [Getting Started](./getting-started.md) — Local setup, previewing with `krew serve`, and building with `krew build`.
 - [Architecture](./architecture.md) — SSG rendering pipeline, layout model, i18n architecture, and GitHub Pages hosting.
 - [Contributing](./contributing.md) — Guidelines for updating contributor pathways, community channels, and support information, including link-verification rules and review cadence.
 - [AI-Assisted Contributions](./ai-contributions.md) — Safe, transparent, and accountable contribution policies for human and autonomous AI contributors.

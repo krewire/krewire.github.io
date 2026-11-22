@@ -20,7 +20,7 @@ The community portal is a static site (`site` workload) designed for speed, zero
                                      |
                                      v
                       +-----------------------------+
-                      |          kiw build          |
+                      |          krew build         |
                       |  - pkg/kiw (template parser)|
                       |  - pkg/web/ssg (generator)  |
                       +--------------+--------------+
@@ -43,7 +43,7 @@ The community portal is a static site (`site` workload) designed for speed, zero
 ## Architectural Principles
 
 ### 1. Minimalistic & Framework-Free
-The portal avoids heavy frontend frameworks (React, Vue, or Webpack/Vite). All DOM templating and scoping happen at build time inside `kiw`, resulting in raw HTML/CSS/vanilla JS with instant load times and small transfer sizes.
+The portal avoids heavy frontend frameworks (React, Vue, or Webpack/Vite). All DOM templating and scoping happen at build time inside `krew`, resulting in raw HTML/CSS/vanilla JS with instant load times and small transfer sizes.
 
 ### 2. Layout & Shell Separation
 - **`layouts/Base.kiw`**: Outer HTML shell with `<head>`, meta tags, theme-color metadata, favicons, navbar, and sidebar scaffolding.

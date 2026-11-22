@@ -13,8 +13,8 @@ We welcome contributions to help improve the onboarding experience, guides, and 
    - Update `pages/index.kiw`, layouts, or language files in `lang/`.
    - Maintain clean, semantic HTML and avoid unnecessary JavaScript dependencies.
 5. **Verify Locally**:
-   - Run `kiw build` inside `krewire.github.io` to ensure a clean build.
-   - Run `kiw serve` and check responsive views on desktop and mobile viewports.
+   - Run `krew build` inside `krewire.github.io` to ensure a clean build.
+   - Run `krew serve` and check responsive views on desktop and mobile viewports.
    - Verify both light and dark modes.
 6. **Commit**: Use Conventional Commits (`feat(community): ...`, `fix(ui): ...`, `docs: ...`).
 7. **Submit PR**: Submit a pull request to `main` with a clear explanation of changes.
