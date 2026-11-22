@@ -1,6 +1,5 @@
 project:
   name: "krewire.github.io"
-  kind: site
   version: "v0.1.0"
   author: "Krewire Contributors"
 
