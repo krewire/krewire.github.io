@@ -222,5 +222,10 @@
     "c3_title": "Isu Portal",
     "c3_desc": "Tautan rusak, informasi usang, atau masalah terjemahan di situs ini.",
     "note": "Server chat, meetup, dan acara baru dicantumkan di sini setelah dipastikan aktif."
+  },
+  "site_title": "Komunitas Krewire — Mulai, Berkontribusi & Dukung",
+  "site_description": "Pintu masuk komunitas ekosistem sumber terbuka Krewire: jalur resmi menuju proyek pertama Anda, panduan kontributor, dan informasi dukungan yang transparan.",
+  "portal": {
+    "welcome": "Selamat Datang di Portal Komunitas Krewire"
   }
 }

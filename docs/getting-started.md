@@ -56,12 +56,22 @@ Open `http://localhost:8080` in your web browser.
   - Community & support channels.
   - AI Boost workflow intro.
 
-### Localization & Bilingual Parity
+### Localization & Bilingual Parity (Single Source of Truth)
 
-- Content is localized across English (`en`) and Indonesian (`id`).
-- Dictionaries are stored in `lang/en/` and `lang/id/`.
-- Ensure new sections or strings are mirrored across both languages to maintain full parity.
-- The runtime language switcher reads a copy of these dictionaries embedded in `public/assets/krewire.js` (`var translations = {...}`). After editing `lang/*/portal.json`, update that object to match so both stay identical.
+- Content is localized across English (`en`) and Indonesian (`id`) with full 100% key parity.
+- Canonical localization dictionaries are stored strictly under `lang/en/portal.json` and `lang/id/portal.json`.
+- Root-level redundant files (`lang/en.json`, `lang/id.json`) are deprecated and removed to prevent overlapping sources of truth.
+- Fallback locale is configured as `en` in `krewire.yaml`.
+- The runtime client-side language switcher reads the synchronized dictionaries embedded in `public/assets/krewire.js` (`var translations = {...}`).
+- When adding or updating portal copy, update `lang/en/portal.json` and `lang/id/portal.json` first, then sync the embedded JSON in `public/assets/krewire.js`.
+
+### Directory & Asset Ownership
+
+- `pages/`: Page entrypoints (`index.kiw` for single-page portal, 404 handler).
+- `layouts/`: Master shell (`Landing.kiw` and `Base.kiw`).
+- `lang/`: Canonical i18n dictionaries (`lang/{locale}/portal.json`).
+- `public/`: Authored static assets (favicons, images, brand logos, CSS/JS).
+- `.krewire/build/`: Ephemeral generated output from `krew build` (excluded via `.gitignore`). Never commit generated build artifacts to source tree.
 
 ### Theme & Design Tokens
 
