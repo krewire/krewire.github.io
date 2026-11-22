@@ -51,7 +51,7 @@ public/               # Authored static assets (favicon, images, client JS/CSS)
 - [Documentation Hub](docs/index.md)
 - [Architecture & Design](docs/architecture.md)
 - [Getting Started Guide](docs/getting-started.md)
-- [Community Contributor Guide](docs/contributing.md)
+- [Community Contributor Guide](CONTRIBUTING.md)
 - [Safe & Transparent AI-Assisted Contribution Policy](docs/ai-contributions.md)
 
 ## Ecosystem

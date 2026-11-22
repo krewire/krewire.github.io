@@ -36,5 +36,5 @@ krewire.github.io/
 
 - [Getting Started](./getting-started.md) — Local setup, previewing with `krew serve`, and building with `krew build`.
 - [Architecture](./architecture.md) — SSG rendering pipeline, layout model, i18n architecture, and GitHub Pages hosting.
-- [Contributing](./contributing.md) — Guidelines for updating contributor pathways, community channels, and support information, including link-verification rules and review cadence.
+- [Contributing](../CONTRIBUTING.md) — Guidelines for updating contributor pathways, community channels, and support information, including link-verification rules and review cadence.
 - [AI-Assisted Contributions](./ai-contributions.md) — Safe, transparent, and accountable contribution policies for human and autonomous AI contributors.
