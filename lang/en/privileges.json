@@ -1,0 +1,16 @@
+{
+  "badge": "Why Contribute",
+  "title": "Why Contribute to Krewire",
+  "subtitle": "Contributions land in an MIT-licensed open-source core that anyone can use. There is no paid perk or license program attached to contributing today.",
+  "p1_badge": "Open Core",
+  "p1_title": "Your Work Ships in the Open",
+  "p1_desc": "Merged changes become part of the MIT-licensed core that anyone can use, study, and build on.",
+  "p2_badge": "Review",
+  "p2_title": "Learn Through Code Review",
+  "p2_desc": "Every pull request is reviewed before merge and checked against the quality gates in CONTRIBUTING.md.",
+  "p3_badge": "Credit",
+  "p3_title": "Public, Lasting Credit",
+  "p3_desc": "Your commits stay attributed to you in the project's public Git history.",
+  "policy_title": "About perks and privileges:",
+  "policy_text": "Earlier versions of this page described lifetime commercial licenses and a four-tier privilege ladder. Those programs are not approved or operational and have been withdrawn. If maintainers introduce a recognition program, it will be documented here with its actual terms."
+}

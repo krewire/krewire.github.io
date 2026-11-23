@@ -1,0 +1,14 @@
+{
+  "badge": "Jaminan Kualitas",
+  "title": "Cara Krewire: 3 Quality Gate",
+  "subtitle": "Agar basis kode tetap andal, dapat diprediksi, dan siap produksi, setiap pull request wajib melewati tiga gerbang. Daftar resminya ada di CONTRIBUTING.md repositori inti.",
+  "gate1_title": "Gerbang 1: Format & Lint",
+  "gate1_desc": "Nol kesalahan linting dan format Go idiomatis. Kode wajib mematuhi konvensi standar Go secara ketat.",
+  "gate1_req": "Wajib: gofmt -l . (bersih), go vet ./... (bersih)",
+  "gate2_title": "Gerbang 2: Pengujian",
+  "gate2_desc": "Setiap perubahan wajib lolos pengujian unit dan integrasi modul, dan krew compat wajib melaporkan ok setelah perubahan version.go.",
+  "gate2_req": "Wajib: go test ./... lolos, krew compat mencetak ok",
+  "gate3_title": "Gerbang 3: Spesifikasi & Commit",
+  "gate3_desc": "Perubahan harus tertaut ke Spesifikasi atau Isu yang sah, mengikuti format Conventional Commits.",
+  "gate3_req": "Wajib: Format commit semantik & keterlacakan spesifikasi"
+}

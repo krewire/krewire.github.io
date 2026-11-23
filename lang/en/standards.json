@@ -1,0 +1,14 @@
+{
+  "badge": "Quality Assurance",
+  "title": "The Krewire Way: 3 Quality Gates",
+  "subtitle": "To keep the codebase reliable, predictable, and production-ready, every pull request must pass three gates. The canonical list lives in the core repository's CONTRIBUTING.md.",
+  "gate1_title": "Gate 1: Format & Lint",
+  "gate1_desc": "Zero lint errors and idiomatic Go formatting. Code must adhere strictly to Go standard conventions.",
+  "gate1_req": "Required: gofmt -l . (clean), go vet ./... (clean)",
+  "gate2_title": "Gate 2: Tests",
+  "gate2_desc": "Every change must pass the module's unit and integration tests, and krew compat must report ok after version.go changes.",
+  "gate2_req": "Required: go test ./... passes, krew compat prints ok",
+  "gate3_title": "Gate 3: Spec & Commits",
+  "gate3_desc": "Changes must link to a valid Spec or Issue, following Conventional Commits format.",
+  "gate3_req": "Required: Semantic commit format & spec traceability"
+}

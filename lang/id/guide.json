@@ -1,0 +1,16 @@
+{
+  "badge": "Jalur Cepat Kontributor",
+  "title": "Mulai Berkontribusi dalam 5 Langkah",
+  "subtitle": "Dari nol hingga pull request pertama Anda digabungkan. Berikut cara menyiapkan lingkungan pengembangan Anda dalam hitungan menit.",
+  "s1_title": "1. Fork & Klon Repositori",
+  "s1_desc": "Fork repositori Krewire ke akun GitHub pribadi Anda, lalu klon secara lokal untuk memulai.",
+  "s2_title": "2. Build CLI krew dari Kode Sumber",
+  "s2_desc": "Di dalam klon repositori inti Anda (Go 1.27.1+), build CLI yang sedang Anda ubah:",
+  "s3_title": "3. Pilih Isu Terbuka",
+  "s3_desc_html": "Jelajahi daftar isu pilihan bertanda <span class=\"tag-issue\">good first issue</span> atau <span class=\"tag-issue\">help wanted</span>. Berikan komentar agar pengelola mengetahui Anda sedang mengerjakannya.",
+  "s3_btn": "Lihat Good First Issues →",
+  "s4_title": "4. Implementasi & Uji Lokal",
+  "s4_desc": "Tulis kode Go yang bersih, idiomatis, dan sertakan pengujian. Jalankan quality gate dari CONTRIBUTING.md sebelum membuka pull request:",
+  "s5_title": "5. Kirim PR dengan Conventional Commits",
+  "s5_desc": "Buka PR dengan format Conventional Commits (feat, fix, docs, refactor, test). Pengelola dan AI Boost akan meninjau dan memandu proses merge."
+}

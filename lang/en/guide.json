@@ -1,0 +1,16 @@
+{
+  "badge": "Onboarding Fast-Track",
+  "title": "Start Contributing in 5 Steps",
+  "subtitle": "From zero to your first merged pull request. Here is how to get your development environment running in minutes.",
+  "s1_title": "1. Fork & Clone Repositories",
+  "s1_desc": "Fork any Krewire repository to your personal GitHub account, then clone it locally to begin.",
+  "s2_title": "2. Build the krew CLI from Source",
+  "s2_desc": "Inside your clone of the core repository (Go 1.27.1+), build the CLI you are changing:",
+  "s3_title": "3. Pick an Open Issue",
+  "s3_desc_html": "Browse our curated issues list tagged with <span class=\"tag-issue\">good first issue</span> or <span class=\"tag-issue\">help wanted</span>. Comment to let maintainers know you are working on it.",
+  "s3_btn": "View Good First Issues →",
+  "s4_title": "4. Implement & Verify Locally",
+  "s4_desc": "Write clean, idiomatic Go code and tests. Run the quality gates from CONTRIBUTING.md before opening a pull request:",
+  "s5_title": "5. Submit PR with Conventional Commits",
+  "s5_desc": "Open a PR following Conventional Commits (feat, fix, docs, refactor, test). Maintainers and AI Boost will review and guide you to merge."
+}

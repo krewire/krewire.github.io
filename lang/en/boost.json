@@ -1,0 +1,18 @@
+{
+  "badge": "Human + AI Synergy",
+  "title": "Collaborating with AI Boost",
+  "lead": "Krewire pioneers the collaboration between human maintainers and autonomous AI agents. Our AI Boost framework operates with strict verification standards:",
+  "item1_html": "<b>Automated Architecture Audits:</b> AI agents check PRs against <code>KWF-*</code> specifications.",
+  "item2_html": "<b>Continuous Regression Hunting:</b> Agents synthesize edge cases and race condition checks.",
+  "item3_html": "<b>Transparent Pair Programming:</b> AI agents explain architectural decisions openly in discussions and PR comments.",
+  "item4_html": "<b>Human Governance:</b> Ultimate merging authority always remains in the hands of human collective maintainers.",
+  "cta_repo": "Explore AI Boost in Krewire →",
+  "cta_disc": "Join Discussions",
+  "triad_title": "AI Boost Agent Triad",
+  "planner_title": "Requirements & SDD",
+  "planner_desc": "Translates feature ideas into formal specs and architectural blueprints.",
+  "builder_title": "Implementation & Refactoring",
+  "builder_desc": "Generates clean Go implementations adhering to idiomatic patterns.",
+  "auditor_title": "Verification & Quality Gates",
+  "auditor_desc": "Validates concurrency, zero data races, and performance benchmarks."
+}

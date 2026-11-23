@@ -1,0 +1,18 @@
+{
+  "badge": "Sinergi Manusia + AI",
+  "title": "Berkolaborasi dengan AI Boost",
+  "lead": "Krewire memelopori kolaborasi antara pengelola manusia dan agen AI otonom. Kerangka kerja AI Boost kami beroperasi dengan standar verifikasi yang ketat:",
+  "item1_html": "<b>Audit Arsitektur Otomatis:</b> Agen AI memeriksa PR terhadap spesifikasi <code>KWF-*</code>.",
+  "item2_html": "<b>Pemberantasan Regresi Berkelanjutan:</b> Agen mensintesis uji kasus ekstrem dan deteksi kondisi balapan.",
+  "item3_html": "<b>Pair Programming Transparan:</b> Agen AI menjelaskan keputusan arsitektur secara terbuka dalam diskusi dan komentar PR.",
+  "item4_html": "<b>Tata Kelola Manusia:</b> Otoritas penggabungan (merge) mutlak tetap berada di tangan pengelola kolektif manusia.",
+  "cta_repo": "Jelajahi AI Boost di Krewire →",
+  "cta_disc": "Gabung Diskusi",
+  "triad_title": "Triad Agen AI Boost",
+  "planner_title": "Kebutuhan & SDD",
+  "planner_desc": "Menerjemahkan ide fitur menjadi spesifikasi formal dan cetak biru arsitektur.",
+  "builder_title": "Implementasi & Refaktorisasi",
+  "builder_desc": "Menghasilkan implementasi Go yang bersih dan mematuhi pola idiomatis.",
+  "auditor_title": "Verifikasi & Quality Gate",
+  "auditor_desc": "Memvalidasi konkurensi, nol data race, dan tolok ukur performa."
+}

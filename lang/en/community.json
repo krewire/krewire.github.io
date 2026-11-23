@@ -1,0 +1,12 @@
+{
+  "badge": "Community & Support Channels",
+  "title": "Where to Ask, Report, and Share",
+  "subtitle": "Use the public GitHub channels below. They are the places maintainers read today.",
+  "c1_title": "GitHub Discussions",
+  "c1_desc": "Questions, ideas, and sharing what you built with Krewire.",
+  "c2_title": "Core Issue Tracker",
+  "c2_desc": "Bug reports and feature requests for the Go packages and the krew CLI.",
+  "c3_title": "Portal Issues",
+  "c3_desc": "Broken links, outdated information, or translation problems on this site.",
+  "note": "Chat servers, meetups, and events are listed here only once they are confirmed to be active."
+}

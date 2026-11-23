@@ -1,0 +1,12 @@
+{
+  "badge": "Kanal Komunitas & Dukungan",
+  "title": "Tempat Bertanya, Melapor, dan Berbagi",
+  "subtitle": "Gunakan kanal GitHub publik di bawah ini. Kanal inilah yang saat ini dibaca oleh para pengelola.",
+  "c1_title": "GitHub Discussions",
+  "c1_desc": "Pertanyaan, ide, dan berbagi apa yang Anda bangun dengan Krewire.",
+  "c2_title": "Issue Tracker Inti",
+  "c2_desc": "Laporan bug dan permintaan fitur untuk paket Go dan CLI krew.",
+  "c3_title": "Isu Portal",
+  "c3_desc": "Tautan rusak, informasi usang, atau masalah terjemahan di situs ini.",
+  "note": "Server chat, meetup, dan acara baru dicantumkan di sini setelah dipastikan aktif."
+}
