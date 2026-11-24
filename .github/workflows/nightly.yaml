@@ -52,20 +52,34 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.24'
+          go-version: '1.27.x'
           check-latest: true
 
-      - name: Install kiw CLI
+      - name: Verify obsolete CLI paths not present
+        run: ./scripts/verify_workflows.sh
+
+      - name: Install canonical Krew CLI
         run: |
           git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/ui.git" "${RUNNER_TEMP}/ui"
+          git clone --depth 1 --branch main "https://github.com/krewire/tui.git" "${RUNNER_TEMP}/tui"
           git clone --depth 1 --branch main "https://github.com/krewire/krew.git" "${RUNNER_TEMP}/krew"
-          cd "${RUNNER_TEMP}/krewire"
-          go build -o "${RUNNER_TEMP}/bin/kiw" ./tools/kiw/cmd/kiw
+          cd "${RUNNER_TEMP}"
+          go work init ./krewire ./ui ./tui ./krew
+          cd "${RUNNER_TEMP}/krew"
+          mkdir -p "${RUNNER_TEMP}/bin"
+          CGO_ENABLED=0 go build -ldflags="-s -w" -o "${RUNNER_TEMP}/bin/krew" ./cmd/krew
+          ln -s "${RUNNER_TEMP}/bin/krew" "${RUNNER_TEMP}/bin/kiw"
           echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
+
+      - name: Verify CLI installation
+        run: |
+          krew version
+          kiw version
 
       - name: Build Static Site
         run: |
-          kiw build
+          krew build
           test -d .krewire/build || { echo "Build output missing"; exit 1; }
 
       - name: Package Bundle

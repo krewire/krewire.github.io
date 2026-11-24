@@ -52,24 +52,35 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: "stable"
+          go-version: "1.27.x"
           check-latest: true
           cache: true
 
-      - name: Install kiw CLI
+      - name: Verify obsolete CLI paths not present
+        run: ./scripts/verify_workflows.sh
+
+      - name: Install canonical Krew CLI
         run: |
           git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/ui.git" "${RUNNER_TEMP}/ui"
+          git clone --depth 1 --branch main "https://github.com/krewire/tui.git" "${RUNNER_TEMP}/tui"
           git clone --depth 1 --branch main "https://github.com/krewire/krew.git" "${RUNNER_TEMP}/krew"
-          cd "${RUNNER_TEMP}/krewire"
-          go build -o "${RUNNER_TEMP}/bin/kiw" ./tools/kiw/cmd/kiw
+          cd "${RUNNER_TEMP}"
+          go work init ./krewire ./ui ./tui ./krew
+          cd "${RUNNER_TEMP}/krew"
+          mkdir -p "${RUNNER_TEMP}/bin"
+          CGO_ENABLED=0 go build -ldflags="-s -w" -o "${RUNNER_TEMP}/bin/krew" ./cmd/krew
+          ln -s "${RUNNER_TEMP}/bin/krew" "${RUNNER_TEMP}/bin/kiw"
           echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
 
-      - name: Verify kiw installation
-        run: kiw version
+      - name: Verify CLI installation
+        run: |
+          krew version
+          kiw version
 
       - name: Build website
         run: |
-          kiw build
+          krew build
           touch .krewire/build/.nojekyll
           # Mirror output into contribute/ subfolder so both root (https://krewire.github.io/)
           # and mounted base path (https://krewire.github.io/contribute/ and krewire.com/contribute/) resolve identically.
