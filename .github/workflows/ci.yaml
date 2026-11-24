@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  test-release-matrix:
+    name: Verify Release & Deploy Policy Matrix
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up Go
+        uses: actions/setup-go@f111f3307d8850f501ac008e886eec1fd1932a34 # v5.3.0
+        with:
+          go-version: "1.23"
+          cache: true
+
+      - name: Verify Workflows
+        run: |
+          chmod +x scripts/verify_workflows.sh
+          ./scripts/verify_workflows.sh
+
+      - name: Run Release Matrix & Deploy Gate Verification
+        run: |
+          chmod +x scripts/verify_release_matrix.sh
+          ./scripts/verify_release_matrix.sh
+
+      - name: Install canonical Krew CLI
+        run: |
+          git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/ui.git" "${RUNNER_TEMP}/ui"
+          git clone --depth 1 --branch main "https://github.com/krewire/tui.git" "${RUNNER_TEMP}/tui"
+          git clone --depth 1 --branch main "https://github.com/krewire/krew.git" "${RUNNER_TEMP}/krew"
+          cd "${RUNNER_TEMP}"
+          go work init ./krewire ./ui ./tui ./krew
+          cd "${RUNNER_TEMP}/krew"
+          mkdir -p "${RUNNER_TEMP}/bin"
+          CGO_ENABLED=0 go build -ldflags="-s -w" -o "${RUNNER_TEMP}/bin/krew" ./cmd/krew
+          ln -s "${RUNNER_TEMP}/bin/krew" "${RUNNER_TEMP}/bin/kiw"
+          echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
+
+      - name: Build and Test Portal
+        run: |
+          krew version
+          krew build
+          test -d .krewire/build || { echo "Build output missing"; exit 1; }
+          if [ -d "cmd" ]; then
+            CGO_ENABLED=0 go test -v ./...
+            CGO_ENABLED=0 go build ./...
+          fi
