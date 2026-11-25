@@ -17,5 +17,22 @@
   "releases": "Tag Rilis ↗",
   "contributing": "CONTRIBUTING.md ↗",
   "channels": "Kanal Dukungan",
-  "support": "Mendukung Krewire"
+  "support": "Mendukung Krewire",
+  "products_title": "Produk",
+  "workloads_title": "8 Workload",
+  "docs_title": "Dokumentasi",
+  "ecosystem_title": "Platform Ekosistem",
+  "guides_title": "Arsitektur & Panduan",
+  "tagline_html": "One Ecosystem. Every Workload.<br>Satu CLI <code class=\"code-inline\">krew</code>, satu konfigurasi <code class=\"code-inline\">krewire.yaml</code>.",
+  "badge": "Go Terkompilasi · Bebas Kembung",
+  "copyright_html": "© 2026 Krewire Team — Dibangun dengan Krewire & DSL .kiw.",
+  "project_title": "Proyek",
+  "about": "Tentang Krewire",
+  "audiences": "Untuk Siapa",
+  "openness": "Keterbukaan & Self-Hosting",
+  "services": "Inti vs. Layanan Platform",
+  "contribute": "Berkontribusi",
+  "impact": "Laporan Dampak",
+  "roadmap": "Kematangan & Roadmap",
+  "security": "Laporkan Masalah Keamanan"
 }

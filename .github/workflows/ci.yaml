@@ -53,6 +53,8 @@ jobs:
           krew version
           krew build
           test -d .krewire/build || { echo "Build output missing"; exit 1; }
+          chmod +x scripts/verify_portal.sh
+          ./scripts/verify_portal.sh
           if [ -d "cmd" ]; then
             CGO_ENABLED=0 go test -v ./...
             CGO_ENABLED=0 go build ./...

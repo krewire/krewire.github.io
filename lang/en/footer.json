@@ -17,5 +17,22 @@
   "releases": "Release Tags ↗",
   "contributing": "CONTRIBUTING.md ↗",
   "channels": "Support Channels",
-  "support": "Supporting Krewire"
+  "support": "Supporting Krewire",
+  "products_title": "Products",
+  "workloads_title": "8 Workloads",
+  "docs_title": "Documentation",
+  "ecosystem_title": "Ecosystem Platforms",
+  "guides_title": "Architecture & Guides",
+  "tagline_html": "One Ecosystem. Every Workload.<br>One CLI <code class=\"code-inline\">krew</code>, one config <code class=\"code-inline\">krewire.yaml</code>.",
+  "badge": "Compiled Go · Zero Bloat",
+  "copyright_html": "© 2026 Krewire Team — Built with Krewire & .kiw DSL.",
+  "project_title": "Project",
+  "about": "About Krewire",
+  "audiences": "Who It's For",
+  "openness": "Openness & Self-Hosting",
+  "services": "Core vs. Platform Services",
+  "contribute": "Contribute",
+  "impact": "Impact Report",
+  "roadmap": "Maturity & Roadmap",
+  "security": "Report a Security Issue"
 }
