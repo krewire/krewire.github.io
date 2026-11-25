@@ -21,8 +21,8 @@ The community portal is a static site (`site` workload) designed for speed, zero
                                      v
                       +-----------------------------+
                       |          krew build         |
-                      |  - pkg/kiw (template parser)|
-                      |  - pkg/web/ssg (generator)  |
+                      |  - ui/kiw (template parser)|
+                      |  - web/ssg (generator)  |
                       +--------------+--------------+
                                      |
                                      v

@@ -9,7 +9,7 @@ The portal is published at **https://open.krewire.com/** (GitHub Pages hosting v
 ## Repository Overview
 
 - **Workload Kind**: `site` (declared in `krewire.yaml`).
-- **Build Engine**: `krew build` (powered by `pkg/kiw` and `pkg/web/ssg`).
+- **Build Engine**: `krew build` (powered by `ui/kiw` and `web/ssg`).
 - **Target Platform**: GitHub Pages (`gh-pages` branch).
 - **Go Module Requirement**: None (`go.mod` is not needed for `site` workloads).
 
