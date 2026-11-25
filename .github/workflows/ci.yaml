@@ -21,7 +21,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@f111f3307d8850f501ac008e886eec1fd1932a34 # v5.3.0
         with:
-          go-version: "1.23"
+          go-version: "1.27.3"
           cache: true
 
       - name: Verify Workflows
@@ -37,15 +37,15 @@ jobs:
       - name: Install canonical Krew CLI
         run: |
           git clone --depth 1 --branch main "https://github.com/krewire/krewire.git" "${RUNNER_TEMP}/krewire"
+          git clone --depth 1 --branch main "https://github.com/krewire/hub.git" "${RUNNER_TEMP}/hub"
           git clone --depth 1 --branch main "https://github.com/krewire/ui.git" "${RUNNER_TEMP}/ui"
           git clone --depth 1 --branch main "https://github.com/krewire/tui.git" "${RUNNER_TEMP}/tui"
           git clone --depth 1 --branch main "https://github.com/krewire/krew.git" "${RUNNER_TEMP}/krew"
-          cd "${RUNNER_TEMP}"
-          go work init ./krewire ./ui ./tui ./krew
+          export GOWORK="${RUNNER_TEMP}/krew/go.work"
           cd "${RUNNER_TEMP}/krew"
           mkdir -p "${RUNNER_TEMP}/bin"
-          CGO_ENABLED=0 go build -ldflags="-s -w" -o "${RUNNER_TEMP}/bin/krew" ./cmd/krew
-          ln -s "${RUNNER_TEMP}/bin/krew" "${RUNNER_TEMP}/bin/kiw"
+          CGO_ENABLED=0 go build -ldflags="-s -w" -o "${RUNNER_TEMP}/bin/krew" ./cli
+          ln -sf "${RUNNER_TEMP}/bin/krew" "${RUNNER_TEMP}/bin/kiw"
           echo "${RUNNER_TEMP}/bin" >> "$GITHUB_PATH"
 
       - name: Build and Test Portal

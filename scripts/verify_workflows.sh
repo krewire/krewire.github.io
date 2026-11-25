@@ -20,11 +20,19 @@ for wf in "${REPO_ROOT}/.github/workflows/"*.yaml; do
     echo "FAIL: Workflow $(basename "$wf") does not clone krew.git!" >&2
     exit 1
   fi
-  if ! grep -q "cmd/krew" "$wf"; then
-    echo "FAIL: Workflow $(basename "$wf") does not build ./cmd/krew!" >&2
+  if ! grep -q "hub.git" "$wf"; then
+    echo "FAIL: Workflow $(basename "$wf") does not clone hub.git!" >&2
+    exit 1
+  fi
+  if ! grep -qE "(./cli|./cmd/krew)" "$wf"; then
+    echo "FAIL: Workflow $(basename "$wf") does not build canonical Krew CLI!" >&2
+    exit 1
+  fi
+  if ! grep -q "GOWORK" "$wf"; then
+    echo "FAIL: Workflow $(basename "$wf") does not explicitly set GOWORK!" >&2
     exit 1
   fi
 done
-echo "✓ All workflows build canonical Krew CLI (cmd/krew)."
+echo "✓ All workflows build canonical Krew CLI in an isolated workspace."
 
 echo "=== All workflow regression checks passed! ==="
